@@ -1,0 +1,5 @@
+#!/bin/bash
+echo Building epiphany
+cd ../epiphany  || exit 1
+source epiphany.SlackBuild
+upgradepkg --install-new --reinstall $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE

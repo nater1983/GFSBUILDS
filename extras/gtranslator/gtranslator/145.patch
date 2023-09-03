@@ -1,0 +1,173 @@
+From e4a3123f6fdb4de7806d593c9d8f664c7359900f Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Daniel=20Garc=C3=ADa=20Moreno?= <dani@danigm.net>
+Date: Thu, 24 Aug 2023 21:07:42 +0200
+Subject: [PATCH] Add spellcheck
+
+This patch adds spellcheck to the translation source view using the
+libspell library. In this patch the library is a hard dependency, but
+maybe we can cosider to make it optional using meson.
+
+Fix https://gitlab.gnome.org/GNOME/gtranslator/-/issues/180
+---
+ build-aux/flatpak/org.gnome.Gtranslator.json | 14 ++++++++++++
+ meson.build                                  |  2 +-
+ src/gtr-tab.c                                | 10 +++++++++
+ src/gtr-view.c                               | 23 ++++++++++++++++++++
+ src/gtr-view.h                               |  1 +
+ 5 files changed, 49 insertions(+), 1 deletion(-)
+
+diff --git a/build-aux/flatpak/org.gnome.Gtranslator.json b/build-aux/flatpak/org.gnome.Gtranslator.json
+index aaf59b44..a228ebc6 100644
+--- a/build-aux/flatpak/org.gnome.Gtranslator.json
++++ b/build-aux/flatpak/org.gnome.Gtranslator.json
+@@ -80,6 +80,20 @@
+                 "/share/doc"
+             ]
+         },
++        {
++            "name" : "libspelling",
++            "buildsystem" : "meson",
++            "config-opts" : [
++                "-Ddocs=false"
++            ],
++            "sources" : [
++                {
++                    "type" : "git",
++                    "url" : "https://gitlab.gnome.org/chergert/libspelling.git",
++                    "commit" : "b5268093bf2f1df82064007bd18b4d9008e069e7"
++                }
++            ]
++        },
+         {
+             "name" : "gtranslator",
+             "buildsystem" : "meson",
+diff --git a/meson.build b/meson.build
+index a0d1baf2..51d57080 100644
+--- a/meson.build
++++ b/meson.build
+@@ -106,7 +106,6 @@ src_dir = join_paths(meson.project_source_root(), 'src')
+ 
+ glib_dep = dependency('glib-2.0', version: '>= 2.71.3')
+ gtk_dep = dependency('gtk4', version: '>= 4.6.0')
+-# libhandy_dep = dependency('libhandy-1', version: '>= 1.5.0')
+ libadwaita_dep = dependency('libadwaita-1', version: '>= 1.1.0')
+ 
+ gtr_deps = [
+@@ -121,6 +120,7 @@ gtr_deps = [
+   dependency('libxml-2.0', version: '>= 2.4.12'),
+   dependency('libsoup-3.0'),
+   dependency('json-glib-1.0', version: '>= 1.2.0'),
++  dependency('libspelling-1'),
+   cc.find_library('gettextpo'),
+ ]
+ 
+diff --git a/src/gtr-tab.c b/src/gtr-tab.c
+index 7557500e..edb77143 100644
+--- a/src/gtr-tab.c
++++ b/src/gtr-tab.c
+@@ -526,6 +526,15 @@ gtr_tab_append_msgstr_page (const gchar * tab_label,
+   GtkWidget *scroll;
+   GtkWidget *label;
+   GtkWidget *view;
++  GtrHeader *header;
++  GtrTabPrivate *priv;
++
++  g_autofree char *lang_code = NULL;
++
++  priv = gtr_tab_get_instance_private (tab);
++
++  header = gtr_po_get_header (priv->po);
++  lang_code = gtr_header_get_language_code (header);
+ 
+   label = gtk_label_new (tab_label);
+ 
+@@ -542,6 +551,7 @@ gtr_tab_append_msgstr_page (const gchar * tab_label,
+                                        GTK_SHADOW_IN);*/
+ 
+   gtk_notebook_append_page (GTK_NOTEBOOK (box), scroll, label);
++  gtr_view_set_lang (GTR_VIEW (view), lang_code);
+ 
+   return view;
+ }
+diff --git a/src/gtr-view.c b/src/gtr-view.c
+index 1e5c0026..d3a26009 100644
+--- a/src/gtr-view.c
++++ b/src/gtr-view.c
+@@ -40,6 +40,7 @@
+ #include <gtk/gtk.h>
+ 
+ #include <gtksourceview/gtksource.h>
++#include <libspelling.h>
+ 
+ typedef struct
+ {
+@@ -47,6 +48,7 @@ typedef struct
+   GSettings *ui_settings;
+ 
+   GtkSourceBuffer *buffer;
++  SpellingChecker *checker;
+ 
+   guint search_flags;
+   gchar *search_text;
+@@ -73,7 +75,9 @@ gtr_view_init (GtrView * view)
+   gchar *ui_dir;
+   GtrViewPrivate *priv;
+   AdwStyleManager *manager;
++  GMenuModel *extra_menu = NULL;
+ 
++  g_autoptr(SpellingTextBufferAdapter) adapter = NULL;
+   g_autofree char *font = NULL;
+ 
+   priv = gtr_view_get_instance_private (view);
+@@ -128,6 +132,15 @@ gtr_view_init (GtrView * view)
+   g_signal_connect_swapped (manager, "notify::dark",
+                             G_CALLBACK (notify_dark_cb), view);
+   gtk_text_view_set_monospace (GTK_TEXT_VIEW (view), TRUE);
++
++  priv->checker = spelling_checker_new (spelling_provider_get_default (), "en_US");
++  adapter = spelling_text_buffer_adapter_new (priv->buffer, priv->checker);
++  extra_menu = spelling_text_buffer_adapter_get_menu_model (adapter);
++
++  gtk_text_view_set_extra_menu (GTK_TEXT_VIEW (view), extra_menu);
++  gtk_widget_insert_action_group (GTK_WIDGET (view), "spelling", G_ACTION_GROUP (adapter));
++  spelling_text_buffer_adapter_set_enabled (adapter, TRUE);
++  gtr_view_set_lang (GTR_VIEW (view), "en_US");
+ }
+ 
+ static void
+@@ -141,6 +154,7 @@ gtr_view_dispose (GObject * object)
+   g_clear_object (&priv->editor_settings);
+   g_clear_object (&priv->ui_settings);
+   g_clear_object (&priv->provider);
++  g_clear_object (&priv->checker);
+ 
+   G_OBJECT_CLASS (gtr_view_parent_class)->dispose (object);
+ }
+@@ -809,3 +823,12 @@ gtr_view_set_font (GtrView *view, char *font)
+   gtk_css_provider_load_from_data (priv->provider, css, -1);
+ #endif
+ }
++
++void
++gtr_view_set_lang (GtrView *view, const char *lang)
++{
++  GtrViewPrivate *priv;
++
++  priv = gtr_view_get_instance_private (view);
++  spelling_checker_set_language (priv->checker, lang);
++}
+diff --git a/src/gtr-view.h b/src/gtr-view.h
+index 70f393d4..d2e72bcb 100644
+--- a/src/gtr-view.h
++++ b/src/gtr-view.h
+@@ -99,6 +99,7 @@ struct _GtrViewClass
+      void gtr_view_reload_scheme_color (GtrView * view);
+ 
+      void gtr_view_set_font (GtrView *view, char *font);
++     void gtr_view_set_lang (GtrView *view, const char *lang);
+ 
+ 
+ /* Search macros */
+-- 
+GitLab
+

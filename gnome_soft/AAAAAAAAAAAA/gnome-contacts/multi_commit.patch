@@ -1,0 +1,487 @@
+From c1742884d82aa897fdabe966dcae95057d5e33c9 Mon Sep 17 00:00:00 2001
+From: Niels De Graef <nielsdegraef@gmail.com>
+Date: Fri, 11 Aug 2023 00:53:54 +0200
+Subject: [PATCH] chunk: Add display-name and icon-name property
+
+Rather than building a separate list of structs somewhere to fetch a
+user-facing string/icon, let's put that knowledge directly into the
+`Contacts.Chunk` object, since that's what we're working with anyway.
+
+This also allows us to easily set an accesible label. As a consequence,
+when using a screen reader, it will now actually tell you what field
+you're focusing on when showing a contact.
+---
+ src/contacts-contact-sheet.vala              | 52 +++++++++++---------
+ src/contacts-utils.vala                      | 47 ------------------
+ src/core/contacts-addresses-chunk.vala       |  4 ++
+ src/core/contacts-alias-chunk.vala           |  4 ++
+ src/core/contacts-avatar-chunk.vala          |  4 ++
+ src/core/contacts-birthday-chunk.vala        |  4 ++
+ src/core/contacts-chunk.vala                 | 10 ++++
+ src/core/contacts-email-addresses-chunk.vala |  4 ++
+ src/core/contacts-full-name-chunk.vala       |  4 ++
+ src/core/contacts-im-addresses-chunk.vala    |  4 ++
+ src/core/contacts-nickname-chunk.vala        |  4 ++
+ src/core/contacts-notes-chunk.vala           |  4 ++
+ src/core/contacts-phones-chunk.vala          |  4 ++
+ src/core/contacts-roles-chunk.vala           |  5 ++
+ src/core/contacts-structured-name-chunk.vala |  6 +++
+ src/core/contacts-urls-chunk.vala            |  4 ++
+ 16 files changed, 95 insertions(+), 69 deletions(-)
+
+diff --git a/src/contacts-contact-sheet.vala b/src/contacts-contact-sheet.vala
+index cceb40e9..e662ee07 100644
+--- a/src/contacts-contact-sheet.vala
++++ b/src/contacts-contact-sheet.vala
+@@ -180,7 +180,7 @@ public class Contacts.ContactSheet : Gtk.Widget {
+       requires (chunk is RolesChunk) {
+     unowned var roles_chunk = (RolesChunk) chunk;
+ 
+-    var group = new ContactSheetGroup ();
++    var group = new ContactSheetGroup (chunk);
+ 
+     for (uint i = 0; i < roles_chunk.get_n_items (); i++) {
+       var role = (OrgRole) roles_chunk.get_item (i);
+@@ -188,7 +188,7 @@ public class Contacts.ContactSheet : Gtk.Widget {
+         continue;
+ 
+       //XXX if no role: set "Organisation" tool tip
+-      var row = new ContactSheetRow (chunk.property_name, role.to_string ());
++      var row = new ContactSheetRow (chunk, role.to_string ());
+ 
+       group.add (row);
+     }
+@@ -200,14 +200,14 @@ public class Contacts.ContactSheet : Gtk.Widget {
+       requires (chunk is EmailAddressesChunk) {
+     unowned var emails_chunk = (EmailAddressesChunk) chunk;
+ 
+-    var group = new ContactSheetGroup ();
++    var group = new ContactSheetGroup (chunk);
+ 
+     for (uint i = 0; i < emails_chunk.get_n_items (); i++) {
+       var email = (EmailAddress) emails_chunk.get_item (i);
+       if (email.is_empty)
+         continue;
+ 
+-      var row = new ContactSheetRow (chunk.property_name,
++      var row = new ContactSheetRow (chunk,
+                                      email.raw_address,
+                                      email.get_email_address_type ().display_name);
+ 
+@@ -235,14 +235,14 @@ public class Contacts.ContactSheet : Gtk.Widget {
+       requires (chunk is PhonesChunk) {
+     unowned var phones_chunk = (PhonesChunk) chunk;
+ 
+-    var group = new ContactSheetGroup ();
++    var group = new ContactSheetGroup (chunk);
+ 
+     for (uint i = 0; i < phones_chunk.get_n_items (); i++) {
+       var phone = (Phone) phones_chunk.get_item (i);
+       if (phone.is_empty)
+         continue;
+ 
+-      var row = new ContactSheetRow (chunk.property_name,
++      var row = new ContactSheetRow (chunk,
+                                      phone.raw_number,
+                                      phone.get_phone_type ().display_name);
+       group.add (row);
+@@ -259,14 +259,14 @@ public class Contacts.ContactSheet : Gtk.Widget {
+ #if 0
+     unowned var im_addrs_chunk = (ImAddressesChunk) chunk;
+ 
+-    var group = new ContactSheetGroup ();
++    var group = new ContactSheetGroup (chunk);
+ 
+     for (uint i = 0; i < im_addrs_chunk.get_n_items (); i++) {
+       var im_addr = (ImAddress) im_addrs_chunk.get_item (i);
+       if (im_addr.is_empty)
+         continue;
+ 
+-        var row = new ContactSheetRow (chunk.property_name,
++        var row = new ContactSheetRow (chunk,
+                                        im_addr.address,
+                                        ImService.get_display_name (im_addr.protocol));
+         group.add (row);
+@@ -282,14 +282,14 @@ public class Contacts.ContactSheet : Gtk.Widget {
+       requires (chunk is UrlsChunk) {
+     unowned var urls_chunk = (UrlsChunk) chunk;
+ 
+-    var group = new ContactSheetGroup ();
++    var group = new ContactSheetGroup (chunk);
+ 
+     for (uint i = 0; i < urls_chunk.get_n_items (); i++) {
+       var url = (Contacts.Url) urls_chunk.get_item (i);
+       if (url.is_empty)
+         continue;
+ 
+-      var row = new ContactSheetRow (chunk.property_name, url.raw_url);
++      var row = new ContactSheetRow (chunk, url.raw_url);
+ 
+       var button = row.add_button ("external-link-symbolic");
+       button.tooltip_text = _("Visit website");
+@@ -315,8 +315,8 @@ public class Contacts.ContactSheet : Gtk.Widget {
+       requires (chunk is NicknameChunk) {
+     unowned var nickname_chunk = (NicknameChunk) chunk;
+ 
+-    var row = new ContactSheetRow (chunk.property_name, nickname_chunk.nickname);
+-    return new ContactSheetGroup.single_row (row);
++    var row = new ContactSheetRow (chunk, nickname_chunk.nickname);
++    return new ContactSheetGroup.single_row (chunk, row);
+   }
+ 
+   private Gtk.Widget create_widget_for_birthday (Chunk chunk)
+@@ -332,22 +332,22 @@ public class Contacts.ContactSheet : Gtk.Widget {
+       subtitle = _("Their birthday is today! ðŸŽ‰");
+     }
+ 
+-    var row = new ContactSheetRow (chunk.property_name, birthday_str, subtitle);
+-    return new ContactSheetGroup.single_row (row);
++    var row = new ContactSheetRow (chunk, birthday_str, subtitle);
++    return new ContactSheetGroup.single_row (chunk, row);
+   }
+ 
+   private Gtk.Widget create_widget_for_notes (Chunk chunk)
+       requires (chunk is NotesChunk) {
+     unowned var notes_chunk = (NotesChunk) chunk;
+ 
+-    var group = new ContactSheetGroup ();
++    var group = new ContactSheetGroup (chunk);
+ 
+     for (uint i = 0; i < notes_chunk.get_n_items (); i++) {
+       var note = (Note) notes_chunk.get_item (i);
+       if (note.is_empty)
+         continue;
+ 
+-      var row = new ContactSheetRow (chunk.property_name, note.text);
++      var row = new ContactSheetRow (chunk, note.text);
+       group.add (row);
+     }
+ 
+@@ -363,14 +363,14 @@ public class Contacts.ContactSheet : Gtk.Widget {
+     var map_uris_supported = (appinfo != null);
+     debug ("Opening 'maps:' URIs supported: %s", map_uris_supported.to_string ());
+ 
+-    var group = new ContactSheetGroup ();
++    var group = new ContactSheetGroup (chunk);
+ 
+     for (uint i = 0; i < addresses_chunk.get_n_items (); i++) {
+       var address = (Address) addresses_chunk.get_item (i);
+       if (address.is_empty)
+         continue;
+ 
+-      var row = new ContactSheetRow (chunk.property_name,
++      var row = new ContactSheetRow (chunk,
+                                      address.to_string ("\n"),
+                                      address.get_address_type ().display_name);
+ 
+@@ -404,7 +404,15 @@ public class Contacts.ContactSheetGroup : Adw.PreferencesGroup {
+     add_css_class ("contacts-sheet-property");
+   }
+ 
+-  public ContactSheetGroup.single_row (ContactSheetRow row) {
++
++  public ContactSheetGroup (Chunk chunk) {
++    update_property (Gtk.AccessibleProperty.LABEL, chunk.display_name);
++  }
++
++  public ContactSheetGroup.single_row (Chunk chunk,
++                                       ContactSheetRow row) {
++    this (chunk);
++
+     add (row);
+   }
+ }
+@@ -415,12 +423,12 @@ public class Contacts.ContactSheetRow : Adw.ActionRow {
+     this.title_selectable = true;
+   }
+ 
+-  public ContactSheetRow (string property_name, string title, string? subtitle = null) {
+-    unowned var icon_name = Utils.get_icon_name_for_property (property_name);
++  public ContactSheetRow (Chunk chunk, string title, string? subtitle = null) {
++    unowned var icon_name = chunk.icon_name;
+     if (icon_name != null) {
+       var icon = new Gtk.Image.from_icon_name (icon_name);
+       icon.add_css_class ("contacts-property-icon");
+-      icon.tooltip_text = Utils.get_display_name_for_property (property_name);
++      icon.tooltip_text = chunk.display_name;
+       this.add_prefix (icon);
+     }
+ 
+diff --git a/src/contacts-utils.vala b/src/contacts-utils.vala
+index fbbb1f8f..a457a2e8 100644
+--- a/src/contacts-utils.vala
++++ b/src/contacts-utils.vala
+@@ -155,51 +155,4 @@ namespace Contacts.Utils {
+ 
+     return store.display_name;
+   }
+-
+-  // A helper struct to keep track on general properties on how each Persona
+-  // property should be displayed
+-  private struct PropertyDisplayInfo {
+-    string property_name;
+-    string display_name;
+-    string icon_name;
+-  }
+-
+-  private const PropertyDisplayInfo[] display_infos = {
+-    { "alias", N_("Alias"), null },
+-    { "avatar", N_("Avatar"), "emblem-photos-symbolic" },
+-    { "birthday", N_("Birthday"), "birthday-symbolic" },
+-    { "calendar-event-id", N_("Calendar event"), "calendar-symbolic" },
+-    { "email-addresses", N_("Email address"), "mail-unread-symbolic" },
+-    { "full-name", N_("Full name"), null },
+-    { "gender", N_("Gender"), null },
+-    { "groups", N_("Group"), null },
+-    { "im-addresses", N_("Instant messaging"), "chat-symbolic" },
+-    { "is-favourite", N_("Favourite"), "emblem-favorite-symbolic" },
+-    { "local-ids", N_("Local ID"), null },
+-    { "nickname", N_("Nickname"), "avatar-default-symbolic" },
+-    { "notes", N_("Note"), "note-symbolic" },
+-    { "phone-numbers", N_("Phone number"), "phone-symbolic" },
+-    { "postal-addresses", N_("Address"), "mark-location-symbolic" },
+-    // TRANSLATORS: This is the role of a contact in an organisation (e.g. CEO)
+-    { "roles", N_("Role"), "building-symbolic" },
+-    // TRANSLATORS: This is a field which contains a name decomposed in several
+-    // parts, rather than a single freeform string for the full name
+-    { "structured-name", N_("Structured name"), "avatar-default-symbolic" },
+-    { "urls", N_("Website"), "website-symbolic" },
+-    { "web-service-addresses", N_("Web service"), null },
+-  };
+-
+-  public unowned string get_display_name_for_property (string property_name) {
+-    foreach (unowned var info in display_infos)
+-      if (info.property_name == property_name)
+-        return gettext (info.display_name);
+-    return_val_if_reached (null);
+-  }
+-
+-  public unowned string? get_icon_name_for_property (string property_name) {
+-    foreach (unowned var info in display_infos)
+-      if (info.property_name == property_name)
+-        return info.icon_name;
+-    return null;
+-  }
+ }
+diff --git a/src/core/contacts-addresses-chunk.vala b/src/core/contacts-addresses-chunk.vala
+index ba90dd7f..d0987d62 100644
+--- a/src/core/contacts-addresses-chunk.vala
++++ b/src/core/contacts-addresses-chunk.vala
+@@ -25,6 +25,10 @@ public class Contacts.AddressesChunk : BinChunk {
+ 
+   public override string property_name { get { return "postal-addresses"; } }
+ 
++  public override string display_name { get { return _("Postal addresses"); } }
++
++  public override string? icon_name { get { return "mark-location-symbolic"; } }
++
+   construct {
+     if (persona != null) {
+       assert (persona is PostalAddressDetails);
+diff --git a/src/core/contacts-alias-chunk.vala b/src/core/contacts-alias-chunk.vala
+index 2e7dd29b..e76f82cf 100644
+--- a/src/core/contacts-alias-chunk.vala
++++ b/src/core/contacts-alias-chunk.vala
+@@ -41,6 +41,10 @@ public class Contacts.AliasChunk : Chunk {
+ 
+   public override string property_name { get { return "alias"; } }
+ 
++  public override string display_name { get { return _("Alias"); } }
++
++  public override string? icon_name { get { return null; } }
++
+   public override bool is_empty { get { return this._alias.strip () == ""; } }
+ 
+   public override bool dirty {
+diff --git a/src/core/contacts-avatar-chunk.vala b/src/core/contacts-avatar-chunk.vala
+index e3798543..d2f9e02d 100644
+--- a/src/core/contacts-avatar-chunk.vala
++++ b/src/core/contacts-avatar-chunk.vala
+@@ -35,6 +35,10 @@ public class Contacts.AvatarChunk : Chunk {
+ 
+   public override string property_name { get { return "avatar"; } }
+ 
++  public override string display_name { get { return _("Avatar"); } }
++
++  public override string? icon_name { get { return "emblem-photos-symbolic"; } }
++
+   public override bool is_empty { get { return this._avatar == null; } }
+ 
+   public override bool dirty {
+diff --git a/src/core/contacts-birthday-chunk.vala b/src/core/contacts-birthday-chunk.vala
+index c03eccd1..44628b1c 100644
+--- a/src/core/contacts-birthday-chunk.vala
++++ b/src/core/contacts-birthday-chunk.vala
+@@ -48,6 +48,10 @@ public class Contacts.BirthdayChunk : Chunk {
+ 
+   public override string property_name { get { return "birthday"; } }
+ 
++  public override string display_name { get { return _("Birthday"); } }
++
++  public override string? icon_name { get { return "birthday-symbolic"; } }
++
+   public override bool is_empty { get { return this.birthday == null; } }
+ 
+   public override bool dirty {
+diff --git a/src/core/contacts-chunk.vala b/src/core/contacts-chunk.vala
+index 333ad7eb..771ef775 100644
+--- a/src/core/contacts-chunk.vala
++++ b/src/core/contacts-chunk.vala
+@@ -35,6 +35,16 @@ public abstract class Contacts.Chunk : GLib.Object {
+    */
+   public abstract string property_name { get; }
+ 
++  /**
++   * The user-visible name for this property
++   */
++  public abstract string display_name { get; }
++
++  /**
++   * The name of an icon to show to the user, if any
++   */
++  public abstract string? icon_name { get; }
++
+   /**
+    * Whether this is empty. As an example, you can use to changes in this
+    * property to update any UI.
+diff --git a/src/core/contacts-email-addresses-chunk.vala b/src/core/contacts-email-addresses-chunk.vala
+index 73a03f20..c965d89f 100644
+--- a/src/core/contacts-email-addresses-chunk.vala
++++ b/src/core/contacts-email-addresses-chunk.vala
+@@ -21,6 +21,10 @@ public class Contacts.EmailAddressesChunk : BinChunk {
+ 
+   public override string property_name { get { return "email-addresses"; } }
+ 
++  public override string display_name { get { return _("Email addresses"); } }
++
++  public override string? icon_name { get { return "mail-unread-symbolic"; } }
++
+   construct {
+     if (persona != null) {
+       assert (persona is EmailDetails);
+diff --git a/src/core/contacts-full-name-chunk.vala b/src/core/contacts-full-name-chunk.vala
+index 64bdb5be..6ac36109 100644
+--- a/src/core/contacts-full-name-chunk.vala
++++ b/src/core/contacts-full-name-chunk.vala
+@@ -46,6 +46,10 @@ public class Contacts.FullNameChunk : Chunk {
+ 
+   public override string property_name { get { return "full-name"; } }
+ 
++  public override string display_name { get { return _("Full name"); } }
++
++  public override string? icon_name { get { return null; } }
++
+   public override bool is_empty { get { return this._full_name.strip () == ""; } }
+ 
+   public override bool dirty {
+diff --git a/src/core/contacts-im-addresses-chunk.vala b/src/core/contacts-im-addresses-chunk.vala
+index 91c64abe..f6fde15e 100644
+--- a/src/core/contacts-im-addresses-chunk.vala
++++ b/src/core/contacts-im-addresses-chunk.vala
+@@ -26,6 +26,10 @@ public class Contacts.ImAddressesChunk : BinChunk {
+ 
+   public override string property_name { get { return "im-addresses"; } }
+ 
++  public override string display_name { get { return _("Instant Messaging addresses"); } }
++
++  public override string? icon_name { get { return "chat-symbolic"; } }
++
+   construct {
+     if (persona != null) {
+       assert (persona is ImDetails);
+diff --git a/src/core/contacts-nickname-chunk.vala b/src/core/contacts-nickname-chunk.vala
+index ad582957..63a90f99 100644
+--- a/src/core/contacts-nickname-chunk.vala
++++ b/src/core/contacts-nickname-chunk.vala
+@@ -44,6 +44,10 @@ public class Contacts.NicknameChunk : Chunk {
+ 
+   public override string property_name { get { return "nickname"; } }
+ 
++  public override string display_name { get { return _("Nickname"); } }
++
++  public override string? icon_name { get { return "avatar-default-symbolic"; } }
++
+   public override bool is_empty { get { return this._nickname.strip () == ""; } }
+ 
+   public override bool dirty {
+diff --git a/src/core/contacts-notes-chunk.vala b/src/core/contacts-notes-chunk.vala
+index dcb3b697..42b7f227 100644
+--- a/src/core/contacts-notes-chunk.vala
++++ b/src/core/contacts-notes-chunk.vala
+@@ -25,6 +25,10 @@ public class Contacts.NotesChunk : BinChunk {
+ 
+   public override string property_name { get { return "notes"; } }
+ 
++  public override string display_name { get { return _("Notes"); } }
++
++  public override string? icon_name { get { return "note-symbolic"; } }
++
+   construct {
+     if (persona != null) {
+       assert (persona is NoteDetails);
+diff --git a/src/core/contacts-phones-chunk.vala b/src/core/contacts-phones-chunk.vala
+index 103cfb60..f2bfdf1c 100644
+--- a/src/core/contacts-phones-chunk.vala
++++ b/src/core/contacts-phones-chunk.vala
+@@ -25,6 +25,10 @@ public class Contacts.PhonesChunk : BinChunk {
+ 
+   public override string property_name { get { return "phone-numbers"; } }
+ 
++  public override string display_name { get { return _("Phone numbers"); } }
++
++  public override string? icon_name { get { return "phone-symbolic"; } }
++
+   construct {
+     if (persona != null) {
+       assert (persona is PhoneDetails);
+diff --git a/src/core/contacts-roles-chunk.vala b/src/core/contacts-roles-chunk.vala
+index b9424599..ea28d729 100644
+--- a/src/core/contacts-roles-chunk.vala
++++ b/src/core/contacts-roles-chunk.vala
+@@ -26,6 +26,11 @@ public class Contacts.RolesChunk : BinChunk {
+ 
+   public override string property_name { get { return "roles"; } }
+ 
++  // TRANSLATORS: This is the role of a contact in an organisation (e.g. CEO)
++  public override string display_name { get { return _("Roles"); } }
++
++  public override string? icon_name { get { return "building-symbolic"; } }
++
+   construct {
+     if (persona != null) {
+       assert (persona is RoleDetails);
+diff --git a/src/core/contacts-structured-name-chunk.vala b/src/core/contacts-structured-name-chunk.vala
+index 264898be..58278900 100644
+--- a/src/core/contacts-structured-name-chunk.vala
++++ b/src/core/contacts-structured-name-chunk.vala
+@@ -47,6 +47,12 @@ public class Contacts.StructuredNameChunk : Chunk {
+ 
+   public override string property_name { get { return "structured-name"; } }
+ 
++  // TRANSLATORS: This is a field which contains a name decomposed in several
++  // parts, rather than a single freeform string for the full name
++  public override string display_name { get { return _("Structured name"); } }
++
++  public override string? icon_name { get { return null; } }
++
+   public override bool is_empty {
+     get {
+       return this._structured_name == null || this._structured_name.is_empty ();
+diff --git a/src/core/contacts-urls-chunk.vala b/src/core/contacts-urls-chunk.vala
+index d7239c9a..e013e7fd 100644
+--- a/src/core/contacts-urls-chunk.vala
++++ b/src/core/contacts-urls-chunk.vala
+@@ -25,6 +25,10 @@ public class Contacts.UrlsChunk : BinChunk {
+ 
+   public override string property_name { get { return "urls"; } }
+ 
++  public override string display_name { get { return _("URLs"); } }
++
++  public override string? icon_name { get { return "website-symbolic"; } }
++
+   construct {
+     if (persona != null) {
+       assert (persona is UrlDetails);
+-- 
+GitLab
+

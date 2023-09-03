@@ -1,0 +1,2 @@
+colord-gtk/
+colord-gtk

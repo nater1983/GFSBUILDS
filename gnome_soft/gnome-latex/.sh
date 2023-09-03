@@ -1,0 +1,2 @@
+gnome-latex/
+gnome-latex

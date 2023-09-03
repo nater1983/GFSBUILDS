@@ -1,0 +1,2 @@
+gnome-applets/
+gnome-applets

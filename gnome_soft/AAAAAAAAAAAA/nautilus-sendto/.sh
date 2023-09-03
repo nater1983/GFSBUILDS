@@ -1,0 +1,2 @@
+nautilus-sendto/
+nautilus-sendto

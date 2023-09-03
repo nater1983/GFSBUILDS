@@ -1,0 +1,5 @@
+#!/bin/bash
+echo Building gnome-system-monitor
+cd ../gnome-system-monitor  || exit 1
+source gnome-system-monitor.SlackBuild
+upgradepkg --install-new --reinstall $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE

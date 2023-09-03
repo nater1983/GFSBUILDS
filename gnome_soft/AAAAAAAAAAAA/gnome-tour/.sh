@@ -1,0 +1,2 @@
+gnome-tour/
+gnome-tour

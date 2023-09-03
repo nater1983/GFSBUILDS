@@ -1,0 +1,477 @@
+From 7f36e18f41e0b28b35c85fe8bf11d844a0001305 Mon Sep 17 00:00:00 2001
+From: Alberto Fanjul <albertofanjul@gmail.com>
+Date: Mon, 10 Oct 2022 21:47:49 +0200
+Subject: [PATCH] Allow to sign commits
+
+---
+ libgit2-glib/ggit-commit.c     |   6 ++
+ libgit2-glib/ggit-commit.h     |   2 +
+ libgit2-glib/ggit-ref.c        |   6 +-
+ libgit2-glib/ggit-repository.c | 118 +++++++++++++++++++++++++++++++++
+ libgit2-glib/ggit-repository.h |  18 +++++
+ libgit2-glib/ggit-tree.c       |   6 ++
+ libgit2-glib/ggit-tree.h       |   1 +
+ 7 files changed, 155 insertions(+), 2 deletions(-)
+
+diff --git a/libgit2-glib/ggit-commit.c b/libgit2-glib/ggit-commit.c
+index d3c73ea..ee62398 100644
+--- a/libgit2-glib/ggit-commit.c
++++ b/libgit2-glib/ggit-commit.c
+@@ -88,6 +88,12 @@ _ggit_commit_wrap (git_commit *commit,
+ 	return gcommit;
+ }
+ 
++const git_commit *
++_ggit_commit_get_commit (GgitCommit *commit)
++{
++	return _ggit_native_get (commit);
++}
++
+ /**
+  * ggit_commit_get_message_encoding:
+  * @commit: a #GgitCommit.
+diff --git a/libgit2-glib/ggit-commit.h b/libgit2-glib/ggit-commit.h
+index 8e792db..5649cc0 100644
+--- a/libgit2-glib/ggit-commit.h
++++ b/libgit2-glib/ggit-commit.h
+@@ -51,6 +51,8 @@ struct _GgitCommitClass
+ GgitCommit          *_ggit_commit_wrap                (git_commit        *commit,
+                                                        gboolean           owned);
+ 
++const git_commit    *_ggit_commit_get_commit          (GgitCommit        *commit);
++
+ const gchar         *ggit_commit_get_message_encoding (GgitCommit        *commit);
+ 
+ const gchar         *ggit_commit_get_message          (GgitCommit        *commit);
+diff --git a/libgit2-glib/ggit-ref.c b/libgit2-glib/ggit-ref.c
+index 01a45f4..f8ba7fb 100644
+--- a/libgit2-glib/ggit-ref.c
++++ b/libgit2-glib/ggit-ref.c
+@@ -263,7 +263,8 @@ ggit_ref_get_owner (GgitRef *ref)
+  * ggit_ref_set_symbolic_target:
+  * @ref: a #GgitRef.
+  * @target: The new target for the reference.
+- * @log_message: The one line long message to be appended to the reflog.
++ * @log_message: (nullable): The one line long message to be appended to the
++ * reflog.
+  * @error: a #GError for error reporting, or %NULL.
+  *
+  * Create a new reference with the same name as the given reference but a
+@@ -308,7 +309,8 @@ ggit_ref_set_symbolic_target (GgitRef       *ref,
+  * ggit_ref_set_target:
+  * @ref: a #GgitRef.
+  * @oid: a #GgitOId.
+- * @log_message: The one line long message to be appended to the reflog.
++ * @log_message: (nullable): The one line long message to be appended to the
++ * reflog.
+  * @error: a #GError for error reporting, or %NULL.
+  *
+  * Create a new reference with the same name as the given reference but a
+diff --git a/libgit2-glib/ggit-repository.c b/libgit2-glib/ggit-repository.c
+index f0c151d..77013dc 100644
+--- a/libgit2-glib/ggit-repository.c
++++ b/libgit2-glib/ggit-repository.c
+@@ -3266,6 +3266,124 @@ ggit_repository_create_commit_from_ids (GgitRepository  *repository,
+ 	return _ggit_oid_wrap (&id);
+ }
+ 
++/**
++ * ggit_repository_create_commit_buffer:
++ * @repository: a #GgitRepository.
++ * @author: author signature.
++ * @committer: committer signature (and time of commit).
++ * @message_encoding: (allow-none): message encoding.
++ * @message: commit message.
++ * @tree: the tree of objects to commit.
++ * @parents: (array length=parent_count): parent commits.
++ * @parent_count: number of parent commits in @parents.
++ * @error: a #GError for error reporting, or %NULL.
++ *
++ * Create a commit as with git_commit_create() but instead of writing it to the objectdb,
++ * write the contents of the object into a buffer.
++ *
++ * Returns: (transfer full) (nullable): the commit object content or %NULL in case of
++ * an error.
++ */
++gchar*
++ggit_repository_create_commit_buffer(GgitRepository *repository,
++                                     GgitSignature  *author,
++                                     GgitSignature  *committer,
++                                     const gchar    *message_encoding,
++                                     const gchar    *message,
++                                     GgitTree       *tree,
++                                     GgitCommit    **parents,
++                                     gint            parent_count,
++                                     GError        **error)
++{
++	gint ret;
++	gchar *retval;
++	git_commit **parents_native;
++	gint i;
++	git_buf buf = {0,};
++
++	g_return_val_if_fail (GGIT_IS_REPOSITORY (repository), NULL);
++	g_return_val_if_fail (error == NULL || *error == NULL, NULL);
++
++	parents_native = g_new0 (git_commit *, parent_count);
++
++	for (i = 0; i < parent_count; ++i)
++	{
++		parents_native[i] = (git_commit *)_ggit_commit_get_commit (parents[i]);
++	}
++
++	ret = git_commit_create_buffer (&buf,
++	                                _ggit_native_get (repository),
++	                                _ggit_native_get (author),
++	                                _ggit_native_get (committer),
++	                                message_encoding,
++	                                message,
++	                                _ggit_tree_get_tree (tree),
++	                                parent_count,
++	                                (git_commit const **)parents_native);
++
++	g_free (parents_native);
++
++	if (ret != GIT_OK)
++	{
++		_ggit_error_set (error, ret);
++	}
++
++	retval = g_strndup (buf.ptr, buf.size);
++#if LIBGIT2_VER_MAJOR > 0 || (LIBGIT2_VER_MAJOR == 0 && LIBGIT2_VER_MINOR >= 28)
++	git_buf_dispose (&buf);
++#else
++	git_buf_free (&buf);
++#endif
++
++	return retval;
++}
++
++/**
++ * ggit_repository_create_commit_with_signature:
++ * @repository: a #GgitRepository.
++ * @commit_content: the content of the unsigned commit.
++ * @signature: (nullable): the signature to add to the commit.
++ * @signature_field: (nullable): which header field should contain this
++ * signature. Leave `NULL` for the default of "gpgsig".
++ * @error: a #GError for error reporting, or %NULL.
++ *
++ * Given the unsigned commit object's contents, its signature and the header field
++ * in which to store the signature, attach the signature to the commit and write it
++ * into the given repositoryCreate a new commit using the (if not NULL) signature
++ * key and type of key provided.
++ *
++ * Returns: (transfer full) (nullable): the #GgitOId of the created commit object,
++ * or %NULL in case of an error.
++ *
++ */
++GgitOId *
++ggit_repository_create_commit_with_signature (GgitRepository *repository,
++                                              const gchar    *commit_content,
++                                              const gchar    *signature,
++                                              const gchar    *signature_field,
++                                              GError        **error)
++{
++	gint ret;
++	git_oid id;
++
++	g_return_val_if_fail (GGIT_IS_REPOSITORY (repository), NULL);
++	g_return_val_if_fail (error == NULL || *error == NULL, NULL);
++
++	ret = git_commit_create_with_signature (&id,
++	                                        _ggit_native_get (repository),
++	                                        commit_content,
++	                                        signature,
++	                                        signature_field);
++
++	if (ret != GIT_OK)
++	{
++		_ggit_error_set (error, ret);
++		return NULL;
++	}
++
++	return _ggit_oid_wrap (&id);
++}
++
+ /**
+  * ggit_repository_create_tree_builder:
+  * @repository: a #GgitRepository.
+diff --git a/libgit2-glib/ggit-repository.h b/libgit2-glib/ggit-repository.h
+index 361afba..d312303 100644
+--- a/libgit2-glib/ggit-repository.h
++++ b/libgit2-glib/ggit-repository.h
+@@ -161,6 +161,24 @@ GgitOId            *ggit_repository_create_commit_from_ids (
+                                                        gint                   parent_count,
+                                                        GError               **error);
+ 
++gchar                *ggit_repository_create_commit_buffer (
++                                                       GgitRepository        *repository,
++                                                       GgitSignature         *author,
++                                                       GgitSignature         *committer,
++                                                       const gchar           *message_encoding,
++                                                       const gchar           *message,
++                                                       GgitTree              *tree,
++                                                       GgitCommit           **parents,
++                                                       gint                   parent_count,
++                                                       GError               **error);
++
++GgitOId      *ggit_repository_create_commit_with_signature (
++                                                       GgitRepository  *repository,
++                                                       const gchar     *commit_content,
++                                                       const gchar     *signature,
++                                                       const gchar     *signature_field,
++                                                       GError         **error);
++
+ GgitOId            *ggit_repository_create_tag        (GgitRepository        *repository,
+                                                        const gchar           *tag_name,
+                                                        GgitObject            *target,
+diff --git a/libgit2-glib/ggit-tree.c b/libgit2-glib/ggit-tree.c
+index 29e21c5..85b20b7 100644
+--- a/libgit2-glib/ggit-tree.c
++++ b/libgit2-glib/ggit-tree.c
+@@ -61,6 +61,12 @@ _ggit_tree_wrap (git_tree *tree,
+ 	return gtree;
+ }
+ 
++const git_tree *
++_ggit_tree_get_tree (GgitTree *tree)
++{
++	return _ggit_native_get (tree);
++}
++
+ /**
+  * ggit_tree_get_id:
+  * @tree: a #GgitTree.
+diff --git a/libgit2-glib/ggit-tree.h b/libgit2-glib/ggit-tree.h
+index 43c184a..8ed39ae 100644
+--- a/libgit2-glib/ggit-tree.h
++++ b/libgit2-glib/ggit-tree.h
+@@ -47,6 +47,7 @@ struct _GgitTreeClass
+ GgitTree      *_ggit_tree_wrap          (git_tree *tree,
+                                          gboolean  owned);
+ 
++const git_tree *_ggit_tree_get_tree     (GgitTree *tree);
+ GgitOId       *ggit_tree_get_id         (GgitTree *tree);
+ 
+ GgitTreeEntry *ggit_tree_get            (GgitTree *tree,
+-- 
+GitLab
+
+From 93300942692a168c2c297787820c0c3e0580d1ce Mon Sep 17 00:00:00 2001
+From: Alberto Fanjul <albertofanjul@gmail.com>
+Date: Mon, 10 Oct 2022 22:00:38 +0200
+Subject: [PATCH] ggit_repository_create_commit_from_ids: add safe checks
+
+---
+ libgit2-glib/ggit-repository.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/libgit2-glib/ggit-repository.c b/libgit2-glib/ggit-repository.c
+index 77013dc..bf099f6 100644
+--- a/libgit2-glib/ggit-repository.c
++++ b/libgit2-glib/ggit-repository.c
+@@ -3237,6 +3237,10 @@ ggit_repository_create_commit_from_ids (GgitRepository  *repository,
+ 	git_oid **parents_native;
+ 	gint i;
+ 
++	g_return_val_if_fail (update_ref != NULL, NULL);
++	g_return_val_if_fail (GGIT_IS_REPOSITORY (repository), NULL);
++	g_return_val_if_fail (error == NULL || *error == NULL, NULL);
++
+ 	parents_native = g_new0 (git_oid *, parent_count);
+ 
+ 	for (i = 0; i < parent_count; ++i)
+-- 
+GitLab
+
+From c8143310a9c717b7f6b32c48cabf4309b06077cb Mon Sep 17 00:00:00 2001
+From: Alberto Fanjul <albertofanjul@gmail.com>
+Date: Mon, 10 Oct 2022 22:00:49 +0200
+Subject: [PATCH] formatting
+
+---
+ libgit2-glib/ggit-repository.h | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+
+diff --git a/libgit2-glib/ggit-repository.h b/libgit2-glib/ggit-repository.h
+index d312303..dbdd624 100644
+--- a/libgit2-glib/ggit-repository.h
++++ b/libgit2-glib/ggit-repository.h
+@@ -138,7 +138,8 @@ GgitOId            *ggit_repository_create_blob_from_path (
+                                                        const gchar           *path,
+                                                        GError               **error);
+ 
+-GgitOId            *ggit_repository_create_commit     (GgitRepository        *repository,
++GgitOId                    *ggit_repository_create_commit (
++                                                       GgitRepository        *repository,
+                                                        const gchar           *update_ref,
+                                                        GgitSignature         *author,
+                                                        GgitSignature         *committer,
+@@ -179,7 +180,8 @@ GgitOId      *ggit_repository_create_commit_with_signature (
+                                                        const gchar     *signature_field,
+                                                        GError         **error);
+ 
+-GgitOId            *ggit_repository_create_tag        (GgitRepository        *repository,
++GgitOId                        *ggit_repository_create_tag (
++                                                       GgitRepository        *repository,
+                                                        const gchar           *tag_name,
+                                                        GgitObject            *target,
+                                                        GgitSignature         *tagger,
+-- 
+GitLab
+
+From d97e73f499ee0b8e80cac3c4696ed234e4e993dd Mon Sep 17 00:00:00 2001
+From: Christian Hergert <chergert@redhat.com>
+Date: Wed, 11 Jan 2023 12:52:01 -0800
+Subject: [PATCH] diff: fix user_data parameter type
+
+This is technically an API break, but it in practice shouldn't actually
+break anything (and does not break ABI).
+
+Anyone using it previously is likely to have casted to (gpointer) anyway
+because this was incorrectly doing void** instead of void*.
+---
+ libgit2-glib/ggit-diff.c | 6 +++---
+ libgit2-glib/ggit-diff.h | 6 +++---
+ 2 files changed, 6 insertions(+), 6 deletions(-)
+
+diff --git a/libgit2-glib/ggit-diff.c b/libgit2-glib/ggit-diff.c
+index 6e09568..c16ddf9 100644
+--- a/libgit2-glib/ggit-diff.c
++++ b/libgit2-glib/ggit-diff.c
+@@ -659,7 +659,7 @@ ggit_diff_foreach (GgitDiff              *diff,
+                    GgitDiffBinaryCallback binary_cb,
+                    GgitDiffHunkCallback   hunk_cb,
+                    GgitDiffLineCallback   line_cb,
+-                   gpointer              *user_data,
++                   gpointer               user_data,
+                    GError               **error)
+ {
+ 	gint ret;
+@@ -731,7 +731,7 @@ void
+ ggit_diff_print (GgitDiff              *diff,
+                  GgitDiffFormatType     type,
+                  GgitDiffLineCallback   print_cb,
+-                 gpointer              *user_data,
++                 gpointer               user_data,
+                  GError               **error)
+ {
+ 	gint ret;
+@@ -886,7 +886,7 @@ ggit_diff_blobs (GgitBlob              *old_blob,
+                  GgitDiffBinaryCallback binary_cb,
+                  GgitDiffHunkCallback   hunk_cb,
+                  GgitDiffLineCallback   line_cb,
+-                 gpointer              *user_data,
++                 gpointer               user_data,
+                  GError               **error)
+ {
+ 	gint ret;
+diff --git a/libgit2-glib/ggit-diff.h b/libgit2-glib/ggit-diff.h
+index 2ec5cd4..3574117 100644
+--- a/libgit2-glib/ggit-diff.h
++++ b/libgit2-glib/ggit-diff.h
+@@ -84,12 +84,12 @@ void           ggit_diff_foreach                   (GgitDiff              *diff,
+                                                     GgitDiffBinaryCallback binary_cb,
+                                                     GgitDiffHunkCallback   hunk_cb,
+                                                     GgitDiffLineCallback   line_cb,
+-                                                    gpointer              *user_data,
++                                                    gpointer               user_data,
+                                                     GError               **error);
+ void           ggit_diff_print                     (GgitDiff              *diff,
+                                                     GgitDiffFormatType     type,
+                                                     GgitDiffLineCallback   print_cb,
+-                                                    gpointer              *user_data,
++                                                    gpointer               user_data,
+                                                     GError               **error);
+ 
+ gchar         *ggit_diff_format_email              (GgitDiff              *diff,
+@@ -110,7 +110,7 @@ void           ggit_diff_blobs                     (GgitBlob              *old_b
+                                                     GgitDiffBinaryCallback binary_cb,
+                                                     GgitDiffHunkCallback   hunk_cb,
+                                                     GgitDiffLineCallback   line_cb,
+-                                                    gpointer              *user_data,
++                                                    gpointer               user_data,
+                                                     GError               **error);
+ 
+ void           ggit_diff_blob_to_buffer            (GgitBlob              *old_blob,
+-- 
+GitLab
+
+From 1659bb3a124c935848203828304c9efe943258db Mon Sep 17 00:00:00 2001
+From: Matt Turner <mattst88@gmail.com>
+Date: Thu, 13 Apr 2023 17:36:52 -0400
+Subject: [PATCH] meson: Use install_symlink
+
+New in v0.61.0, the install_symlink function lets us install symlinks
+directly from Meson, allowing us to remove the meson_vapi_link.py
+script.
+---
+ meson.build        | 10 ++++++++--
+ meson_vapi_link.py | 27 ---------------------------
+ 2 files changed, 8 insertions(+), 29 deletions(-)
+ delete mode 100755 meson_vapi_link.py
+
+diff --git a/meson.build b/meson.build
+index 8f30cda..5598e19 100644
+--- a/meson.build
++++ b/meson.build
+@@ -3,7 +3,7 @@ project(
+   version: '1.1.0',
+   default_options: 'buildtype=debugoptimized',
+   license: 'LGPL2+',
+-  meson_version: '>= 0.50.0',
++  meson_version: '>= 0.61.0',
+ )
+ 
+ libgit2_glib_version = meson.project_version()
+@@ -136,7 +136,13 @@ if enable_vapi
+   assert(enable_gir, 'vapi support was requested, but introspection support is mandatory.')
+   assert(add_languages('vala', required: false), 'vapi support was requested, but vala not found.')
+ 
+-  meson.add_install_script('meson_vapi_link.py', libgit2_glib_datadir)
++  foreach ext : ['vapi', 'deps']
++    install_symlink(
++      'ggit-1.0.' + ext,
++      install_dir: libgit2_glib_prefix / libgit2_glib_datadir / 'vala' / 'vapi',
++      pointing_to: 'libgit2-glib-1.0.' + ext,
++    )
++  endforeach
+ endif
+ 
+ # Check for libgit2 ssh support
+diff --git a/meson_vapi_link.py b/meson_vapi_link.py
+deleted file mode 100755
+index 20afe0c..0000000
+--- a/meson_vapi_link.py
++++ /dev/null
+@@ -1,27 +0,0 @@
+-#!/usr/bin/env python3
+-
+-import os
+-import shutil
+-import sys
+-
+-prefix = os.environ['MESON_INSTALL_DESTDIR_PREFIX'] if os.environ.get('DESTDIR') else os.environ['MESON_INSTALL_PREFIX']
+-
+-datadir = os.path.join(prefix, sys.argv[1])
+-
+-vapidir = os.path.join(datadir, 'vala', 'vapi')
+-os.chdir(vapidir)
+-
+-# FIXME: meson will not track the creation of these files
+-#        https://github.com/mesonbuild/meson/blob/master/mesonbuild/scripts/uninstall.py#L39
+-old = 'ggit-1.0'
+-new = 'libgit2-glib-1.0'
+-
+-for ext in ['vapi', 'deps']:
+-  src = '{}.{}'.format(new, ext)
+-  dest = '{}.{}'.format(old, ext)
+-  try:
+-      os.symlink(src, dest)
+-  except FileExistsError:
+-      pass
+-  except OSError:
+-      shutil.copy(src, dest)
+-- 
+GitLab
+

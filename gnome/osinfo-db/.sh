@@ -1,0 +1,2 @@
+osinfo-db/
+osinfo-db

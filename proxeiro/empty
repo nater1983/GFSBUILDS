@@ -1,0 +1,12 @@
+#!/bin/bash
+
+message="cd ../gnome/  || exit 1"
+message2="source libnma-gtk4.SlackBuild"
+message3="upgradepkg --install-new --reinstall"
+
+for file in *.sh; do
+    echo "$message" >> "$file"
+    echo "$message2" >> "$file"
+    echo "$message3" >> "$file"
+done
+

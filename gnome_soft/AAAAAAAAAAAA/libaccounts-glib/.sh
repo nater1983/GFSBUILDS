@@ -1,0 +1,2 @@
+libaccounts-glib/
+libaccounts-glib

@@ -1,0 +1,2 @@
+libstemmer/
+libstemmer

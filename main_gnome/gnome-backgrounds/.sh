@@ -1,0 +1,2 @@
+gnome-backgrounds/
+gnome-backgrounds

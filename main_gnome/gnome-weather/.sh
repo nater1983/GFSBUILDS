@@ -1,0 +1,2 @@
+gnome-weather/
+gnome-weather

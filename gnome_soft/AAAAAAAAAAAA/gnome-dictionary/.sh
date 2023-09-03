@@ -1,0 +1,2 @@
+gnome-dictionary/
+gnome-dictionary

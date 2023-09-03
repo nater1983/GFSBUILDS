@@ -1,0 +1,2 @@
+libostree/
+libostree
