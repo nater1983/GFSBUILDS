@@ -14,7 +14,8 @@ while IFS= read -r name; do
 
     # Create the script content
     echo "#!/bin/bash" > "$script_dir/$filename"
-    echo "echo Building $name" >> "$script_dir/$filename"
+    echo "PP $name" >> "$script_dir/$filename"
+    echo "echo $PP" >> "$script_dir/$filename"
     echo "cd ../$name || exit 1" >> "$script_dir/$filename"
     echo "source $name.SlackBuild" >> "$script_dir/$filename"
     echo "upgradepkg --install-new --reinstall" >> "$script_dir/$filename"
