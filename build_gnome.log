@@ -1,7 +1,0 @@
-100-build_grilo.sh
-Building grilo
---2023-09-02 18:33:16--  https://download.gnome.org/sources/grilo/0.3/grilo-0.3.16.tar.xz
-Resolving download.gnome.org (download.gnome.org)... failed: Temporary failure in name resolution.
-wget: unable to resolve host address ‘download.gnome.org’
-tar: /home/test/web.slackbuilds.45/gnome/grilo/grilo-0.3.16.tar.?z*: Cannot open: No such file or directory
-tar: Error is not recoverable: exiting now

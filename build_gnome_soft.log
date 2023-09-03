@@ -1,3 +1,0 @@
-01-build_crystal-lang.sh
-Building crystal-lang
-./01-build_crystal-lang.sh: line 3: cd: ../crystal-lang: No such file or directory
