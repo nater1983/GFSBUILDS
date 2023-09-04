@@ -1,2 +1,0 @@
-sofia-sip/
-sofia-sip

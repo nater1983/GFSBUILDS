@@ -8,7 +8,7 @@
 *Gnome from scratch*, *Gnome for Slackware*
 ## prepare_cosmos.sh
 This script add some groups and permissions needed for example avahi to be builded.
-If  you dont want avahi etc in your system, just dnot run this script and remove .sh extension for avahi script from order folder
+If  you dont want avahi etc in your system, just not run this script and remove .sh extension for avahi script from order folder
 ```
   mv  main_gnome/order/14-build_avahi.sh main_gnome/order/14-build_avahi
 ```
