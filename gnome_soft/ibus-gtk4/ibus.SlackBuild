@@ -20,13 +20,16 @@
 # WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
 # OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
+wget -c https://github.com/ibus/ibus/releases/download/1.5.28/ibus-1.5.28.tar.gz
+wget -c http://www.unicode.org/Public/emoji/11.0/emoji-test.txt
+wget -c https://www.unicode.org/Public/UNIDATA/NamesList.txt
+wget -c https://www.unicode.org/Public/UNIDATA/Blocks.txt
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=ibus
 VERSION=${VERSION:-$(echo $PRGNAM-*.tar.?z | rev | cut -f 3- -d . | cut -f 1 -d - | rev)}
 BUILD=${BUILD:-1}
-
+TAG=${TAG:-_gfs}
 NUMJOBS=${NUMJOBS:-" -j$(expr $(nproc) + 1) "}
 
 # Automatically determine the architecture we're building on:
@@ -139,4 +142,4 @@ zcat $CWD/doinst.sh.gz > $PKG/install/doinst.sh
 cat $CWD/slack-desc > $PKG/install/slack-desc
 
 cd $PKG
-/sbin/makepkg -l y -c n $TMP/$PRGNAM-$VERSION-$ARCH-$BUILD.txz
+/sbin/makepkg -l y -c n $TMP/$PRGNAM-$VERSION-$ARCH-$BUILD-$TAG.txz

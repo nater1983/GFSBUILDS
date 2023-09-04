@@ -24,8 +24,8 @@ chmod +x ./*/*.sh
 chmod +x ./*.sh
 
 
-#cd ./BLACKLIST45/"$OD"
-#./build_all.sh |& tee "$D"/build_blacklist.system.log
+cd ./BLACKLIST45/"$OD"
+./build_all.sh |& tee "$D"/build_blacklist.system.log
 
 cd "$D"
 cd ./main_gnome/"$OD"

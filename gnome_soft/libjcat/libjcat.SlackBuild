@@ -21,7 +21,7 @@
 #  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
+wget -c https://github.com/hughsie/libjcat/archive/0.1.14/libjcat-0.1.14.tar.gz
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=libjcat

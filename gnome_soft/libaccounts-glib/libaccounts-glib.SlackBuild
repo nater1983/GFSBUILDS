@@ -95,6 +95,7 @@ meson setup ..\
  --mandir=/usr/man \
  --localstatedir=/var \
  -Ddefault_library=shared \
+
   "${NINJA:=ninja}"
   DESTDIR=$PKG $NINJA install
 cd ..
