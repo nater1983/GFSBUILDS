@@ -28,7 +28,7 @@ PRGNAM=libjcat
 VERSION=${VERSION:-0.1.14}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_gfs}
-PKGTYPE="txz"
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
