@@ -23,15 +23,15 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 # Some of the codes were taken from development/lua/lua.SlackBuild
-wget -c https://www.lua.org/ftp/lua-5.3.4.tar.gz
+wget -c https://www.lua.org/ftp/lua-5.3.6.tar.gz
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=lua53
 SRCNAM=${PRGNAM%??}
-VERSION=${VERSION:-5.3.4}
+VERSION=${VERSION:-5.3.6}
 BUILD=${BUILD:-1}
-TAG=${TAG:-_SBo}
-PKGTYPE=${PKGTYPE:-tgz}
+TAG=${TAG:-_gfs}
+PKGTYPE="txz"
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in

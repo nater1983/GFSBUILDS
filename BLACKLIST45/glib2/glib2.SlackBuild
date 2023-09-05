@@ -20,13 +20,13 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-wget -c https://download.gnome.org/sources/glib/2.77/glib-2.77.2.tar.xz
+wget -c https://download.gnome.org/sources/glib/2.77/glib-2.77.3.tar.xz
 
 cd $(dirname $0) ; CWD=$(pwd)
 
-PKGNAM=glib2
+PRGNAM=glib2
 SRCNAM=glib
-VERSION=${VERSION:-2.77.2}
+VERSION=${VERSION:-2.77.3}
 BUILD=${BUILD:-1}
 TAG=${TAG:-}
 PKGTYPE=${PKGTYPE:-txz}
@@ -40,12 +40,12 @@ if [ -z "$ARCH" ]; then
 fi
 
 if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
-  echo "$PKGNAM-$VERSION-$ARCH-$BUILD.txz"
+  echo "$PRGNAM-$VERSION-$ARCH-$BUILD.txz"
   exit 0
 fi
 
 TMP=${TMP:-/tmp/gfs}
-PKG=$TMP/package-$PKGNAM
+PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
 if [ "$ARCH" = "i586" ]; then
@@ -136,7 +136,7 @@ mkdir -p $PKG/usr/doc/$SRCNAM-$VERSION
 cp -a  AUTHORS COPYING* NEWS README* \
     $PKG/usr/doc/$SRCNAM-$VERSION
 rm -f $PKG/usr/doc/$SRCNAM-$VERSION/README.{in,win32}
-cat $CWD/$PKGNAM.SlackBuild > $PKG/usr/doc/$SRCNAM-$VERSION/$PKGNAM.SlackBuild
+cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$SRCNAM-$VERSION/$PRGNAM.SlackBuild
 
 # Make links to the documentation in /usr/share/gtk-doc/:
 ( cd $PKG/usr/doc/$SRCNAM-$VERSION
@@ -166,4 +166,4 @@ cat $CWD/slack-desc > $PKG/install/slack-desc
 zcat $CWD/doinst.sh.gz | sed "s,@LIBDIR@,/usr/lib${LIBDIRSUFFIX}," > $PKG/install/doinst.sh
 
 cd $PKG
-/sbin/makepkg -l y -c n $OUTPUT/$PKGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE
+/sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE

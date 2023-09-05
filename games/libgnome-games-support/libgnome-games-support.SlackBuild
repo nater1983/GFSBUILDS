@@ -29,7 +29,7 @@ PRGNAM=libgnome-games-support
 VERSION=${VERSION:-1.8.2}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_gfs}
-PKGTYPE=${PKGTYPE:-tgz}
+PKGTYPE="txz"
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in

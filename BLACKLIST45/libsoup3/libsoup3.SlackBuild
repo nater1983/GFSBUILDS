@@ -27,7 +27,7 @@ wget -c https://download.gnome.org/sources/libsoup/3.4/libsoup-3.4.0.tar.xz
 
 cd $(dirname $0) ; CWD=$(pwd)
 
-PKGNAM=libsoup3
+PRGNAM=libsoup3
 SRCNAM=libsoup
 VERSION=${VERSION:-3.4.0}
 BUILD=${BUILD:-1}
@@ -43,12 +43,12 @@ if [ -z "$ARCH" ]; then
 fi
 
 if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
-  echo "$PKGNAM-$VERSION-$ARCH-$BUILD.txz"
+  echo "$PRGNAM-$VERSION-$ARCH-$BUILD.txz"
   exit 0
 fi
 
 TMP=${TMP:-/tmp/gfs}
-PKG=$TMP/package-$PKGNAM
+PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
 if [ "$ARCH" = "i586" ]; then
@@ -103,14 +103,14 @@ cd ..
 
 rm -f $PKG/{,usr/}lib${LIBDIRSUFFIX}/*.la
 
-mkdir -p $PKG/usr/doc/$PKGNAM-$VERSION
-cp -a COPYING* AUTHORS NEWS README* $PKG/usr/doc/$PKGNAM-$VERSION
-cat $CWD/$PKGNAM.SlackBuild > $PKG/usr/doc/$PKGNAM-$VERSION/$PKGNAM.SlackBuild
+mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
+cp -a COPYING* AUTHORS NEWS README* $PKG/usr/doc/$PRGNAM-$VERSION
+cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 # If there's a ChangeLog, installing at least part of the recent history
 # is useful, but don't let it get totally out of control:
 if [ -r ChangeLog ]; then
-  DOCSDIR=$(echo $PKG/usr/doc/${PKGNAM}-$VERSION)
+  DOCSDIR=$(echo $PKG/usr/doc/${PRGNAM}-$VERSION)
   cat ChangeLog | head -n 1000 > $DOCSDIR/ChangeLog
   touch -r ChangeLog $DOCSDIR/ChangeLog
 fi
@@ -120,4 +120,4 @@ if [ -f $CWD/slack-required ]; then cat $CWD/slack-required > $PKG/install/slack
 cat $CWD/slack-desc > $PKG/install/slack-desc
 
 cd $PKG
-/sbin/makepkg -l y -c n $OUTPUT/$PKGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE
+/sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE

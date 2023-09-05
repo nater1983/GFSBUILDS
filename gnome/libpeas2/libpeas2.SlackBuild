@@ -21,13 +21,13 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-wget -c https://download.gnome.org/sources/libpeas/1.99/libpeas-1.99.0.tar.xz
+wget -c https://download.gnome.org/sources/libpeas/1.99/libpeas-1.99.1.tar.xz
 
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=libpeas2
 SRCNAM=libpeas
-VERSION=${VERSION:-1.99.0}
+VERSION=${VERSION:-1.99.1}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_gfs}
 PKGTYPE=${PKGTYPE:-txz}

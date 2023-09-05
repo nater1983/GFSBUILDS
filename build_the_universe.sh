@@ -26,20 +26,28 @@ chmod +x ./*.sh
 
 cd ./BLACKLIST45/"$OD"
 ./build_all.sh |& tee "$D"/build_blacklist.system.log
+cd "$D"
+rm ./*/*/*.tar.?z* 
+
 
 cd "$D"
 cd ./main_gnome/"$OD"
 ./build_all.sh |& tee "$D"/build_main_gnome.log
-
+cd "$D"
+rm ./*/*/*.tar.?z* & rm ./*/*/*.deb 
 
 cd "$D"
 cd ./gnome/"$OD"
 ./build_all.sh |& tee "$D"/build_gnome.log
-
+cd "$D"
+rm ./*/*/*.tar.?z* 
 
 cd "$D"
 cd ./gnome_soft/"$OD"
 ./build_all.sh |& tee "$D"/build_gnome_soft.log
+cd "$D"
+rm ./*/*/*.tar.?z* 
+
 
 exit 0
 
@@ -78,3 +86,5 @@ updatedb
 
 # clean source file
 rm ./*/*/*.tar.?z*
+rm ./*/*/*.deb
+rm ./*/*/*.rpm

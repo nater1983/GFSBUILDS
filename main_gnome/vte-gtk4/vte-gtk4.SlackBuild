@@ -21,13 +21,13 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-wget -c https://download.gnome.org/sources/vte/0.73/vte-0.73.93.tar.xz
+wget -c https://download.gnome.org/sources/vte/0.73/vte-0.73.99.tar.xz
 
 cd $(dirname $0) ; CWD=$(pwd)
 
 SRCNAM=vte
 PRGNAM=vte-gtk4
-VERSION=${VERSION:-0.73.93}
+VERSION=${VERSION:-0.73.99}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_gfs}
 PKGTYPE=${PKGTYPE:-txz}

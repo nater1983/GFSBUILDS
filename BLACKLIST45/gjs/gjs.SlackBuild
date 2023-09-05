@@ -26,7 +26,7 @@ wget -c https://download.gnome.org/sources/gjs/1.77/gjs-1.77.2.tar.xz
 
 cd $(dirname $0) ; CWD=$(pwd)
 
-PKGNAM=gjs
+PRGNAM=gjs
 VERSION=${VERSION:-1.77.2}
 BUILD=${BUILD:-1}
 TAG=${TAG:-}
@@ -41,13 +41,13 @@ if [ -z "$ARCH" ]; then
 fi
 
 if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
-  echo "$PKGNAM-$VERSION-$ARCH-$BUILD.txz"
+  echo "$PRGNAM-$VERSION-$ARCH-$BUILD.txz"
   exit 0
 fi
 
 TMP=${TMP:-/tmp/gfs}
 OUTPUT=${OUTPUT:-/tmp}
-PKG=$TMP/package-$PKGNAM
+PKG=$TMP/package-$PRGNAM
 
 if [ "$ARCH" = "i586" ]; then
   SLKCFLAGS="-O2 -march=i586 -mtune=i686"
@@ -66,9 +66,9 @@ fi
 rm -rf $PKG
 mkdir -p $TMP $PKG
 cd $TMP
-rm -rf $PKGNAM-$VERSION
-tar xvf $CWD/$PKGNAM-$VERSION.tar.?z || exit 1
-cd $PKGNAM-$VERSION
+rm -rf $PRGNAM-$VERSION
+tar xvf $CWD/$PRGNAM-$VERSION.tar.?z || exit 1
+cd $PRGNAM-$VERSION
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
@@ -115,10 +115,10 @@ if [ -d $PKG/usr/man ]; then
   )
 fi
 
-mkdir -p $PKG/usr/doc/$PKGNAM-$VERSION
+mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a  AUTHORS COPYING* HACKING INSTALL MAINTAINERS NEWS README* examples/ \
-    $PKG/usr/doc/$PKGNAM-$VERSION
-cat $CWD/$PKGNAM.SlackBuild > $PKG/usr/doc/$PKGNAM-$VERSION/$PKGNAM.SlackBuild
+    $PKG/usr/doc/$PRGNAM-$VERSION
+cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 # If there's a ChangeLog, installing at least part of the recent history
 # is useful, but don't let it get totally out of control:
@@ -134,4 +134,4 @@ if [ -f $CWD/slack-required ]; then cat $CWD/slack-required > $PKG/install/slack
 cat $CWD/slack-desc > $PKG/install/slack-desc
 
 cd $PKG
-/sbin/makepkg -l y -c n $OUTPUT/$PKGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE
+/sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE

@@ -23,12 +23,12 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-wget -c https://download.gnome.org/sources/evince/45/evince-45.alpha.tar.xz
+wget -c https://download.gnome.org/sources/evince/45/evince-45.rc.tar.xz
 
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=evince
-VERSION=${VERSION:-45.alpha}
+VERSION=${VERSION:-45.rc}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_gfs}
 PKGTYPE=${PKGTYPE:-txz}

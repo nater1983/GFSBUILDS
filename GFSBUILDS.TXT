@@ -1,514 +1,4320 @@
-doinst
-extensions
-proxeiro
-gnome_builder
-games
-gnome-backgrounds-extra
-gnome
-gnome_soft
-BLACKLIST45
-VRR
-extras
-main_gnome
-removed
-extensions/order
-gnome_builder/d-spy
-gnome_builder/gnome-builder
-gnome_builder/devhelp
-gnome_builder/libgit2
-gnome_builder/sysprof
-gnome_builder/jsonrpc-glib
-gnome_builder/sphinx_rtd_theme
-gnome_builder/http-parser
-gnome_builder/libgit2-glib
-gnome_builder/template-glib
-gnome_builder/order
-gnome_builder/flatpak-builder
-gnome_builder/libpanel
-gnome_builder/libdex
-games/gnome-robots
-games/gnome-mines
-games/gnome-mahjongg
-games/four-in-a-row
-games/retro-gtk
-games/gnome-klotski
-games/gnome-nibbles
-games/five-or-more
-games/qqwing
-games/gnome-sudoku
-games/gnome-2048
-games/gnome-tetravex
-games/highscore
-games/order
-games/chess-clock
-games/gnome-chess
-games/clairvoyant
-gnome-backgrounds-extra/order
-gnome/grilo-plugins
-gnome/file-roller
-gnome/grilo
-gnome/tpm2-tss
-gnome/gnome-system-monitor
-gnome/tepl
-gnome/xdg-desktop-portal
-gnome/lua53
-gnome/liboauth
-gnome/gnome-maps
-gnome/libgxps
-gnome/evince
-gnome/libosinfo
-gnome/libdmapsharing
-gnome/tracker-miners
-gnome/libgrss
-gnome/cmark
-gnome/simple-scan
-gnome/baobab
-gnome/nv-codec-headers
-gnome/gnome-font-viewer
-gnome/loupe
-gnome/gedit
-gnome/orca
-gnome/gspell
-gnome/xdg-desktop-portal-gtk
-gnome/gnome-calendar
-gnome/gnome-clocks
-gnome/libpst
-gnome/libshumate
-gnome/glycin-loaders
-gnome/highlight
-gnome/libgedit-gtksourceview
-gnome/libpeas
-gnome/gnome-characters
-gnome/libgedit-amtk
-gnome/libfdk-aac
-gnome/brasero
-gnome/libpeas2
-gnome/libdazzle
-gnome/gnome-user-docs
-gnome/evolution
-gnome/liblouis
-gnome/osinfo-db-tools
-gnome/libheif
-gnome/order
-gnome/gsettings-desktop-schemas
-gnome/gnome-remote-desktop
-gnome/fdkaac
-gnome/xdg-desktop-portal-gnome
-gnome/libiptcdata
-gnome/seahorse
-gnome/exempi
-gnome/gnome-calculator
-gnome/libmediaart
-gnome/pyatspi
-gnome/zenity
-gnome/totem-pl-parser
-gnome/power-profiles-daemon
-gnome/ytnef
-gnome/telepathy-glib
-gnome/folks
-gnome/osinfo-db
-gnome/epiphany
-gnome/gnome-power-manager
-gnome_soft/gitg
-gnome_soft/gnome-nettool
-gnome_soft/Fragments
-gnome_soft/protobuf-c
-gnome_soft/cantarell-fonts
-gnome_soft/zbar
-gnome_soft/python3-scour
-gnome_soft/gnome-text-editor
-gnome_soft/Authenticator
-gnome_soft/gnome-contacts
-gnome_soft/sushi
-gnome_soft/NetworkManager-openvpn-gtk4
-gnome_soft/gnome-browser-connector
-gnome_soft/gnome-shell-extensions
-gnome_soft/geary
-gnome_soft/python3-dateutil
-gnome_soft/Plots
-gnome_soft/Tangram
-gnome_soft/python3-prawcore
-gnome_soft/Junction
-gnome_soft/amberol
-gnome_soft/decoder
-gnome_soft/AAAAAAANOTREADY
-gnome_soft/alacarte
-gnome_soft/gom
-gnome_soft/dialect
-gnome_soft/gnome-music
-gnome_soft/Shortwave
-gnome_soft/eog
-gnome_soft/python3-praw
-gnome_soft/atomix
-gnome_soft/Curtail
-gnome_soft/giara
-gnome_soft/libjcat
-gnome_soft/AAAAAAAAudio
-gnome_soft/vinagre
-gnome_soft/gcab
-gnome_soft/podcasts
-gnome_soft/python3-lark
-gnome_soft/gnome-connections
-gnome_soft/kooha
-gnome_soft/libsmbios
-gnome_soft/gnome-firmware
-gnome_soft/p7zip
-gnome_soft/nautilus-sendto
-gnome_soft/gedit-plugins
-gnome_soft/gnome-software
-gnome_soft/cogl
-gnome_soft/Endeavour
-gnome_soft/deja-dup
-gnome_soft/fwupd
-gnome_soft/mod_dnssd
-gnome_soft/nautilus-code
-gnome_soft/Feeds
-gnome_soft/Collision
-gnome_soft/gnome-applets
-gnome_soft/gnome-dictionary
-gnome_soft/Commit
-gnome_soft/gnome-color-manager
-gnome_soft/network-manager-applet
-gnome_soft/iagno
-gnome_soft/gnome-user-share
-gnome_soft/drawing
-gnome_soft/Font-Downloader
-gnome_soft/python3-freetype
-gnome_soft/eog-plugins
-gnome_soft/python3-glm
-gnome_soft/nautilus-python
-gnome_soft/Solanum
-gnome_soft/aisleriot
-gnome_soft/extension-manager
-gnome_soft/blueprint-compiler
-gnome_soft/python3-pypandoc
-gnome_soft/ibus-gtk4
-gnome_soft/libaccounts-glib
-gnome_soft/gdm-settings
-gnome_soft/order
-gnome_soft/oxipng
-gnome_soft/ghex
-gnome_soft/python3-websocket-client
-gnome_soft/Flatseal
-gnome_soft/gst-editing-services
-gnome_soft/gssdp
-gnome_soft/adobe-source-code-pro-font
-gnome_soft/apostrophe
-gnome_soft/python3-opengl
-gnome_soft/python3-wheel
-gnome_soft/pngquant
-gnome_soft/jpegoptim
-gnome_soft/cups-pk-helper
-gnome_soft/calls
-gnome_soft/totem
-gnome_soft/libgnome-games-support
-gnome_soft/gtk-doc
-gnome_soft/crystal-lang
-gnome_soft/gnome-keyring
-gnome_soft/transmission
-gnome_soft/python3-beautifulsoup4
-gnome_soft/python3-gtts
-gnome_soft/gnome-tour
-gnome_soft/gnome-initial-setup
-gnome_soft/AAAAAAANOTREADY/python3-guzzle_sphinx_theme
-gnome_soft/AAAAAAANOTREADY/goffice
-gnome_soft/AAAAAAANOTREADY/python3-dateparser
-gnome_soft/AAAAAAANOTREADY/libgnome-volume-control
-gnome_soft/AAAAAAANOTREADY/python3-google-crc32c
-gnome_soft/AAAAAAANOTREADY/xdg-user-dirs-gtk
-gnome_soft/AAAAAAANOTREADY/video-trimmer
-gnome_soft/AAAAAAANOTREADY/telepathy-idle
-gnome_soft/AAAAAAANOTREADY/python3-decorator
-gnome_soft/AAAAAAANOTREADY/python3-google-auth
-gnome_soft/AAAAAAANOTREADY/python3-emoji
-gnome_soft/AAAAAAANOTREADY/mousai
-gnome_soft/AAAAAAANOTREADY/python3-mutagen
-gnome_soft/AAAAAAANOTREADY/python3-pep517
-gnome_soft/AAAAAAANOTREADY/gaphor
-gnome_soft/AAAAAAANOTREADY/python3-build
-gnome_soft/AAAAAAANOTREADY/python3-poetry-core
-gnome_soft/AAAAAAANOTREADY/libbacktrace
-gnome_soft/AAAAAAANOTREADY/python3-googleapis-common-protos
-gnome_soft/AAAAAAANOTREADY/protobuf3
-gnome_soft/AAAAAAANOTREADY/python3-numpy
-gnome_soft/AAAAAAANOTREADY/sound-juicer
-gnome_soft/AAAAAAANOTREADY/gtk-internet-radio-locator
-gnome_soft/AAAAAAANOTREADY/python3-magic
-gnome_soft/AAAAAAANOTREADY/python3-unidecode
-gnome_soft/AAAAAAANOTREADY/vala-language-server
-gnome_soft/AAAAAAANOTREADY/komikku
-gnome_soft/AAAAAAANOTREADY/health
-gnome_soft/AAAAAAANOTREADY/python3-pyasn1-modules
-gnome_soft/AAAAAAANOTREADY/gnome-latex
-gnome_soft/AAAAAAANOTREADY/gnome-commander
-gnome_soft/AAAAAAANOTREADY/python3-semantic_version
-gnome_soft/AAAAAAANOTREADY/share-preview
-gnome_soft/AAAAAAANOTREADY/python3-natsort
-gnome_soft/AAAAAAANOTREADY/python3-mistune
-gnome_soft/AAAAAAANOTREADY/python3-pyproject-hooks
-gnome_soft/AAAAAAANOTREADY/gnome-flashback
-gnome_soft/AAAAAAANOTREADY/shotwell
-gnome_soft/AAAAAAANOTREADY/python3-better-exceptions
-gnome_soft/AAAAAAANOTREADY/python3-oauth2client
-gnome_soft/AAAAAAANOTREADY/zap
-gnome_soft/AAAAAAANOTREADY/python3-uritemplate
-gnome_soft/AAAAAAANOTREADY/python3-msgpack
-gnome_soft/AAAAAAANOTREADY/gupnp-dlna
-gnome_soft/AAAAAAANOTREADY/hidapi
-gnome_soft/AAAAAAANOTREADY/textpieces
-gnome_soft/AAAAAAANOTREADY/python3-pykeepass
-gnome_soft/AAAAAAANOTREADY/python3-google-auth-httplib2
-gnome_soft/AAAAAAANOTREADY/python3-tinycss2
-gnome_soft/AAAAAAANOTREADY/lorem
-gnome_soft/AAAAAAANOTREADY/webfont-kit-generator
-gnome_soft/AAAAAAANOTREADY/python3-soupsieve
-gnome_soft/AAAAAAANOTREADY/python3-webencodings
-gnome_soft/AAAAAAANOTREADY/python3-google-cloud-core
-gnome_soft/AAAAAAANOTREADY/rhythmbox
-gnome_soft/AAAAAAANOTREADY/python3-mat2
-gnome_soft/AAAAAAANOTREADY/python3-pyotp
-gnome_soft/AAAAAAANOTREADY/libmusicbrainz5
-gnome_soft/AAAAAAANOTREADY/python3-pyopenssl
-gnome_soft/AAAAAAANOTREADY/python3-tzlocal
-gnome_soft/AAAAAAANOTREADY/workbench
-gnome_soft/AAAAAAANOTREADY/python3-google-api-core
-gnome_soft/AAAAAAANOTREADY/libmanette
-gnome_soft/AAAAAAANOTREADY/rygel
-gnome_soft/AAAAAAANOTREADY/news_flash_gtk
-gnome_soft/AAAAAAANOTREADY/python3-peewee
-gnome_soft/AAAAAAANOTREADY/python3-installer
-gnome_soft/AAAAAAANOTREADY/python3-construct
-gnome_soft/AAAAAAANOTREADY/pure-protobuf
-gnome_soft/AAAAAAANOTREADY/python3-google-cloud-storage
-gnome_soft/AAAAAAANOTREADY/python3-entrypoints
-gnome_soft/AAAAAAANOTREADY/identity
-gnome_soft/AAAAAAANOTREADY/warp
-gnome_soft/AAAAAAANOTREADY/python3-exceptiongroup
-gnome_soft/AAAAAAANOTREADY/python3-generic
-gnome_soft/AAAAAAANOTREADY/python3-pydrive2
-gnome_soft/AAAAAAANOTREADY/python3-argon2-cffi-bindings
-gnome_soft/AAAAAAANOTREADY/secrets
-gnome_soft/AAAAAAANOTREADY/telepathy-logger
-gnome_soft/AAAAAAANOTREADY/lightsoff
-gnome_soft/AAAAAAANOTREADY/python3-google-resumable-media
-gnome_soft/AAAAAAANOTREADY/eyedropper
-gnome_soft/AAAAAAANOTREADY/python3-zxcvbn-python
-gnome_soft/AAAAAAANOTREADY/metronome
-gnome_soft/AAAAAAANOTREADY/python3-rsa
-gnome_soft/AAAAAAANOTREADY/python3-piexif
-gnome_soft/AAAAAAANOTREADY/sofia-sip
-gnome_soft/AAAAAAANOTREADY/polari
-gnome_soft/AAAAAAANOTREADY/python3-cachetools
-gnome_soft/AAAAAAANOTREADY/gnote
-gnome_soft/AAAAAAANOTREADY/wike
-gnome_soft/AAAAAAANOTREADY/python3-regex
-gnome_soft/AAAAAAANOTREADY/rome
-gnome_soft/AAAAAAANOTREADY/meld
-gnome_soft/AAAAAAANOTREADY/python3-pydot
-gnome_soft/AAAAAAANOTREADY/python3-httplib2
-gnome_soft/AAAAAAANOTREADY/python3-pyasn1
-gnome_soft/AAAAAAANOTREADY/hitori
-gnome_soft/AAAAAAANOTREADY/raider
-gnome_soft/AAAAAAANOTREADY/python3-keyring
-gnome_soft/AAAAAAANOTREADY/rhythmbox-tray-icon
-gnome_soft/AAAAAAANOTREADY/python3-parso
-gnome_soft/AAAAAAANOTREADY/emblem
-gnome_soft/AAAAAAANOTREADY/python3-rarfile
-gnome_soft/AAAAAAANOTREADY/gupnp-av
-gnome_soft/AAAAAAANOTREADY/gupnp
-gnome_soft/AAAAAAANOTREADY/font-noto-emoji
-gnome_soft/AAAAAAANOTREADY/telepathy-mission-control
-gnome_soft/AAAAAAANOTREADY/python3-argon2-cffi
-gnome_soft/AAAAAAANOTREADY/python3-jedi
-gnome_soft/AAAAAAANOTREADY/python3-flit_scm
-gnome_soft/AAAAAAANOTREADY/feedbackd
-gnome_soft/AAAAAAANOTREADY/python3-validators
-gnome_soft/AAAAAAANOTREADY/elastic
-gnome_soft/AAAAAAANOTREADY/python3-gaphas
-gnome_soft/AAAAAAANOTREADY/text-engine
-gnome_soft/AAAAAAANOTREADY/gnumeric
-gnome_soft/AAAAAAANOTREADY/metadata-cleaner
-gnome_soft/AAAAAAANOTREADY/telegraph
-gnome_soft/AAAAAAANOTREADY/obfuscate
-gnome_soft/AAAAAAANOTREADY/gnome-photos
-gnome_soft/AAAAAAANOTREADY/python3-setuptools_rust
-gnome_soft/AAAAAAANOTREADY/khronos
-gnome_soft/AAAAAAANOTREADY/python3-google-api-python-client
-gnome_soft/AAAAAAANOTREADY/python3-flit_core
-gnome_soft/AAAAAAANOTREADY/python3-protobuf
-gnome_soft/AAAAAAANOTREADY/python3-pycryptodomex
-gnome_soft/AAAAAAANOTREADY/gthumb
-gnome_soft/AAAAAAAAudio/blanket
-gnome_soft/AAAAAAAAudio/cozy
-gnome_soft/AAAAAAAAudio/callaudiod
-gnome_soft/AAAAAAAAudio/boatswain
-BLACKLIST45/mm-common
-BLACKLIST45/cairomm
-BLACKLIST45/libsoup3
-BLACKLIST45/adwaita-icon-theme
-BLACKLIST45/gvfs
-BLACKLIST45/gtk4
-BLACKLIST45/gi-docgen
-BLACKLIST45/gjs
-BLACKLIST45/mozjs115
-BLACKLIST45/cairo
-BLACKLIST45/librsvg
-BLACKLIST45/pangomm
-BLACKLIST45/glib2
-BLACKLIST45/python3-smartypants
-BLACKLIST45/graphviz
-BLACKLIST45/glib-networking
-BLACKLIST45/pango
-BLACKLIST45/python3-typogrify
-BLACKLIST45/python3-toml
-BLACKLIST45/at-spi2-core
-BLACKLIST45/order
-BLACKLIST45/gtkmm4
-BLACKLIST45/glibmm
-BLACKLIST45/gobject-introspection
-VRR/mutter-vrr
-VRR/gnome-control-center-vrr
-extras/boxes
-extras/pika-backup
-extras/gtranslator
-extras/order
-extras/boxes/spice-protocol
-extras/boxes/spice
-extras/boxes/gnome-boxes
-extras/boxes/virglrenderer
-extras/boxes/libvirt-python
-extras/boxes/numactl
-extras/boxes/usbredir
-extras/boxes/libnfs
-extras/boxes/spice-gtk
-extras/boxes/gtk-vnc
-extras/boxes/yajl
-extras/boxes/order_boxes
-extras/boxes/virt-manager
-extras/boxes/vde2
-extras/boxes/libovf-glib
-extras/boxes/snappy
-extras/boxes/device-tree-compiler
-extras/boxes/qemu
-extras/boxes/libvirt
-extras/boxes/libvirt-glib
-extras/boxes/libcacard
-extras/boxes/phodav
-extras/pika-backup/python-msgpack
-extras/pika-backup/python-pyopenssl
-extras/pika-backup/python-guzzle_sphinx_theme
-extras/pika-backup/python-pydrive2
-extras/pika-backup/python-googleapis-common-protos
-extras/pika-backup/python-pyasn1
-extras/pika-backup/python-google-resumable-media
-extras/pika-backup/python-cachetools
-extras/pika-backup/python-google-crc32c
-extras/pika-backup/python-rsa
-extras/pika-backup/python-setuptools_rust
-extras/pika-backup/pika-backup
-extras/pika-backup/python-uritemplate
-extras/pika-backup/python-google-api-python-client
-extras/pika-backup/python-google-auth
-extras/pika-backup/python-pyasn1-modules
-extras/pika-backup/python-google-auth-httplib2
-extras/pika-backup/python-typing_extensions
-extras/pika-backup/python-protobuf
-extras/pika-backup/python-google-cloud-core
-extras/pika-backup/python-google-cloud-storage
-extras/pika-backup/python-cryptography
-extras/pika-backup/python-google-api-core
-extras/pika-backup/python-httplib2
-extras/pika-backup/python3-cryptography
-extras/pika-backup/python-semantic_version
-extras/pika-backup/order_pika_backup
-extras/pika-backup/borgbackup
-extras/pika-backup/python-oauth2client
-extras/gtranslator/order_gtranslator
-extras/gtranslator/libspelling
-extras/gtranslator/gtranslator
-extras/gtranslator/libgda
-main_gnome/snapshot
-main_gnome/evolution-data-server
-main_gnome/libgdata
-main_gnome/vte-gtk4
-main_gnome/gnome-menus
-main_gnome/gnome-console
-main_gnome/libxmlb
-main_gnome/geoclue2
-main_gnome/lxml
-main_gnome/svt-av1
-main_gnome/libwpe
-main_gnome/libei
-main_gnome/webkit2gtk6.0
-main_gnome/python3-attrs
-main_gnome/libostree
-main_gnome/webkit2gtk4.1
-main_gnome/dav1d
-main_gnome/libadwaita
-main_gnome/gcr4
-main_gnome/libgusb
-main_gnome/xdg-dbus-proxy
-main_gnome/malcontent
-main_gnome/xvfb-run
-main_gnome/libgweather4
-main_gnome/yelp
-main_gnome/libnma-gtk4
-main_gnome/libdaemon
-main_gnome/gnome-tweaks
-main_gnome/gnome-control-center
-main_gnome/gnome-weather
-main_gnome/gsound
-main_gnome/webp-pixbuf-loader
-main_gnome/nautilus
-main_gnome/gnome-backgrounds
-main_gnome/libcloudproviders
-main_gnome/gnome-online-accounts
-main_gnome/mutter
-main_gnome/gnome-shell
-main_gnome/yelp-xsl
-main_gnome/flatpak
-main_gnome/blocaled
-main_gnome/librest
-main_gnome/gnome-autoar
-main_gnome/gnome-disk-utility
-main_gnome/libaom
-main_gnome/geocode-glib
-main_gnome/libstemmer
-main_gnome/gnome-desktop
-main_gnome/avahi
-main_gnome/tracker
-main_gnome/gnome-panel
-main_gnome/AppStream
-main_gnome/gtksourceview5
-main_gnome/tecla
-main_gnome/bubblewrap
-main_gnome/order
-main_gnome/gnome-session
-main_gnome/gnome-settings-daemon
-main_gnome/gdm
-main_gnome/libavif
-main_gnome/gnome-bluetooth
-main_gnome/gnome-terminal
-main_gnome/unifdef
-main_gnome/colord-gtk
-main_gnome/libportal
-main_gnome/jq
-main_gnome/colord
-main_gnome/libyuv
-main_gnome/appstream-glib
-main_gnome/yelp-tools
-main_gnome/wpebackend-fdo
-main_gnome/avahi/patches
-removed/clutter-gtk
-removed/cheese
-removed/clutter
-removed/amtk
-removed/lua54
-removed/libgnomekbd
-removed/libhandy
-removed/order
-removed/libwnck3
-removed/clutter-gst
-removed/upower
-removed/gnome-video-effects
-removed/vala
+23:57:46 05-09-23
+
+Directory: .
+  Directory: ./BLACKLIST45
+    Directory: ./BLACKLIST45/adwaita-icon-theme
+PRGNAM: adwaita-icon-theme
+VERSION: ${VERSION:-45.rc}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/adwaita-icon-theme/45/adwaita-icon-theme-45.rc.tar.xz
+
+    Directory: ./BLACKLIST45/at-spi2-core
+PRGNAM: at-spi2-core
+VERSION: ${VERSION:-2.49.91}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/at-spi2-core/2.49/at-spi2-core-2.49.91.tar.xz
+
+    Directory: ./BLACKLIST45/cairo
+PRGNAM: cairo
+VERSION: ${VERSION:-1.17.8}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.freedesktop.org/cairo/cairo/-/archive/1.17.8/cairo-1.17.8.tar.gz
+
+    Directory: ./BLACKLIST45/cairomm
+PRGNAM: cairomm
+VERSION: ${VERSION:-1.16.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.freedesktop.org/cairo/cairomm/-/archive/1.16.2/cairomm-1.16.2.tar.gz
+
+    Directory: ./BLACKLIST45/gi-docgen
+PRGNAM: gi-docgen
+VERSION: ${VERSION:-2023.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: 
+
+REQUIRED: python3-smartypants python3-typogrify python3-toml 
+
+    Directory: ./BLACKLIST45/gjs
+PRGNAM: gjs
+VERSION: ${VERSION:-1.77.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gjs/1.77/gjs-1.77.2.tar.xz
+
+    Directory: ./BLACKLIST45/glib-networking
+PRGNAM: glib-networking
+VERSION: ${VERSION:-2.76.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/glib-networking/2.76/glib-networking-2.76.0.tar.xz
+
+    Directory: ./BLACKLIST45/glib2
+PRGNAM: glib2
+VERSION: ${VERSION:-2.77.3}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/glib/2.77/glib-2.77.3.tar.xz
+
+    Directory: ./BLACKLIST45/glibmm
+PRGNAM: glibmm
+VERSION: ${VERSION:-2.68.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/glibmm/2.68/glibmm-2.68.2.tar.xz
+
+    Directory: ./BLACKLIST45/gobject-introspection
+PRGNAM: gobject-introspection
+VERSION: ${VERSION:-1.76.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gobject-introspection/1.76/gobject-introspection-1.76.1.tar.xz
+
+    Directory: ./BLACKLIST45/graphviz
+PRGNAM: graphviz
+VERSION: ${VERSION:-8.1.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: "txz"
+DOWNLOAD: https://gitlab.com/graphviz/graphviz/-/archive/8.1.0/graphviz-8.1.0.tar.bz2
+
+    Directory: ./BLACKLIST45/gtkmm4
+PRGNAM: gtkmm4
+VERSION: ${VERSION:-4.11.3}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gtkmm/4.11/gtkmm-4.11.3.tar.xz
+
+REQUIRED:  
+
+    Directory: ./BLACKLIST45/gvfs
+PRGNAM: gvfs
+VERSION: ${VERSION:-1.51.90}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gvfs/1.51/gvfs-1.51.90.tar.xz
+
+    Directory: ./BLACKLIST45/librsvg
+PRGNAM: librsvg
+VERSION: ${VERSION:-2.56.93}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/librsvg/2.56/librsvg-2.56.93.tar.xz
+
+REQUIRED: gi-docgen cairo cairo-png cairo-gobject 
+
+    Directory: ./BLACKLIST45/libsoup3
+PRGNAM: libsoup3
+VERSION: ${VERSION:-3.4.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/libsoup/3.4/libsoup-3.4.0.tar.xz
+
+REQUIRED:  
+
+    Directory: ./BLACKLIST45/mm-common
+PRGNAM: mm-common
+VERSION: ${VERSION:-1.0.5}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/mm-common/1.0/mm-common-1.0.5.tar.xz
+
+    Directory: ./BLACKLIST45/mozjs115
+PRGNAM: mozjs115
+VERSION: ${VERSION:-115.1.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://archive.mozilla.org/pub/firefox/releases/115.1.0esr/source/firefox-115.1.0esr.source.tar.xz
+
+    Directory: ./BLACKLIST45/order
+    Directory: ./BLACKLIST45/pango
+PRGNAM: pango
+VERSION: ${VERSION:-1.51.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/pango/1.51/pango-1.51.0.tar.xz
+
+    Directory: ./BLACKLIST45/pangomm
+PRGNAM: pangomm
+VERSION: ${VERSION:-2.50.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/pangomm/2.50/pangomm-2.50.1.tar.xz
+
+    Directory: ./BLACKLIST45/python3-smartypants
+PRGNAM: python3-smartypants
+VERSION: ${VERSION:-2.0.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: 
+
+    Directory: ./BLACKLIST45/python3-toml
+PRGNAM: python3-toml
+VERSION: ${VERSION:-0.10.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: 
+
+    Directory: ./BLACKLIST45/python3-typogrify
+PRGNAM: python3-typogrify
+VERSION: ${VERSION:-2.0.7}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: 
+
+REQUIRED: python3-smartypants 
+
+  Directory: ./VRR
+    Directory: ./VRR/gnome-control-center-vrr
+PRGNAM: gnome-control-center-vrr
+VERSION: ${VERSION:-45.rc}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-control-center/45/gnome-control-center-45.rc.tar.xz
+
+REQUIRED: colord-gtk gnome-bluetooth gnome-online-accounts gnome-settings-daemon gsound cups-pk-helper rest libnma-gtk4 webp-pixbuf-loader xdg-desktop-portal-gnome libadwaita libwpe geocode-glib libgusb xdg-dbus-proxy wpebackend-fdo geoclue2 bubblewrap libgweather4 gnome-desktop colord webkit2gtk4.1 libhandy gnome-remote-desktop rygel gnome-user-share gnome-color-manager libgnomekbd 
+
+    Directory: ./VRR/mutter-vrr
+PRGNAM: mutter-vrr
+VERSION: ${VERSION:-45.beta.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/mutter/45/mutter-45.beta.1.tar.xz
+
+REQUIRED: gnome-settings-daemon xvfb-run gnome-shell 
+
+  Directory: ./doinst
+  Directory: ./extensions
+    Directory: ./extensions/order
+  Directory: ./extras
+    Directory: ./extras/boxes
+      Directory: ./extras/boxes/device-tree-compiler
+PRGNAM: device-tree-compiler
+VERSION: ${VERSION:-1.6.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://git.kernel.org/pub/scm/utils/dtc/dtc.git/snapshot/dtc-1.6.1.tar.gz
+
+      Directory: ./extras/boxes/gnome-boxes
+PRGNAM: gnome-boxes
+VERSION: ${VERSION:-45.rc}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-boxes/44/gnome-boxes-45.rc.tar.xz
+
+      Directory: ./extras/boxes/libcacard
+PRGNAM: libcacard
+VERSION: ${VERSION:-2.8.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://www.spice-space.org/download/libcacard/libcacard-2.8.1.tar.xz
+
+      Directory: ./extras/boxes/libnfs
+PRGNAM: libnfs
+VERSION: ${VERSION:-5.0.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/sahlberg/libnfs/archive/libnfs-5.0.2/libnfs-libnfs-5.0.2.tar.gz
+
+      Directory: ./extras/boxes/libovf-glib
+PRGNAM: libovf-glib
+VERSION: ${VERSION:-0.1.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://reddoglinux.ddns.net/distfile/libovf-glib-0.1.0.tar.gz
+
+      Directory: ./extras/boxes/libvirt
+PRGNAM: libvirt
+VERSION: ${VERSION:-9.3.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://libvirt.org/sources/libvirt-9.3.0.tar.xz
+
+      Directory: ./extras/boxes/libvirt-glib
+PRGNAM: libvirt-glib
+VERSION: ${VERSION:-4.0.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://libvirt.org/sources/glib/libvirt-glib-4.0.0.tar.xz
+
+      Directory: ./extras/boxes/libvirt-python
+PRGNAM: libvirt-python
+VERSION: ${VERSION:-9.1.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://libvirt.org/sources/python/libvirt-python-9.1.0.tar.gz
+
+      Directory: ./extras/boxes/numactl
+PRGNAM: numactl
+VERSION: ${VERSION:-2.0.16}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/numactl/numactl/releases/download/v2.0.16/numactl-2.0.16.tar.gz
+
+      Directory: ./extras/boxes/order_boxes
+      Directory: ./extras/boxes/phodav
+PRGNAM: phodav
+VERSION: ${VERSION:-3.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/phodav/3.0/phodav-3.0.tar.xz
+
+      Directory: ./extras/boxes/qemu
+PRGNAM: qemu
+VERSION: ${VERSION:-7.2.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.qemu.org/qemu-7.2.0.tar.xz
+
+      Directory: ./extras/boxes/snappy
+PRGNAM: snappy
+VERSION: ${VERSION:-1.1.8}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/google/snappy/archive/1.1.8/snappy-1.1.8.tar.gz
+
+      Directory: ./extras/boxes/spice
+PRGNAM: spice
+VERSION: ${VERSION:-0.15.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://www.spice-space.org/download/releases/spice-server/spice-0.15.1.tar.bz2
+
+      Directory: ./extras/boxes/spice-gtk
+PRGNAM: spice-gtk
+VERSION: ${VERSION:-0.42}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://www.spice-space.org/download/gtk/spice-gtk-0.42.tar.xz
+
+      Directory: ./extras/boxes/spice-protocol
+PRGNAM: spice-protocol
+VERSION: ${VERSION:-0.14.4}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://www.spice-space.org/download/releases/spice-protocol-0.14.4.tar.xz
+
+      Directory: ./extras/boxes/usbredir
+PRGNAM: usbredir
+VERSION: ${VERSION:-0.13.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://www.spice-space.org/download/usbredir/usbredir-0.13.0.tar.xz
+
+      Directory: ./extras/boxes/vde2
+PRGNAM: vde2
+VERSION: ${VERSION:-2.3.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: http://downloads.sourceforge.net/project/vde/vde2/2.3.2/vde2-2.3.2.tar.bz2
+
+      Directory: ./extras/boxes/virglrenderer
+PRGNAM: virglrenderer
+VERSION: ${VERSION:-0.10.4}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.freedesktop.org/virgl/virglrenderer/-/archive/virglrenderer-0.10.4/virglrenderer-virglrenderer-0.10.4.tar.bz2
+
+      Directory: ./extras/boxes/virt-manager
+PRGNAM: virt-manager
+VERSION: ${VERSION:-4.1.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://releases.pagure.org/virt-manager/virt-manager-4.1.0.tar.gz
+
+      Directory: ./extras/boxes/yajl
+PRGNAM: yajl
+VERSION: ${VERSION:-2.1.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+
+    Directory: ./extras/gtranslator
+      Directory: ./extras/gtranslator/gtranslator
+PRGNAM: gtranslator
+VERSION: ${VERSION:-45.alpha0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.gnome.org/GNOME/gtranslator/-/archive/45.alpha0/gtranslator-45.alpha0.tar.gz
+
+REQUIRED: libgda libspelling 
+
+      Directory: ./extras/gtranslator/libgda
+PRGNAM: libgda
+VERSION: ${VERSION:-6.0.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/libgda/6.0/libgda-6.0.0.tar.xz
+
+      Directory: ./extras/gtranslator/order_gtranslator
+    Directory: ./extras/order
+    Directory: ./extras/pika-backup
+      Directory: ./extras/pika-backup/borgbackup
+PRGNAM: borgbackup
+VERSION: ${VERSION:-$(echo $PRGNAM-*.tar.?z | rev | cut -f 3- -d . | cut -f 1 -d - | rev)}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/borgbackup/borg/releases/download/1.2.3/borgbackup-1.2.3.tar.gz
+
+      Directory: ./extras/pika-backup/order_pika_backup
+      Directory: ./extras/pika-backup/pika-backup
+PRGNAM: pika-backup
+VERSION: ${VERSION:-$(echo $PRGNAM-v*.tar.?z | rev | cut -f 3- -d . | cut -f 1 -d - | rev)}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.gnome.org/World/pika-backup/-/archive/v0.4.2/pika-backup-v0.4.2.tar.gz
+
+      Directory: ./extras/pika-backup/python-cachetools
+PRGNAM: 
+VERSION: ${VERSION:-$(echo $SRCNAM-*.tar.?z | rev | cut -f 3- -d . | cut -f 1 -d - | rev)}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/c2/6f/278225c5a070a18a76f85db5f1238f66476579fa9b04cda3722331dcc90f/cachetools-5.2.0.tar.gz
+
+      Directory: ./extras/pika-backup/python-cryptography
+PRGNAM: 
+VERSION: ${VERSION:-$(echo $SRCNAM-*.tar.?z | rev | cut -f 3- -d . | cut -f 1 -d - | rev)}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/e3/3f/41186b1f2fd86a542d399175f6b8e43f82cd4dfa51235a0b030a042b811a/cryptography-38.0.4.tar.gz
+
+      Directory: ./extras/pika-backup/python-google-api-core
+PRGNAM: 
+VERSION: ${VERSION:-$(echo $SRCNAM-*.tar.?z | rev | cut -f 3- -d . | cut -f 1 -d - | rev)}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/2b/15/7bafa5379a228ed72baf769eea5e6019a944469fe637ea0742c0351109bf/google-api-core-2.11.0.tar.gz
+
+      Directory: ./extras/pika-backup/python-google-api-python-client
+PRGNAM: 
+VERSION: ${VERSION:-$(echo $SRCNAM-*.tar.?z | rev | cut -f 3- -d . | cut -f 1 -d - | rev)}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/a8/fe/71091bf1a9f2fa50c06a6caa94b579da7d354d83ac01a4c34b139808d332/google-api-python-client-2.70.0.tar.gz
+
+      Directory: ./extras/pika-backup/python-google-auth
+PRGNAM: 
+VERSION: ${VERSION:-$(echo $SRCNAM-*.tar.?z | rev | cut -f 3- -d . | cut -f 1 -d - | rev)}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/52/a6/72c80f4a0b37c2c32d35636b2373bdf07c1dad81b109f9361742d3aa1cbe/google-auth-2.15.0.tar.gz
+
+      Directory: ./extras/pika-backup/python-google-auth-httplib2
+PRGNAM: 
+VERSION: ${VERSION:-$(echo $SRCNAM-*.tar.?z | rev | cut -f 3- -d . | cut -f 1 -d - | rev)}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/c6/b5/a9e956fd904ecb34ec9d297616fe98fa4106fc12f3b0a914dec983c267b9/google-auth-httplib2-0.1.0.tar.gz
+
+      Directory: ./extras/pika-backup/python-google-cloud-core
+PRGNAM: 
+VERSION: ${VERSION:-$(echo $SRCNAM-*.tar.?z | rev | cut -f 3- -d . | cut -f 1 -d - | rev)}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/40/4b/f4cebb92fe965f02f4a9c06f16355cf83a61a2d5db110df9af71191c830a/google-cloud-core-2.3.2.tar.gz
+
+      Directory: ./extras/pika-backup/python-google-cloud-storage
+PRGNAM: 
+VERSION: ${VERSION:-$(echo $SRCNAM-*.tar.?z | rev | cut -f 3- -d . | cut -f 1 -d - | rev)}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/9f/9c/8cd4da7df57284832c3853aa565de278ca6d33a47ebe6722628488dc01ca/google-cloud-storage-2.7.0.tar.gz
+
+      Directory: ./extras/pika-backup/python-google-crc32c
+PRGNAM: 
+VERSION: ${VERSION:-$(echo $SRCNAM-*.tar.?z | rev | cut -f 3- -d . | cut -f 1 -d - | rev)}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/d3/a5/4bb58448fffd36ede39684044df93a396c13d1ea3516f585767f9f960352/google-crc32c-1.5.0.tar.gz
+
+      Directory: ./extras/pika-backup/python-google-resumable-media
+PRGNAM: 
+VERSION: ${VERSION:-$(echo $SRCNAM-*.tar.?z | rev | cut -f 3- -d . | cut -f 1 -d - | rev)}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/71/d2/d681d0c192d2948b692f155bc20ee03727ab3a70d541b0c39a327c9689a9/google-resumable-media-2.4.0.tar.gz
+
+      Directory: ./extras/pika-backup/python-googleapis-common-protos
+PRGNAM: 
+VERSION: ${VERSION:-$(echo $SRCNAM-*.tar.?z | rev | cut -f 3- -d . | cut -f 1 -d - | rev)}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/c5/db/9b98c3a9e148b5daaa2e26ce4faeb6ade28dc623dcc109f2ac7efee514de/googleapis-common-protos-1.57.0.tar.gz
+
+      Directory: ./extras/pika-backup/python-guzzle_sphinx_theme
+PRGNAM: 
+VERSION: ${VERSION:-0.7.11}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/f4/7d/aed8cd5e4ca52bb8550d2c33fcbb8d6dbd5c2cf5e1694202d2135b374eba/guzzle_sphinx_theme-0.7.11.tar.gz
+
+      Directory: ./extras/pika-backup/python-httplib2
+PRGNAM: python-httplib2
+VERSION: ${VERSION:-$(echo $SRCNAM-*.tar.?z | rev | cut -f 3- -d . | cut -f 1 -d - | rev)}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/c2/37/a093aaa902f6b2301f0f2cff5285548dbc4ab9b9a29215eb440381cbb32b/httplib2-0.21.0.tar.gz
+
+      Directory: ./extras/pika-backup/python-msgpack
+PRGNAM: python-msgpack
+VERSION: ${VERSION:-1.0.4}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/22/44/0829b19ac243211d1d2bd759999aa92196c546518b0be91de9cacc98122a/msgpack-1.0.4.tar.gz
+
+      Directory: ./extras/pika-backup/python-oauth2client
+PRGNAM: python-oauth2client
+VERSION: ${VERSION:-$(echo $SRCNAM-*.tar.?z | rev | cut -f 3- -d . | cut -f 1 -d - | rev)}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/a6/7b/17244b1083e8e604bf154cf9b716aecd6388acd656dd01893d0d244c94d9/oauth2client-4.1.3.tar.gz
+
+      Directory: ./extras/pika-backup/python-protobuf
+PRGNAM: python-protobuf
+VERSION: ${VERSION:-$(echo $SRCNAM-*.tar.?z | rev | cut -f 3- -d . | cut -f 1 -d - | rev)}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/ba/dd/f8a01b146bf45ac12a829bbc599e6590aa6a6849ace7d28c42d77041d6ab/protobuf-4.21.12.tar.gz
+
+      Directory: ./extras/pika-backup/python-pyasn1
+PRGNAM: python-pyasn1
+VERSION: ${VERSION:-$(echo $SRCNAM-*.tar.?z | rev | cut -f 3- -d . | cut -f 1 -d - | rev)}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/a4/db/fffec68299e6d7bad3d504147f9094830b704527a7fc098b721d38cc7fa7/pyasn1-0.4.8.tar.gz
+
+      Directory: ./extras/pika-backup/python-pyasn1-modules
+PRGNAM: python-pyasn1-modules
+VERSION: ${VERSION:-$(echo $SRCNAM-*.tar.?z | rev | cut -f 3- -d . | cut -f 1 -d - | rev)}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/88/87/72eb9ccf8a58021c542de2588a867dbefc7556e14b2866d1e40e9e2b587e/pyasn1-modules-0.2.8.tar.gz
+
+      Directory: ./extras/pika-backup/python-pydrive2
+PRGNAM: python-pydrive2
+VERSION: ${VERSION:-1.15.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/05/e8/4d227db64308b3ccc81e7ef5df2432c4b97ecc835b9f291fd07f5be93c58/PyDrive2-1.15.0.tar.gz
+
+      Directory: ./extras/pika-backup/python-pyopenssl
+PRGNAM: python-pyopenssl
+VERSION: ${VERSION:-$(echo $SRCNAM-*.tar.?z | rev | cut -f 3- -d . | cut -f 1 -d - | rev)}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/e7/2f/c6d89edac75482f11e231b644e365d31d5479b7b727734e6a8f3d00decd5/pyOpenSSL-22.1.0.tar.gz
+
+      Directory: ./extras/pika-backup/python-rsa
+PRGNAM: python-rsa
+VERSION: ${VERSION:-$(echo $SRCNAM-*.tar.?z | rev | cut -f 3- -d . | cut -f 1 -d - | rev)}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/aa/65/7d973b89c4d2351d7fb232c2e452547ddfa243e93131e7cfa766da627b52/rsa-4.9.tar.gz
+
+      Directory: ./extras/pika-backup/python-semantic_version
+PRGNAM: python-semantic_version
+VERSION: ${VERSION:-$(echo $SRCNAM-*.tar.?z | rev | cut -f 3- -d . | cut -f 1 -d - | rev)}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/7d/31/f2289ce78b9b473d582568c234e104d2a342fd658cc288a7553d83bb8595/semantic_version-2.10.0.tar.gz
+
+      Directory: ./extras/pika-backup/python-setuptools_rust
+PRGNAM: python-setuptools-rust
+VERSION: ${VERSION:-$(echo $SRCNAM-*.tar.?z | rev | cut -f 3- -d . | cut -f 1 -d - | rev)}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/99/db/e4ecb483ffa194d632ed44bda32cb740e564789fed7e56c2be8e2a0e2aa6/setuptools-rust-1.5.2.tar.gz
+
+      Directory: ./extras/pika-backup/python-typing_extensions
+PRGNAM: 
+VERSION: ${VERSION:-4.4.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/source/t/typing_extensions/typing_extensions-4.4.0.tar.gz
+
+      Directory: ./extras/pika-backup/python-uritemplate
+PRGNAM: python-uritemplate
+VERSION: ${VERSION:-$(echo $SRCNAM-*.tar.?z | rev | cut -f 3- -d . | cut -f 1 -d - | rev)}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/d2/5a/4742fdba39cd02a56226815abfa72fe0aa81c33bed16ed045647d6000eba/uritemplate-4.1.1.tar.gz
+
+      Directory: ./extras/pika-backup/python3-cryptography
+PRGNAM: python3-cryptography
+VERSION: ${VERSION:-38.0.4}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/e3/3f/41186b1f2fd86a542d399175f6b8e43f82cd4dfa51235a0b030a042b811a/cryptography-38.0.4.tar.gz
+
+  Directory: ./games
+    Directory: ./games/atomix
+PRGNAM: atomix
+VERSION: ${VERSION:-44.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/atomix/44/atomix-44.0.tar.xz
+
+REQUIRED: libgnome-games-support 
+
+    Directory: ./games/chess-clock
+PRGNAM: chess-clock
+VERSION: ${VERSION:-0.5.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.gnome.org/World/chess-clock/-/archive/v0.5.0/chess-clock-v0.5.0.tar.gz
+
+REQUIRED:  
+
+    Directory: ./games/clairvoyant
+PRGNAM: clairvoyant
+VERSION: ${VERSION:-3.0.6}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/cassidyjames/clairvoyant/archive/3.0.6/clairvoyant-3.0.6.tar.gz
+
+REQUIRED: gtk4 libadwaita 
+
+    Directory: ./games/five-or-more
+PRGNAM: five-or-more
+VERSION: ${VERSION:-3.32.3}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/five-or-more/3.32/five-or-more-3.32.3.tar.xz
+
+    Directory: ./games/four-in-a-row
+PRGNAM: four-in-a-row
+VERSION: ${VERSION:-3.38.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/four-in-a-row/3.38/four-in-a-row-3.38.1.tar.xz
+
+    Directory: ./games/gnome-2048
+PRGNAM: gnome-2048
+VERSION: ${VERSION:-3.38.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-2048/3.38/gnome-2048-3.38.2.tar.xz
+
+    Directory: ./games/gnome-chess
+PRGNAM: gnome-chess		
+VERSION: ${VERSION:-43.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}	
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-chess/43/gnome-chess-43.2.tar.xz
+
+    Directory: ./games/gnome-klotski
+PRGNAM: gnome-klotski
+VERSION: ${VERSION:-3.38.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-klotski/3.38/gnome-klotski-3.38.2.tar.xz
+
+    Directory: ./games/gnome-mahjongg
+PRGNAM: gnome-mahjongg
+VERSION: ${VERSION:-3.40.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-mahjongg/3.40/gnome-mahjongg-3.40.0.tar.xz
+
+    Directory: ./games/gnome-mines
+PRGNAM: gnome-mines
+VERSION: ${VERSION:-40.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-mines/40/gnome-mines-40.1.tar.xz
+
+    Directory: ./games/gnome-nibbles
+PRGNAM: gnome-nibbles
+VERSION: ${VERSION:-3.38.3}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-nibbles/3.38/gnome-nibbles-3.38.3.tar.xz
+
+    Directory: ./games/gnome-robots
+PRGNAM: gnome-robots
+VERSION: ${VERSION:-40.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-robots/40/gnome-robots-40.0.tar.xz
+
+    Directory: ./games/gnome-sudoku
+PRGNAM: gnome-sudoku
+VERSION: ${VERSION:-45.alpha}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-sudoku/45/gnome-sudoku-45.alpha.tar.xz
+
+    Directory: ./games/gnome-tetravex
+PRGNAM: gnome-tetravex
+VERSION: ${VERSION:-3.38.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-tetravex/3.38/gnome-tetravex-3.38.2.tar.xz
+
+    Directory: ./games/highscore
+PRGNAM: highscore
+VERSION: ${VERSION:-40.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+
+    Directory: ./games/libgnome-games-support
+PRGNAM: libgnome-games-support
+VERSION: ${VERSION:-1.8.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: "txz"
+DOWNLOAD: https://download.gnome.org/sources/libgnome-games-support/1.8/libgnome-games-support-1.8.2.tar.xz
+
+    Directory: ./games/order
+    Directory: ./games/qqwing
+PRGNAM: qqwing	
+VERSION: ${VERSION:-1.3.4}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}	
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://qqwing.com/qqwing-1.3.4.tar.gz
+
+    Directory: ./games/retro-gtk
+PRGNAM: retro-gtk
+VERSION: ${VERSION:-1.0.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+
+  Directory: ./gnome
+    Directory: ./gnome/baobab
+PRGNAM: baobab	
+VERSION: ${VERSION:-45.alpha}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}	
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/baobab/45/baobab-45.alpha.tar.xz
+
+REQUIRED: libadwaita 
+
+    Directory: ./gnome/brasero
+PRGNAM: brasero
+VERSION: ${VERSION:-3.12.3}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/brasero/3.12/brasero-3.12.3.tar.xz
+
+    Directory: ./gnome/cmark
+PRGNAM: cmark
+VERSION: ${VERSION:-0.30.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/commonmark/cmark/archive/0.30.2/cmark-0.30.2.tar.gz
+
+REQUIRED:  
+
+    Directory: ./gnome/epiphany
+PRGNAM: epiphany
+VERSION: ${VERSION:-45.beta}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/epiphany/45/epiphany-45.beta.tar.xz
+
+REQUIRED: webkit2gtk6.0 libwpe gcab libsoup3 xdg-dbus-proxy wpebackend-fdo geoclue2 bubblewrap libportal appstream-glib libhandy libdazzle 
+
+    Directory: ./gnome/evince
+PRGNAM: evince
+VERSION: ${VERSION:-45.rc}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/evince/45/evince-45.rc.tar.xz
+
+REQUIRED: libhandy 
+
+    Directory: ./gnome/evolution
+PRGNAM: evolution
+VERSION: ${VERSION:-3.49.3}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/evolution/3.49/evolution-3.49.3.tar.xz
+
+REQUIRED: evolution-data-server gnome-autoar gspell ytnef highlight libpst cmark libwpe xdg-dbus-proxy wpebackend-fdo geoclue2 bubblewrap cogl webkit2gtk4.1 rest clutter gnome-online-accounts uhttpmock geocode-glib lua53 clutter-gtk libgdata libgweather4 
+
+    Directory: ./gnome/exempi
+PRGNAM: exempi
+VERSION: ${VERSION:-2.6.4}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://libopenraw.freedesktop.org/download/exempi-2.6.4.tar.xz
+
+REQUIRED:  
+
+    Directory: ./gnome/fdkaac
+PRGNAM: fdkaac
+VERSION: ${VERSION:-1.0.5}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/nu774/fdkaac/archive/v1.0.5/fdkaac-1.0.5.tar.gz
+
+    Directory: ./gnome/file-roller
+PRGNAM: file-roller
+VERSION: ${VERSION:-43.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/file-roller/43/file-roller-43.0.tar.xz
+
+REQUIRED:  
+
+    Directory: ./gnome/folks
+PRGNAM: folks
+VERSION: ${VERSION:-0.15.6}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/folks/0.15/folks-0.15.6.tar.xz
+
+REQUIRED: evolution-data-server telepathy-glib libwpe xdg-dbus-proxy wpebackend-fdo geoclue2 bubblewrap webkit2gtk4.1 rest gnome-online-accounts uhttpmock geocode-glib libgdata libgweather4 
+
+    Directory: ./gnome/gedit
+PRGNAM: gedit
+VERSION: ${VERSION:-46.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gedit/46/gedit-46.1.tar.xz
+
+REQUIRED: libpeas libgedit-gtksourceview libgedit-amtk 
+
+    Directory: ./gnome/glycin-loaders
+PRGNAM: glycin-loaders
+VERSION: ${VERSION:-0.1.rc}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}	
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/glycin-loaders/0.1/glycin-loaders-0.1.rc.4.tar.xz
+
+REQUIRED: gtk4 libadwaita libheif 
+
+    Directory: ./gnome/gnome-calculator
+PRGNAM: gnome-calculator
+VERSION: ${VERSION:-45.0.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-calculator/45/gnome-calculator-45.0.1.tar.xz
+
+REQUIRED: gtksourceview5 libadwaita 
+
+    Directory: ./gnome/gnome-calendar
+PRGNAM: gnome-calendar
+VERSION: ${VERSION:-45.beta}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-calendar/45/gnome-calendar-45.beta.tar.xz
+
+REQUIRED: evolution-data-server geoclue2 libgweather4 libwpe xdg-dbus-proxy wpebackend-fdo bubblewrap webkit2gtk4.1 rest gnome-online-accounts uhttpmock geocode-glib libgdata libhandy libdazzle 
+
+    Directory: ./gnome/gnome-characters
+PRGNAM: gnome-characters
+VERSION: ${VERSION:-45.alpha}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-characters/45/gnome-characters-45.alpha.tar.xz
+
+REQUIRED:  
+
+    Directory: ./gnome/gnome-clocks
+PRGNAM: gnome-clocks
+VERSION: ${VERSION:-44.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-clocks/44/gnome-clocks-44.0.tar.xz
+
+REQUIRED: gsound libgweather4 gnome-desktop geoclue2 libadwaita geocode-glib libhandy 
+
+    Directory: ./gnome/gnome-font-viewer
+PRGNAM: gnome-font-viewer
+VERSION: ${VERSION:-45.alpha}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-font-viewer/45/gnome-font-viewer-45.alpha.tar.xz
+
+REQUIRED: gnome-desktop libadwaita 
+
+    Directory: ./gnome/gnome-maps
+PRGNAM: gnome-maps	
+VERSION: ${VERSION:-45.rc}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}	
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-maps/45/gnome-maps-45.rc.tar.xz
+
+REQUIRED: libshumate telepathy-glib folks libwpe xdg-dbus-proxy wpebackend-fdo geoclue2 bubblewrap webkit2gtk4.1 rest cogl gnome-online-accounts uhttpmock geocode-glib clutter libgdata libgweather4 clutter-gtk telepathy-glib evolution-data-server libhandy 
+
+    Directory: ./gnome/gnome-power-manager
+PRGNAM: gnome-power-manager
+VERSION: ${VERSION:-43.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-power-manager/43/gnome-power-manager-43.0.tar.xz
+
+    Directory: ./gnome/gnome-remote-desktop
+PRGNAM: gnome-remote-desktop
+VERSION: ${VERSION:-45.rc}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}	
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-remote-desktop/45/gnome-remote-desktop-45.rc.tar.xz
+
+REQUIRED:  
+
+    Directory: ./gnome/gnome-system-monitor
+PRGNAM: gnome-system-monitor	
+VERSION: ${VERSION:-45.0.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-system-monitor/45/gnome-system-monitor-45.0.1.tar.xz
+
+REQUIRED: libhandy 
+
+    Directory: ./gnome/gnome-user-docs
+PRGNAM: gnome-user-docs	
+VERSION: ${VERSION:-44.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}	
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-user-docs/44/gnome-user-docs-44.0.tar.xz
+
+    Directory: ./gnome/gom
+PRGNAM: gom
+VERSION: ${VERSION:-0.4}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gom/0.4/gom-0.4.tar.xz
+
+REQUIRED: gtk-doc 
+
+    Directory: ./gnome/grilo
+PRGNAM: grilo
+VERSION: ${VERSION:-0.3.16}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/grilo/0.3/grilo-0.3.16.tar.xz
+
+REQUIRED: totem-pl-parser libsoup3 
+
+    Directory: ./gnome/grilo-plugins
+PRGNAM: grilo-plugins
+VERSION: ${VERSION:-0.3.16}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/grilo-plugins/0.3/grilo-plugins-0.3.16.tar.xz
+
+REQUIRED: grilo libdmapsharing tracker 
+
+    Directory: ./gnome/gsettings-desktop-schemas
+PRGNAM: gsettings-desktop-schemas
+VERSION: ${VERSION:-45.beta}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gsettings-desktop-schemas/45/gsettings-desktop-schemas-45.beta.tar.xz
+
+    Directory: ./gnome/gspell
+PRGNAM: gspell
+VERSION: ${VERSION:-1.12.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gspell/1.12/gspell-1.12.2.tar.xz
+
+REQUIRED:  
+
+    Directory: ./gnome/highlight
+PRGNAM: highlight
+VERSION: ${VERSION:-4.4}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: http://www.andre-simon.de/zip/highlight-4.4.tar.bz2
+
+REQUIRED: lua53 
+
+    Directory: ./gnome/libdazzle
+PRGNAM: libdazzle
+VERSION: ${VERSION:-3.44.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/libdazzle/3.44/libdazzle-3.44.0.tar.xz
+
+    Directory: ./gnome/libdmapsharing
+PRGNAM: libdmapsharing
+VERSION: ${VERSION:-3.9.13}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}		
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.gnome.org/GNOME/libdmapsharing/-/archive/LIBDMAPSHARING_3_9_13/libdmapsharing-LIBDMAPSHARING_3_9_13.tar.gz
+
+    Directory: ./gnome/libfdk-aac
+PRGNAM: libfdk-aac
+VERSION: ${VERSION:-2.0.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/mstorsjo/fdk-aac/archive/v2.0.2/fdk-aac-2.0.2.tar.gz
+
+REQUIRED:  
+
+    Directory: ./gnome/libgedit-amtk
+PRGNAM: libgedit-amtk
+VERSION: ${VERSION:-5.8.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gedit-technology.net/tarballs/libgedit-amtk/libgedit-amtk-5.8.0.tar.xz
+
+    Directory: ./gnome/libgedit-gtksourceview
+PRGNAM: libgedit-gtksourceview
+VERSION: ${VERSION:-299.0.4}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gedit-technology.net/tarballs/libgedit-gtksourceview/libgedit-gtksourceview-299.0.4.tar.xz
+
+REQUIRED:  
+
+    Directory: ./gnome/libgrss
+PRGNAM: libgrss
+VERSION: ${VERSION:-0.7.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/libgrss/0.7/libgrss-0.7.0.tar.xz
+
+    Directory: ./gnome/libgxps
+PRGNAM: libgxps
+VERSION: ${VERSION:-0.3.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/libgxps/0.3/libgxps-0.3.2.tar.xz
+
+REQUIRED:  
+
+    Directory: ./gnome/libheif
+PRGNAM: libheif
+VERSION: ${VERSION:-1.16.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/strukturag/libheif/releases/download/v1.16.2/libheif-1.16.2.tar.gz
+
+    Directory: ./gnome/libiptcdata
+PRGNAM: libiptcdata
+VERSION: ${VERSION:-1.0.5}
+BUILD: ${BUILD:-4}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/ianw/libiptcdata/releases/download/release_1_0_5/libiptcdata-1.0.5.tar.gz
+
+REQUIRED:  
+
+    Directory: ./gnome/liblouis
+PRGNAM: liblouis
+VERSION: ${VERSION:-3.24.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/liblouis/liblouis/releases/download/v3.24.0/liblouis-3.24.0.tar.gz
+
+    Directory: ./gnome/libmediaart
+PRGNAM: libmediaart
+VERSION: ${VERSION:-1.9.6}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/libmediaart/1.9/libmediaart-1.9.6.tar.xz
+
+REQUIRED:  
+
+    Directory: ./gnome/liboauth
+PRGNAM: liboauth
+VERSION: ${VERSION:-1.0.3}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+
+    Directory: ./gnome/libosinfo
+PRGNAM: libosinfo
+VERSION: ${VERSION:-1.10.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://releases.pagure.org/libosinfo/libosinfo-1.10.0.tar.xz
+
+REQUIRED: libosinfo osinfo-db-tools osinfo-db 
+
+    Directory: ./gnome/libpeas
+PRGNAM: libpeas
+VERSION: ${VERSION:-1.36.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/libpeas/1.36/libpeas-1.36.0.tar.xz
+
+REQUIRED:  
+
+    Directory: ./gnome/libpeas2
+PRGNAM: libpeas2
+VERSION: ${VERSION:-1.99.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/libpeas/1.99/libpeas-1.99.1.tar.xz
+
+REQUIRED:  
+
+    Directory: ./gnome/libpst
+PRGNAM: libpst
+VERSION: ${VERSION:-0.6.76}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://www.five-ten-sg.com/libpst/packages/libpst-0.6.76.tar.gz
+
+REQUIRED:  
+
+    Directory: ./gnome/libshumate
+PRGNAM: libshumate
+VERSION: ${VERSION:-1.1.rc}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/libshumate/1.1/libshumate-1.1.rc.tar.xz
+
+REQUIRED:  
+
+    Directory: ./gnome/loupe
+PRGNAM: loupe
+VERSION: ${VERSION:-45.beta.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}	
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/loupe/45/loupe-45.beta.1.tar.xz
+
+REQUIRED: geocode-glib gtk4 libadwaita libgweather4 libheif glycin-loaders 
+
+    Directory: ./gnome/lua53
+PRGNAM: lua53
+VERSION: ${VERSION:-5.3.6}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: "txz"
+DOWNLOAD: https://www.lua.org/ftp/lua-5.3.6.tar.gz
+
+    Directory: ./gnome/nv-codec-headers
+PRGNAM: nv-codec-headers
+VERSION: ${VERSION:-12.0.16.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}	
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/FFmpeg/nv-codec-headers/releases/download/n12.0.16.0/nv-codec-headers-12.0.16.0.tar.gz
+
+REQUIRED:  
+
+    Directory: ./gnome/orca
+PRGNAM: orca
+VERSION: ${VERSION:-45.beta2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}	
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/orca/45/orca-45.beta2.tar.xz
+
+REQUIRED: liblouis pyatspi 
+
+    Directory: ./gnome/order
+      Directory: ./gnome/order/builded
+    Directory: ./gnome/osinfo-db
+PRGNAM: osinfo-db
+VERSION: ${VERSION:-20230719}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://releases.pagure.org/libosinfo/osinfo-db-20230719.tar.xz
+https://harrier.slackbuilds.org/misc/osinfo-db-slackware-20220214.tar.xz
+
+REQUIRED: osinfo-db-tools 
+
+    Directory: ./gnome/osinfo-db-tools
+PRGNAM: osinfo-db-tools
+VERSION: ${VERSION:-1.10.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://releases.pagure.org/libosinfo/osinfo-db-tools-1.10.0.tar.xz
+
+REQUIRED:  
+
+    Directory: ./gnome/power-profiles-daemon
+PRGNAM: power-profiles-daemon           
+VERSION: ${VERSION:-0.13}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}		
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.freedesktop.org/hadess/power-profiles-daemon/-/archive/0.13/power-profiles-daemon-0.13.tar.gz
+
+    Directory: ./gnome/pyatspi
+PRGNAM: pyatspi
+VERSION: ${VERSION:-2.46.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/pyatspi/2.46/pyatspi-2.46.0.tar.xz
+
+    Directory: ./gnome/seahorse
+PRGNAM: seahorse
+VERSION: ${VERSION:-43.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/seahorse/43/seahorse-43.0.tar.xz
+
+REQUIRED:  
+
+    Directory: ./gnome/simple-scan
+PRGNAM: simple-scan
+VERSION: ${VERSION:-44.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/simple-scan/44/simple-scan-44.0.tar.xz
+
+REQUIRED: libgusb 
+
+    Directory: ./gnome/telepathy-glib
+PRGNAM: telepathy-glib
+VERSION: ${VERSION:-0.24.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/TelepathyIM/telepathy-glib/archive/refs/tags/telepathy-glib-0.24.2.tar.gz
+
+    Directory: ./gnome/tepl
+PRGNAM: tepl
+VERSION: ${VERSION:-6.8.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/tepl/6.8/tepl-6.8.0.tar.xz
+
+REQUIRED: libgedit-gtksourceview libgedit-amtk 
+
+    Directory: ./gnome/totem-pl-parser
+PRGNAM: totem-pl-parser
+VERSION: ${VERSION:-3.26.6}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/totem-pl-parser/3.26/totem-pl-parser-3.26.6.tar.xz
+
+REQUIRED:  
+
+    Directory: ./gnome/tpm2-tss
+PRGNAM: tpm2-tss
+VERSION: ${VERSION:-4.0.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/tpm2-software/tpm2-tss/releases/download/4.0.1/tpm2-tss-4.0.1.tar.gz
+
+REQUIRED:  
+
+    Directory: ./gnome/tracker-miners
+PRGNAM: tracker-miners
+VERSION: ${VERSION:-3.6.beta}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/tracker-miners/3.6/tracker-miners-3.6.beta.tar.xz
+
+REQUIRED: exempi libgxps libiptcdata libosinfo totem-pl-parser tracker upower 
+
+    Directory: ./gnome/xdg-desktop-portal
+PRGNAM: xdg-desktop-portal
+VERSION: ${VERSION:-1.17.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/flatpak/xdg-desktop-portal/releases/download/1.17.0/xdg-desktop-portal-1.17.0.tar.xz
+
+    Directory: ./gnome/xdg-desktop-portal-gnome
+PRGNAM: xdg-desktop-portal-gnome	
+VERSION: ${VERSION:-45.rc}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}	
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/xdg-desktop-portal-gnome/45/xdg-desktop-portal-gnome-45.rc.tar.xz
+
+REQUIRED: xdg-desktop-portal xdg-desktop-portal-gtk 
+
+    Directory: ./gnome/xdg-desktop-portal-gtk
+PRGNAM: xdg-desktop-portal-gtk
+VERSION: ${VERSION:-1.14.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/flatpak/xdg-desktop-portal-gtk/releases/download/1.14.1/xdg-desktop-portal-gtk-1.14.1.tar.xz
+
+REQUIRED:  
+
+    Directory: ./gnome/ytnef
+PRGNAM: ytnef
+VERSION: ${VERSION:-2.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/Yeraze/ytnef/archive/v2.0/ytnef-2.0.tar.gz
+
+REQUIRED:  
+
+    Directory: ./gnome/zenity
+PRGNAM: zenity
+VERSION: ${VERSION:-3.99.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/zenity/3.99/zenity-3.99.1.tar.xz
+
+REQUIRED:  
+
+  Directory: ./gnome-backgrounds-extra
+PRGNAM: gnome-backgrounds-extra
+VERSION: ${VERSION:-45}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://reddoglinux.ddns.net/distfile/gnome-backgrounds-extra-45.tar.xz
+https://reddoglinux.ddns.net/distfile/rizits.tar.xz
+https://reddoglinux.ddns.net/distfile/AI-rizitis-wallpapers.tar.xz
+
+    Directory: ./gnome-backgrounds-extra/order
+  Directory: ./gnome_builder
+    Directory: ./gnome_builder/d-spy
+PRGNAM: d-spy
+VERSION: ${VERSION:-44.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/d-spy/1.6/d-spy-1.6.0.tar.xz
+
+    Directory: ./gnome_builder/devhelp
+PRGNAM: devhelp
+VERSION: ${VERSION:-43.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/devhelp/43/devhelp-43.0.tar.xz
+
+    Directory: ./gnome_builder/flatpak-builder
+PRGNAM: flatpak-builder
+VERSION: ${VERSION:-1.2.3}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/flatpak/flatpak-builder/releases/download/1.2.3/flatpak-builder-1.2.3.tar.xz
+
+REQUIRED: xdg-desktop-portal-gtk gcab appstream-glib libostree bubblewrap flatpak 
+
+    Directory: ./gnome_builder/gnome-builder
+PRGNAM: gnome-builder
+VERSION: ${VERSION:-45.beta}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-builder/45/gnome-builder-45.beta.tar.xz
+
+REQUIRED: gtksourceview5 jsonrpc-glib libpeas template-glib webkit2gtk6.0 libdex cmark libgit2-glib gspell Sphinx sphinx_rtd_theme sysprof 
+
+    Directory: ./gnome_builder/jsonrpc-glib
+PRGNAM: jsonrpc-glib
+VERSION: ${VERSION:-3.44.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/jsonrpc-glib/3.44/jsonrpc-glib-3.44.0.tar.xz
+
+REQUIRED: gi-docgen 
+
+    Directory: ./gnome_builder/libdex
+PRGNAM: libdex
+VERSION: ${VERSION:-0.3.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/libdex/0.3/libdex-0.3.1.tar.xz
+
+    Directory: ./gnome_builder/libpanel
+PRGNAM: libpanel
+VERSION: ${VERSION:-1.3.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/libpanel/1.3/libpanel-1.3.1.tar.xz
+
+    Directory: ./gnome_builder/order
+    Directory: ./gnome_builder/sphinx_rtd_theme
+PRGNAM: sphinx_rtd_theme
+VERSION: ${VERSION:-1.2.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/35/b4/40faec6790d4b08a6ef878feddc6ad11c3872b75f52273f1418c39f67cd6/sphinx_rtd_theme-1.2.0.tar.gz
+
+    Directory: ./gnome_builder/sysprof
+PRGNAM: sysprof
+VERSION: ${VERSION:-45.rc}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/sysprof/45/sysprof-45.rc.tar.xz
+
+REQUIRED: libdex 
+
+    Directory: ./gnome_builder/template-glib
+PRGNAM: template-glib
+VERSION: ${VERSION:-3.36.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/template-glib/3.36/template-glib-3.36.1.tar.xz
+
+  Directory: ./gnome_soft
+    Directory: ./gnome_soft/AAAAAAANOTREADY
+      Directory: ./gnome_soft/AAAAAAANOTREADY/cozy
+PRGNAM: cozy
+VERSION: ${VERSION:-1.2.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/geigi/cozy/archive/1.2.1/cozy-1.2.1.tar.gz
+
+REQUIRED: python3-peewee python3-mutagen libdazzle gst-plugins-ugly 
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/elastic
+PRGNAM: elastic
+VERSION: ${VERSION:-0.1.3}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.gnome.org/World/elastic/-/archive/0.1.3/elastic-0.1.3.tar.gz
+
+REQUIRED: libadwaita gtk4 
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/emblem
+PRGNAM: emblem
+VERSION: ${VERSION:-1.2.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.gnome.org/World/design/emblem/-/archive/1.2.0/emblem-1.2.0.tar.gz
+
+REQUIRED: libadwaita gtk4 
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/eyedropper
+PRGNAM: eyedropper
+VERSION: ${VERSION:-0.6.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/FineFindus/eyedropper/archive/refs/tags/v0.6.0.tar.gz
+
+REQUIRED: libadwaita gtk4 
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/font-noto-emoji
+PRGNAM: font-noto-emoji
+VERSION: ${VERSION:-2.038}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/googlei18n/noto-emoji/archive/v2.038/noto-emoji-2.038.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/gaphor
+PRGNAM: gaphor
+VERSION: ${VERSION:-2.19.3}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/gaphor/gaphor/archive/2.19.3/gaphor-2.19.3.tar.gz
+
+REQUIRED: libadwaita gtk4 python3-poetry-core python3-build python3-pyproject-hooks python3-installer python3-flit_core python3-generic python3-exceptiongroup python3-flit_scm python3-gaphas python3-tinycss2 python3-webencodings python3-pydot graphviz python3-jedi python3-parso python3-better-exceptions 
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/gnome-commander
+PRGNAM: gnome-commander
+VERSION: ${VERSION:-1.16.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-commander/1.16/gnome-commander-1.16.1.tar.xz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/gnome-flashback
+PRGNAM: gnome-flashback	
+VERSION: ${VERSION:-3.46.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}	
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-flashback/3.46/gnome-flashback-3.46.0.tar.xz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/gnome-latex
+PRGNAM: gnome-latex
+VERSION: ${VERSION:-3.46.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-latex/3.46/gnome-latex-3.46.0.tar.xz
+
+REQUIRED: gtksourceview4 
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/gnote
+PRGNAM: gnote
+VERSION: ${VERSION:-45.alpha}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnote/45/gnote-45.alpha.tar.xz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/gnumeric
+PRGNAM: gnumeric	
+VERSION: ${VERSION:-1.12.55}	
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}	
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnumeric/1.12/gnumeric-1.12.55.tar.xz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/goffice
+PRGNAM: goffice	
+VERSION: ${VERSION:-0.10.55}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/goffice/0.10/goffice-0.10.55.tar.xz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/gthumb
+PRGNAM: gthumb
+VERSION: ${VERSION:-3.12.3}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}	
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.gnome.org/GNOME/gthumb/-/archive/3.12.3/gthumb-3.12.3.tar.gz
+
+REQUIRED: colord libheif 
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/gtk-internet-radio-locator
+PRGNAM: gtk-internet-radio-locator		
+VERSION: ${VERSION:-12.5.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}	
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gtk-internet-radio-locator/4.8/gtk-internet-radio-locator-4.8.2.tar.xz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/gupnp
+PRGNAM: gupnp
+VERSION: ${VERSION:-1.6.5}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gupnp/1.6/gupnp-1.6.5.tar.xz
+
+REQUIRED: libsoup3 gssdp 
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/gupnp-av
+PRGNAM: gupnp-av
+VERSION: ${VERSION:-0.14.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gupnp-av/0.14/gupnp-av-0.14.1.tar.xz
+
+REQUIRED:  
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/gupnp-dlna
+PRGNAM: gupnp-dlna
+VERSION: ${VERSION:-0.12.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gupnp-dlna/0.12/gupnp-dlna-0.12.0.tar.xz
+
+REQUIRED:  
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/health
+PRGNAM: health
+VERSION: ${VERSION:-0.94.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.gnome.org/World/Health/-/archive/0.94.0/Health-0.94.0.tar.gz
+
+REQUIRED: libadwaita gtk4 blueprint-compiler appstream-glib 
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/hitori
+PRGNAM: hitori
+VERSION: ${VERSION:-44.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/hitori/44/hitori-44.0.tar.xz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/identity
+PRGNAM: identity
+VERSION: ${VERSION:-0.5.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.gnome.org/YaLTeR/identity/-/archive/v0.5.0/identity-v0.5.0.tar.gz
+
+REQUIRED: libadwaita gtk4 
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/khronos
+PRGNAM: khronos
+VERSION: ${VERSION:-3.7.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/lainsce/khronos/archive/3.7.0/khronos-3.7.0.tar.gz
+
+REQUIRED: gtk4 libadwaita 
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/komikku
+PRGNAM: komikku
+VERSION: ${VERSION:-1.19.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+
+REQUIRED: libadwaita pure-protobuf python3-beautifulsoup4 python3-dateparser python3-dateutil python3-emoji python3-entrypoints python3-keyring python3-magic python3-natsort python3-piexif python3-rarfile python3-regex python3-soupsieve python3-tzlocal python3-unidecode 
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/libgnome-volume-control
+PRGNAM: libgnome-volume-control	
+VERSION: ${VERSION:-0.0.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}	
+PKGTYPE: ${PKGTYPE:-txz}
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/libmusicbrainz5
+PRGNAM: libmusicbrainz5
+VERSION: ${VERSION:-5.1.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/metabrainz/libmusicbrainz/releases/download/release-5.1.0/libmusicbrainz-5.1.0.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/lightsoff
+PRGNAM: lightsoff
+VERSION: ${VERSION:-40.0.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.gnome.org/GNOME/lightsoff/-/archive/40.0.1/lightsoff-40.0.1.tar.gz
+
+REQUIRED:  
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/lorem
+PRGNAM: lorem
+VERSION: ${VERSION:-1.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.gnome.org/World/design/lorem/-/archive/1.2/lorem-1.2.tar.gz
+
+REQUIRED: libadwaita gtk4 
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/meld
+PRGNAM: meld
+VERSION: ${VERSION:-3.22.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/meld/3.22/meld-3.22.0.tar.xz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/metadata-cleaner
+PRGNAM: metadata-cleaner
+VERSION: ${VERSION:-2.5.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.com/rmnvgr/metadata-cleaner/-/archive/v2.5.2/metadata-cleaner-v2.5.2.tar.gz
+
+REQUIRED: libadwaita gtk4 python3-flit_core python3-installer python3-pyproject-hooks python3-build python3-mutagen python3-mat2 
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/metronome
+PRGNAM: metronome
+VERSION: ${VERSION:-1.3.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.gnome.org/World/metronome/-/archive/1.3.0/metronome-1.3.0.tar.gz
+
+REQUIRED: libadwaita gtk4 
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/mousai
+PRGNAM: mousai
+VERSION: ${VERSION:-0.7.5}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/SeaDve/Mousai/archive/v0.7.5/Mousai-0.7.5.tar.gz
+
+REQUIRED: gtk4 libadwaita 
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/news_flash_gtk
+PRGNAM: news_flash_gtk
+VERSION: ${VERSION:-2.3.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.com/news-flash/news_flash_gtk/-/archive/v.2.3.0/news_flash_gtk-v.2.3.0.tar.gz
+
+REQUIRED: gtk4 libadwaita 
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/obfuscate
+PRGNAM: obfuscate
+VERSION: ${VERSION:-0.0.9}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.gnome.org/World/obfuscate/-/archive/0.0.9/obfuscate-0.0.9.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/polari
+PRGNAM: polari
+VERSION: ${VERSION:-43.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.gnome.org/GNOME/polari/-/archive/43.0/polari-43.0.tar.gz
+
+REQUIRED: telepathy-logger 
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-better-exceptions
+PRGNAM: python3-better-exceptions
+VERSION: ${VERSION:-0.2.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/Qix-/better-exceptions/archive/0.2.1/better-exceptions-0.2.1.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-cachetools
+PRGNAM: python3-cachetools
+VERSION: ${VERSION:-5.2.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/c2/6f/278225c5a070a18a76f85db5f1238f66476579fa9b04cda3722331dcc90f/cachetools-5.2.0.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-dateparser
+PRGNAM: python3-dateparser
+VERSION: ${VERSION:-1.1.8}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-emoji
+PRGNAM: python3-emoji
+VERSION: ${VERSION:-1.2.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/carpedm20/emoji/archive/v.1.2.1/emoji-v.1.2.1.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-entrypoints
+PRGNAM: python3-entrypoints
+VERSION: ${VERSION:-0.4}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-exceptiongroup
+PRGNAM: python3-exceptiongroup
+VERSION: ${VERSION:-1.1.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/source/e/exceptiongroup/exceptiongroup-1.1.1.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-flit_scm
+PRGNAM: python3-flit_scm
+VERSION: ${VERSION:-1.7.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/source/f/flit_scm/flit_scm-1.7.0.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-gaphas
+PRGNAM: python3-gaphas
+VERSION: ${VERSION:-3.11.3}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/gaphor/gaphas/archive/3.11.3/gaphas-3.11.3.tar.gz
+
+REQUIRED: libadwaita gtk4 python3-poetry-core generic python3-exceptiongroup 
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-generic
+PRGNAM: python3-generic
+VERSION: ${VERSION:-1.1.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/gaphor/generic/archive/1.1.2/generic-1.1.2.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-google-api-core
+PRGNAM: python3-google-api-core
+VERSION: ${VERSION:-2.11.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/2b/15/7bafa5379a228ed72baf769eea5e6019a944469fe637ea0742c0351109bf/google-api-core-2.11.0.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-google-api-python-client
+PRGNAM: python3-google-api-python-client
+VERSION: ${VERSION:-2.70.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/a8/fe/71091bf1a9f2fa50c06a6caa94b579da7d354d83ac01a4c34b139808d332/google-api-python-client-2.70.0.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-google-auth
+PRGNAM: python3-google-auth
+VERSION: ${VERSION:-2.15.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/52/a6/72c80f4a0b37c2c32d35636b2373bdf07c1dad81b109f9361742d3aa1cbe/google-auth-2.15.0.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-google-auth-httplib2
+PRGNAM: python3-google-auth-httplib2
+VERSION: ${VERSION:-0.1.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/c6/b5/a9e956fd904ecb34ec9d297616fe98fa4106fc12f3b0a914dec983c267b9/google-auth-httplib2-0.1.0.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-google-cloud-core
+PRGNAM: python3-google-cloud-core
+VERSION: ${VERSION:-2.3.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/40/4b/f4cebb92fe965f02f4a9c06f16355cf83a61a2d5db110df9af71191c830a/google-cloud-core-2.3.2.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-google-cloud-storage
+PRGNAM: python3-google-cloud-storage
+VERSION: ${VERSION:-2.7.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/9f/9c/8cd4da7df57284832c3853aa565de278ca6d33a47ebe6722628488dc01ca/google-cloud-storage-2.7.0.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-google-crc32c
+PRGNAM: python3-google-crc32c
+VERSION: ${VERSION:-1.5.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/d3/a5/4bb58448fffd36ede39684044df93a396c13d1ea3516f585767f9f960352/google-crc32c-1.5.0.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-google-resumable-media
+PRGNAM: python3-google-resumable-media
+VERSION: ${VERSION:-2.4.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/71/d2/d681d0c192d2948b692f155bc20ee03727ab3a70d541b0c39a327c9689a9/google-resumable-media-2.4.0.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-googleapis-common-protos
+PRGNAM: python3-googleapis-common-protos
+VERSION: ${VERSION:-1.57.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/c5/db/9b98c3a9e148b5daaa2e26ce4faeb6ade28dc623dcc109f2ac7efee514de/googleapis-common-protos-1.57.0.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-guzzle_sphinx_theme
+PRGNAM: python3-guzzle_sphinx_theme
+VERSION: ${VERSION:-0.7.11}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/f4/7d/aed8cd5e4ca52bb8550d2c33fcbb8d6dbd5c2cf5e1694202d2135b374eba/guzzle_sphinx_theme-0.7.11.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-httplib2
+PRGNAM: python3-httplib2
+VERSION: ${VERSION:-0.21.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/c2/37/a093aaa902f6b2301f0f2cff5285548dbc4ab9b9a29215eb440381cbb32b/httplib2-0.21.0.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-jedi
+PRGNAM: python3-jedi
+VERSION: ${VERSION:-0.18.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/source/j/jedi/jedi-0.18.2.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-keyring
+PRGNAM: python3-keyring
+VERSION: ${VERSION:-19.2.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/ee/46/77fdb7cd2b0f1f684afbc35a59b3d7ebb6961fe528f97b86900002968914/keyring-19.2.0.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-magic
+PRGNAM: python3-magic
+VERSION: ${VERSION:-0.4.27}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://pypi.io/packages/source/p/python-magic/python-magic-0.4.27.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-mat2
+PRGNAM: python3-mat2
+VERSION: ${VERSION:-0.13.3}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://0xacab.org/jvoisin/mat2/-/archive/0.13.3/mat2-0.13.3.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-msgpack
+PRGNAM: python3-msgpack
+VERSION: ${VERSION:-1.0.4}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/22/44/0829b19ac243211d1d2bd759999aa92196c546518b0be91de9cacc98122a/msgpack-1.0.4.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-mutagen
+PRGNAM: python3-mutagen
+VERSION: ${VERSION:-1.46.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/b1/54/d1760a363d0fe345528e37782f6c18123b0e99e8ea755022fd51f1ecd0f9/mutagen-1.46.0.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-natsort
+PRGNAM: python3-natsort
+VERSION: ${VERSION:-8.1.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/f7/37/207acdf07c2229a799b7a042c0977ad2372f4adb3446fba8f7703e2840e1/natsort-8.1.0.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-oauth2client
+PRGNAM: python3-oauth2client
+VERSION: ${VERSION:-4.1.3}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/a6/7b/17244b1083e8e604bf154cf9b716aecd6388acd656dd01893d0d244c94d9/oauth2client-4.1.3.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-parso
+PRGNAM: python3-parso
+VERSION: ${VERSION:-0.8.3}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/davidhalter/parso/archive/v0.8.3/parso-0.8.3.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-peewee
+PRGNAM: python3-peewee
+VERSION: ${VERSION:-3.16.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/a9/50/1dd5ea74c559df4afb8391f8d05f0fec685dbe8effba13bb9072901eb288/peewee-3.16.2.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-piexif
+PRGNAM: python3-piexif
+VERSION: ${VERSION:-1.1.3}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/fa/84/a3f25cec7d0922bf60be8000c9739d28d24b6896717f44cc4cfb843b1487/piexif-1.1.3.zip
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-poetry-core
+PRGNAM: python3-poetry-core
+VERSION: ${VERSION:-1.5.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/source/p/poetry_core/poetry_core-1.5.2.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-pyasn1
+PRGNAM: python3-pyasn1
+VERSION: ${VERSION:-0.4.8}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/a4/db/fffec68299e6d7bad3d504147f9094830b704527a7fc098b721d38cc7fa7/pyasn1-0.4.8.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-pyasn1-modules
+PRGNAM: python3-pyasn1-modules
+VERSION: ${VERSION:-0.2.8}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/88/87/72eb9ccf8a58021c542de2588a867dbefc7556e14b2866d1e40e9e2b587e/pyasn1-modules-0.2.8.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-pydot
+PRGNAM: python3-pydot
+VERSION: ${VERSION:-1.4.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/13/6e/916cdf94f9b38ae0777b254c75c3bdddee49a54cc4014aac1460a7a172b3/pydot-1.4.2.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-pydrive2
+PRGNAM: python3-pydrive2
+VERSION: ${VERSION:-1.15.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/05/e8/4d227db64308b3ccc81e7ef5df2432c4b97ecc835b9f291fd07f5be93c58/PyDrive2-1.15.0.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-pyopenssl
+PRGNAM: python3-pyopenssl
+VERSION: ${VERSION:-22.1.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/e7/2f/c6d89edac75482f11e231b644e365d31d5479b7b727734e6a8f3d00decd5/pyOpenSSL-22.1.0.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-pyproject-hooks
+PRGNAM: python3-pyproject-hooks
+VERSION: ${VERSION:-1.0.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/source/p/pyproject_hooks/pyproject_hooks-1.0.0.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-rarfile
+PRGNAM: python3-rarfile
+VERSION: ${VERSION:-3.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/88/0b/107dde3f330d04668e126932a09002ac47348841453aa0391634381fa087/rarfile-3.1.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-regex
+PRGNAM: python3-regex
+VERSION: ${VERSION:-2023.6.3}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/source/r/regex/regex-2023.6.3.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-rsa
+PRGNAM: python3-rsa
+VERSION: ${VERSION:-4.9}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/aa/65/7d973b89c4d2351d7fb232c2e452547ddfa243e93131e7cfa766da627b52/rsa-4.9.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-semantic_version
+PRGNAM: python3-semantic_version
+VERSION: ${VERSION:-2.10.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/7d/31/f2289ce78b9b473d582568c234e104d2a342fd658cc288a7553d83bb8595/semantic_version-2.10.0.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-setuptools_rust
+PRGNAM: python3-setuptools-rust
+VERSION: ${VERSION:-1.5.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/99/db/e4ecb483ffa194d632ed44bda32cb740e564789fed7e56c2be8e2a0e2aa6/setuptools-rust-1.5.2.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-soupsieve
+PRGNAM: python3-soupsieve
+VERSION: ${VERSION:-2.3.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/facelessuser/soupsieve/archive/2.3.1/soupsieve-2.3.1.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-tinycss2
+PRGNAM: python3-tinycss2
+VERSION: ${VERSION:-1.1.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/ce/d3/ece7a98d5826bd134e269a3a3030153d30482194fca71d95a3041812aab8/tinycss2-1.1.0.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-tzlocal
+PRGNAM: python3-tzlocal
+VERSION: ${VERSION:-5.0b2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-unidecode
+PRGNAM: python3-unidecode
+VERSION: ${VERSION:-1.3.6}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/source/u/unidecode/Unidecode-1.3.6.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-uritemplate
+PRGNAM: python3-uritemplate
+VERSION: ${VERSION:-4.1.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/d2/5a/4742fdba39cd02a56226815abfa72fe0aa81c33bed16ed045647d6000eba/uritemplate-4.1.1.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/python3-webencodings
+PRGNAM: python3-webencodings
+VERSION: ${VERSION:-0.5.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/gsnedders/python-webencodings/archive/v0.5.1/python-webencodings-0.5.1.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/raider
+PRGNAM: raider
+VERSION: ${VERSION:-1.3.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/ADBeveridge/raider/archive/refs/tags/v1.3.1.tar.gz
+
+REQUIRED: libadwaita gtk4 
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/rhythmbox
+PRGNAM: rhythmbox
+VERSION: ${VERSION:-3.4.6}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}	
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/rhythmbox/3.4/rhythmbox-3.4.6.tar.xz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/rhythmbox-tray-icon
+PRGNAM: rhythmbox-tray-icon
+VERSION: ${VERSION:-2022.04.19}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}	
+PKGTYPE: ${PKGTYPE:-txz}
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/rome
+PRGNAM: rome
+VERSION: ${VERSION:-12.1.3}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+
+REQUIRED:  
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/rygel
+PRGNAM: rygel
+VERSION: ${VERSION:-0.42.4}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/rygel/0.42/rygel-0.42.4.tar.xz
+
+REQUIRED: gst-editing-services gssdp gupnp-av gupnp-dlna gupnp 
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/share-preview
+PRGNAM: share-preview
+VERSION: ${VERSION:-0.3.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/rafaelmardojai/share-preview/archive/0.3.0/share-preview-0.3.0.tar.gz
+
+REQUIRED: gtk4 libadwaita 
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/shotwell
+PRGNAM: shotwell
+VERSION: ${VERSION:-0.32.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/shotwell/0.32/shotwell-0.32.2.tar.xz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/sound-juicer
+PRGNAM: sound-juicer
+VERSION: ${VERSION:-3.40.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/sound-juicer/3.40/sound-juicer-3.40.0.tar.xz
+
+REQUIRED: libmusicbrainz5 
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/telegraph
+PRGNAM: telegraph
+VERSION: ${VERSION:-0.1.7}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}	
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/fkinoshita/Telegraph/releases/download/v0.1.7/telegraph-0.1.7.tar.xz
+
+REQUIRED: gtk4 libadwaita 
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/telepathy-idle
+PRGNAM: telepathy-idle
+VERSION: ${VERSION:-0.2.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: http://telepathy.freedesktop.org/releases/telepathy-idle/telepathy-idle-0.2.2.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/telepathy-logger
+PRGNAM: telepathy-logger
+VERSION: ${VERSION:-0.8.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: http://telepathy.freedesktop.org/releases/telepathy-logger/telepathy-logger-0.8.2.tar.bz2
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/telepathy-mission-control
+PRGNAM: telepathy-mission-control
+VERSION: ${VERSION:-5.16.6}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: http://telepathy.freedesktop.org/releases/telepathy-mission-control/telepathy-mission-control-5.16.6.tar.gz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/textpieces
+PRGNAM: textpieces
+VERSION: ${VERSION:-3.1.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/liferooter/textpieces/archive/v3.1.1/textpieces-3.1.1.tar.gz
+
+REQUIRED: gtk4 libadwaita 
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/vala-language-server
+PRGNAM: vala-language-server
+VERSION: ${VERSION:-0.48.7}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+
+REQUIRED:  
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/video-trimmer
+PRGNAM: video-trimmer
+VERSION: ${VERSION:-0.8.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}	
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.gnome.org/YaLTeR/video-trimmer/-/archive/v0.8.1/video-trimmer-0.8.1.tar.gz
+
+REQUIRED: gtk4 libadwaita 
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/warp
+PRGNAM: warp
+VERSION: ${VERSION:-0.5.4}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}	
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.gnome.org/World/warp/-/archive/v0.5.4/warp-0.5.4.tar.gz
+
+REQUIRED: gtk4 libadwaita 
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/webfont-kit-generator
+PRGNAM: webfont-kit-generator
+VERSION: ${VERSION:-1.0.3}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/rafaelmardojai/webfont-kit-generator/archive/1.0.3/webfont-kit-generator-1.0.3.tar.gz
+
+REQUIRED: gtk4 libadwaita python-unicodedata2 python-fonttools 
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/wike
+PRGNAM: wike
+VERSION: ${VERSION:-2.0.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+
+REQUIRED: libadwaita python-gobject python-requests webkit2gtk6.0 meson appstream-glib 
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/workbench
+PRGNAM: workbench
+VERSION: ${VERSION:-44.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+
+REQUIRED: libadwaita blueprint-compiler vala-language-server rome 
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/xdg-user-dirs-gtk
+PRGNAM: xdg-user-dirs-gtk
+VERSION: ${VERSION:-0.11}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/xdg-user-dirs-gtk/0.11/xdg-user-dirs-gtk-0.11.tar.xz
+
+      Directory: ./gnome_soft/AAAAAAANOTREADY/zap
+PRGNAM: zap
+VERSION: ${VERSION:-1.2.3}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.com/rmnvgr/zap/-/archive/1.2.3/zap-1.2.3.tar.gz
+
+REQUIRED: gtk4 libadwaita 
+
+    Directory: ./gnome_soft/Authenticator
+PRGNAM: Authenticator
+VERSION: ${VERSION:-4.3.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.gnome.org/World/Authenticator/-/archive/4.3.1/Authenticator-4.3.1.tar.gz
+
+REQUIRED: zbar 
+
+    Directory: ./gnome_soft/Collision
+PRGNAM: Collision
+VERSION: ${VERSION:-3.5.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/GeopJr/Collision/archive/v3.5.0/Collision-3.5.0.tar.gz
+
+REQUIRED: crystal-lang libadwaita gettext 
+
+    Directory: ./gnome_soft/Commit
+PRGNAM: Commit
+VERSION: ${VERSION:-4.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/sonnyp/Commit/archive/296e3fcc2990e3197c30d308cf1ce577ffddc044/Commit-296e3fcc2990e3197c30d308cf1ce577ffddc044.tar.gz
+https://github.com/sonnyp/troll/archive/63392a57392fb8ed944e859269a3751f649f64ec/troll-63392a57392fb8ed944e859269a3751f649f64ec.tar.gz
+
+REQUIRED: blueprint-compiler 
+
+    Directory: ./gnome_soft/Curtail
+PRGNAM: Curtail
+VERSION: ${VERSION:-1.7.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/Huluti/Curtail/archive/1.7.0/Curtail-1.7.0.tar.gz
+
+REQUIRED: gtk4 libadwaita scour pngquant jpegoptim oxipng 
+
+    Directory: ./gnome_soft/Endeavour
+PRGNAM: Endeavour
+VERSION: ${VERSION:-43.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.gnome.org/World/Endeavour/-/archive/43.0/Endeavour-43.0.tar.gz
+
+    Directory: ./gnome_soft/Feeds
+PRGNAM: Feeds
+VERSION: ${VERSION:-$(echo $SRCNAM-*.tar.?z | rev | cut -f 3- -d . | cut -f 1 -d - | rev)}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.gnome.org/World/gfeeds/-/archive/2.2.0/gfeeds-2.2.0.tar.gz
+
+    Directory: ./gnome_soft/Flatseal
+PRGNAM: Flatseal
+VERSION: ${VERSION:-2.0.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/tchx84/Flatseal/archive/v2.0.2/Flatseal-2.0.2.tar.gz
+
+    Directory: ./gnome_soft/Font-Downloader
+PRGNAM: Font-Downloader
+VERSION: ${VERSION:-10.0.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/GustavoPeredo/Font-Downloader/archive/refs/tags/v10.0.0.tar.gz
+
+REQUIRED: libadwaita gtk4 
+
+    Directory: ./gnome_soft/Fragments
+PRGNAM: Fragments
+VERSION: ${VERSION:-2.1.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.gnome.org/World/Fragments/-/archive/2.1.1/Fragments-2.1.1.tar.gz
+
+    Directory: ./gnome_soft/Junction
+PRGNAM: Junction
+VERSION: ${VERSION:-1.6}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/sonnyp/Junction/archive/refs/tags/v1.6.tar.gz
+
+REQUIRED: libadwaita gtk4 
+
+    Directory: ./gnome_soft/NetworkManager-openvpn-gtk4
+PRGNAM: NetworkManager-openvpn-gtk4
+VERSION: ${VERSION:-1.10.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/NetworkManager-openvpn/1.10/NetworkManager-openvpn-1.10.2.tar.xz
+
+    Directory: ./gnome_soft/Plots
+PRGNAM: Plots
+VERSION: ${VERSION:-0.8.5}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+
+REQUIRED: python3-lark python3-opengl python3-numpy python3-freetype python3-glm 
+
+    Directory: ./gnome_soft/Shortwave
+PRGNAM: Shortwave
+VERSION: ${VERSION:-3.2.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.gnome.org/World/Shortwave/-/archive/3.2.0/Shortwave-3.2.0.tar.gz
+
+REQUIRED: gtk4 libadwaita 
+
+    Directory: ./gnome_soft/Solanum
+PRGNAM: Solanum
+VERSION: ${VERSION:-4.0.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.gnome.org/World/Solanum/-/archive/4.0.0/Solanum-4.0.0.tar.gz
+
+REQUIRED: gtk4 libadwaita 
+
+    Directory: ./gnome_soft/Tangram
+PRGNAM: Tangram
+VERSION: ${VERSION:-3.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/sonnyp/Tangram/archive/v3.0/Tangram-3.0.tar.gz
+
+REQUIRED: gtk4 libadwaita 
+
+    Directory: ./gnome_soft/adobe-source-code-pro-font
+PRGNAM: adobe-source-code-pro-font
+VERSION: ${VERSION:-2.042}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/adobe-fonts/source-code-pro/releases/download/2.042R-u%2F1.062R-i%2F1.026R-vf/OTF-source-code-pro-2.042R-u_1.062R-i.zip
+
+    Directory: ./gnome_soft/aisleriot
+PRGNAM: aisleriot
+VERSION: ${VERSION:-3.22.29}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.gnome.org/GNOME/aisleriot/-/archive/3.22.29/aisleriot-3.22.29.tar.gz
+
+    Directory: ./gnome_soft/alacarte
+PRGNAM: alacarte
+VERSION: ${VERSION:-3.44.3}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/alacarte/3.44/alacarte-3.44.3.tar.xz
+
+    Directory: ./gnome_soft/amberol
+PRGNAM: amberol
+VERSION: ${VERSION:-0.10.3}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.gnome.org/World/amberol/-/archive/0.10.3/amberol-0.10.3.tar.gz
+
+    Directory: ./gnome_soft/apostrophe
+PRGNAM: apostrophe
+VERSION: ${VERSION:-2.6.3}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.gnome.org/World/apostrophe/-/archive/v2.6.3/apostrophe-v2.6.3.tar.bz2
+
+REQUIRED: python3-wheel python3-pypandoc 
+
+    Directory: ./gnome_soft/blanket
+PRGNAM: blanket
+VERSION: ${VERSION:-0.6.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/rafaelmardojai/blanket/archive/0.6.0/blanket-0.6.0.tar.gz
+
+REQUIRED: pygobject3 gtk4 libadwaita gstreamer 
+
+    Directory: ./gnome_soft/blueprint-compiler
+PRGNAM: blueprint-compiler
+VERSION: ${VERSION:-0.10.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.gnome.org/jwestman/blueprint-compiler/-/archive/v0.10.0/blueprint-compiler-v0.10.0.tar.gz
+
+    Directory: ./gnome_soft/boatswain
+PRGNAM: boatswain
+VERSION: ${VERSION:-0.3.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.gnome.org/World/boatswain/-/archive/0.3.0/boatswain-0.3.0.tar.gz
+
+REQUIRED: libadwaita libpeas libportal libgusb gtk4 hidapi json-glib 
+
+    Directory: ./gnome_soft/callaudiod
+PRGNAM: callaudiod
+VERSION: ${VERSION:-0.1.7}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: "txz"
+DOWNLOAD: https://gitlab.com/mobian1/callaudiod/-/archive/0.1.7/callaudiod-0.1.7.tar.gz
+
+    Directory: ./gnome_soft/calls
+PRGNAM: calls
+VERSION: ${VERSION:-45.alpha.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: "txz"
+DOWNLOAD: https://download.gnome.org/sources/calls/45/calls-45.alpha.0.tar.xz
+
+REQUIRED:  
+
+    Directory: ./gnome_soft/cantarell-fonts
+PRGNAM: cantarell-fonts
+VERSION: ${VERSION:-0.303.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/cantarell-fonts/0.303/cantarell-fonts-0.303.1.tar.xz
+
+REQUIRED: gcab appstream-glib 
+
+    Directory: ./gnome_soft/cogl
+PRGNAM: cogl
+VERSION: ${VERSION:-1.22.8}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/cogl/1.22/cogl-1.22.8.tar.xz
+
+REQUIRED:  
+
+    Directory: ./gnome_soft/crystal-lang
+PRGNAM: crystal-lang
+VERSION: ${VERSION:-1.7.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/crystal-lang/crystal/releases/download/1.7.1/crystal-1.7.1-1-linux-x86_64-bundled.tar.gz
+
+    Directory: ./gnome_soft/cups-pk-helper
+PRGNAM: cups-pk-helper
+VERSION: ${VERSION:-0.2.7}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://www.freedesktop.org/software/cups-pk-helper/releases/cups-pk-helper-0.2.7.tar.xz
+
+REQUIRED:  
+
+    Directory: ./gnome_soft/decoder
+PRGNAM: decoder
+VERSION: ${VERSION:-0.3.3}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.gnome.org/World/decoder/-/archive/0.3.3/decoder-0.3.3.tar.gz
+
+REQUIRED: gtk4 libadwaita 
+
+    Directory: ./gnome_soft/deja-dup
+PRGNAM: deja-dup
+VERSION: ${VERSION:-44.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.gnome.org/World/deja-dup/-/archive/44.2/deja-dup-44.2.tar.gz
+
+REQUIRED: libadwaita gtk4 
+
+    Directory: ./gnome_soft/dialect
+PRGNAM: dialect
+VERSION: ${VERSION:-2.1.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+
+REQUIRED: libadwaita python3-gtts 
+
+    Directory: ./gnome_soft/drawing
+PRGNAM: drawing
+VERSION: ${VERSION:-1.0.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/maoschanz/drawing/archive/refs/tags/1.0.2.tar.gz
+
+REQUIRED:  
+
+    Directory: ./gnome_soft/eog
+PRGNAM: eog	
+VERSION: ${VERSION:-45.rc}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}	
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/eog/45/eog-45.rc.tar.xz
+
+REQUIRED: gnome-desktop libpeas exempi libportal 
+
+    Directory: ./gnome_soft/eog-plugins
+PRGNAM: eog-plugins
+VERSION: ${VERSION:-44.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}	
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/eog-plugins/44/eog-plugins-44.0.tar.xz
+
+    Directory: ./gnome_soft/extension-manager
+PRGNAM: extension-manager
+VERSION: ${VERSION:-0.4.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/mjakeman/extension-manager/archive/v0.4.2/extension-manager-0.4.2.tar.gz
+
+REQUIRED: appstream-glib libbacktrace blueprint-compiler text-engine gtk4 libadwaita libsoup3 
+
+    Directory: ./gnome_soft/feedbackd
+PRGNAM: feedbackd
+VERSION: ${VERSION:-v0.1.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: "txz"
+DOWNLOAD: https://gitlab.gnome.org/guidog/gmobile/-/archive/v0.0.1/gmobile-v0.0.1.tar.gz
+
+    Directory: ./gnome_soft/fwupd
+PRGNAM: fwupd
+VERSION: ${VERSION:-1.8.14}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/fwupd/fwupd/releases/download/1.8.14/fwupd-1.8.14.tar.xz
+
+REQUIRED: libxmlb libgusb gcab libsmbios protobuf-c python-toml python3-typogrify libjcat 
+
+    Directory: ./gnome_soft/gcab
+PRGNAM: gcab
+VERSION: ${VERSION:-1.6}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gcab/1.6/gcab-1.6.tar.xz
+
+REQUIRED:  
+
+    Directory: ./gnome_soft/gdm-settings
+PRGNAM: gdm-settings			
+VERSION: ${VERSION:-3.1}	
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}	
+PKGTYPE: ${PKGTYPE:-txz}
+
+    Directory: ./gnome_soft/geary
+PRGNAM: geary
+VERSION: ${VERSION:-44.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/geary/44/geary-44.0.tar.xz
+
+REQUIRED: webkit2gtk4.1 appstream-glib libpeas libytnef gspell folks libstemmer 
+
+    Directory: ./gnome_soft/gedit-plugins
+PRGNAM: gedit-plugins
+VERSION: ${VERSION:-46.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gedit-plugins/46/gedit-plugins-46.0.tar.xz
+
+REQUIRED: gedit 
+
+    Directory: ./gnome_soft/ghex
+PRGNAM: ghex
+VERSION: ${VERSION:-45.beta}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/ghex/45/ghex-45.beta.tar.xz
+
+    Directory: ./gnome_soft/giara
+PRGNAM: giara
+VERSION: ${VERSION:-1.1.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.gnome.org/World/giara/-/archive/1.1.0/giara-1.1.0.tar.gz
+
+REQUIRED: blueprint-compiler python3-praw python3-prawcore python3-websocket-client python3-dateutil python3-beautifulsoup4 python3-mistune 
+
+    Directory: ./gnome_soft/gitg
+PRGNAM: gitg
+VERSION: ${VERSION:-44}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gitg/44/gitg-44.tar.xz
+
+    Directory: ./gnome_soft/gnome-applets
+PRGNAM: gnome-applets
+VERSION: ${VERSION:-3.49.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-applets/3.49/gnome-applets-3.49.1.tar.xz
+
+    Directory: ./gnome_soft/gnome-browser-connector
+PRGNAM: gnome-browser-connector
+VERSION: ${VERSION:-42.1}
+BUILD: ${BUILD:-2}
+TAG: ${TAG:-_gfs}
+PKGTYPE: 
+
+REQUIRED: p7zip jq 
+
+    Directory: ./gnome_soft/gnome-color-manager
+PRGNAM: gnome-color-manager
+VERSION: ${VERSION:-3.36.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}	
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-color-manager/3.36/gnome-color-manager-3.36.0.tar.xz
+
+REQUIRED:  
+
+    Directory: ./gnome_soft/gnome-connections
+PRGNAM: gnome-connections
+VERSION: ${VERSION:-45.rc}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-connections/45/gnome-connections-45.rc.tar.xz
+
+REQUIRED:  
+
+    Directory: ./gnome_soft/gnome-contacts
+PRGNAM: gnome-contacts
+VERSION: ${VERSION:-45.beta}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-contacts/45/gnome-contacts-45.beta.tar.xz
+
+REQUIRED: folks gnome-online-accounts libadwaita libportal 
+
+    Directory: ./gnome_soft/gnome-dictionary
+PRGNAM: gnome-dictionary			
+VERSION: ${VERSION:-41.alpha}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}		
+PKGTYPE: ${PKGTYPE:-txz}
+
+    Directory: ./gnome_soft/gnome-firmware
+PRGNAM: gnome-firmware
+VERSION: ${VERSION:-43.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}	
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.gnome.org/World/gnome-firmware/-/archive/43.2/gnome-firmware-43.2.tar.gz
+
+REQUIRED: gtk4 libadwaita 
+
+    Directory: ./gnome_soft/gnome-initial-setup
+PRGNAM: gnome-initial-setup
+VERSION: ${VERSION:-45.beta}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}	
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-initial-setup/45/gnome-initial-setup-45.beta.tar.xz
+
+REQUIRED: libadwaita webkit2gtk6.0 
+
+    Directory: ./gnome_soft/gnome-keyring
+PRGNAM: gnome-keyring
+VERSION: ${VERSION:-42.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-keyring/42/gnome-keyring-42.1.tar.xz
+
+    Directory: ./gnome_soft/gnome-music
+PRGNAM: gnome-music
+VERSION: ${VERSION:-44.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-music/44/gnome-music-44.0.tar.xz
+
+REQUIRED: gnome-online-accounts grilo grilo-plugins libadwaita libmediaart tracker 
+
+    Directory: ./gnome_soft/gnome-nettool
+PRGNAM: gnome-nettool	
+VERSION: ${VERSION:-42.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-nettool/42/gnome-nettool-42.0.tar.xz
+
+    Directory: ./gnome_soft/gnome-photos
+PRGNAM: gnome-photos
+VERSION: ${VERSION:-44.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-photos/44/gnome-photos-44.0.tar.xz
+
+REQUIRED: geocode-glib gnome-online-accounts libdazzle libportal tracker libwpe xdg-dbus-proxy wpebackend-fdo geoclue2 bubblewrap webkit2gtk4.1 rest uhttpmock libsoup3 totem-pl-parser libhandy libgdata grilo 
+
+    Directory: ./gnome_soft/gnome-software
+PRGNAM: gnome-software
+VERSION: ${VERSION:-45.rc}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-software/45/gnome-software-45.rc.tar.xz
+
+REQUIRED: AppStream flatpak libadwaita 
+
+    Directory: ./gnome_soft/gnome-text-editor
+PRGNAM: gnome-text-editor	
+VERSION: ${VERSION:-45.beta}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-text-editor/45/gnome-text-editor-45.beta.tar.xz
+
+REQUIRED: gtk4 gtksourceview5 libadwaita libspelling cairo 
+
+    Directory: ./gnome_soft/gnome-tour
+PRGNAM: gnome-tour
+VERSION: ${VERSION:-44.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-tour/44/gnome-tour-44.0.tar.xz
+
+REQUIRED:  
+
+    Directory: ./gnome_soft/gnome-user-share
+PRGNAM: gnome-user-share
+VERSION: ${VERSION:-43.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-user-share/43/gnome-user-share-43.0.tar.xz
+
+REQUIRED: nautilus mod_dnssd 
+
+    Directory: ./gnome_soft/gom
+PRGNAM: gom
+VERSION: ${VERSION:-0.4}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gom/0.4/gom-0.4.tar.xz
+
+REQUIRED: gtk-doc 
+
+    Directory: ./gnome_soft/gssdp
+PRGNAM: gssdp
+VERSION: ${VERSION:-1.6.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gssdp/1.6/gssdp-1.6.2.tar.xz
+
+REQUIRED: libsoup3 
+
+    Directory: ./gnome_soft/gst-editing-services
+PRGNAM: gst-editing-services
+VERSION: ${VERSION:-1.20.3}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: 
+DOWNLOAD: https://gstreamer.freedesktop.org/src/gst-editing-services/gst-editing-services-1.20.3.tar.xz
+
+REQUIRED:  
+
+    Directory: ./gnome_soft/gtk-doc
+PRGNAM: gtk-doc
+VERSION: ${VERSION:-1.33.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gtk-doc/1.33/gtk-doc-1.33.2.tar.xz
+
+    Directory: ./gnome_soft/gtk-vnc
+PRGNAM: gtk-vnc
+VERSION: ${VERSION:-1.3.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: 
+DOWNLOAD: https://download.gnome.org/sources/gtk-vnc/1.3/gtk-vnc-1.3.1.tar.xz
+
+    Directory: ./gnome_soft/gtksourceview4
+PRGNAM: gtksourceview4
+VERSION: ${VERSION:-4.8.3}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: 
+DOWNLOAD: https://download.gnome.org/sources/gtksourceview/4.8/gtksourceview-4.8.3.tar.xz
+
+    Directory: ./gnome_soft/hidapi
+PRGNAM: hidapi
+VERSION: ${VERSION:-0.10.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/libusb/hidapi/archive/refs/tags/hidapi-0.10.1.tar.gz
+
+    Directory: ./gnome_soft/http-parser
+PRGNAM: http-parser
+VERSION: ${VERSION:-2.9.4}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/nodejs/http-parser/archive/v2.9.4/http-parser-2.9.4.tar.gz
+
+    Directory: ./gnome_soft/iagno
+PRGNAM: iagno
+VERSION: ${VERSION:-3.38.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/iagno/3.38/iagno-3.38.1.tar.xz
+
+REQUIRED: gsound 
+
+    Directory: ./gnome_soft/ibus-gtk4
+PRGNAM: ibus
+VERSION: ${VERSION:-$(echo $PRGNAM-*.tar.?z | rev | cut -f 3- -d . | cut -f 1 -d - | rev)}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: 
+DOWNLOAD: https://github.com/ibus/ibus/releases/download/1.5.28/ibus-1.5.28.tar.gz
+http://www.unicode.org/Public/emoji/11.0/emoji-test.txt
+https://www.unicode.org/Public/UNIDATA/NamesList.txt
+https://www.unicode.org/Public/UNIDATA/Blocks.txt
+
+    Directory: ./gnome_soft/jpegoptim
+PRGNAM: jpegoptim
+VERSION: ${VERSION:-1.5.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/tjko/jpegoptim/archive/v1.5.1/jpegoptim-1.5.1.tar.gz
+
+    Directory: ./gnome_soft/kooha
+PRGNAM: kooha
+VERSION: ${VERSION:-2.2.3}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/SeaDve/Kooha/releases/download/v2.2.3/kooha-2.2.3.tar.xz
+
+REQUIRED: libadwaita appstream-glib xdg-desktop-portal-gnome 
+
+    Directory: ./gnome_soft/libaccounts-glib
+PRGNAM: libaccounts-glib
+VERSION: ${VERSION:-1.26}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.com/accounts-sso/libaccounts-glib/-/archive/1.26/libaccounts-glib-1.26.tar.gz
+
+    Directory: ./gnome_soft/libbacktrace
+PRGNAM: libbacktrace
+VERSION: ${VERSION:-1.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://reddoglinux.ddns.net/distfile/libbacktrace-1.0.tar.xz
+
+    Directory: ./gnome_soft/libgit2
+PRGNAM: libgit2
+VERSION: ${VERSION:-1.7.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/libgit2/libgit2/archive/v1.7.0/libgit2-1.7.0.tar.gz
+
+    Directory: ./gnome_soft/libgit2-glib
+PRGNAM: libgit2-glib
+VERSION: ${VERSION:-1.2.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/libgit2-glib/1.1/libgit2-glib-1.2.0.tar.xz
+
+REQUIRED: libgit2 
+
+    Directory: ./gnome_soft/libgnome-games-support
+PRGNAM: libgnome-games-support
+VERSION: ${VERSION:-1.8.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/libgnome-games-support/1.8/libgnome-games-support-1.8.2.tar.xz
+
+    Directory: ./gnome_soft/libjcat
+PRGNAM: libjcat
+VERSION: ${VERSION:-0.1.14}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: "txz"
+DOWNLOAD: https://github.com/hughsie/libjcat/archive/0.1.14/libjcat-0.1.14.tar.gz
+
+    Directory: ./gnome_soft/libmanette
+PRGNAM: libmanette
+VERSION: ${VERSION:-0.2.6}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/libmanette/0.2/libmanette-0.2.6.tar.xz
+
+    Directory: ./gnome_soft/libsmbios
+PRGNAM: libsmbios
+VERSION: ${VERSION:-2.4.3}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/dell/libsmbios/archive/v2.4.3/libsmbios-2.4.3.tar.gz
+
+REQUIRED:  
+
+    Directory: ./gnome_soft/libspelling
+PRGNAM: libspelling
+VERSION: ${VERSION:-0.1.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}	
+PKGTYPE: ${PKGTYPE:-txz}
+
+REQUIRED: gtk4 gtksourceview5 enchant 
+
+    Directory: ./gnome_soft/mod_dnssd
+PRGNAM: mod_dnssd
+VERSION: ${VERSION:-0.6}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: http://0pointer.de/lennart/projects/mod_dnssd/mod_dnssd-0.6.tar.gz
+
+    Directory: ./gnome_soft/nautilus-code
+PRGNAM: nautilus-code
+VERSION: ${VERSION:-0.5}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+
+    Directory: ./gnome_soft/nautilus-python
+PRGNAM: nautilus-python
+VERSION: ${VERSION:-4.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/nautilus-python/4.0/nautilus-python-4.0.tar.xz
+
+    Directory: ./gnome_soft/nautilus-sendto
+PRGNAM: nautilus-sendto
+VERSION: ${VERSION:-3.8.6}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/nautilus-sendto/3.8/nautilus-sendto-3.8.6.tar.xz
+
+    Directory: ./gnome_soft/network-manager-applet
+PRGNAM: network-manager-applet
+VERSION: ${VERSION:-1.30.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/network-manager-applet/1.30/network-manager-applet-1.30.0.tar.xz
+
+    Directory: ./gnome_soft/order
+      Directory: ./gnome_soft/order/builded
+    Directory: ./gnome_soft/oxipng
+PRGNAM: oxipng
+VERSION: ${VERSION:-8.0.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+
+    Directory: ./gnome_soft/p7zip
+PRGNAM: p7zip
+VERSION: ${VERSION:-17.04}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: "txz"
+DOWNLOAD: https://github.com/p7zip-project/p7zip/archive/v17.04/p7zip-17.04.tar.gz
+
+    Directory: ./gnome_soft/pngquant
+PRGNAM: pngquant
+VERSION: ${VERSION:-2.9.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://pngquant.org/pngquant-2.9.0-src.tar.gz
+
+    Directory: ./gnome_soft/podcasts
+PRGNAM: podcasts
+VERSION: ${VERSION:-0.5.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.gnome.org/World/podcasts/-/archive/0.5.1/podcasts-0.5.1.tar.gz
+
+REQUIRED: libadwaita appstream-glib gstreamer 
+
+    Directory: ./gnome_soft/protobuf-c
+PRGNAM: protobuf-c
+VERSION: ${VERSION:-1.4.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/protobuf-c/protobuf-c/releases/download/v1.4.1/protobuf-c-1.4.1.tar.gz
+
+    Directory: ./gnome_soft/protobuf3
+PRGNAM: protobuf3
+VERSION: ${VERSION:-3.20.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/google/protobuf/archive/v3.20.1/protobuf-3.20.1.tar.gz
+
+REQUIRED:  
+
+    Directory: ./gnome_soft/pure-protobuf
+PRGNAM: pure-protobuf
+VERSION: ${VERSION:-2.0.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/47/0c/afa77d73b8366a82e865ca5d248bea090e2b4659460a86f9adf0a2522f7d/pure-protobuf-2.0.0.tar.gz
+
+    Directory: ./gnome_soft/python3-argon2-cffi
+PRGNAM: python3-argon2-cffi
+VERSION: ${VERSION:-21.3.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/3f/18/20bb5b6bf55e55d14558b57afc3d4476349ab90e0c43e60f27a7c2187289/argon2-cffi-21.3.0.tar.gz
+
+    Directory: ./gnome_soft/python3-argon2-cffi-bindings
+PRGNAM: python3-argon2-cffi-bindings
+VERSION: ${VERSION:-21.2.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/b9/e9/184b8ccce6683b0aa2fbb7ba5683ea4b9c5763f1356347f1312c32e3c66e/argon2-cffi-bindings-21.2.0.tar.gz
+
+    Directory: ./gnome_soft/python3-beautifulsoup4
+PRGNAM: python3-beautifulsoup4
+VERSION: ${VERSION:-4.10.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://www.crummy.com/software/BeautifulSoup/bs4/download/4.10/beautifulsoup4-4.10.0.tar.gz
+
+    Directory: ./gnome_soft/python3-build
+PRGNAM: python3-build
+VERSION: ${VERSION:-0.10.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/source/b/build/build-0.10.0.tar.gz
+
+    Directory: ./gnome_soft/python3-construct
+PRGNAM: python3-construct
+VERSION: ${VERSION:-2.10.68}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/e0/b7/a4a032e94bcfdff481f2e6fecd472794d9da09f474a2185ed33b2c7cad64/construct-2.10.68.tar.gz
+
+    Directory: ./gnome_soft/python3-dateutil
+PRGNAM: python3-dateutil
+VERSION: ${VERSION:-2.8.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/source/p/python-dateutil/python-dateutil-2.8.2.tar.gz
+
+    Directory: ./gnome_soft/python3-decorator
+PRGNAM: python3-decorator
+VERSION: ${VERSION:-5.1.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/66/0c/8d907af351aa16b42caae42f9d6aa37b900c67308052d10fdce809f8d952/decorator-5.1.1.tar.gz
+
+    Directory: ./gnome_soft/python3-flit_core
+PRGNAM: python3-flit_core
+VERSION: ${VERSION:-3.9.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/source/f/flit_core/flit_core-3.9.0.tar.gz
+
+    Directory: ./gnome_soft/python3-freetype
+PRGNAM: python3-freetype
+VERSION: ${VERSION:-2.4.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/rougier/freetype-py/archive/v2.4.0/freetype-py-2.4.0.tar.gz
+
+    Directory: ./gnome_soft/python3-glm
+PRGNAM: python3-glm
+VERSION: ${VERSION:-2.7.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/4e/4c/ca1a71217c4ac5b0f9ef56681ebe9eae14b5bb0d3ac8bb58f392bad445a5/PyGLM-2.7.0.tar.gz
+
+    Directory: ./gnome_soft/python3-gtts
+PRGNAM: python3-gtts
+VERSION: ${VERSION:-2.3.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/8b/63/fd0d51530696af71b17d3d3d8aacf181ae2040065dd8fe54e85c32ca28ec/gTTS-2.3.2.tar.gz
+
+    Directory: ./gnome_soft/python3-installer
+PRGNAM: python3-installer
+VERSION: ${VERSION:-0.7.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/source/i/installer/installer-0.7.0.tar.gz
+
+    Directory: ./gnome_soft/python3-lark
+PRGNAM: python3-lark
+VERSION: ${VERSION:-1.1.5}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+
+    Directory: ./gnome_soft/python3-mistune
+PRGNAM: python3-mistune
+VERSION: ${VERSION:-2.0.5}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/source/m/mistune/mistune-2.0.5.tar.gz
+
+    Directory: ./gnome_soft/python3-numpy
+PRGNAM: python3-numpy
+VERSION: ${VERSION:-1.22.3}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/numpy/numpy/releases/download/v1.22.3/numpy-1.22.3.tar.gz
+
+    Directory: ./gnome_soft/python3-opengl
+PRGNAM: python3-opengl
+VERSION: ${VERSION:-3.1.6}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/5b/01/f8fd986bc7f456f1a925ee0239f0391838ade92cdb6e5b674ffb8b86cfd6/PyOpenGL-3.1.6.tar.gz
+
+    Directory: ./gnome_soft/python3-pep517
+PRGNAM: python3-pep517
+VERSION: ${VERSION:-0.12.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/0a/65/6e656d49c679136edfba25f25791f45ffe1ea4ae2ec1c59fe9c35e061cd1/pep517-0.12.0.tar.gz
+
+    Directory: ./gnome_soft/python3-praw
+PRGNAM: python3-praw
+VERSION: ${VERSION:-7.6.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/praw-dev/praw/archive/v7.6.1/praw-7.6.1.tar.gz
+
+    Directory: ./gnome_soft/python3-prawcore
+PRGNAM: python3-prawcore
+VERSION: ${VERSION:-2.3.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/ed/85/13e76be737f3159514cce609b29e95499ba6d2cfa0b88761bab318b5f63e/prawcore-2.3.0.tar.gz
+
+    Directory: ./gnome_soft/python3-protobuf
+PRGNAM: python3-protobuf
+VERSION: ${VERSION:-4.21.12}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/ba/dd/f8a01b146bf45ac12a829bbc599e6590aa6a6849ace7d28c42d77041d6ab/protobuf-4.21.12.tar.gz
+
+    Directory: ./gnome_soft/python3-pycryptodomex
+PRGNAM: python3-pycryptodomex
+VERSION: ${VERSION:-3.18.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/40/92/efd675dba957315d705f792b28d900bddc36f39252f6713961b4221ee9af/pycryptodomex-3.18.0.tar.gz
+
+    Directory: ./gnome_soft/python3-pykeepass
+PRGNAM: python3-pykeepass
+VERSION: ${VERSION:-4.0.5}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/85/60/2e033401578976102e5a10b1abde5d0900cb4879579cb8c3c16bdc9cdeea/pykeepass-4.0.5.tar.gz
+
+    Directory: ./gnome_soft/python3-pyotp
+PRGNAM: python3-pyotp
+VERSION: ${VERSION:-2.8.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/7e/f9/4c2ec78572a2d25f669220b8b9700c1133905ff6af9bf93c010778e82c65/pyotp-2.8.0.tar.gz
+
+    Directory: ./gnome_soft/python3-pypandoc
+PRGNAM: python3-pypandoc
+VERSION: ${VERSION:-1.11}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/c3/14/33725e5e7b9c36679c04d200d10e48d6da90d8d91420248a9d11263feb1c/pypandoc-1.11.tar.gz
+
+    Directory: ./gnome_soft/python3-scour
+PRGNAM: python3-scour
+VERSION: ${VERSION:-0.35}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/scour-project/scour/archive/v0.35/scour-0.35.tar.gz
+
+    Directory: ./gnome_soft/python3-validators
+PRGNAM: python3-validators
+VERSION: ${VERSION:-0.20.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/95/14/ed0af6865d378cfc3c504aed0d278a890cbefb2f1934bf2dbe92ecf9d6b1/validators-0.20.0.tar.gz
+
+    Directory: ./gnome_soft/python3-websocket-client
+PRGNAM: python3-websocket-client
+VERSION: ${VERSION:-1.4.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/liris/websocket-client/archive/v1.4.2/websocket-client-1.4.2.tar.gz
+
+    Directory: ./gnome_soft/python3-wheel
+PRGNAM: python3-wheel
+VERSION: ${VERSION:-0.40.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/fc/ef/0335f7217dd1e8096a9e8383e1d472aa14717878ffe07c4772e68b6e8735/wheel-0.40.0.tar.gz
+
+    Directory: ./gnome_soft/python3-zxcvbn-python
+PRGNAM: python3-zxcvbn-python
+VERSION: ${VERSION:-4.4.28}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/54/67/c6712608c99e7720598e769b8fb09ebd202119785adad0bbce25d330243c/zxcvbn-4.4.28.tar.gz
+
+    Directory: ./gnome_soft/secrets
+PRGNAM: secrets
+VERSION: ${VERSION:-7.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.gnome.org/World/secrets/-/archive/7.0/secrets-7.0.tar.gz
+
+REQUIRED: python3-argon2-cffi-bindings python3-argon2-cffi python3-build python3-construct python3-dateutil python3-decorator python3-flit_core python3-installer python3-pep517 python3-pycryptodomex python3-pykeepass python3-pyotp python3-validators python3-zxcvbn-python 
+
+    Directory: ./gnome_soft/sofia-sip
+PRGNAM: sofia-sip
+VERSION: ${VERSION:-1.13.16}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: "txz"
+DOWNLOAD: https://github.com/freeswitch/sofia-sip/archive/v1.13.14/sofia-sip-1.13.16.tar.gz
+
+    Directory: ./gnome_soft/sushi
+PRGNAM: sushi
+VERSION: ${VERSION:-45.alpha.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/sushi/45/sushi-45.alpha.2.tar.xz
+
+REQUIRED:  
+
+    Directory: ./gnome_soft/text-engine
+PRGNAM: text-engine
+VERSION: ${VERSION:-0.1.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/mjakeman/text-engine/archive/v0.1.1/text-engine-0.1.1.tar.gz
+
+    Directory: ./gnome_soft/totem
+PRGNAM: totem
+VERSION: ${VERSION:-43.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/totem/43/totem-43.0.tar.xz
+
+    Directory: ./gnome_soft/transmission
+PRGNAM: transmission
+VERSION: ${VERSION:-3.00}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/transmission/transmission-releases/raw/master/transmission-3.00.tar.xz
+
+    Directory: ./gnome_soft/vinagre
+PRGNAM: vinagre
+VERSION: ${VERSION:-3.22.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/vinagre/3.22/vinagre-3.22.0.tar.xz
+
+    Directory: ./gnome_soft/zbar
+PRGNAM: zbar
+VERSION: ${VERSION:-0.23.90}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://linuxtv.org/downloads/zbar/zbar-0.23.90.tar.gz
+
+  Directory: ./main_gnome
+    Directory: ./main_gnome/AppStream
+PRGNAM: AppStream
+VERSION: ${VERSION:-0.16.3}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: 
+
+REQUIRED: libxmlb 
+
+    Directory: ./main_gnome/appstream-glib
+PRGNAM: appstream-glib
+VERSION: ${VERSION:-0.8.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/hughsie/appstream-glib/archive/appstream_glib_0_8_2/appstream-glib-appstream_glib_0_8_2.tar.gz
+
+REQUIRED: gcab 
+
+    Directory: ./main_gnome/avahi
+PRGNAM: avahi
+VERSION: ${VERSION:-0.8}
+BUILD: ${BUILD:-7}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: http://avahi.org/download/avahi-0.8.tar.gz
+
+      Directory: ./main_gnome/avahi/patches
+    Directory: ./main_gnome/blocaled
+PRGNAM: blocaled
+VERSION: ${VERSION:-0.5}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/lfs-book/blocaled/releases/download/v0.4/blocaled-0.5.tar.xz
+
+REQUIRED: libdaemon 
+
+    Directory: ./main_gnome/bubblewrap
+PRGNAM: bubblewrap
+VERSION: ${VERSION:-0.8.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/containers/bubblewrap/releases/download/v0.8.0/bubblewrap-0.8.0.tar.xz
+
+REQUIRED:  
+
+    Directory: ./main_gnome/colord
+PRGNAM: colord
+VERSION: ${VERSION:-1.4.6}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://www.freedesktop.org/software/colord/releases/colord-1.4.6.tar.xz
+
+REQUIRED: libgusb 
+
+    Directory: ./main_gnome/colord-gtk
+PRGNAM: colord-gtk
+VERSION: ${VERSION:-0.3.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: http://www.freedesktop.org/software/colord/releases/colord-gtk-0.3.0.tar.xz
+
+REQUIRED: colord 
+
+    Directory: ./main_gnome/dav1d
+PRGNAM: dav1d
+VERSION: ${VERSION:-1.2.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: http://downloads.videolan.org/pub/videolan/dav1d/1.2.1/dav1d-1.2.1.tar.xz
+
+    Directory: ./main_gnome/evolution-data-server
+PRGNAM: evolution-data-server
+VERSION: ${VERSION:-3.49.3}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/evolution-data-server/3.49/evolution-data-server-3.49.3.tar.xz
+
+REQUIRED: gnome-online-accounts libgweather4 libgdata webkit2gtk6.0 libwpe xdg-dbus-proxy wpebackend-fdo geoclue2 bubblewrap rest uhttpmock geocode-glib 
+
+    Directory: ./main_gnome/flatpak
+PRGNAM: flatpak
+VERSION: ${VERSION:-1.15.4}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/flatpak/flatpak/releases/download/1.15.4/flatpak-1.15.4.tar.xz
+
+REQUIRED: xdg-desktop-portal-gtk gcab appstream-glib libostree bubblewrap AppStream 
+
+    Directory: ./main_gnome/gcr4
+PRGNAM: gcr4
+VERSION: ${VERSION:-4.1.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gcr/4.1/gcr-4.1.0.tar.xz
+
+    Directory: ./main_gnome/gdm
+PRGNAM: gdm
+VERSION: ${VERSION:-45.beta}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gdm/44/gdm-45.beta.tar.xz
+
+REQUIRED: blocaled gnome-session gnome-shell libwpe xdg-dbus-proxy wpebackend-fdo geoclue2 bubblewrap geocode-glib libgusb webkit2gtk4.1 rest libgweather gnome-desktop colord gnome-online-accounts uhttpmock xvfb-run gnome-settings-daemon cups-pk-helper libhandy gsound gnome-bluetooth colord-gtk libgdata libgweather4 mutter gnome-control-center gnome-autoar evolution-data-server libdaemon 
+
+    Directory: ./main_gnome/geoclue2
+PRGNAM: geoclue2
+VERSION: ${VERSION:-2.7.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.freedesktop.org/geoclue/geoclue/-/archive/2.7.0/geoclue-2.7.0.tar.gz
+
+REQUIRED:  
+
+    Directory: ./main_gnome/geocode-glib
+PRGNAM: geocode-glib
+VERSION: ${VERSION:-3.26.4}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.4.tar.xz
+
+REQUIRED: libsoup3 
+
+    Directory: ./main_gnome/gnome-autoar
+PRGNAM: gnome-autoar
+VERSION: ${VERSION:-0.4.4}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-autoar/0.4/gnome-autoar-0.4.4.tar.xz
+
+REQUIRED:  
+
+    Directory: ./main_gnome/gnome-backgrounds
+PRGNAM: gnome-backgrounds
+VERSION: ${VERSION:-45.rc}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-backgrounds/45/gnome-backgrounds-45.rc.tar.xz
+
+REQUIRED:  
+
+    Directory: ./main_gnome/gnome-bluetooth
+PRGNAM: gnome-bluetooth
+VERSION: ${VERSION:-42.6}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-bluetooth/42/gnome-bluetooth-42.6.tar.xz
+
+REQUIRED: gsound libadwaita  upower gnome-control-center gnome-shell 
+
+    Directory: ./main_gnome/gnome-console
+PRGNAM: gnome-console
+VERSION: ${VERSION:-45.beta}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-console/45/gnome-console-45.beta.tar.xz
+
+REQUIRED: vte-gtk4 libadwaita 
+
+    Directory: ./main_gnome/gnome-control-center
+PRGNAM: gnome-control-center
+VERSION: ${VERSION:-45.rc}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-control-center/45/gnome-control-center-45.rc.tar.xz
+
+REQUIRED: colord-gtk gnome-bluetooth gnome-online-accounts gnome-settings-daemon gsound cups-pk-helper rest libnma-gtk4 webp-pixbuf-loader xdg-desktop-portal-gnome libadwaita libwpe geocode-glib libgusb xdg-dbus-proxy wpebackend-fdo geoclue2 bubblewrap libgweather4 gnome-desktop colord webkit2gtk4.1 libhandy gnome-remote-desktop rygel gnome-user-share gnome-color-manager libgnomekbd 
+
+    Directory: ./main_gnome/gnome-desktop
+PRGNAM: gnome-desktop
+VERSION: ${VERSION:-44.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-desktop/44/gnome-desktop-44.0.tar.xz
+
+REQUIRED:  
+
+    Directory: ./main_gnome/gnome-disk-utility
+PRGNAM: gnome-disk-utility		
+VERSION: ${VERSION:-44.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}	
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-disk-utility/44/gnome-disk-utility-44.0.tar.xz
+
+REQUIRED: libhandy 
+
+    Directory: ./main_gnome/gnome-menus
+PRGNAM: gnome-menus
+VERSION: ${VERSION:-3.36.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-menus/3.36/gnome-menus-3.36.0.tar.xz
+
+    Directory: ./main_gnome/gnome-online-accounts
+PRGNAM: gnome-online-accounts
+VERSION: ${VERSION:-3.48.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-online-accounts/3.48/gnome-online-accounts-3.48.0.tar.xz
+
+REQUIRED: rest webkit2gtk4.1 libwpe xdg-dbus-proxy wpebackend-fdo geoclue2 bubblewrap 
+
+    Directory: ./main_gnome/gnome-panel
+PRGNAM: gnome-panel
+VERSION: ${VERSION:-3.49.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}	
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-panel/3.49/gnome-panel-3.49.1.tar.xz
+
+    Directory: ./main_gnome/gnome-session
+PRGNAM: gnome-session
+VERSION: ${VERSION:-44.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-session/44/gnome-session-44.0.tar.xz
+
+REQUIRED: gnome-desktop 
+
+    Directory: ./main_gnome/gnome-settings-daemon
+PRGNAM: gnome-settings-daemon
+VERSION: ${VERSION:-45.beta}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-settings-daemon/45/gnome-settings-daemon-45.beta.tar.xz
+
+REQUIRED: colord geoclue2 gnome-desktop libgweather4 gcr4 geocode-glib libgusb 
+
+    Directory: ./main_gnome/gnome-shell
+PRGNAM: gnome-shell
+VERSION: ${VERSION:-45.beta.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-shell/45/gnome-shell-45.beta.1.tar.xz
+
+REQUIRED: evolution-data-server gnome-autoar gnome-bluetooth gnome-control-center mutter libwpe xdg-dbus-proxy wpebackend-fdo geoclue2 bubblewrap geocode-glib libgusb webkit2gtk4.1 rest gnome-desktop colord gnome-online-accounts uhttpmock xvfb-run gnome-settings-daemon cups-pk-helper libhandy gsound colord-gtk libgdata libgweather4 
+
+    Directory: ./main_gnome/gnome-shell-extensions
+PRGNAM: gnome-shell-extensions	
+VERSION: ${VERSION:-45.beta}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}	
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-shell-extensions/45/gnome-shell-extensions-45.beta.tar.xz
+
+REQUIRED: gnome-menus 
+
+    Directory: ./main_gnome/gnome-terminal
+PRGNAM: gnome-terminal
+VERSION: ${VERSION:-3.49.92}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.gnome.org/GNOME/gnome-terminal/-/archive/3.49.92/gnome-terminal-3.49.92.tar.gz
+
+REQUIRED: gnome-shell nautilus vte-gtk4 libwpe xdg-dbus-proxy wpebackend-fdo geoclue2 bubblewrap geocode-glib libgusb webkit2gtk4.1 rest gnome-desktop colord gnome-online-accounts uhttpmock xvfb-run gnome-settings-daemon cups-pk-helper libhandy gsound gnome-bluetooth colord-gtk libgdata libgweather4 tracker libportal gnome-autoar mutter gnome-control-center evolution-data-server 
+
+    Directory: ./main_gnome/gnome-tweaks
+PRGNAM: gnome-tweaks
+VERSION: ${VERSION:-45.alpha}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-tweaks/42/gnome-tweaks-42.beta.tar.xz
+
+REQUIRED:  
+
+    Directory: ./main_gnome/gnome-weather
+PRGNAM: gnome-weather
+VERSION: ${VERSION:-45.alpha}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}	
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-weather/45/gnome-weather-45.alpha.tar.xz
+
+REQUIRED: geocode-glib libgweather4 libhandy geoclue2 
+
+    Directory: ./main_gnome/gsound
+PRGNAM: gsound
+VERSION: ${VERSION:-1.0.3}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gsound/1.0/gsound-1.0.3.tar.xz
+
+REQUIRED:  
+
+    Directory: ./main_gnome/gtksourceview5
+PRGNAM: gtksourceview5
+VERSION: ${VERSION:-5.9.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gtksourceview/5.8/gtksourceview-5.9.0.tar.xz
+
+REQUIRED:  
+
+    Directory: ./main_gnome/jq
+PRGNAM: jq
+VERSION: ${VERSION:-1.6}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/stedolan/jq/releases/download/jq-1.6/jq-1.6.tar.gz
+
+REQUIRED:  
+
+    Directory: ./main_gnome/libadwaita
+PRGNAM: libadwaita
+VERSION: ${VERSION:-1.4.rc}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: 
+
+    Directory: ./main_gnome/libaom
+PRGNAM: libaom
+VERSION: ${VERSION:-3.6.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/jbeich/aom/archive/v3.6.1/aom-3.6.1.tar.gz
+
+    Directory: ./main_gnome/libavif
+PRGNAM: libavif
+VERSION: ${VERSION:-0.11.1}
+BUILD: ${BUILD:-2}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/AOMediaCodec/libavif/archive/v0.11.1/libavif-0.11.1.tar.gz
+
+    Directory: ./main_gnome/libcloudproviders
+PRGNAM: libcloudproviders
+VERSION: ${VERSION:-0.3.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/libcloudproviders/0.3/libcloudproviders-0.3.2.tar.xz
+
+REQUIRED:  
+
+    Directory: ./main_gnome/libdaemon
+PRGNAM: libdaemon
+VERSION: ${VERSION:-0.14}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: http://0pointer.de/lennart/projects/libdaemon/libdaemon-0.14.tar.gz
+
+REQUIRED:  
+
+    Directory: ./main_gnome/libei
+PRGNAM: libei
+VERSION: ${VERSION:-1.0.901}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.freedesktop.org/libinput/libei/-/archive/1.0.0/libei-1.0.901.tar.gz
+
+REQUIRED: python3-attrs 
+
+    Directory: ./main_gnome/libgdata
+PRGNAM: libgdata
+VERSION: ${VERSION:-0.18.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/libgdata/0.18/libgdata-0.18.1.tar.xz
+
+REQUIRED: gnome-online-accounts libwpe xdg-dbus-proxy wpebackend-fdo geoclue2 bubblewrap webkit2gtk4.1 rest uhttpmock 
+
+    Directory: ./main_gnome/libgusb
+PRGNAM: libgusb
+VERSION: ${VERSION:-0.4.6}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/hughsie/libgusb/releases/download/0.4.6/libgusb-0.4.6.tar.xz
+
+REQUIRED:  
+
+    Directory: ./main_gnome/libgweather4
+PRGNAM: libgweather4
+VERSION: ${VERSION:-4.3.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/libgweather/4.3/libgweather-4.3.2.tar.xz
+
+REQUIRED: geocode-glib 
+
+    Directory: ./main_gnome/libnma-gtk4
+PRGNAM: libnma-gtk4
+VERSION: ${VERSION:-1.10.6}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: 
+
+    Directory: ./main_gnome/libostree
+PRGNAM: libostree
+VERSION: ${VERSION:-2023.4}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/ostreedev/ostree/releases/download/v2023.4/libostree-2023.4.tar.xz
+
+    Directory: ./main_gnome/libportal
+PRGNAM: libportal
+VERSION: ${VERSION:-0.6}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/flatpak/libportal/releases/download/0.6/libportal-0.6.tar.xz
+
+REQUIRED:  
+
+    Directory: ./main_gnome/librest
+PRGNAM: librest
+VERSION: ${VERSION:-0.9.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/rest/0.9/rest-0.9.1.tar.xz
+
+REQUIRED: gtksourceview5 
+
+    Directory: ./main_gnome/libstemmer
+PRGNAM: libstemmer
+VERSION: ${VERSION:-20140325}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://dev.gentoo.org/~graaff/libstemmer_c-20140325.tgz
+
+    Directory: ./main_gnome/libwpe
+PRGNAM: libwpe
+VERSION: ${VERSION:-1.15.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://wpewebkit.org/releases/libwpe-1.15.1.tar.xz
+
+REQUIRED:  
+
+    Directory: ./main_gnome/libxmlb
+PRGNAM: libxmlb
+VERSION: ${VERSION:-0.3.14}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/hughsie/libxmlb/archive/0.3.12/libxmlb-0.3.14.tar.gz
+
+REQUIRED:  
+
+    Directory: ./main_gnome/libyuv
+PRGNAM: libyuv
+VERSION: ${VERSION:-20230619_c0031cf}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+
+    Directory: ./main_gnome/lxml
+PRGNAM: lxml
+VERSION: ${VERSION:-4.9.3}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/lxml/lxml/releases/download/lxml-4.9.3/lxml-4.9.3.tar.gz
+
+REQUIRED: python-toml python2-setuptools-scm functools-lru-cache python3-webencodings python2-soupsieve python3-soupsieve html5lib python2-BeautifulSoup4 BeautifulSoup4 
+
+    Directory: ./main_gnome/malcontent
+PRGNAM: malcontent
+VERSION: ${VERSION:-0.11.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.freedesktop.org/pwithnall/malcontent/-/archive/0.11.1/malcontent-0.11.1.tar.gz
+
+    Directory: ./main_gnome/mutter
+PRGNAM: mutter
+VERSION: ${VERSION:-45.beta.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/mutter/45/mutter-45.beta.1.tar.xz
+
+REQUIRED: gnome-settings-daemon xvfb-run gnome-shell geocode-glib libgusb libgweather4 gnome-desktop geoclue2 colord libei 
+
+    Directory: ./main_gnome/nautilus
+PRGNAM: nautilus
+VERSION: ${VERSION:-45.rc}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}	
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/nautilus/45/nautilus-45.rc.tar.xz
+
+REQUIRED: gnome-autoar gnome-desktop libportal tracker libcloudproviders libhandy 
+
+    Directory: ./main_gnome/order
+    Directory: ./main_gnome/python3-attrs
+PRGNAM: python3-attrs
+VERSION: ${VERSION:-21.4.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://files.pythonhosted.org/packages/source/a/attrs/attrs-21.4.0.tar.gz
+
+    Directory: ./main_gnome/snapshot
+PRGNAM: snapshot
+VERSION: ${VERSION:-45.beta}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}	
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/snapshot/45/snapshot-45.beta.tar.xz
+
+    Directory: ./main_gnome/svt-av1
+PRGNAM: svt-av1
+VERSION: ${VERSION:-1.6.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v1.6.0/SVT-AV1-v1.6.0.tar.gz
+
+    Directory: ./main_gnome/tecla
+PRGNAM: tecla
+VERSION: ${VERSION:-45.beta}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}	
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/tecla/45/tecla-45.beta.tar.xz
+
+REQUIRED: gtk4 libadwaita 
+
+    Directory: ./main_gnome/tracker
+PRGNAM: tracker
+VERSION: ${VERSION:-3.6.beta}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/tracker/3.6/tracker-3.6.beta.tar.xz
+
+REQUIRED:  
+
+    Directory: ./main_gnome/unifdef
+PRGNAM: unifdef
+VERSION: ${VERSION:-2.12}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://dotat.at/prog/unifdef/unifdef-2.12.tar.xz
+
+    Directory: ./main_gnome/vte-gtk4
+PRGNAM: vte-gtk4
+VERSION: ${VERSION:-0.73.99}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/vte/0.73/vte-0.73.99.tar.xz
+
+REQUIRED:  
+
+    Directory: ./main_gnome/webkit2gtk4.1
+PRGNAM: webkit2gtk4.1
+VERSION: ${VERSION:-2.40.4}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://webkitgtk.org/releases/webkitgtk-2.40.4.tar.xz
+
+REQUIRED: bubblewrap geoclue2 wpebackend-fdo xdg-dbus-proxy 
+
+    Directory: ./main_gnome/webkit2gtk6.0
+PRGNAM: webkit2gtk6.0
+VERSION: ${VERSION:-2.40.5}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://webkitgtk.org/releases/webkitgtk-2.40.5.tar.xz
+
+REQUIRED: libwpe libsoup3 xdg-dbus-proxy wpebackend-fdo geoclue2 bubblewrap libaom dav1d libavif libyuv 
+
+    Directory: ./main_gnome/webp-pixbuf-loader
+PRGNAM: webp-pixbuf-loader
+VERSION: ${VERSION:-0.2.4}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/aruiz/webp-pixbuf-loader/archive/0.2.4/webp-pixbuf-loader-0.2.4.tar.gz
+
+REQUIRED:  
+
+    Directory: ./main_gnome/wpebackend-fdo
+PRGNAM: wpebackend-fdo
+VERSION: ${VERSION:-1.14.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://wpewebkit.org/releases/wpebackend-fdo-1.14.2.tar.xz
+
+REQUIRED: libwpe 
+
+    Directory: ./main_gnome/xdg-dbus-proxy
+PRGNAM: xdg-dbus-proxy
+VERSION: ${VERSION:-0.1.5}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://github.com/flatpak/xdg-dbus-proxy/releases/download/0.1.5/xdg-dbus-proxy-0.1.5.tar.xz
+
+REQUIRED:  
+
+    Directory: ./main_gnome/xvfb-run
+PRGNAM: xvfb-run
+VERSION: ${VERSION:-21.1.7}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: "txz"
+DOWNLOAD: http://ftp.us.debian.org/debian/pool/main/x/xorg-server/xvfb_21.1.7-3_i386.deb
+
+REQUIRED:  
+
+    Directory: ./main_gnome/yelp
+PRGNAM: yelp
+VERSION: ${VERSION:-42.2}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/yelp/42/yelp-42.2.tar.xz
+
+REQUIRED: yelp-tools webkit2gtk4.1 python-toml python2-setuptools-scm functools-lru-cache python3-webencodings python2-soupsieve python3-soupsieve html5lib python2-BeautifulSoup4 BeautifulSoup4 libwpe lxml xdg-dbus-proxy wpebackend-fdo geoclue2 bubblewrap yelp-xsl libhandy 
+
+    Directory: ./main_gnome/yelp-tools
+PRGNAM: yelp-tools
+VERSION: ${VERSION:-42.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/yelp-tools/42/yelp-tools-42.1.tar.xz
+
+REQUIRED: yelp-xsl 
+
+    Directory: ./main_gnome/yelp-xsl
+PRGNAM: yelp-xsl
+VERSION: ${VERSION:-42.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/yelp-xsl/42/yelp-xsl-42.1.tar.xz
+
+REQUIRED: lxml 
+
+  Directory: ./proxeiro
+  Directory: ./removed
+    Directory: ./removed/amtk
+PRGNAM: amtk
+VERSION: ${VERSION:-5.6.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/amtk/5.6/amtk-5.6.1.tar.xz
+
+    Directory: ./removed/cheese
+PRGNAM: cheese
+VERSION: ${VERSION:-43.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/cheese/43/cheese-43.0.tar.xz
+
+REQUIRED: clutter-gtk clutter-gst gnome-desktop gnome-video-effects 
+
+    Directory: ./removed/clutter
+PRGNAM: clutter
+VERSION: ${VERSION:-1.26.4}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/clutter/1.26/clutter-1.26.4.tar.xz
+
+REQUIRED: cogl 
+
+    Directory: ./removed/clutter-gst
+PRGNAM: clutter-gst
+VERSION: ${VERSION:-3.0.27}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/clutter-gst/3.0/clutter-gst-3.0.27.tar.xz
+
+REQUIRED: clutter 
+
+    Directory: ./removed/clutter-gtk
+PRGNAM: clutter-gtk
+VERSION: ${VERSION:-1.8.4}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/clutter-gtk/1.8/clutter-gtk-1.8.4.tar.xz
+
+REQUIRED: clutter 
+
+    Directory: ./removed/gnome-video-effects
+PRGNAM: gnome-video-effects
+VERSION: ${VERSION:-0.6.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gnome-video-effects/0.6/gnome-video-effects-0.6.0.tar.xz
+
+REQUIRED:  
+
+    Directory: ./removed/gtk4
+PRGNAM: 
+VERSION: ${VERSION:-4.12.1}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gtk/4.12/gtk-4.12.1.tar.xz
+
+    Directory: ./removed/libgnomekbd
+PRGNAM: libgnomekbd
+VERSION: ${VERSION:-3.28.1}
+BUILD: ${BUILD:-2}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/libgnomekbd/3.28/libgnomekbd-3.28.1.tar.xz
+
+    Directory: ./removed/libhandy
+PRGNAM: libhandy
+VERSION: ${VERSION:-1.8.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/libhandy/1.8/libhandy-1.8.0.tar.xz
+
+    Directory: ./removed/libwnck3
+PRGNAM: 
+VERSION: ${VERSION:-43.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/libwnck/43/libwnck-43.0.tar.xz
+
+    Directory: ./removed/lua54
+PRGNAM: lua54
+VERSION: ${VERSION:-5.4.4}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-_gfs}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: http://www.lua.org/ftp/lua-5.4.4.tar.gz
+
+    Directory: ./removed/order
+    Directory: ./removed/upower
+PRGNAM: 
+VERSION: ${VERSION:-0.99.20}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-}
+PKGTYPE: ${PKGTYPE:-txz}
+${PKGTYPE:-txz}
+DOWNLOAD: https://gitlab.freedesktop.org/upower/upower/-/archive/v0.99.20/upower-v0.99.20.tar.gz
+
+    Directory: ./removed/vala
+PRGNAM: 
+VERSION: ${VERSION:-0.56.4}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/vala/0.56/vala-0.56.4.tar.xz
+

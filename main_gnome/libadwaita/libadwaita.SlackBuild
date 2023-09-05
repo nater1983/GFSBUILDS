@@ -37,7 +37,7 @@
 #
 
 PRGNAM=libadwaita
-VERSION=${VERSION:-1.4.beta}
+VERSION=${VERSION:-1.4.rc}
 BUILD=${BUILD:-1}
 # 'make' can run jobs in parallel for added speed. The number should be higher
 # than the number of cores/virtual CPU's in your system:
@@ -60,7 +60,7 @@ OUTPUT=${OUTPUT:-/tmp}
 
 # If you want automatic download to work, supply a URL for 'SRCURL' below:
 SOURCE[0]="$SRCDIR/${PRGNAM}-${VERSION}.tar.gz"
-SRCURL[0]="https://download.gnome.org/sources/libadwaita/1.4/libadwaita-1.4.beta.tar.xz"
+SRCURL[0]="https://download.gnome.org/sources/libadwaita/1.4/libadwaita-1.4.rc.tar.xz"
 
 # Use the src_checkout() function if no downloadable tarball exists.
 # Check out sources from SVN/GIT and create a tarball of them.

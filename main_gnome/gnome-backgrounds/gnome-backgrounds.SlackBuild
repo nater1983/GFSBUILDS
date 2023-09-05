@@ -23,12 +23,12 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-wget -c https://download.gnome.org/sources/gnome-backgrounds/45/gnome-backgrounds-45.beta.tar.xz
+wget -c https://download.gnome.org/sources/gnome-backgrounds/45/gnome-backgrounds-45.rc.tar.xz
 
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=gnome-backgrounds
-VERSION=${VERSION:-45.beta}
+VERSION=${VERSION:-45.rc}
 BUILD=${BUILD:-1}
 ARCH=${ARCH:-noarch}
 TAG=${TAG:-_gfs}

@@ -21,16 +21,14 @@
 #  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
 wget -c https://github.com/p7zip-project/p7zip/archive/v17.04/p7zip-17.04.tar.gz
-
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=p7zip
 VERSION=${VERSION:-17.04}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_gfs}
-PKGTYPE=${PKGTYPE:-txz}
+PKGTYPE="txz"
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -38,13 +36,17 @@ if [ -z "$ARCH" ]; then
     arm*) ARCH=arm ;;
        *) ARCH=$( uname -m ) ;;
   esac
+fi
 
+# If the variable PRINT_PACKAGE_NAME is set, then this script will report what
+# the name of the created package would be, and then exit. This information
+# could be useful to other scripts.
 if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   echo "$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE"
   exit 0
 fi
 
-TMP=${TMP:-/tmp/gfs}
+TMP=${TMP:-/tmp/SBo}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 

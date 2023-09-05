@@ -23,7 +23,7 @@ wget -c https://download.gnome.org/sources/librsvg/2.56/librsvg-2.56.93.tar.xz
 
 cd $(dirname $0) ; CWD=$(pwd)
 
-PKGNAM=librsvg
+PRGNAM=librsvg
 VERSION=${VERSION:-2.56.93}
 BUILD=${BUILD:-1}
 TAG=${TAG:-}
@@ -38,7 +38,7 @@ if [ -z "$ARCH" ]; then
 fi
 
 if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
-  echo "$PKGNAM-$VERSION-$ARCH-$BUILD.txz"
+  echo "$PRGNAM-$VERSION-$ARCH-$BUILD.txz"
   exit 0
 fi
 
@@ -60,16 +60,16 @@ else
 fi
 
 TMP=${TMP:-/tmp/gfs}
-PKG=$TMP/package-$PKGNAM
+PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
 rm -rf $PKG
 mkdir -p $TMP $PKG
 
 cd $TMP
-rm -rf $PKGNAM-$VERSION
-tar xvf $CWD/$PKGNAM-$VERSION.tar.?z || exit 1
-cd $PKGNAM-$VERSION || exit 1
+rm -rf $PRGNAM-$VERSION
+tar xvf $CWD/$PRGNAM-$VERSION.tar.?z || exit 1
+cd $PRGNAM-$VERSION || exit 1
 chown -R root:root .
 find . \
   \( -perm 777 -o -perm 775 -o -perm 711 -o -perm 555 -o -perm 511 \) \
@@ -84,7 +84,7 @@ CFLAGS="$SLKCFLAGS" \
   --sysconfdir=/etc \
   --localstatedir=/var/lib \
   --mandir=/usr/man \
-  --docdir=/usr/doc/$PKGNAM-$VERSION \
+  --docdir=/usr/doc/$PRGNAM-$VERSION \
   --enable-vala=yes \
   --enable-static=no \
   --build=$ARCH-slackware-linux || exit 1
@@ -117,10 +117,10 @@ if [ -d $PKG/usr/man ]; then
   )
 fi
 
-mkdir -p $PKG/usr/doc/$PKGNAM-$VERSION
+mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a  AUTHORS COPYING* NEWS README* TODO \
-  $PKG/usr/doc/$PKGNAM-$VERSION
-cat $CWD/$PKGNAM.SlackBuild > $PKG/usr/doc/$PKGNAM-$VERSION/$PKGNAM.SlackBuild
+  $PKG/usr/doc/$PRGNAM-$VERSION
+cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 ( cd $PKG/usr/doc/librsvg-$VERSION ; ln -s /usr/share/gtk-doc/html/rsvg-2.0/ html )
 
 # If there's a ChangeLog, installing at least part of the recent history
@@ -136,4 +136,4 @@ if [ -f $CWD/slack-required ]; then cat $CWD/slack-required > $PKG/install/slack
 cat $CWD/slack-desc > $PKG/install/slack-desc
 
 cd $PKG
-/sbin/makepkg -l y -c n $OUTPUT/$PKGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE
+/sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE

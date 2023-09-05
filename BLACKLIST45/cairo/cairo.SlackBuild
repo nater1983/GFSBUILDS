@@ -24,7 +24,7 @@ wget -c https://gitlab.freedesktop.org/cairo/cairo/-/archive/1.17.8/cairo-1.17.8
 
 cd $(dirname $0) ; CWD=$(pwd)
 
-PKGNAM=cairo
+PRGNAM=cairo
 VERSION=${VERSION:-1.17.8}
 BUILD=${BUILD:-1}
 TAG=${TAG:-}
@@ -39,12 +39,12 @@ if [ -z "$ARCH" ]; then
 fi
 
 if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
-  echo "$PKGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE"
+  echo "$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE"
   exit 0
 fi
 
 TMP=${TMP:-/tmp/gfs}
-PKG=$TMP/package-$PKGNAM
+PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
 if [ "$ARCH" = "i586" ]; then
@@ -69,9 +69,9 @@ set -e
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
-rm -rf $PKGNAM-$VERSION
-tar xvf $CWD/$PKGNAM-$VERSION.tar.?z || exit 1
-cd $PKGNAM-$VERSION || exit 1
+rm -rf $PRGNAM-$VERSION
+tar xvf $CWD/$PRGNAM-$VERSION.tar.?z || exit 1
+cd $PRGNAM-$VERSION || exit 1
 patch -Np1 -i $CWD/cairo-xlib-endianness.patch
 patch -Np1 -i $CWD/cairo-get_bitmap_surface-bsc1036789-CVE-2017-7475.diff
 patch -Np1 -i $CWD/cairo-1.17.8-fix-tee-compilation.patch
@@ -117,10 +117,10 @@ rm -f $PKG/{,usr/}lib${LIBDIRSUFFIX}/*.la
 find $PKG | xargs file | grep -e "executable" -e "shared object" \
   | grep ELF | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null
 
-mkdir -p $PKG/usr/doc/$PKGNAM-$VERSION
+mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a COPYING COPYING-LGPL-2.1 COPYING-MPL-1.1 AUTHORS NEWS README.md \
-    $PKG/usr/doc/$PKGNAM-$VERSION
-cat $CWD/$PKGNAM.SlackBuild > $PKG/usr/doc/$PKGNAM-$VERSION/$PKGNAM.SlackBuild
+    $PKG/usr/doc/$PRGNAM-$VERSION
+cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 # We do not need the entire NEWS file.
 if [ -r NEWS ]; then
@@ -133,4 +133,4 @@ mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
 
 cd $PKG
-/sbin/makepkg -l y -c n $OUTPUT/$PKGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE
+/sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE
