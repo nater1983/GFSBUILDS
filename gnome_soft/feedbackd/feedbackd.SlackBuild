@@ -33,7 +33,7 @@ VERSION=${VERSION:-v0.1.0}
 VERSION2=${VERSION2:-v0.0.1}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_gfs}
-PKGTYPE="txz"
+PKGTYPE=${PKGTYPE:-txz}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
