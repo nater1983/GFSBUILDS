@@ -18,48 +18,48 @@ D=$(pwd)
 OD=order
 BD=/tmp/gfs
 
-rm -rf "$BD"
-chmod +x ./*/*/*.SlackBuild
-chmod +x ./*/*/*.sh
-chmod +x ./*/*.sh
-chmod +x ./*.bash
+rm -rf "$BD" || true
+chmod +x ./*/*/*.SlackBuild || true
+chmod +x ./*/*/*.sh || true
+chmod +x ./*/*.sh || true
+chmod +x *.bash || true
 
 
-cd ./BLACKLIST45/"$OD"
+cd ./BLACKLIST45/"$OD" || exit
 ./build_all.sh |& tee "$D"/build_blacklist.system.log
-cd "$D"
 
 
-cd "$D"
+
+cd "$D" || exit
 cd ./main_gnome/"$OD"
 ./build_all.sh |& tee "$D"/build_main_gnome.log
-cd "$D"
 
 
-cd "$D"
+
+cd "$D" || exit
 cd ./gnome/"$OD"
 ./build_all.sh |& tee "$D"/build_gnome.log
-cd "$D"
+
 
 
 # every day I have time will add more packages
-cd "$D"
+cd "$D" || exit
 cd ./gnome_soft/"$OD"
 ./build_all.sh |& tee "$D"/build_gnome_soft.log
-cd "$D"
 
 
-cd "$D"
+
+cd "$D" || exit
 cd ./gnome_builder/"$OD"
 ./build_all.sh |& tee "$D"/build_gnome_builder.log
 
 
 # not all extension ready for gnome-45  so far...
-cd "$D"
+cd "$D" || exit
 cd ./extensions/"$OD"
 ./build_all.sh |& tee "$D"/build_exensions.log
 
-cd "$D"
+cd "$D" || exit 
 cd ./backgrounds/"$OD"
 ./build_all.sh |& tee "$D"/build_backgrounds.log
 
@@ -71,7 +71,7 @@ cd ./backgrounds/"$OD"
 # this way you will build and install it with all deps in the right build order.      #
 #######################################################################################
 
-#cd "$D"
+#cd "$D" || exit
 #cd ./extras/"$OD"
 #./build_all.sh |& tee "$D"/build_extras.log
 #rm ./*/*/*.tar.?z* 
@@ -82,22 +82,25 @@ cd ./backgrounds/"$OD"
 # and ran build_all.sh                                                               #
 # this way you will build and install it with all deps in the right build order.     #
 ######################################################################################
-
+# NOTE: games are not ready yet...
 # games not ready so far... no time :( #
-#cd "$D"
+#cd "$D" || exit
 #cd ./games/"$OD"
 #./build_all.sh |& tee "$D"/build_games.log
 #rm ./*/*/*.tar.?z*
 
-cd "$D"
-slackpkg new-config
+# configs...
+cd "$D" || exit
 cd ./doinst
 ./doinst
-
-
-cd "$D"
-ldconfig
+cd "$D" || true
+ldconfig || true
+slackpkg new-config || false
 updatedb
+
+# clean repo from forgoten source.tar.* file...
+rm ./*/*/*.tar.?z* || false
+rm ./*/*/*.deb || false
 
 echo "Welcome to your new GNOME desktop environment on Slackware!"
     
@@ -111,6 +114,5 @@ echo -e "  _____     _    ______
           | |          
           |_|          "
 
-# clean repo from forgoten source.tar.* file...
-rm ./*/*/*.tar.?z*
-rm ./*/*/*.deb
+
+
