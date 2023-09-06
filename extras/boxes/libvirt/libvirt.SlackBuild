@@ -6,15 +6,11 @@
 
 # 20220422 bkw: Modified by SlackBuilds.org, BUILD=2:
 # - strip binaries.
-# Modified by Rafael Tavares <mdrafaeltavares@gmail.com> for gfs (2021)
-# modified by 2022 Nathaniel Russell <naterussell83@gmail.com> Texas, USA.
-
-wget -c https://libvirt.org/sources/libvirt-9.3.0.tar.xz 
-
+wget -c https://libvirt.org/sources/libvirt-9.6.0.tar.xz
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=libvirt
-VERSION=${VERSION:-9.3.0}
+VERSION=${VERSION:-9.6.0}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_gfs}
 PKGTYPE=${PKGTYPE:-txz}
@@ -32,7 +28,7 @@ if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
   exit 0
 fi
 
-TMP=${TMP:-/tmp/gfs}
+TMP=${TMP:-/tmp/SBo}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
@@ -63,15 +59,16 @@ rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$VERSION
-tar xvf $CWD/$PRGNAM-$VERSION.tar.?z*
+tar xvf $CWD/$PRGNAM-$VERSION.tar.xz
 cd $PRGNAM-$VERSION
+rm -fR tests/vircaps2xmldata # either this or find outputs "filesystem loop detected"
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
-  -o -perm 511 \) -exec chmod 755 {} \; -o \
+ -o -perm 511 \) -exec chmod 755 {} \+ -o \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
-  -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
-  
+ -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \+
+
 # we have sysctld files in /etc/sysctl.d
 sed -i "s|prefix / 'lib' / 'sysctl.d'|sysconfdir / 'sysctl.d'|" src/remote/meson.build
 
@@ -83,7 +80,7 @@ mkdir -p build
 cd build
   CFLAGS="$SLKCFLAGS" \
   CXXFLAGS="$SLKCFLAGS" \
-  meson .. \
+  meson setup .. \
     --buildtype=release \
     --infodir=/usr/info \
     --libdir=/usr/lib${LIBDIRSUFFIX} \
@@ -133,12 +130,15 @@ sed -i \
   -e "s|^\#listen_tls|listen_tls|" \
   $PKG/etc/libvirt/libvirtd.conf
 
+# still, we use $VIRTGROUP as our virtualization group
+sed -i \
+  -e "s|^\#group\ =\ \"root\"|group = \"$VIRTGROUP\"|" \
+  $PKG/etc/libvirt/qemu.conf
+
 # disable seccomp support or else VMs won't start with new libvirt/qemu combo
 # 20220212 bkw: this file doesn't exist if qemu wasn't installed. and
 # since qemu isn't in REQUIRES, it's optional, so the build shouldn't fail.
 if [ -e $PKG/etc/libvirt/qemu.conf ]; then
-  sed -i -e "s|^\#group\ =\ \"root\"|group = \"$VIRTGROUP\"|" \
-  $PKG/etc/libvirt/qemu.conf
   sed -i  "s|^\#seccomp_sandbox = 1|seccomp_sandbox = 0|" \
     $PKG/etc/libvirt/qemu.conf
 fi
@@ -154,7 +154,6 @@ cp -a \
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
-if [ -f $CWD/slack-required ]; then cat $CWD/slack-required > $PKG/install/slack-required; fi
 cat $CWD/slack-desc > $PKG/install/slack-desc
 cat $CWD/doinst.sh > $PKG/install/doinst.sh
 

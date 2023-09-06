@@ -95,7 +95,6 @@ meson setup ..\
  -Dsysprofd=bundled \
  -Dsystemdunitdir=/usr/lib/systemd/system \
  -Dhelp=true \
- -Dlibunwind=true \
  -Dtools=true \
  -Dtests=false \
  -Dexamples=false

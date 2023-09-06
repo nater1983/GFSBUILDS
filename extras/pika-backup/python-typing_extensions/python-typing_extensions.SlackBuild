@@ -30,14 +30,14 @@ wget -c https://files.pythonhosted.org/packages/source/t/typing_extensions/typin
 
 cd $(dirname $0) ; CWD=$(pwd)
 
-PKGNAM=python-typing_extensions
+PRGNAM=python-typing_extensions
 SRCNAM=typing_extensions
 VERSION=${VERSION:-4.4.0}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_gfs}
 PKGTYPE=${PKGTYPE:-txz}
 
-SRCNAM="$(printf $PKGNAM | cut -d- -f2-)"
+SRCNAM="$(printf $PRGNAM | cut -d- -f2-)"
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -48,12 +48,12 @@ if [ -z "$ARCH" ]; then
 fi
 
 if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
-  echo "$PKGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE"
+  echo "$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE"
   exit 0
 fi
 
 TMP=${TMP:-/tmp/gfs}
-PKG=$TMP/package-$PKGNAM
+PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
 set -e
@@ -74,12 +74,12 @@ find -L . \
 python3 -m build --no-isolation
 python3 -m installer -d "$PKG" dist/*.whl
 
-mkdir -p $PKG/usr/doc/$PKGNAM-$VERSION
-cp -a LICENSE README.md $PKG/usr/doc/$PKGNAM-$VERSION
-cat $CWD/$PKGNAM.SlackBuild > $PKG/usr/doc/$PKGNAM-$VERSION/$PKGNAM.SlackBuild
+mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
+cp -a LICENSE README.md $PKG/usr/doc/$PRGNAM-$VERSION
+cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
 
 cd $PKG
-/sbin/makepkg -l y -c n $OUTPUT/$PKGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE
+/sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE
