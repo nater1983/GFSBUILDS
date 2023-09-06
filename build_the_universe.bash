@@ -22,7 +22,7 @@ rm -rf "$BD"
 chmod +x ./*/*/*.SlackBuild
 chmod +x ./*/*/*.sh
 chmod +x ./*/*.sh
-chmod +x ./*.sh
+chmod +x ./*.bash
 
 
 cd ./BLACKLIST45/"$OD"
