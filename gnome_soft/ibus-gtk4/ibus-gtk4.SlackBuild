@@ -23,9 +23,6 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 wget -c https://github.com/ibus/ibus/releases/download/1.5.28/ibus-1.5.28.tar.gz
-wget -c http://www.unicode.org/Public/emoji/11.0/emoji-test.txt
-wget -c https://www.unicode.org/Public/UNIDATA/NamesList.txt
-wget -c https://www.unicode.org/Public/UNIDATA/Blocks.txt
 
 cd $(dirname $0) ; CWD=$(pwd)
 
