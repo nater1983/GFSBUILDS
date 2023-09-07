@@ -1,7 +1,7 @@
 From c317661f6196e7162cce700774418bcbc8865907 Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Fri, 11 Aug 2023 22:55:12 +0200
-Subject: [PATCH 01/53] set gnome 45 to only supported shell versions
+Subject: [PATCH 01/58] set gnome 45 to only supported shell versions
 
 ---
  metadata.json | 2 +-
@@ -24,7 +24,7 @@ index 17d80f4b..65dc8e6a 100644
 From b87ac15d66e1a2acd4fd81bb4185d172c127840f Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 13 Aug 2023 02:49:56 +0200
-Subject: [PATCH 02/53] migrate gi, ui and Me imports to new ESM format
+Subject: [PATCH 02/58] migrate gi, ui and Me imports to new ESM format
 
 ---
  appIcons.js                | 53 +++++++++++++++++-----------------
@@ -686,7 +686,7 @@ index 6a659450..06b22c96 100644
 From 33c07bf397fc95ea2732dfce361d490e6e8f4185 Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 13 Aug 2023 03:06:21 +0200
-Subject: [PATCH 03/53] export default Extension class
+Subject: [PATCH 03/58] export default Extension class
 
 ---
  extension.js | 108 ++++++++++++++++++++++++++++-----------------------
@@ -823,7 +823,7 @@ index fad4c3c9..5409c186 100644
 From 6f5a2e0f192799b6814be959e984a0e47e0725a8 Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 13 Aug 2023 03:06:39 +0200
-Subject: [PATCH 04/53] export default ExtensionPreferences class
+Subject: [PATCH 04/58] export default ExtensionPreferences class
 
 ---
  prefs.js | 20 ++++++++++++--------
@@ -871,7 +871,7 @@ index 0d86117e..8d09130c 100644
 From 950c1aaa4bb0bc92ea30ab2991159b16de240393 Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 13 Aug 2023 03:25:09 +0200
-Subject: [PATCH 05/53] fix imports with {}
+Subject: [PATCH 05/58] fix imports with {}
 
 ---
  extension.js    | 2 +-
@@ -930,7 +930,7 @@ index 9f423ed7..3e95192a 100755
 From 1780bb1bff142cfa3d3de8fc338f2a80c16ab107 Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 13 Aug 2023 17:32:09 +0200
-Subject: [PATCH 06/53] move Extension import to the top
+Subject: [PATCH 06/58] move Extension import to the top
 
 ---
  extension.js | 4 ++--
@@ -962,7 +962,7 @@ index 0f4a7572..da16004e 100644
 From 9c12d7908cf961ab8f55a05b4b2f96ceb40e287a Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 13 Aug 2023 17:35:28 +0200
-Subject: [PATCH 07/53] migrate signals imports to new ESM format
+Subject: [PATCH 07/58] migrate signals imports to new ESM format
 
 ---
  appIcons.js      | 2 +-
@@ -1041,7 +1041,7 @@ index 06b22c96..4d1c1a7d 100644
 From 7eedebca38ccdc61ffc1800f63dcbc4cf1f4fa89 Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 13 Aug 2023 20:04:49 +0200
-Subject: [PATCH 08/53] export functions and vars in panelPosition.js and
+Subject: [PATCH 08/58] export functions and vars in panelPosition.js and
  paneSettings.js
 
 ---
@@ -1218,7 +1218,7 @@ index 0f070577..fc2d60cd 100644
 From 9a3d3156388100fb7d21b2097a4e020e0a41325f Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 13 Aug 2023 20:10:23 +0200
-Subject: [PATCH 09/53] fix imports in prefs.js
+Subject: [PATCH 09/58] fix imports in prefs.js
 
 ---
  prefs.js | 11 +++++------
@@ -1261,7 +1261,7 @@ index 8d09130c..6b0eac63 100644
 From ef93bd908b7783031109dcea80e8c34d7a8d9b22 Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 13 Aug 2023 20:12:56 +0200
-Subject: [PATCH 10/53] fix paths and settings in prefs.js
+Subject: [PATCH 10/58] fix paths and settings in prefs.js
 
 ---
  prefs.js | 51 ++++++++++++++++++++++++++-------------------------
@@ -1368,7 +1368,7 @@ index 6b0eac63..b580a0cc 100644
 From f843af865102c7b709f454dc47c902f9cd521609 Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 13 Aug 2023 20:14:25 +0200
-Subject: [PATCH 11/53] mark settings variables as TODO for now
+Subject: [PATCH 11/58] mark settings variables as TODO for now
 
 ---
  prefs.js | 2 +-
@@ -1391,7 +1391,7 @@ index b580a0cc..a4a83ea7 100644
 From bc60959709e85b3cbb4ac3731d5944ecde2365b4 Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 13 Aug 2023 20:32:43 +0200
-Subject: [PATCH 12/53] move all imports to the top
+Subject: [PATCH 12/58] move all imports to the top
 
 ---
  appIcons.js                | 6 ++----
@@ -1647,7 +1647,7 @@ index 4d1c1a7d..285e978f 100644
 From 2931452c1ab1039e01f92fd56407b79f8c9043fe Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 13 Aug 2023 21:10:14 +0200
-Subject: [PATCH 13/53] fix gettext import
+Subject: [PATCH 13/58] fix gettext import
 
 ---
  appIcons.js | 2 +-
@@ -1684,7 +1684,7 @@ index 760bdf76..b59f1908 100644
 From 1dbad460e46ce905ce487ae191ddff9f568c407b Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 13 Aug 2023 22:45:43 +0200
-Subject: [PATCH 14/53] revert Signals import back
+Subject: [PATCH 14/58] revert Signals import back
 
 ---
  appIcons.js      | 2 +-
@@ -1794,7 +1794,7 @@ index 285e978f..4efae2f4 100644
 From 3cec4d7135407c5a931bac4e81154f56f69325b5 Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 13 Aug 2023 22:47:02 +0200
-Subject: [PATCH 15/53] comment Signals.addSignalMethods for now
+Subject: [PATCH 15/58] comment Signals.addSignalMethods for now
 
 ---
  appIcons.js  | 2 +-
@@ -1868,7 +1868,7 @@ index 9eeb452c..e2881930 100644
 From d634f0cdfd3b1185ed64cdb64304643942e87e82 Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 13 Aug 2023 22:57:43 +0200
-Subject: [PATCH 16/53] export settings and persistant storage
+Subject: [PATCH 16/58] export settings and persistant storage
 
 ---
  extension.js | 27 +++++++++++++++------------
@@ -1970,7 +1970,7 @@ index f3b8360a..245adb2e 100644
 From 84159f5df9aead75828fb61d8fcb51369105920c Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 13 Aug 2023 22:58:15 +0200
-Subject: [PATCH 17/53] use exported settings
+Subject: [PATCH 17/58] use exported settings
 
 ---
  appIcons.js      | 193 ++++++++++++++++++++++++-----------------------
@@ -3746,7 +3746,7 @@ index 4efae2f4..55a8af9e 100644
 From 56306fb76bdb1b28d2aa79ef50468b44bd1b5809 Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 13 Aug 2023 23:00:56 +0200
-Subject: [PATCH 18/53] use exported persistent storage
+Subject: [PATCH 18/58] use exported persistent storage
 
 ---
  panel.js | 12 ++++++------
@@ -3794,7 +3794,7 @@ index d1be58b3..8f0abee5 100644
 From c9789f013c012256b1c5880f41f23cd43cb405dd Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 13 Aug 2023 23:04:35 +0200
-Subject: [PATCH 19/53] export path, uuid and use it
+Subject: [PATCH 19/58] export path, uuid and use it
 
 ---
  appIcons.js                | 4 ++--
@@ -3871,7 +3871,7 @@ index 245adb2e..6b57760b 100644
 From 6acd829e633cffacb94d28d42ba8005c68209c9e Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 13 Aug 2023 23:24:32 +0200
-Subject: [PATCH 20/53] fix more translation imports
+Subject: [PATCH 20/58] fix more translation imports
 
 ---
  appIcons.js | 2 +-
@@ -3921,7 +3921,7 @@ index 139a75df..8f2873cb 100644
 From 39137bde156b900566d1c852e1d2462daf1ba557 Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 13 Aug 2023 23:29:53 +0200
-Subject: [PATCH 21/53] fix SearchController import
+Subject: [PATCH 21/58] fix SearchController import
 
 ---
  taskbar.js | 4 +---
@@ -3953,7 +3953,7 @@ index 2ba6922d..28e8c05f 100644
 From a1461db80d972b78a53daebc6f155cd22d753139 Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 13 Aug 2023 23:39:55 +0200
-Subject: [PATCH 22/53] export classes from panelManager.js
+Subject: [PATCH 22/58] export classes from panelManager.js
 
 ---
  extension.js    | 2 +-
@@ -3999,7 +3999,7 @@ index b996e9c8..9dc222da 100755
 From 32021f825e068f346dd7c1f0787b2c92560c5547 Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 13 Aug 2023 23:44:02 +0200
-Subject: [PATCH 23/53] export classes in panel.js
+Subject: [PATCH 23/58] export classes in panel.js
 
 ---
  panel.js        | 4 ++--
@@ -4045,7 +4045,7 @@ index 9dc222da..b9e63302 100755
 From 8a987a4ec2a8a0968f3126d6af1b53612985a1e3 Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 13 Aug 2023 23:47:22 +0200
-Subject: [PATCH 24/53] export overview class
+Subject: [PATCH 24/58] export overview class
 
 ---
  overview.js     | 2 +-
@@ -4082,7 +4082,7 @@ index b9e63302..91b1f4ee 100755
 From 8cabdd466235dd9bd715d702468e874f9520e963 Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 13 Aug 2023 23:49:34 +0200
-Subject: [PATCH 25/53] export classes from panelStyle.js
+Subject: [PATCH 25/58] export classes from panelStyle.js
 
 ---
  panel.js      | 2 +-
@@ -4119,7 +4119,7 @@ index 6ef6c102..c1d44522 100644
 From 01d63c2332dbeb3d125e4df5fd3c3e15593899f3 Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 13 Aug 2023 23:51:06 +0200
-Subject: [PATCH 26/53] export classes from progress.js
+Subject: [PATCH 26/58] export classes from progress.js
 
 ---
  progress.js | 6 +++---
@@ -4160,7 +4160,7 @@ index 03ab49f9..eb16aa2f 100644
 From 24f4552a79da26c9a899d1e6271f8ab26e02c202 Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 13 Aug 2023 23:51:52 +0200
-Subject: [PATCH 27/53] export classes from profimity.js
+Subject: [PATCH 27/58] export classes from profimity.js
 
 ---
  proximity.js | 4 ++--
@@ -4192,7 +4192,7 @@ index 3e033431..2d0c4cab 100644
 From 59bc598566cb26fec1968a2e0bc957ef3c45de7c Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 13 Aug 2023 23:55:46 +0200
-Subject: [PATCH 28/53] export classes and functions from taskbar.js
+Subject: [PATCH 28/58] export classes and functions from taskbar.js
 
 ---
  panel.js   |  2 +-
@@ -4278,7 +4278,7 @@ index 28e8c05f..06208ec1 100644
 From 204f33eb7025e675a512a5b92c133c79811d3d1c Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 13 Aug 2023 23:56:26 +0200
-Subject: [PATCH 29/53] export classes from transparency.js
+Subject: [PATCH 29/58] export classes from transparency.js
 
 ---
  transparency.js | 2 +-
@@ -4301,7 +4301,7 @@ index e48ffc92..2561f033 100644
 From 61db151f8351fd6ff1967ea2dfb84a2a419689b2 Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Mon, 14 Aug 2023 00:04:25 +0200
-Subject: [PATCH 30/53] export classes and functions from utils.js
+Subject: [PATCH 30/58] export classes and functions from utils.js
 
 ---
  utils.js | 78 ++++++++++++++++++++++++++++----------------------------
@@ -4626,7 +4626,7 @@ index 8f2873cb..5ea50a48 100644
 From 37e11409b74b2ece03b474dda06a8689b8068303 Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Mon, 14 Aug 2023 00:06:27 +0200
-Subject: [PATCH 31/53] export functions and classes from windowPreview.js
+Subject: [PATCH 31/58] export functions and classes from windowPreview.js
 
 ---
  windowPreview.js | 10 +++++-----
@@ -4683,7 +4683,7 @@ index 55a8af9e..d44828a0 100644
 From fb8fd19d95b029c0a7abb2f31dc04fa0a170e8f1 Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Mon, 14 Aug 2023 00:07:10 +0200
-Subject: [PATCH 32/53] export class from intellihide.js
+Subject: [PATCH 32/58] export class from intellihide.js
 
 ---
  intellihide.js | 2 +-
@@ -4706,7 +4706,7 @@ index 6979ffeb..681be12e 100644
 From d95db96d4f0c2b24a0c657410ec8b3981e8e1c8a Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Mon, 14 Aug 2023 00:07:47 +0200
-Subject: [PATCH 33/53] export class from desktopIconsIntegration.js
+Subject: [PATCH 33/58] export class from desktopIconsIntegration.js
 
 ---
  desktopIconsIntegration.js | 2 +-
@@ -4729,7 +4729,7 @@ index abeebe83..c308b2c7 100644
 From 3f8e5bfb9577a3ff8c790d395dd63315a9e95827 Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Mon, 14 Aug 2023 00:11:03 +0200
-Subject: [PATCH 34/53] export functions and classes from appIcons.js
+Subject: [PATCH 34/58] export functions and classes from appIcons.js
 
 ---
  appIcons.js | 30 +++++++++++++++---------------
@@ -4876,7 +4876,7 @@ index 761b452f..288b8e27 100644
 From 03a0aee77c9807ee9ec291838d1e43d8bccf9797 Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Mon, 14 Aug 2023 01:02:59 +0200
-Subject: [PATCH 35/53] remove the remaining non ESM imports
+Subject: [PATCH 35/58] remove the remaining non ESM imports
 
 ---
  appIcons.js     |  3 ++-
@@ -5040,7 +5040,7 @@ index 5ea50a48..eb5df53e 100644
 From 517d7d2e75bf90d1b7f69fde306a7f4d043b858c Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sat, 19 Aug 2023 02:44:53 +0200
-Subject: [PATCH 36/53] modify Signals import and use addSignalMethods again
+Subject: [PATCH 36/58] modify Signals import and use addSignalMethods again
 
 ---
  appIcons.js      | 4 ++--
@@ -5164,7 +5164,7 @@ index d44828a0..1f78a1f4 100644
 From e97e5b111aa691ce0c3acee657d19169b7adfe8a Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sat, 19 Aug 2023 14:01:26 +0200
-Subject: [PATCH 37/53] fix quickSettings _volume being renamed to
+Subject: [PATCH 37/58] fix quickSettings _volume being renamed to
  _volumeOutput
 
 ---
@@ -5208,7 +5208,7 @@ index 5652b120..290eb2cb 100644
 From ef733f33f555143185c876690e15e4409f6eeccc Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sat, 19 Aug 2023 14:03:05 +0200
-Subject: [PATCH 38/53] export panelBoxes and fix its import
+Subject: [PATCH 38/58] export panelBoxes and fix its import
 
 ---
  panel.js        | 2 +-
@@ -5253,7 +5253,7 @@ index 23601bc2..a62ecb3e 100755
 From 11b04333c103899811ba8b5e646aa4dc1a9fdacc Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sat, 19 Aug 2023 15:31:03 +0200
-Subject: [PATCH 39/53] use Extension.openPreferences
+Subject: [PATCH 39/58] use Extension.openPreferences
 
 ---
  appIcons.js  | 5 ++---
@@ -5321,7 +5321,7 @@ index d151b083..a632ebb7 100644
 From 011c9d5d262afc19bb709c813e34a2a51396aa3d Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sat, 19 Aug 2023 15:33:06 +0200
-Subject: [PATCH 40/53] open-application-menu and _toggleAppMenuare no longer
+Subject: [PATCH 40/58] open-application-menu and _toggleAppMenuare no longer
  available, comment the key binding replacement for now
 
 ---
@@ -5386,7 +5386,7 @@ index a632ebb7..5cf24573 100644
 From d9e55635fcdc21cf89e7b92d172f58191e9e4e5f Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sat, 19 Aug 2023 15:35:58 +0200
-Subject: [PATCH 41/53] add the reset parameter back to extension disable
+Subject: [PATCH 41/58] add the reset parameter back to extension disable
  function
 
 ---
@@ -5412,7 +5412,7 @@ index 5cf24573..a5d13b57 100644
 From 116eeec5ba599700afd93efeaa64eedc0fe2199e Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sat, 19 Aug 2023 23:25:39 +0200
-Subject: [PATCH 42/53] export proximity Mode
+Subject: [PATCH 42/58] export proximity Mode
 
 ---
  proximity.js | 2 +-
@@ -5435,7 +5435,7 @@ index 2d0c4cab..61d356b1 100644
 From d4a2eb219fa44177431cb7ea807758898ffca4fe Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 20 Aug 2023 02:15:20 +0200
-Subject: [PATCH 43/53] export missing variables
+Subject: [PATCH 43/58] export missing variables
 
 ---
  appIcons.js    | 2 +-
@@ -5489,7 +5489,7 @@ index 6939b679..5f361dad 100644
 From fe83d4d36a6ec30afcac87db5bcbdd532b78960c Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 20 Aug 2023 02:57:57 +0200
-Subject: [PATCH 44/53] fix SHELL_KEYBINDINGS_SCHEMA import
+Subject: [PATCH 44/58] fix SHELL_KEYBINDINGS_SCHEMA import
 
 ---
  overview.js     | 6 +++---
@@ -5537,7 +5537,7 @@ index a62ecb3e..1dd45e18 100755
 From 8a61a0d7301d9f1aa5fe1c4289ffe04f4b70a11e Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 20 Aug 2023 17:36:30 +0200
-Subject: [PATCH 45/53] fix version in about panel
+Subject: [PATCH 45/58] fix version in about panel
 
 ---
  prefs.js | 4 +++-
@@ -5562,7 +5562,7 @@ index a4a83ea7..2061c584 100644
 From 4625beef12ab266f721ea7890488f19eb41ba9b0 Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 20 Aug 2023 17:36:57 +0200
-Subject: [PATCH 46/53] fix ngettext import in prefs
+Subject: [PATCH 46/58] fix ngettext import in prefs
 
 ---
  prefs.js | 4 ++--
@@ -5594,7 +5594,7 @@ index 2061c584..cd7acc56 100644
 From ae812b34d0634e1996360302724be8d34ffef77e Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 20 Aug 2023 18:28:44 +0200
-Subject: [PATCH 47/53] fix _realHasOverview access in extension _disable
+Subject: [PATCH 47/58] fix _realHasOverview access in extension _disable
 
 ---
  extension.js | 2 +-
@@ -5617,7 +5617,7 @@ index a5d13b57..251d260a 100644
 From ac43d822f3c71a1c78044574fe23f049757bc020 Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 20 Aug 2023 19:10:38 +0200
-Subject: [PATCH 48/53] remove open-application-menu keybinding, appmenu will
+Subject: [PATCH 48/58] remove open-application-menu keybinding, appmenu will
  be removed
 
 ---
@@ -5665,7 +5665,7 @@ index 251d260a..b2703338 100644
 From 222e3ed7fc23a9d6edb74ecfb571ffeef982455f Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 20 Aug 2023 19:16:50 +0200
-Subject: [PATCH 49/53] update QuickSettings access in utils
+Subject: [PATCH 49/58] update QuickSettings access in utils
 
 ---
  utils.js | 3 +--
@@ -5696,7 +5696,7 @@ index eb5df53e..8da0def9 100644
 From 217816da8d751d2ad3bc1826b3559cba5967fa5b Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 20 Aug 2023 19:18:14 +0200
-Subject: [PATCH 50/53] update ActivitiesButton access in panel
+Subject: [PATCH 50/58] update ActivitiesButton access in panel
 
 ---
  panel.js | 3 +--
@@ -5727,7 +5727,7 @@ index 434041c1..abfdb972 100644
 From 0418059f615cdd15c35afbf920ef221eb09b65ac Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 20 Aug 2023 20:22:15 +0200
-Subject: [PATCH 51/53] use SearchController from Main.overview to fix show
+Subject: [PATCH 51/58] use SearchController from Main.overview to fix show
  apps button
 
 ---
@@ -5758,7 +5758,7 @@ index 5f361dad..addfc865 100644
 From 817c8cbf810c7c5fa9d872ab739557e49479d7b6 Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sun, 20 Aug 2023 23:33:03 +0200
-Subject: [PATCH 52/53] remove option to show appmenu appmenu has been removed
+Subject: [PATCH 52/58] remove option to show appmenu appmenu has been removed
  with gnome 45
 
 ---
@@ -5890,7 +5890,7 @@ index 18db9436..677f38ad 100644
 From 6b2629a572fe0faea24e6235a44743a5b56469e3 Mon Sep 17 00:00:00 2001
 From: Philipp Unger <philipp.unger.1988@gmail.com>
 Date: Sat, 26 Aug 2023 23:56:54 +0200
-Subject: [PATCH 53/53]  move away from event.get_source
+Subject: [PATCH 53/58]  move away from event.get_source
 
 ---
  panel.js | 16 +++++++++++-----
@@ -5929,4 +5929,200 @@ index 22f9f0f1..240643f5 100644
 +        if (!this._checkIfIgnoredScrollSource(targetActor) && !this._timeoutsHandler.getId(T6)) {
              if (direction && scrollAction === 'SWITCH_WORKSPACE') {
                  let args = [global.display];
+ 
+
+From c4c114d921290e4f6d69943d2e250bf8d48a7751 Mon Sep 17 00:00:00 2001
+From: Philipp Unger <philipp.unger.1988@gmail.com>
+Date: Mon, 28 Aug 2023 16:34:46 +0200
+Subject: [PATCH 54/58] copy getAppFromSource into taskbar.js since it is not
+ exported yet
+
+---
+ taskbar.js | 11 ++++++++++-
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+
+diff --git a/taskbar.js b/taskbar.js
+index addfc865..9dcf044b 100644
+--- a/taskbar.js
++++ b/taskbar.js
+@@ -41,6 +41,7 @@ import * as PopupMenu from 'resource:///org/gnome/shell/ui/popupMenu.js';
+ import * as Workspace from 'resource:///org/gnome/shell/ui/workspace.js';
+ 
+ import * as AppIcons from './appIcons.js';
++import * as AppDisplay from 'resource:///org/gnome/shell/ui/appDisplay.js';
+ import * as Panel from './panel.js';
+ import * as PanelManager from './panelManager.js';
+ import * as PanelSettings from './panelSettings.js';
+@@ -61,6 +62,14 @@ const T1 = 'ensureAppIconVisibilityTimeout'
+ const T2 = 'showLabelTimeout'
+ const T3 = 'resetHoverTimeout'
+ 
++// TODO will be exported in the next gnome 45 release again
++function getAppFromSource(source) {
++    if (source instanceof AppDisplay.AppIcon)
++        return source.app;
++    else
++        return null;
++}
++
+ /**
+  * Extend DashItemContainer
+  *
+@@ -621,7 +630,7 @@ export var Taskbar = class {
+     }
+ 
+     _onDragMotion(dragEvent) {
+-        let app = Dash.getAppFromSource(dragEvent.source);
++        let app = getAppFromSource(dragEvent.source);
+         if (app == null)
+             return DND.DragMotionResult.CONTINUE;
+ 
+
+From 3fe3eddc003991820bc4af783c4a812f208cdffc Mon Sep 17 00:00:00 2001
+From: Philipp Unger <philipp.unger.1988@gmail.com>
+Date: Sun, 3 Sep 2023 20:54:33 +0200
+Subject: [PATCH 55/58] fix scroll panel to change volume
+
+---
+ panel.js | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/panel.js b/panel.js
+index 240643f5..35a36bab 100644
+--- a/panel.js
++++ b/panel.js
+@@ -1217,7 +1217,7 @@ export var Panel = GObject.registerClass({
+                 
+                 Utils.activateSiblingWindow(windows, direction);
+             } else if (scrollAction === 'CHANGE_VOLUME' && !event.is_pointer_emulated()) {
+-                let proto = Volume.Indicator.prototype;
++                let proto = Volume.OutputIndicator.prototype;
+                 let func = proto._handleScrollEvent || proto.vfunc_scroll_event || proto._onScrollEvent;
+                 let indicator = Main.panel.statusArea[Utils.getSystemMenuInfo().name]._volumeOutput;
+ 
+
+From a3fc2fd0debb2c666bea60c3329b0295daa0dde5 Mon Sep 17 00:00:00 2001
+From: Philipp Unger <philipp.unger.1988@gmail.com>
+Date: Mon, 4 Sep 2023 22:17:43 +0200
+Subject: [PATCH 56/58] use Clutter.ActorAlign instead of St.Align
+
+---
+ taskbar.js | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+
+diff --git a/taskbar.js b/taskbar.js
+index 9dcf044b..1e0b48a0 100644
+--- a/taskbar.js
++++ b/taskbar.js
+@@ -284,8 +284,10 @@ export var Taskbar = class {
+         this.previewMenu.enable();
+ 
+         let rtl = Clutter.get_default_text_direction() == Clutter.TextDirection.RTL;
+-        this.actor = new St.Bin({ child: this._container,
+-            y_align: St.Align.START, x_align:rtl?St.Align.END:St.Align.START
++        this.actor = new St.Bin({
++            child: this._container,
++            y_align: Clutter.ActorAlign.START,
++            x_align: rtl ? Clutter.ActorAlign.END : Clutter.ActorAlign.START
+         });
+ 
+         let adjustment = this._scrollView[orientation[0] + 'scroll'].adjustment;
+
+From 70c640b957f2cff08e00783de692e8ab9e17eabf Mon Sep 17 00:00:00 2001
+From: Philipp Unger <philipp.unger.1988@gmail.com>
+Date: Thu, 7 Sep 2023 01:08:12 +0200
+Subject: [PATCH 57/58] replace Meta.Rectangle with Mtk.Rectangle
+
+---
+ appIcons.js  | 4 ++--
+ proximity.js | 3 ++-
+ 2 files changed, 4 insertions(+), 3 deletions(-)
+
+diff --git a/appIcons.js b/appIcons.js
+index 70cd54b2..2f5e647f 100644
+--- a/appIcons.js
++++ b/appIcons.js
+@@ -28,7 +28,7 @@ import GLib from 'gi://GLib';
+ import Graphene from 'gi://Graphene';
+ import Gtk from 'gi://Gtk';
+ import GObject from 'gi://GObject';
+-import Meta from 'gi://Meta';
++import Mtk from 'gi://Mtk';
+ import Shell from 'gi://Shell';
+ import St from 'gi://St';
+ 
+@@ -396,7 +396,7 @@ export var TaskbarAppIcon = GObject.registerClass({
+         if (this.get_stage() == null)
+             return;
+ 
+-        let rect = new Meta.Rectangle();
++        let rect = new Mtk.Rectangle();
+ 
+         [rect.x, rect.y] = this.get_transformed_position();
+         [rect.width, rect.height] = this.get_transformed_size();
+diff --git a/proximity.js b/proximity.js
+index 61d356b1..9dcff428 100644
+--- a/proximity.js
++++ b/proximity.js
+@@ -16,6 +16,7 @@
+  */
+ 
+ import Meta from 'gi://Meta';
++import Mtk from 'gi://Mtk';
+ 
+ import * as Layout from 'resource:///org/gnome/shell/ui/layout.js';
+ import * as Main from 'resource:///org/gnome/shell/ui/main.js';
+@@ -56,7 +57,7 @@ export class ProximityWatch {
+     _updateWatchRect() {
+         let [actorX, actorY] = this.actor.get_position();
+ 
+-        this.rect = new Meta.Rectangle({ 
++        this.rect = new Mtk.Rectangle({ 
+             x: actorX - this.threshold[0],
+             y: actorY - this.threshold[1],
+             width: this.actor.width + this.threshold[0] * 2,
+
+From c3db082e5b1dfdb50fd0715efb6bb8eebd99872f Mon Sep 17 00:00:00 2001
+From: Philipp Unger <philipp.unger.1988@gmail.com>
+Date: Thu, 7 Sep 2023 01:11:25 +0200
+Subject: [PATCH 58/58] use getAppFromSource from Dash again
+
+---
+ taskbar.js | 10 +---------
+ 1 file changed, 1 insertion(+), 9 deletions(-)
+
+diff --git a/taskbar.js b/taskbar.js
+index 1e0b48a0..b80e4aad 100644
+--- a/taskbar.js
++++ b/taskbar.js
+@@ -41,7 +41,6 @@ import * as PopupMenu from 'resource:///org/gnome/shell/ui/popupMenu.js';
+ import * as Workspace from 'resource:///org/gnome/shell/ui/workspace.js';
+ 
+ import * as AppIcons from './appIcons.js';
+-import * as AppDisplay from 'resource:///org/gnome/shell/ui/appDisplay.js';
+ import * as Panel from './panel.js';
+ import * as PanelManager from './panelManager.js';
+ import * as PanelSettings from './panelSettings.js';
+@@ -62,13 +61,6 @@ const T1 = 'ensureAppIconVisibilityTimeout'
+ const T2 = 'showLabelTimeout'
+ const T3 = 'resetHoverTimeout'
+ 
+-// TODO will be exported in the next gnome 45 release again
+-function getAppFromSource(source) {
+-    if (source instanceof AppDisplay.AppIcon)
+-        return source.app;
+-    else
+-        return null;
+-}
+ 
+ /**
+  * Extend DashItemContainer
+@@ -632,7 +624,7 @@ export var Taskbar = class {
+     }
+ 
+     _onDragMotion(dragEvent) {
+-        let app = getAppFromSource(dragEvent.source);
++        let app = Dash.getAppFromSource(dragEvent.source);
+         if (app == null)
+             return DND.DragMotionResult.CONTINUE;
  
