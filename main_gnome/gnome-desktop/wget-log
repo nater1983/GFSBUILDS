@@ -1,0 +1,12 @@
+--2023-09-07 12:15:06--  https://download.gnome.org/sources/gnome-desktop/44/gnome-desktop-44.0.tar.xz
+Resolving download.gnome.org (download.gnome.org)... 2a04:4e42:400::347, 2a04:4e42:600::347, 2a04:4e42:200::347, ...
+Connecting to download.gnome.org (download.gnome.org)|2a04:4e42:400::347|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://fr.rpmfind.net/linux/gnome.org/sources/gnome-desktop/44/gnome-desktop-44.0.tar.xz [following]
+--2023-09-07 12:15:06--  https://fr.rpmfind.net/linux/gnome.org/sources/gnome-desktop/44/gnome-desktop-44.0.tar.xz
+Resolving fr.rpmfind.net (fr.rpmfind.net)... 195.220.108.108
+Connecting to fr.rpmfind.net (fr.rpmfind.net)|195.220.108.108|:443... connected.
+HTTP request sent, awaiting response... 416 Requested Range Not Satisfiable
+
+    The file is already fully retrieved; nothing to do.
+

@@ -74,7 +74,8 @@ cd ./backgrounds/"$OD"
 #cd "$D" || exit
 #cd ./extras/"$OD"
 #./build_all.sh |& tee "$D"/build_extras.log
-#rm ./*/*/*.tar.?z* 
+# cd "$D" || exit
+#rm ./*/*/*/*.tar.?z* || true
 
 ######################################################################################
 # uncomment to build all games or                                                    #
@@ -87,21 +88,22 @@ cd ./backgrounds/"$OD"
 #cd "$D" || exit
 #cd ./games/"$OD"
 #./build_all.sh |& tee "$D"/build_games.log
-#rm ./*/*/*.tar.?z*
+#rm ./*/*.tar.?z* || true
 
 # configs...
 cd "$D" || exit
-cd ./doinst
+cd ./doinst || exit
 ./doinst
-cd "$D" || true
+cd "$D" || exit
 ldconfig || true
-slackpkg new-config || false
+slackpkg new-config || true
 updatedb
+./GEN-GFSBUILDS.bash
+
 
 # clean repo from forgoten source.tar.* file...
-rm ./*/*/*.tar.?z* || false
-rm ./*/*/*.deb || false
-
+rm ./*/*/*.tar.?z* || true
+rm ./*/*/*.deb || true
 echo "Welcome to your new GNOME desktop environment on Slackware!"
     
     echo "************************************************************"

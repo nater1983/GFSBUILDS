@@ -1,0 +1,11 @@
+--2023-09-07 12:17:18--  https://files.pythonhosted.org/packages/source/a/attrs/attrs-21.4.0.tar.gz
+Resolving files.pythonhosted.org (files.pythonhosted.org)... 2a04:4e42:8d::311, 146.75.117.55
+Connecting to files.pythonhosted.org (files.pythonhosted.org)|2a04:4e42:8d::311|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://files.pythonhosted.org/packages/d7/77/ebb15fc26d0f815839ecd897b919ed6d85c050feeb83e100e020df9153d2/attrs-21.4.0.tar.gz [following]
+--2023-09-07 12:17:18--  https://files.pythonhosted.org/packages/d7/77/ebb15fc26d0f815839ecd897b919ed6d85c050feeb83e100e020df9153d2/attrs-21.4.0.tar.gz
+Reusing existing connection to [files.pythonhosted.org]:443.
+HTTP request sent, awaiting response... 416 Range Not Satisfiable
+
+    The file is already fully retrieved; nothing to do.
+

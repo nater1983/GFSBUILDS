@@ -22,7 +22,7 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-wget -c https://download.gnome.org/sources/gdm/44/gdm-45.beta.tar.xz
+wget -c https://download.gnome.org/sources/gdm/45/gdm-45.beta.tar.xz
 
 cd $(dirname $0) ; CWD=$(pwd)
 
@@ -80,7 +80,6 @@ find -L . \
 
 # A couple patches taken from Artix Linux:
 patch -Np1 -i $CWD/0001-Xsession-Don-t-start-ssh-agent-by-default.patch
-patch -Np1 -i $CWD/0002-meson-allow-building-with-elogind.patch
 patch -Np1 -i $CWD/0003-add-wayland-session-script.patch
 patch -Np1 -i $CWD/0004-fix-Xsession-language-in-gnome.patch
 

@@ -1,0 +1,11 @@
+--2023-09-07 12:33:41--  https://wpewebkit.org/releases/wpebackend-fdo-1.14.2.tar.xz
+Resolving wpewebkit.org (wpewebkit.org)... 46.105.159.180
+Connecting to wpewebkit.org (wpewebkit.org)|46.105.159.180|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 43332 (42K) [application/x-xz]
+Saving to: ‘wpebackend-fdo-1.14.2.tar.xz’
+
+     0K .......... .......... .......... .......... ..        100%  391K=0.1s
+
+2023-09-07 12:33:41 (391 KB/s) - ‘wpebackend-fdo-1.14.2.tar.xz’ saved [43332/43332]
+

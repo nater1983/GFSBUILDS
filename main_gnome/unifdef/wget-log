@@ -1,0 +1,12 @@
+--2023-09-07 12:33:50--  https://dotat.at/prog/unifdef/unifdef-2.12.tar.xz
+Resolving dotat.at (dotat.at)... 2001:ba8:1e3::, 212.13.197.229
+Connecting to dotat.at (dotat.at)|2001:ba8:1e3::|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 66912 (65K) [application/x-xz]
+Saving to: ‘unifdef-2.12.tar.xz’
+
+     0K .......... .......... .......... .......... .......... 76%  291K 0s
+    50K .......... .....                                      100% 3.88M=0.2s
+
+2023-09-07 12:33:50 (372 KB/s) - ‘unifdef-2.12.tar.xz’ saved [66912/66912]
+

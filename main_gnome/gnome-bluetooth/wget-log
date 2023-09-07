@@ -1,0 +1,21 @@
+--2023-09-07 12:33:21--  https://download.gnome.org/sources/gnome-bluetooth/42/gnome-bluetooth-42.6.tar.xz
+Resolving download.gnome.org (download.gnome.org)... 2a04:4e42:200::347, 2a04:4e42::347, 2a04:4e42:600::347, ...
+Connecting to download.gnome.org (download.gnome.org)|2a04:4e42:200::347|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.acc.umu.se/pub/GNOME/sources/gnome-bluetooth/42/gnome-bluetooth-42.6.tar.xz [following]
+--2023-09-07 12:33:21--  https://ftp.acc.umu.se/pub/GNOME/sources/gnome-bluetooth/42/gnome-bluetooth-42.6.tar.xz
+Resolving ftp.acc.umu.se (ftp.acc.umu.se)... 2001:6b0:19::173, 2001:6b0:19::163, 2001:6b0:19::165, ...
+Connecting to ftp.acc.umu.se (ftp.acc.umu.se)|2001:6b0:19::173|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 304668 (298K) [application/x-xz]
+Saving to: ‘gnome-bluetooth-42.6.tar.xz’
+
+     0K .......... .......... .......... .......... .......... 16%  307K 1s
+    50K .......... .......... .......... .......... .......... 33%  534K 1s
+   100K .......... .......... .......... .......... .......... 50%  827K 0s
+   150K .......... .......... .......... .......... .......... 67% 1.38M 0s
+   200K .......... .......... .......... .......... .......... 84% 1.31M 0s
+   250K .......... .......... .......... .......... .......   100% 2.16M=0.4s
+
+2023-09-07 12:33:22 (724 KB/s) - ‘gnome-bluetooth-42.6.tar.xz’ saved [304668/304668]
+

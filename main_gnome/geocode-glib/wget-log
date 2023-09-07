@@ -1,0 +1,12 @@
+--2023-09-07 12:15:15--  https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.4.tar.xz
+Resolving download.gnome.org (download.gnome.org)... 2a04:4e42::347, 2a04:4e42:400::347, 2a04:4e42:600::347, ...
+Connecting to download.gnome.org (download.gnome.org)|2a04:4e42::347|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.fau.de/gnome/sources/geocode-glib/3.26/geocode-glib-3.26.4.tar.xz [following]
+--2023-09-07 12:15:16--  https://ftp.fau.de/gnome/sources/geocode-glib/3.26/geocode-glib-3.26.4.tar.xz
+Resolving ftp.fau.de (ftp.fau.de)... 2001:638:a000:1021:21::1, 131.188.12.211
+Connecting to ftp.fau.de (ftp.fau.de)|2001:638:a000:1021:21::1|:443... connected.
+HTTP request sent, awaiting response... 416 Requested Range Not Satisfiable
+
+    The file is already fully retrieved; nothing to do.
+

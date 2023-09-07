@@ -1,0 +1,12 @@
+--2023-09-07 12:33:36--  https://wpewebkit.org/releases/libwpe-1.15.1.tar.xz
+Resolving wpewebkit.org (wpewebkit.org)... 46.105.159.180
+Connecting to wpewebkit.org (wpewebkit.org)|46.105.159.180|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 63452 (62K) [application/x-xz]
+Saving to: ‘libwpe-1.15.1.tar.xz’
+
+     0K .......... .......... .......... .......... .......... 80%  218K 0s
+    50K .......... .                                          100%  342M=0.2s
+
+2023-09-07 12:33:37 (270 KB/s) - ‘libwpe-1.15.1.tar.xz’ saved [63452/63452]
+

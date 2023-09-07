@@ -1,0 +1,28 @@
+--2023-09-07 12:33:45--  http://wget/
+Resolving wget (wget)... 199.59.243.224
+Connecting to wget (wget)|199.59.243.224|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+
+    The file is already fully retrieved; nothing to do.
+
+--2023-09-07 12:33:45--  https://github.com/containers/bubblewrap/releases/download/v0.8.0/bubblewrap-0.8.0.tar.xz
+Resolving github.com (github.com)... 140.82.121.3
+Connecting to github.com (github.com)|140.82.121.3|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/51868010/cb0f3785-1f38-4992-8734-14ac7b06b532?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230907%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230907T093259Z&X-Amz-Expires=300&X-Amz-Signature=eda957d798c67d2d10276892f17a309f40e9aff15bae57d875466ab7a5c25798&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=51868010&response-content-disposition=attachment%3B%20filename%3Dbubblewrap-0.8.0.tar.xz&response-content-type=application%2Foctet-stream [following]
+--2023-09-07 12:33:46--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/51868010/cb0f3785-1f38-4992-8734-14ac7b06b532?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230907%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230907T093259Z&X-Amz-Expires=300&X-Amz-Signature=eda957d798c67d2d10276892f17a309f40e9aff15bae57d875466ab7a5c25798&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=51868010&response-content-disposition=attachment%3B%20filename%3Dbubblewrap-0.8.0.tar.xz&response-content-type=application%2Foctet-stream
+Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.109.133, 185.199.111.133, 185.199.108.133, ...
+Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.109.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 149088 (146K) [application/octet-stream]
+Saving to: ‘bubblewrap-0.8.0.tar.xz’
+
+     0K .......... .......... .......... .......... .......... 34%  488K 0s
+    50K .......... .......... .......... .......... .......... 68%  584K 0s
+   100K .......... .......... .......... .......... .....     100% 2.92M=0.2s
+
+2023-09-07 12:33:47 (716 KB/s) - ‘bubblewrap-0.8.0.tar.xz’ saved [149088/149088]
+
+FINISHED --2023-09-07 12:33:47--
+Total wall clock time: 2.0s
+Downloaded: 1 files, 146K in 0.2s (716 KB/s)
