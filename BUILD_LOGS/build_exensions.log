@@ -1,0 +1,2687 @@
+01-build_gnome-shell-extension-appindicator.sh
+gnome-shell-extension-appindicator
+Cloning into 'gnome-shell-extension-appindicator'...
+Note: switching to 'b7cc3b3261545b2ec5f36409555502c1fde7a36f'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at b7cc3b3 Release 57
+The Meson build system
+Version: 1.2.1
+Source dir: /tmp/gfs/gnome-shell-extension-appindicator
+Build dir: /tmp/gfs/gnome-shell-extension-appindicator/build
+Build type: native build
+Project name: gnome-shell-ubuntu-appindicators
+Project version: 57
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Program sh found: YES (/bin/sh)
+Program jq found: YES (/usr/bin/jq)
+WARNING: You should add the boolean check kwarg to the run_command call.
+         It currently defaults to false,
+         but it will default to true in future releases of meson.
+         See also: https://github.com/mesonbuild/meson/issues/9300
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Program eslint found: NO
+Build targets in project: 21
+NOTICE: Future-deprecated features used:
+ * 0.55.0: {'ExternalProgram.path'}
+
+gnome-shell-ubuntu-appindicators 57
+
+  Configuration
+    Local installation : False
+    Extension UUID     : appindicatorsupport@rgcjonas.gmail.com
+    Gettext domain     : AppIndicatorExtension
+    ESLint             : False
+
+  Directories
+    Extension directory: /usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com
+    GSchema directory  : /usr/share/glib-2.0/schemas
+    Locale directory   : /usr/share/locale
+
+  User defined options
+    buildtype          : release
+    libdir             : /usr/lib
+    localstatedir      : /var
+    prefix             : /usr
+    strip              : true
+    sysconfdir         : /etc
+
+Found ninja-1.11.1 at /usr/bin/ninja
+[1/18] Generating locale/cs/LC_MESSAGES/AppIndicatorExtension-cs.mo with a custom command
+[2/18] Generating locale/de/LC_MESSAGES/AppIndicatorExtension-de.mo with a custom command
+[3/18] Generating locale/fr/LC_MESSAGES/AppIndicatorExtension-fr.mo with a custom command
+[4/18] Generating locale/hu/LC_MESSAGES/AppIndicatorExtension-hu.mo with a custom command
+[5/18] Generating locale/pl/LC_MESSAGES/AppIndicatorExtension-pl.mo with a custom command
+[6/18] Generating locale/it/LC_MESSAGES/AppIndicatorExtension-it.mo with a custom command
+[7/18] Generating locale/sk/LC_MESSAGES/AppIndicatorExtension-sk.mo with a custom command
+[8/18] Generating locale/sr@latin/LC_MESSAGES/AppIndicatorExtension-sr@latin.mo with a custom command
+[9/18] Generating locale/pt_BR/LC_MESSAGES/AppIndicatorExtension-pt_BR.mo with a custom command
+[10/18] Generating locale/ja/LC_MESSAGES/AppIndicatorExtension-ja.mo with a custom command
+[11/18] Generating locale/ko/LC_MESSAGES/AppIndicatorExtension-ko.mo with a custom command
+[12/18] Generating locale/ru/LC_MESSAGES/AppIndicatorExtension-ru.mo with a custom command
+[13/18] Generating locale/nl/LC_MESSAGES/AppIndicatorExtension-nl.mo with a custom command
+[14/18] Generating locale/oc/LC_MESSAGES/AppIndicatorExtension-oc.mo with a custom command
+[15/18] Generating locale/sr/LC_MESSAGES/AppIndicatorExtension-sr.mo with a custom command
+[16/18] Generating locale/ta/LC_MESSAGES/AppIndicatorExtension-ta.mo with a custom command
+[17/18] Generating locale/zh_CN/LC_MESSAGES/AppIndicatorExtension-zh_CN.mo with a custom command
+[18/18] Generating locale/tr/LC_MESSAGES/AppIndicatorExtension-tr.mo with a custom command
+[0/1] Installing files.
+Installing subdir /tmp/gfs/gnome-shell-extension-appindicator/interfaces-xml to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/interfaces-xml
+Installing /tmp/gfs/gnome-shell-extension-appindicator/interfaces-xml/StatusNotifierWatcher.xml to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/interfaces-xml
+Installing /tmp/gfs/gnome-shell-extension-appindicator/interfaces-xml/DBusMenu.xml to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/interfaces-xml
+Installing /tmp/gfs/gnome-shell-extension-appindicator/interfaces-xml/StatusNotifierItem.xml to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/interfaces-xml
+Installing locale/cs/LC_MESSAGES/AppIndicatorExtension.mo to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/locale/cs/LC_MESSAGES
+Installing locale/de/LC_MESSAGES/AppIndicatorExtension.mo to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/locale/de/LC_MESSAGES
+Installing locale/fr/LC_MESSAGES/AppIndicatorExtension.mo to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/locale/fr/LC_MESSAGES
+Installing locale/hu/LC_MESSAGES/AppIndicatorExtension.mo to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/locale/hu/LC_MESSAGES
+Installing locale/it/LC_MESSAGES/AppIndicatorExtension.mo to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/locale/it/LC_MESSAGES
+Installing locale/ja/LC_MESSAGES/AppIndicatorExtension.mo to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/locale/ja/LC_MESSAGES
+Installing locale/ko/LC_MESSAGES/AppIndicatorExtension.mo to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/locale/ko/LC_MESSAGES
+Installing locale/nl/LC_MESSAGES/AppIndicatorExtension.mo to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/locale/nl/LC_MESSAGES
+Installing locale/oc/LC_MESSAGES/AppIndicatorExtension.mo to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/locale/oc/LC_MESSAGES
+Installing locale/pl/LC_MESSAGES/AppIndicatorExtension.mo to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/locale/pl/LC_MESSAGES
+Installing locale/pt_BR/LC_MESSAGES/AppIndicatorExtension.mo to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/locale/pt_BR/LC_MESSAGES
+Installing locale/ru/LC_MESSAGES/AppIndicatorExtension.mo to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/locale/ru/LC_MESSAGES
+Installing locale/sk/LC_MESSAGES/AppIndicatorExtension.mo to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/locale/sk/LC_MESSAGES
+Installing locale/sr@latin/LC_MESSAGES/AppIndicatorExtension.mo to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/locale/sr@latin/LC_MESSAGES
+Installing locale/sr/LC_MESSAGES/AppIndicatorExtension.mo to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/locale/sr/LC_MESSAGES
+Installing locale/ta/LC_MESSAGES/AppIndicatorExtension.mo to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/locale/ta/LC_MESSAGES
+Installing locale/tr/LC_MESSAGES/AppIndicatorExtension.mo to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/locale/tr/LC_MESSAGES
+Installing locale/zh_CN/LC_MESSAGES/AppIndicatorExtension.mo to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/locale/zh_CN/LC_MESSAGES
+Installing /tmp/gfs/gnome-shell-extension-appindicator/metadata.json to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com
+Installing /tmp/gfs/gnome-shell-extension-appindicator/appIndicator.js to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com
+Installing /tmp/gfs/gnome-shell-extension-appindicator/dbusMenu.js to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com
+Installing /tmp/gfs/gnome-shell-extension-appindicator/dbusProxy.js to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com
+Installing /tmp/gfs/gnome-shell-extension-appindicator/extension.js to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com
+Installing /tmp/gfs/gnome-shell-extension-appindicator/iconCache.js to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com
+Installing /tmp/gfs/gnome-shell-extension-appindicator/indicatorStatusIcon.js to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com
+Installing /tmp/gfs/gnome-shell-extension-appindicator/interfaces.js to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com
+Installing /tmp/gfs/gnome-shell-extension-appindicator/pixmapsUtils.js to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com
+Installing /tmp/gfs/gnome-shell-extension-appindicator/prefs.js to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com
+Installing /tmp/gfs/gnome-shell-extension-appindicator/promiseUtils.js to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com
+Installing /tmp/gfs/gnome-shell-extension-appindicator/settingsManager.js to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com
+Installing /tmp/gfs/gnome-shell-extension-appindicator/statusNotifierWatcher.js to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com
+Installing /tmp/gfs/gnome-shell-extension-appindicator/trayIconsManager.js to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com
+Installing /tmp/gfs/gnome-shell-extension-appindicator/util.js to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com
+Installing /tmp/gfs/gnome-shell-extension-appindicator/schemas/org.gnome.shell.extensions.appindicator.gschema.xml to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/glib-2.0/schemas
+Installing /tmp/gfs/gnome-shell-extension-appindicator/schemas/org.gnome.shell.extensions.appindicator.gschema.xml to /tmp/gfs/package-gnome-shell-extension-appindicator/usr/share/glib-2.0/schemas
+Running custom install script '/bin/sh -c glib-compile-schemas $DESTDIR//usr/share/glib-2.0/schemas'
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+Creating Slackware package:  /tmp/gnome-shell-extension-appindicator-57-noarch-1_gfs.txz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/gnome-shell-extension-appindicator-57/
+usr/doc/gnome-shell-extension-appindicator-57/AUTHORS.md
+usr/doc/gnome-shell-extension-appindicator-57/LICENSE
+usr/doc/gnome-shell-extension-appindicator-57/README.md
+usr/doc/gnome-shell-extension-appindicator-57/gnome-shell-extension-appindicator.SlackBuild
+usr/share/
+usr/share/glib-2.0/
+usr/share/glib-2.0/schemas/
+usr/share/glib-2.0/schemas/gschemas.compiled
+usr/share/glib-2.0/schemas/org.gnome.shell.extensions.appindicator.gschema.xml
+usr/share/gnome-shell/
+usr/share/gnome-shell/extensions/
+usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/
+usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/appIndicator.js
+usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/dbusMenu.js
+usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/dbusProxy.js
+usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/extension.js
+usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/iconCache.js
+usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/indicatorStatusIcon.js
+usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/interfaces-xml/
+usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/interfaces-xml/DBusMenu.xml
+usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/interfaces-xml/StatusNotifierItem.xml
+usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/interfaces-xml/StatusNotifierWatcher.xml
+usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/interfaces.js
+usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/metadata.json
+usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/pixmapsUtils.js
+usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/prefs.js
+usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/promiseUtils.js
+usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/settingsManager.js
+usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/statusNotifierWatcher.js
+usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/trayIconsManager.js
+usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/util.js
+usr/share/locale/
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/AppIndicatorExtension.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/AppIndicatorExtension.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/AppIndicatorExtension.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/AppIndicatorExtension.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/AppIndicatorExtension.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/AppIndicatorExtension.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/AppIndicatorExtension.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/AppIndicatorExtension.mo
+usr/share/locale/oc/
+usr/share/locale/oc/LC_MESSAGES/
+usr/share/locale/oc/LC_MESSAGES/AppIndicatorExtension.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/AppIndicatorExtension.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/AppIndicatorExtension.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/AppIndicatorExtension.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/AppIndicatorExtension.mo
+usr/share/locale/sr/
+usr/share/locale/sr/LC_MESSAGES/
+usr/share/locale/sr/LC_MESSAGES/AppIndicatorExtension.mo
+usr/share/locale/sr@latin/
+usr/share/locale/sr@latin/LC_MESSAGES/
+usr/share/locale/sr@latin/LC_MESSAGES/AppIndicatorExtension.mo
+usr/share/locale/ta/
+usr/share/locale/ta/LC_MESSAGES/
+usr/share/locale/ta/LC_MESSAGES/AppIndicatorExtension.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/AppIndicatorExtension.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/AppIndicatorExtension.mo
+
+Slackware package /tmp/gnome-shell-extension-appindicator-57-noarch-1_gfs.txz created.
+
+
++==============================================================================
+| Upgrading gnome-shell-extension-appindicator-57-noarch-1_gfs package using /tmp/gnome-shell-extension-appindicator-57-noarch-1_gfs.txz
++==============================================================================
+Pre-installing package gnome-shell-extension-appindicator-57-noarch-1_gfs...
+Removing package: gnome-shell-extension-appindicator-57-noarch-1_gfs-upgraded-2023-09-07,23:48:14
+Verifying package gnome-shell-extension-appindicator-57-noarch-1_gfs.txz.
+Installing package gnome-shell-extension-appindicator-57-noarch-1_gfs.txz:
+PACKAGE DESCRIPTION:
+# gnome-shell-extension-appindicator ( support for legacy tray icons )
+#
+# This extension integrates Ubuntu AppIndicators and KStatusNotifier
+# (KDE's blessed successor of the systray) into GNOME shell.
+# Including support for legacy tray icons.
+#
+# https://github.com/ubuntu/gnome-shell-extension-appindicator
+#
+Executing install script for gnome-shell-extension-appindicator-57-noarch-1_gfs.txz.
+Package gnome-shell-extension-appindicator-57-noarch-1_gfs.txz installed.
+Package gnome-shell-extension-appindicator-57-noarch-1_gfs upgraded with new package /tmp/gnome-shell-extension-appindicator-57-noarch-1_gfs.txz.
+02-build_gnome-shell-extension-arc-menu.sh
+
+Cloning into 'ArcMenu'...
+Note: switching to '0a5cbde58ae050f86aee453651a62ca1bf603652'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 0a5cbde Merge branch 'gnome-45' into 'master'
+glib-compile-schemas ./schemas/
+msgfmt -c po/ar.po -o po/ar.mo
+po/ar.po:8: warning: header field 'PO-Revision-Date' still has the initial default value
+po/ar.po:8: warning: header field 'Language-Team' still has the initial default value
+msgfmt -c po/be.po -o po/be.mo
+msgfmt -c po/bg.po -o po/bg.mo
+msgfmt -c po/ca.po -o po/ca.mo
+msgfmt -c po/cs.po -o po/cs.mo
+msgfmt -c po/de.po -o po/de.mo
+msgfmt -c po/el.po -o po/el.mo
+po/el.po:8: warning: header field 'PO-Revision-Date' still has the initial default value
+po/el.po:8: warning: header field 'Language-Team' still has the initial default value
+msgfmt -c po/es.po -o po/es.mo
+msgfmt -c po/et.po -o po/et.mo
+msgfmt -c po/fi.po -o po/fi.mo
+msgfmt -c po/fr.po -o po/fr.mo
+msgfmt -c po/he.po -o po/he.mo
+msgfmt -c po/hi_IN.po -o po/hi_IN.mo
+po/hi_IN.po:8: warning: header field 'Language' still has the initial default value
+msgfmt -c po/hu.po -o po/hu.mo
+msgfmt -c po/id.po -o po/id.mo
+msgfmt -c po/it.po -o po/it.mo
+msgfmt -c po/ja.po -o po/ja.mo
+msgfmt -c po/ko.po -o po/ko.mo
+msgfmt -c po/nb_NO.po -o po/nb_NO.mo
+msgfmt -c po/nl.po -o po/nl.mo
+msgfmt -c po/oc.po -o po/oc.mo
+msgfmt -c po/pl.po -o po/pl.mo
+msgfmt -c po/pt_BR.po -o po/pt_BR.mo
+msgfmt -c po/ru.po -o po/ru.mo
+msgfmt -c po/si.po -o po/si.mo
+msgfmt -c po/sk.po -o po/sk.mo
+msgfmt -c po/sr.po -o po/sr.mo
+msgfmt -c po/sr@latin.po -o po/sr@latin.mo
+msgfmt -c po/sv.po -o po/sv.mo
+msgfmt -c po/szl.po -o po/szl.mo
+msgfmt -c po/tr.po -o po/tr.mo
+msgfmt -c po/uk.po -o po/uk.mo
+msgfmt -c po/zh_CN.po -o po/zh_CN.mo
+msgfmt -c po/zh_TW.po -o po/zh_TW.mo
+rm -fR ./_build
+mkdir -p _build
+cp COPYING extension.js keybinder.js metadata.json README.md stylesheet.css theming.js appMenu.js constants.js controller.js menuButton.js menuWidgets.js placeDisplay.js prefs.js prefsWidgets.js recentFilesManager.js search.js standaloneRunner.js utils.js _build
+cp -r icons menulayouts searchProviders settings _build
+mkdir -p _build/schemas
+cp schemas/*.xml _build/schemas/
+cp schemas/gschemas.compiled _build/schemas/
+mkdir -p _build/locale
+for l in po/ar.mo po/be.mo po/bg.mo po/ca.mo po/cs.mo po/de.mo po/el.mo po/es.mo po/et.mo po/fi.mo po/fr.mo po/he.mo po/hi_IN.mo po/hu.mo po/id.mo po/it.mo po/ja.mo po/ko.mo po/nb_NO.mo po/nl.mo po/oc.mo po/pl.mo po/pt_BR.mo po/ru.mo po/si.mo po/sk.mo po/sr.mo po/sr@latin.mo po/sv.mo po/szl.mo po/tr.mo po/uk.mo po/zh_CN.mo po/zh_TW.mo ; do \
+	lf=_build/locale/`basename $l .mo`; \
+	mkdir -p $lf; \
+	mkdir -p $lf/LC_MESSAGES; \
+	cp $l $lf/LC_MESSAGES/arcmenu.mo; \
+done;
+sed -i '/"version": .*,/a "commit": "0a5cbde58ae050f86aee453651a62ca1bf603652",'  _build/metadata.json;
+rm -rf /tmp/gfs/package-gnome-shell-extension-arc-menu/usr/share/gnome-shell/extensions/arcmenu@arcmenu.com
+mkdir -p /tmp/gfs/package-gnome-shell-extension-arc-menu/usr/share/gnome-shell/extensions/arcmenu@arcmenu.com
+cp -r ./_build/* /tmp/gfs/package-gnome-shell-extension-arc-menu/usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/
+# system-wide settings and locale files
+rm -r /tmp/gfs/package-gnome-shell-extension-arc-menu/usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/schemas /tmp/gfs/package-gnome-shell-extension-arc-menu/usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/locale
+mkdir -p /tmp/gfs/package-gnome-shell-extension-arc-menu/usr/share/glib-2.0/schemas /tmp/gfs/package-gnome-shell-extension-arc-menu/usr/share/locale
+cp -r ./schemas/*gschema.* /tmp/gfs/package-gnome-shell-extension-arc-menu/usr/share/glib-2.0/schemas
+cp -r ./_build/locale/* /tmp/gfs/package-gnome-shell-extension-arc-menu/usr/share/locale
+rm -fR _build
+echo done
+done
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+Creating Slackware package:  /tmp/gnome-shell-extension-arc-menu-49-noarch-1_gfs.txz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/gnome-shell-extension-arc-menu-49/
+usr/doc/gnome-shell-extension-arc-menu-49/COPYING
+usr/doc/gnome-shell-extension-arc-menu-49/README.md
+usr/doc/gnome-shell-extension-arc-menu-49/gnome-shell-extension-arc-menu.SlackBuild
+usr/share/
+usr/share/glib-2.0/
+usr/share/glib-2.0/schemas/
+usr/share/glib-2.0/schemas/org.gnome.shell.extensions.arcmenu.gschema.xml
+usr/share/gnome-shell/
+usr/share/gnome-shell/extensions/
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/COPYING
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/README.md
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/appMenu.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/constants.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/controller.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/extension.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/arcmenu-logo-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/category-icons/
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/category-icons/applications-accessories-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/category-icons/applications-community-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/category-icons/applications-development-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/category-icons/applications-electronics-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/category-icons/applications-engineering-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/category-icons/applications-fonts-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/category-icons/applications-games-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/category-icons/applications-graphics-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/category-icons/applications-health-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/category-icons/applications-internet-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/category-icons/applications-multimedia-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/category-icons/applications-office-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/category-icons/applications-other-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/category-icons/applications-science-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/category-icons/applications-system-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/category-icons/applications-utilities-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/distro-arch-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/distro-budgie-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/distro-cachyos-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/distro-debian-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/distro-endeavour-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/distro-fedora-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/distro-gentoo-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/distro-gnome-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/distro-kali-linux-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/distro-manjaro-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/distro-mx-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/distro-nobara-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/distro-opensuse-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/distro-pardus-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/distro-pop-os-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/distro-pureos-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/distro-raspbian-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/distro-redhat-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/distro-solus-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/distro-ubuntu-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/distro-voyager-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/distro-zorin-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-3d-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-a-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-alien-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-app-launcher-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-apps-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-arcmenu-logo-alt-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-arcmenu-logo-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-arcmenu-old-alt-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-arcmenu-old-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-arcmenu-oldest-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-arrow-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-bat-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-bug-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-cita-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-cloud-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-curved-a-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-diamond-square-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-dimond-win-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-dolphin-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-dota-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-dra-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-dragon-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-dragonheart-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-eclipse-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-equal-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-fly-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-focus-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-football-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-football2-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-gnacs-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-groove-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-heddy-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-helmet-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-kaaet-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-launcher-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-lins-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-loveheart-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-octo-maze-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-pac-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-pacman-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-paint-palette-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-peaks-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-peeks-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-pie-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-pointer-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-pyrimid-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-record-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-rewind-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-robots-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-round-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-saucer-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-search-glass-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-sheild-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-snap-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-somnia-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-start-box-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-step-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-sums-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-swirl-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-time-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-toxic-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-toxic2-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-transform-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-tree-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-triple-dash-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-utool-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-vancer-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-vibe-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-whirl-circle-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-whirl-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/icon-zegon-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/menu-arcmenu-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/menu-az-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/menu-brisk-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/menu-budgie-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/menu-chromebook-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/menu-elementary-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/menu-eleven-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/menu-enterprise-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/menu-gnomemenu-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/menu-gnomeoverview-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/menu-insider-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/menu-mint-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/menu-plasma-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/menu-pop-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/menu-raven-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/menu-redmond-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/menu-runner-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/menu-tognee-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/menu-unity-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/menu-whisker-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/menu-windows-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/menustyle-alternative-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/menustyle-launcher-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/menustyle-modern-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/menustyle-touch-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/menustyle-traditional-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/settings-arcmenu-logo.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/settings-customicon-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/settings-finetune-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/settings-keyboard.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/settings-layouts-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/settings-settings-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/hicolor/16x16/actions/settings-theme-symbolic.svg
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/keybinder.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/menuButton.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/menuWidgets.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/menulayouts/
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/menulayouts/arcmenu.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/menulayouts/az.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/menulayouts/baseMenuLayout.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/menulayouts/brisk.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/menulayouts/budgie.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/menulayouts/chromebook.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/menulayouts/elementary.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/menulayouts/eleven.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/menulayouts/enterprise.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/menulayouts/gnomemenu.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/menulayouts/insider.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/menulayouts/layoutHandler.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/menulayouts/mint.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/menulayouts/plasma.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/menulayouts/pop.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/menulayouts/raven.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/menulayouts/redmond.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/menulayouts/runner.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/menulayouts/tognee.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/menulayouts/unity.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/menulayouts/whisker.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/menulayouts/windows.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/metadata.json
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/placeDisplay.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/prefs.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/prefsWidgets.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/recentFilesManager.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/search.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/searchProviders/
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/searchProviders/openWindows.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/searchProviders/recentFiles.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/searchProviders/searchProviderEmitter.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/settings/
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/settings/AboutPage.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/settings/GeneralPage.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/settings/Menu/
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/settings/Menu/FineTunePage.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/settings/Menu/LayoutTweaksPage.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/settings/Menu/LayoutsPage.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/settings/Menu/ListOtherPage.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/settings/Menu/ListPinnedPage.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/settings/Menu/SearchOptionsPage.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/settings/Menu/SubPage.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/settings/Menu/ThemePage.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/settings/Menu/ThemingDialog.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/settings/Menu/VisualSettings.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/settings/MenuButtonPage.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/settings/MenuPage.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/settings/SettingsUtils.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/standaloneRunner.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/stylesheet.css
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/theming.js
+usr/share/gnome-shell/extensions/arcmenu@arcmenu.com/utils.js
+usr/share/locale/
+usr/share/locale/ar/
+usr/share/locale/ar/LC_MESSAGES/
+usr/share/locale/ar/LC_MESSAGES/arcmenu.mo
+usr/share/locale/be/
+usr/share/locale/be/LC_MESSAGES/
+usr/share/locale/be/LC_MESSAGES/arcmenu.mo
+usr/share/locale/bg/
+usr/share/locale/bg/LC_MESSAGES/
+usr/share/locale/bg/LC_MESSAGES/arcmenu.mo
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/arcmenu.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/arcmenu.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/arcmenu.mo
+usr/share/locale/el/
+usr/share/locale/el/LC_MESSAGES/
+usr/share/locale/el/LC_MESSAGES/arcmenu.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/arcmenu.mo
+usr/share/locale/et/
+usr/share/locale/et/LC_MESSAGES/
+usr/share/locale/et/LC_MESSAGES/arcmenu.mo
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/arcmenu.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/arcmenu.mo
+usr/share/locale/he/
+usr/share/locale/he/LC_MESSAGES/
+usr/share/locale/he/LC_MESSAGES/arcmenu.mo
+usr/share/locale/hi_IN/
+usr/share/locale/hi_IN/LC_MESSAGES/
+usr/share/locale/hi_IN/LC_MESSAGES/arcmenu.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/arcmenu.mo
+usr/share/locale/id/
+usr/share/locale/id/LC_MESSAGES/
+usr/share/locale/id/LC_MESSAGES/arcmenu.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/arcmenu.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/arcmenu.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/arcmenu.mo
+usr/share/locale/nb_NO/
+usr/share/locale/nb_NO/LC_MESSAGES/
+usr/share/locale/nb_NO/LC_MESSAGES/arcmenu.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/arcmenu.mo
+usr/share/locale/oc/
+usr/share/locale/oc/LC_MESSAGES/
+usr/share/locale/oc/LC_MESSAGES/arcmenu.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/arcmenu.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/arcmenu.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/arcmenu.mo
+usr/share/locale/si/
+usr/share/locale/si/LC_MESSAGES/
+usr/share/locale/si/LC_MESSAGES/arcmenu.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/arcmenu.mo
+usr/share/locale/sr/
+usr/share/locale/sr/LC_MESSAGES/
+usr/share/locale/sr/LC_MESSAGES/arcmenu.mo
+usr/share/locale/sr@latin/
+usr/share/locale/sr@latin/LC_MESSAGES/
+usr/share/locale/sr@latin/LC_MESSAGES/arcmenu.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/arcmenu.mo
+usr/share/locale/szl/
+usr/share/locale/szl/LC_MESSAGES/
+usr/share/locale/szl/LC_MESSAGES/arcmenu.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/arcmenu.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/arcmenu.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/arcmenu.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/arcmenu.mo
+
+Slackware package /tmp/gnome-shell-extension-arc-menu-49-noarch-1_gfs.txz created.
+
+
++==============================================================================
+| Upgrading gnome-shell-extension-arc-menu-49-noarch-1_gfs package using /tmp/gnome-shell-extension-arc-menu-49-noarch-1_gfs.txz
++==============================================================================
+Pre-installing package gnome-shell-extension-arc-menu-49-noarch-1_gfs...
+Removing package: gnome-shell-extension-arc-menu-49-noarch-1_gfs-upgraded-2023-09-07,23:48:20
+Verifying package gnome-shell-extension-arc-menu-49-noarch-1_gfs.txz.
+Installing package gnome-shell-extension-arc-menu-49-noarch-1_gfs.txz:
+PACKAGE DESCRIPTION:
+# gnome-shell-extension-arc-menu (Application Menu Extension for GNOME)
+#
+# https://gitlab.com/arcmenu/ArcMenu
+#
+Executing install script for gnome-shell-extension-arc-menu-49-noarch-1_gfs.txz.
+Package gnome-shell-extension-arc-menu-49-noarch-1_gfs.txz installed.
+Package gnome-shell-extension-arc-menu-49-noarch-1_gfs upgraded with new package /tmp/gnome-shell-extension-arc-menu-49-noarch-1_gfs.txz.
+03-build_gnome-shell-extension-autohide-battery.sh
+
+Cloning into 'autohide-battery'...
+Note: switching to '1d90ecfcc9c47003b2174d9c6733898b561f1f45'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 1d90ecf Release 43 version
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+Creating Slackware package:  /tmp/gnome-shell-extension-autohide-battery-43-noarch-1_gfs.txz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/gnome-shell-extension-autohide-battery-43/
+usr/doc/gnome-shell-extension-autohide-battery-43/CHANGELOG.md
+usr/doc/gnome-shell-extension-autohide-battery-43/LICENSE
+usr/doc/gnome-shell-extension-autohide-battery-43/README.md
+usr/doc/gnome-shell-extension-autohide-battery-43/gnome-shell-extension-autohide-battery.SlackBuild
+usr/share/
+usr/share/glib-2.0/
+usr/share/glib-2.0/schemas/
+usr/share/glib-2.0/schemas/gschemas.compiled
+usr/share/glib-2.0/schemas/org.gnome.shell.extensions.autohide-battery.gschema.xml
+usr/share/gnome-shell/
+usr/share/gnome-shell/extensions/
+usr/share/gnome-shell/extensions/autohide-battery@sitnik.ru/
+usr/share/gnome-shell/extensions/autohide-battery@sitnik.ru/CHANGELOG.md
+usr/share/gnome-shell/extensions/autohide-battery@sitnik.ru/LICENSE
+usr/share/gnome-shell/extensions/autohide-battery@sitnik.ru/README.md
+usr/share/gnome-shell/extensions/autohide-battery@sitnik.ru/example.png
+usr/share/gnome-shell/extensions/autohide-battery@sitnik.ru/extension.js
+usr/share/gnome-shell/extensions/autohide-battery@sitnik.ru/icon.png
+usr/share/gnome-shell/extensions/autohide-battery@sitnik.ru/metadata.json
+usr/share/gnome-shell/extensions/autohide-battery@sitnik.ru/package.json
+usr/share/gnome-shell/extensions/autohide-battery@sitnik.ru/pnpm-lock.yaml
+usr/share/gnome-shell/extensions/autohide-battery@sitnik.ru/po/
+usr/share/gnome-shell/extensions/autohide-battery@sitnik.ru/po/autohide-battery.pot
+usr/share/gnome-shell/extensions/autohide-battery@sitnik.ru/po/be.po
+usr/share/gnome-shell/extensions/autohide-battery@sitnik.ru/po/ca.po
+usr/share/gnome-shell/extensions/autohide-battery@sitnik.ru/po/de.po
+usr/share/gnome-shell/extensions/autohide-battery@sitnik.ru/po/es.po
+usr/share/gnome-shell/extensions/autohide-battery@sitnik.ru/po/fr.po
+usr/share/gnome-shell/extensions/autohide-battery@sitnik.ru/po/id.po
+usr/share/gnome-shell/extensions/autohide-battery@sitnik.ru/po/ja.po
+usr/share/gnome-shell/extensions/autohide-battery@sitnik.ru/po/ko.po
+usr/share/gnome-shell/extensions/autohide-battery@sitnik.ru/po/lt.po
+usr/share/gnome-shell/extensions/autohide-battery@sitnik.ru/po/nb_NO.po
+usr/share/gnome-shell/extensions/autohide-battery@sitnik.ru/po/nl.po
+usr/share/gnome-shell/extensions/autohide-battery@sitnik.ru/po/pl.po
+usr/share/gnome-shell/extensions/autohide-battery@sitnik.ru/po/ru.po
+usr/share/gnome-shell/extensions/autohide-battery@sitnik.ru/po/tr.po
+usr/share/gnome-shell/extensions/autohide-battery@sitnik.ru/po/uk.po
+usr/share/gnome-shell/extensions/autohide-battery@sitnik.ru/po/zh_Hans.po
+usr/share/gnome-shell/extensions/autohide-battery@sitnik.ru/prefs.js
+usr/share/gnome-shell/extensions/autohide-battery@sitnik.ru/schemas/
+usr/share/gnome-shell/extensions/autohide-battery@sitnik.ru/schemas/gschemas.compiled
+usr/share/gnome-shell/extensions/autohide-battery@sitnik.ru/schemas/org.gnome.shell.extensions.autohide-battery.gschema.xml
+
+Slackware package /tmp/gnome-shell-extension-autohide-battery-43-noarch-1_gfs.txz created.
+
+
++==============================================================================
+| Upgrading gnome-shell-extension-autohide-battery-43-noarch-1_gfs package using /tmp/gnome-shell-extension-autohide-battery-43-noarch-1_gfs.txz
++==============================================================================
+Pre-installing package gnome-shell-extension-autohide-battery-43-noarch-1_gfs...
+Removing package: gnome-shell-extension-autohide-battery-43-noarch-1_gfs-upgraded-2023-09-07,23:48:24
+Verifying package gnome-shell-extension-autohide-battery-43-noarch-1_gfs.txz.
+Installing package gnome-shell-extension-autohide-battery-43-noarch-1_gfs.txz:
+PACKAGE DESCRIPTION:
+Executing install script for gnome-shell-extension-autohide-battery-43-noarch-1_gfs.txz.
+Package gnome-shell-extension-autohide-battery-43-noarch-1_gfs.txz installed.
+Package gnome-shell-extension-autohide-battery-43-noarch-1_gfs upgraded with new package /tmp/gnome-shell-extension-autohide-battery-43-noarch-1_gfs.txz.
+04-build_gnome-shell-extension-coverflow-alt-tab.sh
+
+Cloning into 'CoverflowAltTab'...
+Note: switching to 'ae98553d117883804e041094ae261878485d2d9b'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at ae98553 Tweaked coverflow symbolic icon.
+mkdir -p build
+cd src && gnome-extensions pack -f \
+	--extra-source ./coverflowSwitcher.js \
+	--extra-source ./keybinder.js \
+	--extra-source ./lib.js \
+	--extra-source ./manager.js \
+	--extra-source ./platform.js \
+	--extra-source ./preview.js \
+	--extra-source ./switcher.js \
+	--extra-source ./timelineSwitcher.js \
+	--extra-source ../metadata.json \
+	--extra-source ../ui \
+	--schema ../schemas/org.gnome.shell.extensions.coverflowalttab.gschema.xml \
+	--podir ../locale/ \
+	-o ../build/
+glib-compile-schemas "./schemas"
+gnome-extensions install -f build/CoverflowAltTab@palatis.blogspot.com.shell-extension.zip
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+Creating Slackware package:  /tmp/gnome-shell-extension-coverflow-alt-tab-59-noarch-1_gfs.txz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/gnome-shell-extension-coverflow-alt-tab-59/
+usr/doc/gnome-shell-extension-coverflow-alt-tab-59/CONTRIBUTORS.md
+usr/doc/gnome-shell-extension-coverflow-alt-tab-59/COPYING
+usr/doc/gnome-shell-extension-coverflow-alt-tab-59/README.md
+usr/doc/gnome-shell-extension-coverflow-alt-tab-59/gnome-shell-extension-coverflow-alt-tab.SlackBuild
+usr/share/
+usr/share/gnome-shell/
+usr/share/gnome-shell/extensions/
+usr/share/gnome-shell/extensions/CoverflowAltTab@palatis.blogspot.com/
+usr/share/gnome-shell/extensions/CoverflowAltTab@palatis.blogspot.com/coverflowSwitcher.js
+usr/share/gnome-shell/extensions/CoverflowAltTab@palatis.blogspot.com/extension.js
+usr/share/gnome-shell/extensions/CoverflowAltTab@palatis.blogspot.com/keybinder.js
+usr/share/gnome-shell/extensions/CoverflowAltTab@palatis.blogspot.com/lib.js
+usr/share/gnome-shell/extensions/CoverflowAltTab@palatis.blogspot.com/manager.js
+usr/share/gnome-shell/extensions/CoverflowAltTab@palatis.blogspot.com/metadata.json
+usr/share/gnome-shell/extensions/CoverflowAltTab@palatis.blogspot.com/platform.js
+usr/share/gnome-shell/extensions/CoverflowAltTab@palatis.blogspot.com/prefs.js
+usr/share/gnome-shell/extensions/CoverflowAltTab@palatis.blogspot.com/preview.js
+usr/share/gnome-shell/extensions/CoverflowAltTab@palatis.blogspot.com/schemas/
+usr/share/gnome-shell/extensions/CoverflowAltTab@palatis.blogspot.com/schemas/gschemas.compiled
+usr/share/gnome-shell/extensions/CoverflowAltTab@palatis.blogspot.com/schemas/org.gnome.shell.extensions.coverflowalttab.gschema.xml
+usr/share/gnome-shell/extensions/CoverflowAltTab@palatis.blogspot.com/switcher.js
+usr/share/gnome-shell/extensions/CoverflowAltTab@palatis.blogspot.com/timelineSwitcher.js
+usr/share/gnome-shell/extensions/CoverflowAltTab@palatis.blogspot.com/ui/
+usr/share/gnome-shell/extensions/CoverflowAltTab@palatis.blogspot.com/ui/icons/
+usr/share/gnome-shell/extensions/CoverflowAltTab@palatis.blogspot.com/ui/icons/hicolor/
+usr/share/gnome-shell/extensions/CoverflowAltTab@palatis.blogspot.com/ui/icons/hicolor/scalable/
+usr/share/gnome-shell/extensions/CoverflowAltTab@palatis.blogspot.com/ui/icons/hicolor/scalable/actions/
+usr/share/gnome-shell/extensions/CoverflowAltTab@palatis.blogspot.com/ui/icons/hicolor/scalable/actions/applications-symbolic.svg
+usr/share/gnome-shell/extensions/CoverflowAltTab@palatis.blogspot.com/ui/icons/hicolor/scalable/actions/code-symbolic.svg
+usr/share/gnome-shell/extensions/CoverflowAltTab@palatis.blogspot.com/ui/icons/hicolor/scalable/actions/contribute-symbolic.svg
+usr/share/gnome-shell/extensions/CoverflowAltTab@palatis.blogspot.com/ui/icons/hicolor/scalable/actions/coverflow-symbolic.svg
+usr/share/gnome-shell/extensions/CoverflowAltTab@palatis.blogspot.com/ui/icons/hicolor/scalable/actions/dash-symbolic.svg
+usr/share/gnome-shell/extensions/CoverflowAltTab@palatis.blogspot.com/ui/icons/hicolor/scalable/actions/general-symbolic.svg
+usr/share/gnome-shell/extensions/CoverflowAltTab@palatis.blogspot.com/ui/icons/hicolor/scalable/actions/support-symbolic.svg
+usr/share/locale/
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/CoverflowAltTab@palatis.blogspot.com.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/CoverflowAltTab@palatis.blogspot.com.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/CoverflowAltTab@palatis.blogspot.com.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/CoverflowAltTab@palatis.blogspot.com.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/CoverflowAltTab@palatis.blogspot.com.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/CoverflowAltTab@palatis.blogspot.com.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/CoverflowAltTab@palatis.blogspot.com.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/CoverflowAltTab@palatis.blogspot.com.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/CoverflowAltTab@palatis.blogspot.com.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/CoverflowAltTab@palatis.blogspot.com.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/CoverflowAltTab@palatis.blogspot.com.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/CoverflowAltTab@palatis.blogspot.com.mo
+
+Slackware package /tmp/gnome-shell-extension-coverflow-alt-tab-59-noarch-1_gfs.txz created.
+
+
++==============================================================================
+| Upgrading gnome-shell-extension-coverflow-alt-tab-59-noarch-1_gfs package using /tmp/gnome-shell-extension-coverflow-alt-tab-59-noarch-1_gfs.txz
++==============================================================================
+Pre-installing package gnome-shell-extension-coverflow-alt-tab-59-noarch-1_gfs...
+Removing package: gnome-shell-extension-coverflow-alt-tab-59-noarch-1_gfs-upgraded-2023-09-07,23:48:28
+Verifying package gnome-shell-extension-coverflow-alt-tab-59-noarch-1_gfs.txz.
+Installing package gnome-shell-extension-coverflow-alt-tab-59-noarch-1_gfs.txz:
+PACKAGE DESCRIPTION:
+# gnome-shell-extension-coverflow-alt-tab ( Replacement of Alt-Tab )
+#
+# Replacement of Alt-Tab, iterates through windows in a cover-flow  
+# manner. 
+# 
+#
+# https://github.com/dmo60/CoverflowAltTab 
+# 
+#
+Executing install script for gnome-shell-extension-coverflow-alt-tab-59-noarch-1_gfs.txz.
+Package gnome-shell-extension-coverflow-alt-tab-59-noarch-1_gfs.txz installed.
+Package gnome-shell-extension-coverflow-alt-tab-59-noarch-1_gfs upgraded with new package /tmp/gnome-shell-extension-coverflow-alt-tab-59-noarch-1_gfs.txz.
+05-build_gnome-shell-extension-cpufreq.sh
+
+Cloning into 'cpufreq'...
+Note: switching to '2b4086adf408f6754b8b9584a42feec4466a5a08'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 2b4086a Update supporting strings
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+Creating Slackware package:  /tmp/gnome-shell-extension-cpufreq-53+2b4086a-noarch-1_gfs.txz
+
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/gnome-shell-extension-cpufreq-53+2b4086a/
+usr/doc/gnome-shell-extension-cpufreq-53+2b4086a/BACKERS.md
+usr/doc/gnome-shell-extension-cpufreq-53+2b4086a/LICENSE
+usr/doc/gnome-shell-extension-cpufreq-53+2b4086a/README.md
+usr/doc/gnome-shell-extension-cpufreq-53+2b4086a/changelog
+usr/doc/gnome-shell-extension-cpufreq-53+2b4086a/gnome-shell-extension-cpufreq.SlackBuild
+usr/share/
+usr/share/gnome-shell/
+usr/share/gnome-shell/extensions/
+usr/share/gnome-shell/extensions/cpufreq@konkor/
+usr/share/gnome-shell/extensions/cpufreq@konkor/.gitignore
+usr/share/gnome-shell/extensions/cpufreq@konkor/BACKERS.md
+usr/share/gnome-shell/extensions/cpufreq@konkor/INSTALL.md
+usr/share/gnome-shell/extensions/cpufreq@konkor/LICENSE
+usr/share/gnome-shell/extensions/cpufreq@konkor/Makefile.am
+usr/share/gnome-shell/extensions/cpufreq@konkor/README.md
+usr/share/gnome-shell/extensions/cpufreq@konkor/autogen.sh
+usr/share/gnome-shell/extensions/cpufreq@konkor/common/
+usr/share/gnome-shell/extensions/cpufreq@konkor/common/Application.js
+usr/share/gnome-shell/extensions/cpufreq@konkor/common/HelperCPUFreq.js
+usr/share/gnome-shell/extensions/cpufreq@konkor/common/Indicator.js
+usr/share/gnome-shell/extensions/cpufreq@konkor/common/Logger.js
+usr/share/gnome-shell/extensions/cpufreq@konkor/common/Makefile.am
+usr/share/gnome-shell/extensions/cpufreq@konkor/common/Preferences.js
+usr/share/gnome-shell/extensions/cpufreq@konkor/common/Settings.js
+usr/share/gnome-shell/extensions/cpufreq@konkor/common/ui/
+usr/share/gnome-shell/extensions/cpufreq@konkor/common/ui/ControlPanel.js
+usr/share/gnome-shell/extensions/cpufreq@konkor/common/ui/InfoPanel.js
+usr/share/gnome-shell/extensions/cpufreq@konkor/common/ui/MainWindow.js
+usr/share/gnome-shell/extensions/cpufreq@konkor/common/ui/Makefile.am
+usr/share/gnome-shell/extensions/cpufreq@konkor/common/ui/ProfileItems.js
+usr/share/gnome-shell/extensions/cpufreq@konkor/common/ui/SideMenu.js
+usr/share/gnome-shell/extensions/cpufreq@konkor/common/ui/Slider.js
+usr/share/gnome-shell/extensions/cpufreq@konkor/common/ui/Switch.js
+usr/share/gnome-shell/extensions/cpufreq@konkor/configure.ac
+usr/share/gnome-shell/extensions/cpufreq@konkor/convenience.js
+usr/share/gnome-shell/extensions/cpufreq@konkor/cpufreq-application
+usr/share/gnome-shell/extensions/cpufreq@konkor/cpufreq-indicator
+usr/share/gnome-shell/extensions/cpufreq@konkor/cpufreq-preferences
+usr/share/gnome-shell/extensions/cpufreq@konkor/cpufreq-service
+usr/share/gnome-shell/extensions/cpufreq@konkor/cpufreqctl
+usr/share/gnome-shell/extensions/cpufreq@konkor/data/
+usr/share/gnome-shell/extensions/cpufreq@konkor/data/Makefile.am
+usr/share/gnome-shell/extensions/cpufreq@konkor/data/cpufreq-manager.desktop
+usr/share/gnome-shell/extensions/cpufreq@konkor/data/icons/
+usr/share/gnome-shell/extensions/cpufreq@konkor/data/icons/Makefile.am
+usr/share/gnome-shell/extensions/cpufreq@konkor/data/icons/application-menu-symbolic.svg
+usr/share/gnome-shell/extensions/cpufreq@konkor/data/icons/cpufreq.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/data/icons/cpufreq.svg
+usr/share/gnome-shell/extensions/cpufreq@konkor/data/icons/feedcat.svg
+usr/share/gnome-shell/extensions/cpufreq@konkor/data/icons/hicolor/
+usr/share/gnome-shell/extensions/cpufreq@konkor/data/icons/hicolor/32x32/
+usr/share/gnome-shell/extensions/cpufreq@konkor/data/icons/hicolor/32x32/apps/
+usr/share/gnome-shell/extensions/cpufreq@konkor/data/icons/hicolor/32x32/apps/cpufreq.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/data/icons/hicolor/32x32/apps/cpufreq.svg
+usr/share/gnome-shell/extensions/cpufreq@konkor/data/icons/hicolor/scalable/
+usr/share/gnome-shell/extensions/cpufreq@konkor/data/icons/hicolor/scalable/apps/
+usr/share/gnome-shell/extensions/cpufreq@konkor/data/icons/hicolor/scalable/apps/cpufreq.svg
+usr/share/gnome-shell/extensions/cpufreq@konkor/data/icons/open-menu-symbolic.svg
+usr/share/gnome-shell/extensions/cpufreq@konkor/data/screenshots.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/data/screenshots2.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/data/splash.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/data/splash.svg
+usr/share/gnome-shell/extensions/cpufreq@konkor/data/themes/
+usr/share/gnome-shell/extensions/cpufreq@konkor/data/themes/Makefile.am
+usr/share/gnome-shell/extensions/cpufreq@konkor/data/themes/default/
+usr/share/gnome-shell/extensions/cpufreq@konkor/data/themes/default/gtk.css
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/.gitignore
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/BACKERS.md
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/Gemfile
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/README.md
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/_config.yml
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/_includes/
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/_includes/analytics.html
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/_includes/footer.html
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/_includes/head.html
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/_includes/sidebar.html
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/_layouts/
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/_layouts/default.html
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/_layouts/home.html
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/_layouts/page.html
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/_layouts/post.html
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/_posts/
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/_posts/2018-02-26-hello-world.md
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/_posts/2018-02-28-version-25.md
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/_posts/2018-07-18-top100.md
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/_posts/2018-11-25-debugging.md
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/_posts/2018-12-04-fonts.md
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/_posts/2019-02-10-news.md
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/_posts/2019-02-15-news.md
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/_posts/2019-02-25-news.md
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/_posts/2019-04-18-news.md
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/_posts/2019-10-14-news.md
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/_sass/
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/_sass/content.scss
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/_sass/footer.scss
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/_sass/header.scss
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/_sass/mixins.scss
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/_sass/normalize.scss
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/_sass/posts.scss
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/_sass/sidebar.scss
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/_sass/variables.scss
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/about.md
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/Hello.sfd
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/Hello.woff
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/atom-one-dark.min.css
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/favicon.ico
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/highlight.min.js
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/cpufreq.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/cpufreq.svg
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/edit.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/elements.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/governors.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/logo.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/mixed_mode.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/posts/
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/posts/bugs.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/posts/colorstates.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/posts/fontbasics.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/posts/fontforge00.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/posts/fontforge01.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/posts/fontforge02.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/posts/fontforge03.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/posts/fontforge04.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/posts/fontforge05.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/posts/fontforge06.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/posts/fonts.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/posts/france.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/posts/gtk.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/posts/hundred.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/posts/letterform.gif
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/posts/linuxuprising.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/posts/loading_prefs.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/posts/logo_jb.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/posts/news.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/posts/omg.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/posts/power_events.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/posts/sidebyside.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/posts/states.gif
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/posts/top100.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/posts/unplugged.jpg
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/posts/version_1.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/posts/welcome.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/preferences.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/prefs.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/profiles.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/screenshot.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/system_status.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/assets/images/userspace.png
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/contribution.md
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/docker-compose.yml
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/donations.md
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/faq.md
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/frontend.md
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/index.md
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/install.md
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/main.scss
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/sources.md
+usr/share/gnome-shell/extensions/cpufreq@konkor/docs/start.md
+usr/share/gnome-shell/extensions/cpufreq@konkor/extension.js
+usr/share/gnome-shell/extensions/cpufreq@konkor/fonts/
+usr/share/gnome-shell/extensions/cpufreq@konkor/fonts/Makefile.am
+usr/share/gnome-shell/extensions/cpufreq@konkor/fonts/cpufreq.sfd
+usr/share/gnome-shell/extensions/cpufreq@konkor/fonts/cpufreq.ttf
+usr/share/gnome-shell/extensions/cpufreq@konkor/install_extension.sh
+usr/share/gnome-shell/extensions/cpufreq@konkor/konkor.cpufreq.policy
+usr/share/gnome-shell/extensions/cpufreq@konkor/metadata.json
+usr/share/gnome-shell/extensions/cpufreq@konkor/metadata.json.in
+usr/share/gnome-shell/extensions/cpufreq@konkor/packaging/
+usr/share/gnome-shell/extensions/cpufreq@konkor/packaging/debian/
+usr/share/gnome-shell/extensions/cpufreq@konkor/packaging/debian/changelog
+usr/share/gnome-shell/extensions/cpufreq@konkor/packaging/debian/compat
+usr/share/gnome-shell/extensions/cpufreq@konkor/packaging/debian/control
+usr/share/gnome-shell/extensions/cpufreq@konkor/packaging/debian/copyright
+usr/share/gnome-shell/extensions/cpufreq@konkor/packaging/debian/rules
+usr/share/gnome-shell/extensions/cpufreq@konkor/packaging/debian/source/
+usr/share/gnome-shell/extensions/cpufreq@konkor/packaging/debian/source/format
+usr/share/gnome-shell/extensions/cpufreq@konkor/packaging/packaging.sh
+usr/share/gnome-shell/extensions/cpufreq@konkor/prefs.js
+usr/share/gnome-shell/extensions/cpufreq@konkor/schemas/
+usr/share/gnome-shell/extensions/cpufreq@konkor/schemas/Makefile.am
+usr/share/gnome-shell/extensions/cpufreq@konkor/schemas/gschemas.compiled
+usr/share/gnome-shell/extensions/cpufreq@konkor/schemas/org.gnome.shell.extensions.cpufreq.gschema.xml
+usr/share/gnome-shell/extensions/cpufreq@konkor/stylesheet.css
+usr/share/gnome-shell/extensions/cpufreq@konkor/tests/
+usr/share/gnome-shell/extensions/cpufreq@konkor/tests/battery_test.js
+
+Slackware package /tmp/gnome-shell-extension-cpufreq-53+2b4086a-noarch-1_gfs.txz created.
+
+
++==============================================================================
+| Upgrading gnome-shell-extension-cpufreq-53+2b4086a-noarch-1_gfs package using /tmp/gnome-shell-extension-cpufreq-53+2b4086a-noarch-1_gfs.txz
++==============================================================================
+Pre-installing package gnome-shell-extension-cpufreq-53+2b4086a-noarch-1_gfs...
+Removing package: gnome-shell-extension-cpufreq-53+2b4086a-noarch-1_gfs-upgraded-2023-09-07,23:48:34
+Verifying package gnome-shell-extension-cpufreq-53+2b4086a-noarch-1_gfs.txz.
+Installing package gnome-shell-extension-cpufreq-53+2b4086a-noarch-1_gfs.txz:
+PACKAGE DESCRIPTION:
+# gnome-shell-extension-cpufreq (Cpu Monitor and Governor Manager)
+#
+# Gnome Shell CPU Frequency Monitor and Governor 
+# Manager.
+#
+# https://github.com/konkor/cpufreq
+#
+Package gnome-shell-extension-cpufreq-53+2b4086a-noarch-1_gfs.txz installed.
+Package gnome-shell-extension-cpufreq-53+2b4086a-noarch-1_gfs upgraded with new package /tmp/gnome-shell-extension-cpufreq-53+2b4086a-noarch-1_gfs.txz.
+06-build_gnome-shell-extension-dash-to-dock.sh
+
+Cloning into 'dash-to-dock'...
+Note: switching to '962bc4aeaa044b10346488e2c46d4c7a08d544ac'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 962bc4a Releasing v87
+glib-compile-schemas ./schemas/
+sassc --omit-map-comment _stylesheet.scss stylesheet.css
+msgfmt -c po/ar.po -o po/ar.mo
+msgfmt -c po/cs.po -o po/cs.mo
+msgfmt -c po/de.po -o po/de.mo
+msgfmt -c po/el.po -o po/el.mo
+msgfmt -c po/es.po -o po/es.mo
+msgfmt -c po/eu.po -o po/eu.mo
+msgfmt -c po/fr.po -o po/fr.mo
+msgfmt -c po/gl.po -o po/gl.mo
+msgfmt -c po/hu.po -o po/hu.mo
+msgfmt -c po/id.po -o po/id.mo
+msgfmt -c po/it.po -o po/it.mo
+msgfmt -c po/ja.po -o po/ja.mo
+msgfmt -c po/nb.po -o po/nb.mo
+msgfmt -c po/nl.po -o po/nl.mo
+msgfmt -c po/pl.po -o po/pl.mo
+msgfmt -c po/pt.po -o po/pt.mo
+msgfmt -c po/pt_BR.po -o po/pt_BR.mo
+msgfmt -c po/ru.po -o po/ru.mo
+msgfmt -c po/sk.po -o po/sk.mo
+msgfmt -c po/sr.po -o po/sr.mo
+msgfmt -c po/sr@latin.po -o po/sr@latin.mo
+msgfmt -c po/sv.po -o po/sv.mo
+msgfmt -c po/tr.po -o po/tr.mo
+msgfmt -c po/uk_UA.po -o po/uk_UA.mo
+msgfmt -c po/zh_CN.po -o po/zh_CN.mo
+msgfmt -c po/zh_TW.po -o po/zh_TW.mo
+rm -fR ./_build
+mkdir -p _build
+cp extension.js metadata.json COPYING README.md  appSpread.js dash.js docking.js appIcons.js appIconIndicators.js fileManager1API.js imports.js launcherAPI.js locations.js locationsWorker.js notificationsMonitor.js windowPreview.js intellihide.js prefs.js theming.js utils.js dbusmenuUtils.js desktopIconsIntegration.js Settings.ui  _build
+cp -a dependencies _build
+cp stylesheet.css _build
+mkdir -p _build/media
+cd media ; cp logo.svg glossy.svg highlight_stacked_bg.svg highlight_stacked_bg_h.svg  ../_build/media/
+mkdir -p _build/schemas
+cp schemas/*.xml _build/schemas/
+cp schemas/gschemas.compiled _build/schemas/
+mkdir -p _build/locale
+for l in po/ar.mo po/cs.mo po/de.mo po/el.mo po/es.mo po/eu.mo po/fr.mo po/gl.mo po/hu.mo po/id.mo po/it.mo po/ja.mo po/nb.mo po/nl.mo po/pl.mo po/pt.mo po/pt_BR.mo po/ru.mo po/sk.mo po/sr.mo po/sr@latin.mo po/sv.mo po/tr.mo po/uk_UA.mo po/zh_CN.mo po/zh_TW.mo ; do \
+	lf=_build/locale/`basename $l .mo`; \
+	mkdir -p $lf; \
+	mkdir -p $lf/LC_MESSAGES; \
+	cp $l $lf/LC_MESSAGES/dashtodock.mo; \
+done;
+sed -i 's/"version": -1/"version": "87"/'  _build/metadata.json;
+rm -rf /tmp/gfs/package-gnome-shell-extension-dash-to-dock/usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com
+mkdir -p /tmp/gfs/package-gnome-shell-extension-dash-to-dock/usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com
+cp -r ./_build/* /tmp/gfs/package-gnome-shell-extension-dash-to-dock/usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/
+# system-wide settings and locale files
+rm -r /tmp/gfs/package-gnome-shell-extension-dash-to-dock/usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/schemas /tmp/gfs/package-gnome-shell-extension-dash-to-dock/usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/locale
+mkdir -p /tmp/gfs/package-gnome-shell-extension-dash-to-dock/usr/share/glib-2.0/schemas /tmp/gfs/package-gnome-shell-extension-dash-to-dock/usr/share/locale
+cp -r ./schemas/*gschema.* /tmp/gfs/package-gnome-shell-extension-dash-to-dock/usr/share/glib-2.0/schemas
+cp -r ./_build/locale/* /tmp/gfs/package-gnome-shell-extension-dash-to-dock/usr/share/locale
+rm -fR _build
+echo done
+done
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+Creating Slackware package:  /tmp/gnome-shell-extension-dash-to-dock-87-noarch-1_gfs.txz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/gnome-shell-extension-dash-to-dock-87/
+usr/doc/gnome-shell-extension-dash-to-dock-87/COPYING
+usr/doc/gnome-shell-extension-dash-to-dock-87/README.md
+usr/doc/gnome-shell-extension-dash-to-dock-87/gnome-shell-extension-dash-to-dock.SlackBuild
+usr/share/
+usr/share/glib-2.0/
+usr/share/glib-2.0/schemas/
+usr/share/glib-2.0/schemas/org.gnome.shell.extensions.dash-to-dock.gschema.xml
+usr/share/gnome-shell/
+usr/share/gnome-shell/extensions/
+usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/
+usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/COPYING
+usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/README.md
+usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/Settings.ui
+usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/appIconIndicators.js
+usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/appIcons.js
+usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/appSpread.js
+usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/dash.js
+usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/dbusmenuUtils.js
+usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/dependencies/
+usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/dependencies/gi.js
+usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/dependencies/shell/
+usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/dependencies/shell/extensions/
+usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/dependencies/shell/extensions/extension.js
+usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/dependencies/shell/misc.js
+usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/dependencies/shell/ui.js
+usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/desktopIconsIntegration.js
+usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/docking.js
+usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/extension.js
+usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/fileManager1API.js
+usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/imports.js
+usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/intellihide.js
+usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/launcherAPI.js
+usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/locations.js
+usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/locationsWorker.js
+usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/media/
+usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/media/glossy.svg
+usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/media/highlight_stacked_bg.svg
+usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/media/highlight_stacked_bg_h.svg
+usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/media/logo.svg
+usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/metadata.json
+usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/notificationsMonitor.js
+usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/prefs.js
+usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/stylesheet.css
+usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/theming.js
+usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/utils.js
+usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/windowPreview.js
+usr/share/locale/
+usr/share/locale/ar/
+usr/share/locale/ar/LC_MESSAGES/
+usr/share/locale/ar/LC_MESSAGES/dashtodock.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/dashtodock.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/dashtodock.mo
+usr/share/locale/el/
+usr/share/locale/el/LC_MESSAGES/
+usr/share/locale/el/LC_MESSAGES/dashtodock.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/dashtodock.mo
+usr/share/locale/eu/
+usr/share/locale/eu/LC_MESSAGES/
+usr/share/locale/eu/LC_MESSAGES/dashtodock.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/dashtodock.mo
+usr/share/locale/gl/
+usr/share/locale/gl/LC_MESSAGES/
+usr/share/locale/gl/LC_MESSAGES/dashtodock.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/dashtodock.mo
+usr/share/locale/id/
+usr/share/locale/id/LC_MESSAGES/
+usr/share/locale/id/LC_MESSAGES/dashtodock.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/dashtodock.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/dashtodock.mo
+usr/share/locale/nb/
+usr/share/locale/nb/LC_MESSAGES/
+usr/share/locale/nb/LC_MESSAGES/dashtodock.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/dashtodock.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/dashtodock.mo
+usr/share/locale/pt/
+usr/share/locale/pt/LC_MESSAGES/
+usr/share/locale/pt/LC_MESSAGES/dashtodock.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/dashtodock.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/dashtodock.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/dashtodock.mo
+usr/share/locale/sr/
+usr/share/locale/sr/LC_MESSAGES/
+usr/share/locale/sr/LC_MESSAGES/dashtodock.mo
+usr/share/locale/sr@latin/
+usr/share/locale/sr@latin/LC_MESSAGES/
+usr/share/locale/sr@latin/LC_MESSAGES/dashtodock.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/dashtodock.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/dashtodock.mo
+usr/share/locale/uk_UA/
+usr/share/locale/uk_UA/LC_MESSAGES/
+usr/share/locale/uk_UA/LC_MESSAGES/dashtodock.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/dashtodock.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/dashtodock.mo
+
+Slackware package /tmp/gnome-shell-extension-dash-to-dock-87-noarch-1_gfs.txz created.
+
+
++==============================================================================
+| Upgrading gnome-shell-extension-dash-to-dock-87-noarch-1_gfs package using /tmp/gnome-shell-extension-dash-to-dock-87-noarch-1_gfs.txz
++==============================================================================
+Pre-installing package gnome-shell-extension-dash-to-dock-87-noarch-1_gfs...
+Removing package: gnome-shell-extension-dash-to-dock-87-noarch-1_gfs-upgraded-2023-09-07,23:48:47
+Verifying package gnome-shell-extension-dash-to-dock-87-noarch-1_gfs.txz.
+Installing package gnome-shell-extension-dash-to-dock-87-noarch-1_gfs.txz:
+PACKAGE DESCRIPTION:
+# gnome-shell-extension-dash-to-dock (Dash to Dock extension for GNOME)
+#
+# Move the dash out of the overview transforming it in a dock 
+# 
+# https://micheleg.github.io/dash-to-dock
+# 
+#
+Executing install script for gnome-shell-extension-dash-to-dock-87-noarch-1_gfs.txz.
+Package gnome-shell-extension-dash-to-dock-87-noarch-1_gfs.txz installed.
+Package gnome-shell-extension-dash-to-dock-87-noarch-1_gfs upgraded with new package /tmp/gnome-shell-extension-dash-to-dock-87-noarch-1_gfs.txz.
+07-build_gnome-shell-extension-dash-to-panel.sh
+
+Cloning into 'dash-to-panel'...
+Note: switching to 'be8214d1789fb08d98113762da2bc03e6b13c596'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at be8214d Ignore overview window previews from click to exit
+patching file metadata.json
+patching file appIcons.js
+patching file desktopIconsIntegration.js
+patching file extension.js
+patching file intellihide.js
+patching file overview.js
+patching file panel.js
+patching file panelManager.js
+patching file panelSettings.js
+patching file panelStyle.js
+patching file prefs.js
+patching file progress.js
+patching file proximity.js
+patching file taskbar.js
+patching file transparency.js
+patching file utils.js
+patching file windowPreview.js
+patching file extension.js
+patching file prefs.js
+patching file extension.js
+patching file panel.js
+patching file panelManager.js
+patching file extension.js
+patching file appIcons.js
+patching file extension.js
+patching file progress.js
+patching file taskbar.js
+patching file windowPreview.js
+patching file panelPositions.js
+patching file panelSettings.js
+patching file prefs.js
+patching file prefs.js
+patching file prefs.js
+patching file appIcons.js
+patching file desktopIconsIntegration.js
+patching file extension.js
+patching file panel.js
+patching file panelManager.js
+patching file panelStyle.js
+patching file progress.js
+patching file taskbar.js
+patching file utils.js
+patching file windowPreview.js
+patching file appIcons.js
+patching file panel.js
+patching file appIcons.js
+patching file extension.js
+patching file progress.js
+patching file taskbar.js
+patching file windowPreview.js
+patching file appIcons.js
+patching file extension.js
+patching file progress.js
+patching file taskbar.js
+patching file extension.js
+patching file appIcons.js
+patching file intellihide.js
+patching file overview.js
+patching file panel.js
+patching file panelManager.js
+patching file panelStyle.js
+patching file progress.js
+patching file taskbar.js
+patching file transparency.js
+patching file windowPreview.js
+patching file panel.js
+patching file appIcons.js
+patching file desktopIconsIntegration.js
+patching file extension.js
+patching file appIcons.js
+patching file panel.js
+patching file utils.js
+patching file taskbar.js
+patching file extension.js
+patching file panelManager.js
+patching file panel.js
+patching file panelManager.js
+patching file overview.js
+patching file panelManager.js
+patching file panel.js
+patching file panelStyle.js
+patching file progress.js
+patching file proximity.js
+patching file panel.js
+patching file taskbar.js
+patching file transparency.js
+patching file utils.js
+patching file windowPreview.js
+patching file intellihide.js
+patching file desktopIconsIntegration.js
+patching file appIcons.js
+patching file appIcons.js
+patching file extension.js
+patching file overview.js
+patching file panel.js
+patching file panelManager.js
+patching file taskbar.js
+patching file utils.js
+patching file appIcons.js
+patching file extension.js
+patching file progress.js
+patching file taskbar.js
+patching file windowPreview.js
+patching file panel.js
+patching file panel.js
+patching file panelManager.js
+patching file appIcons.js
+patching file extension.js
+patching file extension.js
+patching file extension.js
+patching file proximity.js
+patching file appIcons.js
+patching file intellihide.js
+patching file taskbar.js
+patching file overview.js
+patching file panelManager.js
+patching file prefs.js
+patching file prefs.js
+patching file extension.js
+patching file extension.js
+patching file utils.js
+patching file panel.js
+patching file taskbar.js
+patching file panel.js
+patching file prefs.js
+patching file schemas/org.gnome.shell.extensions.dash-to-panel.gschema.xml
+patching file ui/SettingsBehavior.ui
+patching file panel.js
+patching file taskbar.js
+patching file panel.js
+patching file taskbar.js
+patching file appIcons.js
+patching file proximity.js
+patching file taskbar.js
+glib-compile-schemas ./schemas/
+msgfmt -c po/cs.po -o po/cs.mo
+msgfmt -c po/de.po -o po/de.mo
+msgfmt -c po/es.po -o po/es.mo
+msgfmt -c po/fa.po -o po/fa.mo
+msgfmt -c po/fr.po -o po/fr.mo
+msgfmt -c po/gl.po -o po/gl.mo
+msgfmt -c po/hu.po -o po/hu.mo
+msgfmt -c po/it.po -o po/it.mo
+msgfmt -c po/ja.po -o po/ja.mo
+msgfmt -c po/kk.po -o po/kk.mo
+msgfmt -c po/ko.po -o po/ko.mo
+msgfmt -c po/nl.po -o po/nl.mo
+msgfmt -c po/pl.po -o po/pl.mo
+msgfmt -c po/pt_BR.po -o po/pt_BR.mo
+msgfmt -c po/ru.po -o po/ru.mo
+msgfmt -c po/sk.po -o po/sk.mo
+msgfmt -c po/sv.po -o po/sv.mo
+msgfmt -c po/tr.po -o po/tr.mo
+msgfmt -c po/uk.po -o po/uk.mo
+msgfmt -c po/zh_CN.po -o po/zh_CN.mo
+msgfmt -c po/zh_TW.po -o po/zh_TW.mo
+rm -fR ./_build
+mkdir -p _build
+cp extension.js stylesheet.css metadata.json COPYING README.md appIcons.js panel.js panelManager.js proximity.js intellihide.js progress.js panelPositions.js panelSettings.js panelStyle.js overview.js taskbar.js transparency.js windowPreview.js prefs.js utils.js desktopIconsIntegration.js _build
+mkdir -p _build/ui
+cp ui/BoxAdvancedOptions.ui ui/BoxAnimateAppIconHoverOptions.ui ui/BoxDotOptions.ui ui/BoxDynamicOpacityOptions.ui ui/BoxGroupAppsOptions.ui ui/BoxIntellihideOptions.ui ui/BoxMiddleClickOptions.ui ui/BoxOverlayShortcut.ui ui/BoxScrollIconOptions.ui ui/BoxScrollPanelOptions.ui ui/BoxSecondaryMenuOptions.ui ui/BoxShowApplicationsOptions.ui ui/BoxShowDesktopOptions.ui ui/BoxWindowPreviewOptions.ui ui/SettingsAbout.ui ui/SettingsAction.ui ui/SettingsBehavior.ui ui/SettingsFineTune.ui ui/SettingsPosition.ui ui/SettingsStyle.ui _build/ui
+mkdir -p _build/img
+cd img ; cp highlight_stacked_bg.svg highlight_stacked_bg_2.svg highlight_stacked_bg_3.svg ../_build/img/
+mkdir -p _build/schemas
+cp schemas/*.xml _build/schemas/
+cp schemas/gschemas.compiled _build/schemas/
+mkdir -p _build/locale
+for l in po/cs.mo po/de.mo po/es.mo po/fa.mo po/fr.mo po/gl.mo po/hu.mo po/it.mo po/ja.mo po/kk.mo po/ko.mo po/nl.mo po/pl.mo po/pt_BR.mo po/ru.mo po/sk.mo po/sv.mo po/tr.mo po/uk.mo po/zh_CN.mo po/zh_TW.mo ; do \
+	lf=_build/locale/`basename $l .mo`; \
+	mkdir -p $lf; \
+	mkdir -p $lf/LC_MESSAGES; \
+	cp $l $lf/LC_MESSAGES/dash-to-panel.mo; \
+done;
+sed -i 's/"version": [[:digit:]][[:digit:]]*/"version": 56,\n"commit": "be8214d1789fb08d98113762da2bc03e6b13c596"/'  _build/metadata.json;
+rm -rf /tmp/gfs/package-gnome-shell-extension-dash-to-panel/usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com
+mkdir -p /tmp/gfs/package-gnome-shell-extension-dash-to-panel/usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com
+cp -r ./_build/* /tmp/gfs/package-gnome-shell-extension-dash-to-panel/usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/
+rm -fR _build
+echo done
+done
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+Creating Slackware package:  /tmp/gnome-shell-extension-dash-to-panel-57-noarch-1_gfs.txz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/gnome-shell-extension-dash-to-panel-57/
+usr/doc/gnome-shell-extension-dash-to-panel-57/COPYING
+usr/doc/gnome-shell-extension-dash-to-panel-57/README.md
+usr/doc/gnome-shell-extension-dash-to-panel-57/gnome-shell-extension-dash-to-panel.SlackBuild
+usr/share/
+usr/share/gnome-shell/
+usr/share/gnome-shell/extensions/
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/COPYING
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/README.md
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/appIcons.js
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/desktopIconsIntegration.js
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/extension.js
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/img/
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/img/highlight_stacked_bg.svg
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/img/highlight_stacked_bg_2.svg
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/img/highlight_stacked_bg_3.svg
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/intellihide.js
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/metadata.json
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/overview.js
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/panel.js
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/panelManager.js
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/panelPositions.js
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/panelSettings.js
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/panelStyle.js
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/prefs.js
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/progress.js
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/proximity.js
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/schemas/
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/schemas/gschemas.compiled
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/schemas/org.gnome.shell.extensions.dash-to-panel.gschema.xml
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/stylesheet.css
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/taskbar.js
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/transparency.js
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/ui/
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/ui/BoxAdvancedOptions.ui
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/ui/BoxAnimateAppIconHoverOptions.ui
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/ui/BoxDotOptions.ui
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/ui/BoxDynamicOpacityOptions.ui
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/ui/BoxGroupAppsOptions.ui
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/ui/BoxIntellihideOptions.ui
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/ui/BoxMiddleClickOptions.ui
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/ui/BoxOverlayShortcut.ui
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/ui/BoxScrollIconOptions.ui
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/ui/BoxScrollPanelOptions.ui
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/ui/BoxSecondaryMenuOptions.ui
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/ui/BoxShowApplicationsOptions.ui
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/ui/BoxShowDesktopOptions.ui
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/ui/BoxWindowPreviewOptions.ui
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/ui/SettingsAbout.ui
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/ui/SettingsAction.ui
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/ui/SettingsBehavior.ui
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/ui/SettingsFineTune.ui
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/ui/SettingsPosition.ui
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/ui/SettingsStyle.ui
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/utils.js
+usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/windowPreview.js
+usr/share/locale/
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/dash-to-panel.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/dash-to-panel.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/dash-to-panel.mo
+usr/share/locale/fa/
+usr/share/locale/fa/LC_MESSAGES/
+usr/share/locale/fa/LC_MESSAGES/dash-to-panel.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/dash-to-panel.mo
+usr/share/locale/gl/
+usr/share/locale/gl/LC_MESSAGES/
+usr/share/locale/gl/LC_MESSAGES/dash-to-panel.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/dash-to-panel.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/dash-to-panel.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/dash-to-panel.mo
+usr/share/locale/kk/
+usr/share/locale/kk/LC_MESSAGES/
+usr/share/locale/kk/LC_MESSAGES/dash-to-panel.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/dash-to-panel.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/dash-to-panel.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/dash-to-panel.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/dash-to-panel.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/dash-to-panel.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/dash-to-panel.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/dash-to-panel.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/dash-to-panel.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/dash-to-panel.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/dash-to-panel.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/dash-to-panel.mo
+
+Slackware package /tmp/gnome-shell-extension-dash-to-panel-57-noarch-1_gfs.txz created.
+
+
++==============================================================================
+| Upgrading gnome-shell-extension-dash-to-panel-57-noarch-1_gfs package using /tmp/gnome-shell-extension-dash-to-panel-57-noarch-1_gfs.txz
++==============================================================================
+Pre-installing package gnome-shell-extension-dash-to-panel-57-noarch-1_gfs...
+Removing package: gnome-shell-extension-dash-to-panel-57-noarch-1_gfs-upgraded-2023-09-07,23:49:07
+Verifying package gnome-shell-extension-dash-to-panel-57-noarch-1_gfs.txz.
+Installing package gnome-shell-extension-dash-to-panel-57-noarch-1_gfs.txz:
+PACKAGE DESCRIPTION:
+# gnome-shell-extension-dash-to-panel ( Gnome extension )
+#
+# Dash to Panel is an icon taskbar for Gnome Shell.  
+#
+# https://github.com/home-sweet-gnome/dash-to-panel
+#
+Executing install script for gnome-shell-extension-dash-to-panel-57-noarch-1_gfs.txz.
+Package gnome-shell-extension-dash-to-panel-57-noarch-1_gfs.txz installed.
+Package gnome-shell-extension-dash-to-panel-57-noarch-1_gfs upgraded with new package /tmp/gnome-shell-extension-dash-to-panel-57-noarch-1_gfs.txz.
+08-build_gnome-shell-extension-desktop-icons-ng.sh
+
+Cloning into 'desktop-icons-ng'...
+Note: switching to '4d45588445dc773326aa95f7cdbcfc59f0588bf7'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 4d45588 Gtk4-ding version 50
+The Meson build system
+Version: 1.2.1
+Source dir: /tmp/gfs/desktop-icons-ng
+Build dir: /tmp/gfs/desktop-icons-ng/build
+Build type: native build
+Project name: gtk4-ding
+Project version: 1
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Program glib-compile-schemas found: YES (/usr/bin/glib-compile-schemas)
+Build targets in project: 35
+
+gtk4-ding 1
+
+  User defined options
+    buildtype    : release
+    infodir      : /usr/info
+    libdir       : lib
+    libexecdir   : /usr/libexec
+    localstatedir: /var
+    mandir       : /usr/man
+    prefix       : /usr
+    sysconfdir   : /etc
+
+Found ninja-1.11.1 at /usr/bin/ninja
+[1/32] Generating po/da/LC_MESSAGES/gtk4-ding-da.mo with a custom command
+[2/32] Generating po/de/LC_MESSAGES/gtk4-ding-de.mo with a custom command
+[3/32] Generating po/fr/LC_MESSAGES/gtk4-ding-fr.mo with a custom command
+[4/32] Generating po/fur/LC_MESSAGES/gtk4-ding-fur.mo with a custom command
+[5/32] Generating po/be/LC_MESSAGES/gtk4-ding-be.mo with a custom command
+[6/32] Generating po/ca/LC_MESSAGES/gtk4-ding-ca.mo with a custom command
+[7/32] Generating po/cs/LC_MESSAGES/gtk4-ding-cs.mo with a custom command
+[8/32] Generating po/es/LC_MESSAGES/gtk4-ding-es.mo with a custom command
+[9/32] Generating po/fi/LC_MESSAGES/gtk4-ding-fi.mo with a custom command
+[10/32] Generating po/hr/LC_MESSAGES/gtk4-ding-hr.mo with a custom command
+[11/32] Generating po/he/LC_MESSAGES/gtk4-ding-he.mo with a custom command
+[12/32] Generating po/hu/LC_MESSAGES/gtk4-ding-hu.mo with a custom command
+[13/32] Generating po/id/LC_MESSAGES/gtk4-ding-id.mo with a custom command
+[14/32] Generating po/it/LC_MESSAGES/gtk4-ding-it.mo with a custom command
+[15/32] Generating po/ja/LC_MESSAGES/gtk4-ding-ja.mo with a custom command
+[16/32] Generating po/ko/LC_MESSAGES/gtk4-ding-ko.mo with a custom command
+[17/32] Generating po/ro/LC_MESSAGES/gtk4-ding-ro.mo with a custom command
+[18/32] Generating po/sk/LC_MESSAGES/gtk4-ding-sk.mo with a custom command
+[19/32] Generating po/sv/LC_MESSAGES/gtk4-ding-sv.mo with a custom command
+[20/32] Generating po/uk/LC_MESSAGES/gtk4-ding-uk.mo with a custom command
+[21/32] Generating po/zh_CN/LC_MESSAGES/gtk4-ding-zh_CN.mo with a custom command
+[22/32] Generating po/oc/LC_MESSAGES/gtk4-ding-oc.mo with a custom command
+[23/32] Generating po/zh_TW/LC_MESSAGES/gtk4-ding-zh_TW.mo with a custom command
+[24/32] Generating po/nl/LC_MESSAGES/gtk4-ding-nl.mo with a custom command
+[25/32] Generating po/pl/LC_MESSAGES/gtk4-ding-pl.mo with a custom command
+[26/32] Generating po/pt_BR/LC_MESSAGES/gtk4-ding-pt_BR.mo with a custom command
+[27/32] Generating po/ru/LC_MESSAGES/gtk4-ding-ru.mo with a custom command
+[28/32] Generating po/tr/LC_MESSAGES/gtk4-ding-tr.mo with a custom command
+[29/32] Generating po/nb_NO/LC_MESSAGES/gtk4-ding-nb_NO.mo with a custom command
+[30/32] Generating schemas/gsettings-compile-schemas with a custom command
+[31/32] Generating po/eo/LC_MESSAGES/gtk4-ding-eo.mo with a custom command
+[32/32] Generating po/bn/LC_MESSAGES/gtk4-ding-bn.mo with a custom command
+[0/1] Installing files.
+Installing subdir /tmp/gfs/desktop-icons-ng/app to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app
+Installing /tmp/gfs/desktop-icons-ng/app/thumbnails.js to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app
+Installing /tmp/gfs/desktop-icons-ng/app/templatesScriptsManager.js to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app
+Installing /tmp/gfs/desktop-icons-ng/app/desktopGrid.js to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app
+Installing /tmp/gfs/desktop-icons-ng/app/stackItem.js to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app
+Installing /tmp/gfs/desktop-icons-ng/app/preferences.js to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app
+Installing /tmp/gfs/desktop-icons-ng/app/autoAr.js to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app
+Installing /tmp/gfs/desktop-icons-ng/app/createThumbnail.js to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app
+Installing /tmp/gfs/desktop-icons-ng/app/showErrorPopup.js to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app
+Installing /tmp/gfs/desktop-icons-ng/app/fileItem.js to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app
+Installing /tmp/gfs/desktop-icons-ng/app/fileItemMenu.js to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app
+Installing /tmp/gfs/desktop-icons-ng/app/desktopManager.js to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app
+Installing /tmp/gfs/desktop-icons-ng/app/gnomeShellDragDrop.js to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app
+Installing /tmp/gfs/desktop-icons-ng/app/appChooser.js to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app
+Installing /tmp/gfs/desktop-icons-ng/app/askRenamePopup.js to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app
+Installing /tmp/gfs/desktop-icons-ng/app/enums.js to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app
+Installing /tmp/gfs/desktop-icons-ng/app/adwPreferencesWindow.js to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app
+Installing /tmp/gfs/desktop-icons-ng/app/ding.js to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app
+Installing /tmp/gfs/desktop-icons-ng/app/desktopIconItem.js to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app
+Installing /tmp/gfs/desktop-icons-ng/app/utils/gsConnect.js to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/utils
+Installing /tmp/gfs/desktop-icons-ng/app/utils/desktopIconsUtil.js to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/utils
+Installing /tmp/gfs/desktop-icons-ng/app/utils/dbusInterfaces.js to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/utils
+Installing /tmp/gfs/desktop-icons-ng/app/utils/dbusUtils.js to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/utils
+Installing /tmp/gfs/desktop-icons-ng/app/resources/stylesheet.css to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/resources
+Installing /tmp/gfs/desktop-icons-ng/app/resources/ui/ding-app-chooser.ui to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/resources/ui
+Installing /tmp/gfs/desktop-icons-ng/app/resources/icons/hicolor/symbolic/apps/prefs-more.svg to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/resources/icons/hicolor/symbolic/apps
+Installing /tmp/gfs/desktop-icons-ng/app/resources/icons/hicolor/symbolic/apps/prefs-desktop-symbolic.svg to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/resources/icons/hicolor/symbolic/apps
+Installing /tmp/gfs/desktop-icons-ng/app/resources/icons/hicolor/symbolic/apps/prefs-files.svg to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/resources/icons/hicolor/symbolic/apps
+Installing /tmp/gfs/desktop-icons-ng/app/resources/icons/hicolor/symbolic/apps/prefs-more-symbolic.svg to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/resources/icons/hicolor/symbolic/apps
+Installing /tmp/gfs/desktop-icons-ng/app/resources/icons/hicolor/symbolic/apps/prefs-tweaks-symbolic.svg to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/resources/icons/hicolor/symbolic/apps
+Installing /tmp/gfs/desktop-icons-ng/app/resources/icons/hicolor/symbolic/apps/prefs-desktop.svg to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/resources/icons/hicolor/symbolic/apps
+Installing /tmp/gfs/desktop-icons-ng/app/resources/icons/hicolor/symbolic/apps/prefs-files-symbolic.svg to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/resources/icons/hicolor/symbolic/apps
+Installing subdir /tmp/gfs/desktop-icons-ng/utils to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/utils
+Installing /tmp/gfs/desktop-icons-ng/utils/fileUtils.js to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/utils
+Installing /tmp/gfs/desktop-icons-ng/utils/promiseUtils.js to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/utils
+Installing po/be/LC_MESSAGES/gtk4-ding.mo to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/locale/be/LC_MESSAGES
+Installing po/ca/LC_MESSAGES/gtk4-ding.mo to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/locale/ca/LC_MESSAGES
+Installing po/cs/LC_MESSAGES/gtk4-ding.mo to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/locale/cs/LC_MESSAGES
+Installing po/da/LC_MESSAGES/gtk4-ding.mo to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/locale/da/LC_MESSAGES
+Installing po/de/LC_MESSAGES/gtk4-ding.mo to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/locale/de/LC_MESSAGES
+Installing po/es/LC_MESSAGES/gtk4-ding.mo to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/locale/es/LC_MESSAGES
+Installing po/fi/LC_MESSAGES/gtk4-ding.mo to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/locale/fi/LC_MESSAGES
+Installing po/fr/LC_MESSAGES/gtk4-ding.mo to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/locale/fr/LC_MESSAGES
+Installing po/fur/LC_MESSAGES/gtk4-ding.mo to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/locale/fur/LC_MESSAGES
+Installing po/he/LC_MESSAGES/gtk4-ding.mo to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/locale/he/LC_MESSAGES
+Installing po/hr/LC_MESSAGES/gtk4-ding.mo to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/locale/hr/LC_MESSAGES
+Installing po/hu/LC_MESSAGES/gtk4-ding.mo to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/locale/hu/LC_MESSAGES
+Installing po/id/LC_MESSAGES/gtk4-ding.mo to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/locale/id/LC_MESSAGES
+Installing po/it/LC_MESSAGES/gtk4-ding.mo to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/locale/it/LC_MESSAGES
+Installing po/ja/LC_MESSAGES/gtk4-ding.mo to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/locale/ja/LC_MESSAGES
+Installing po/ko/LC_MESSAGES/gtk4-ding.mo to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/locale/ko/LC_MESSAGES
+Installing po/nl/LC_MESSAGES/gtk4-ding.mo to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/locale/nl/LC_MESSAGES
+Installing po/oc/LC_MESSAGES/gtk4-ding.mo to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/locale/oc/LC_MESSAGES
+Installing po/pl/LC_MESSAGES/gtk4-ding.mo to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/locale/pl/LC_MESSAGES
+Installing po/pt_BR/LC_MESSAGES/gtk4-ding.mo to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/locale/pt_BR/LC_MESSAGES
+Installing po/ro/LC_MESSAGES/gtk4-ding.mo to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/locale/ro/LC_MESSAGES
+Installing po/ru/LC_MESSAGES/gtk4-ding.mo to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/locale/ru/LC_MESSAGES
+Installing po/sk/LC_MESSAGES/gtk4-ding.mo to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/locale/sk/LC_MESSAGES
+Installing po/sv/LC_MESSAGES/gtk4-ding.mo to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/locale/sv/LC_MESSAGES
+Installing po/tr/LC_MESSAGES/gtk4-ding.mo to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/locale/tr/LC_MESSAGES
+Installing po/uk/LC_MESSAGES/gtk4-ding.mo to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/locale/uk/LC_MESSAGES
+Installing po/zh_CN/LC_MESSAGES/gtk4-ding.mo to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/locale/zh_CN/LC_MESSAGES
+Installing po/zh_TW/LC_MESSAGES/gtk4-ding.mo to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/locale/zh_TW/LC_MESSAGES
+Installing po/nb_NO/LC_MESSAGES/gtk4-ding.mo to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/locale/nb_NO/LC_MESSAGES
+Installing po/eo/LC_MESSAGES/gtk4-ding.mo to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/locale/eo/LC_MESSAGES
+Installing po/bn/LC_MESSAGES/gtk4-ding.mo to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/locale/bn/LC_MESSAGES
+Installing /tmp/gfs/desktop-icons-ng/emulateX11WindowType.js to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com
+Installing /tmp/gfs/desktop-icons-ng/extension.js to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com
+Installing /tmp/gfs/desktop-icons-ng/gnomeShellOverride.js to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com
+Installing /tmp/gfs/desktop-icons-ng/metadata.json to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com
+Installing /tmp/gfs/desktop-icons-ng/prefs.js to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com
+Installing /tmp/gfs/desktop-icons-ng/visibleArea.js to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com
+Installing /tmp/gfs/desktop-icons-ng/schemas/org.gnome.shell.extensions.gtk4-ding.gschema.xml to /tmp/gfs/package-gnome-shell-extension-desktop-icons-ng/usr/share/glib-2.0/schemas
+Running custom install script '/usr/bin/python3 /tmp/gfs/desktop-icons-ng/scripts/meson_post_install.py'
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+Creating Slackware package:  /tmp/gnome-shell-extension-desktop-icons-ng-50+4d45588-noarch-1_gfs.txz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/gnome-shell-extension-desktop-icons-ng-50+4d45588/
+usr/doc/gnome-shell-extension-desktop-icons-ng-50+4d45588/COPYING
+usr/doc/gnome-shell-extension-desktop-icons-ng-50+4d45588/HISTORY.md
+usr/doc/gnome-shell-extension-desktop-icons-ng-50+4d45588/README.md
+usr/doc/gnome-shell-extension-desktop-icons-ng-50+4d45588/gnome-shell-extension-desktop-icons-ng.SlackBuild
+usr/share/
+usr/share/glib-2.0/
+usr/share/glib-2.0/schemas/
+usr/share/glib-2.0/schemas/org.gnome.shell.extensions.gtk4-ding.gschema.xml
+usr/share/gnome-shell/
+usr/share/gnome-shell/extensions/
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/adwPreferencesWindow.js
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/appChooser.js
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/askRenamePopup.js
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/autoAr.js
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/createThumbnail.js
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/desktopGrid.js
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/desktopIconItem.js
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/desktopManager.js
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/ding.js
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/enums.js
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/fileItem.js
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/fileItemMenu.js
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/gnomeShellDragDrop.js
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/preferences.js
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/resources/
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/resources/icons/
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/resources/icons/hicolor/
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/resources/icons/hicolor/symbolic/
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/resources/icons/hicolor/symbolic/apps/
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/resources/icons/hicolor/symbolic/apps/prefs-desktop-symbolic.svg
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/resources/icons/hicolor/symbolic/apps/prefs-desktop.svg
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/resources/icons/hicolor/symbolic/apps/prefs-files-symbolic.svg
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/resources/icons/hicolor/symbolic/apps/prefs-files.svg
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/resources/icons/hicolor/symbolic/apps/prefs-more-symbolic.svg
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/resources/icons/hicolor/symbolic/apps/prefs-more.svg
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/resources/icons/hicolor/symbolic/apps/prefs-tweaks-symbolic.svg
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/resources/stylesheet.css
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/resources/ui/
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/resources/ui/ding-app-chooser.ui
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/showErrorPopup.js
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/stackItem.js
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/templatesScriptsManager.js
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/thumbnails.js
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/utils/
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/utils/dbusInterfaces.js
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/utils/dbusUtils.js
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/utils/desktopIconsUtil.js
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/app/utils/gsConnect.js
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/emulateX11WindowType.js
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/extension.js
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/gnomeShellOverride.js
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/metadata.json
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/prefs.js
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/utils/
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/utils/fileUtils.js
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/utils/promiseUtils.js
+usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/visibleArea.js
+usr/share/locale/
+usr/share/locale/be/
+usr/share/locale/be/LC_MESSAGES/
+usr/share/locale/be/LC_MESSAGES/gtk4-ding.mo
+usr/share/locale/bn/
+usr/share/locale/bn/LC_MESSAGES/
+usr/share/locale/bn/LC_MESSAGES/gtk4-ding.mo
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/gtk4-ding.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/gtk4-ding.mo
+usr/share/locale/da/
+usr/share/locale/da/LC_MESSAGES/
+usr/share/locale/da/LC_MESSAGES/gtk4-ding.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/gtk4-ding.mo
+usr/share/locale/eo/
+usr/share/locale/eo/LC_MESSAGES/
+usr/share/locale/eo/LC_MESSAGES/gtk4-ding.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/gtk4-ding.mo
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/gtk4-ding.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/gtk4-ding.mo
+usr/share/locale/fur/
+usr/share/locale/fur/LC_MESSAGES/
+usr/share/locale/fur/LC_MESSAGES/gtk4-ding.mo
+usr/share/locale/he/
+usr/share/locale/he/LC_MESSAGES/
+usr/share/locale/he/LC_MESSAGES/gtk4-ding.mo
+usr/share/locale/hr/
+usr/share/locale/hr/LC_MESSAGES/
+usr/share/locale/hr/LC_MESSAGES/gtk4-ding.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/gtk4-ding.mo
+usr/share/locale/id/
+usr/share/locale/id/LC_MESSAGES/
+usr/share/locale/id/LC_MESSAGES/gtk4-ding.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/gtk4-ding.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/gtk4-ding.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/gtk4-ding.mo
+usr/share/locale/nb_NO/
+usr/share/locale/nb_NO/LC_MESSAGES/
+usr/share/locale/nb_NO/LC_MESSAGES/gtk4-ding.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/gtk4-ding.mo
+usr/share/locale/oc/
+usr/share/locale/oc/LC_MESSAGES/
+usr/share/locale/oc/LC_MESSAGES/gtk4-ding.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/gtk4-ding.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/gtk4-ding.mo
+usr/share/locale/ro/
+usr/share/locale/ro/LC_MESSAGES/
+usr/share/locale/ro/LC_MESSAGES/gtk4-ding.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/gtk4-ding.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/gtk4-ding.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/gtk4-ding.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/gtk4-ding.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/gtk4-ding.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/gtk4-ding.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/gtk4-ding.mo
+
+Slackware package /tmp/gnome-shell-extension-desktop-icons-ng-50+4d45588-noarch-1_gfs.txz created.
+
+
++==============================================================================
+| Upgrading gnome-shell-extension-desktop-icons-ng-50+4d45588-noarch-1_gfs package using /tmp/gnome-shell-extension-desktop-icons-ng-50+4d45588-noarch-1_gfs.txz
++==============================================================================
+Pre-installing package gnome-shell-extension-desktop-icons-ng-50+4d45588-noarch-1_gfs...
+Removing package: gnome-shell-extension-desktop-icons-ng-50+4d45588-noarch-1_gfs-upgraded-2023-09-07,23:49:13
+Verifying package gnome-shell-extension-desktop-icons-ng-50+4d45588-noarch-1_gfs.txz.
+Installing package gnome-shell-extension-desktop-icons-ng-50+4d45588-noarch-1_gfs.txz:
+PACKAGE DESCRIPTION:
+# gnome-shell-extension-desktop-icons-ng (desktop icons)
+#
+# official desktop icons project, with several enhancements like 
+# Drag'n'Drop.
+# Allows to use "Open with..." option with several files
+# When hovering or clicking on an icon with a name too large to fit,
+# it shows the full name
+#
+# https://gitlab.com/rastersoft/desktop-icons-ng
+#
+Executing install script for gnome-shell-extension-desktop-icons-ng-50+4d45588-noarch-1_gfs.txz.
+Package gnome-shell-extension-desktop-icons-ng-50+4d45588-noarch-1_gfs.txz installed.
+Package gnome-shell-extension-desktop-icons-ng-50+4d45588-noarch-1_gfs upgraded with new package /tmp/gnome-shell-extension-desktop-icons-ng-50+4d45588-noarch-1_gfs.txz.
+09-build_gnome-shell-extension-eortologio.sh
+
+Cloning into 'eortologio-gnome-shell-extension'...
+Note: switching to '24a126b5a9f606619c3070ea7560601b2d2906d8'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 24a126b add names and correct some...
+patching file eortologio@danchris.github.io/extension.js
+patching file eortologio@danchris.github.io/helpers.js
+patching file eortologio@danchris.github.io/metadata.json
+patching file eortologio@danchris.github.io/helpers.js
+patching file eortologio@danchris.github.io/helpers.js
+patching file eortologio@danchris.github.io/helpers.js
+patching file eortologio@danchris.github.io/extension.js
+patching file eortologio@danchris.github.io/helpers.js
+patching file eortologio@danchris.github.io/helpers.js
+patching file eortologio@danchris.github.io/extension.js
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+Creating Slackware package:  /tmp/gnome-shell-extension-eortologio-6-noarch-1_gfs.txz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/gnome-shell-extension-eortologio-6/
+usr/doc/gnome-shell-extension-eortologio-6/README.md
+usr/doc/gnome-shell-extension-eortologio-6/gnome-shell-extension-eortologio.SlackBuild
+usr/share/
+usr/share/gnome-shell/
+usr/share/gnome-shell/extensions/
+usr/share/gnome-shell/extensions/eortologio@danchris.github.io/
+usr/share/gnome-shell/extensions/eortologio@danchris.github.io/extension.js
+usr/share/gnome-shell/extensions/eortologio@danchris.github.io/helpers.js
+usr/share/gnome-shell/extensions/eortologio@danchris.github.io/metadata.json
+usr/share/gnome-shell/extensions/eortologio@danchris.github.io/recurring_namedays.json
+usr/share/gnome-shell/extensions/eortologio@danchris.github.io/relative_to_easter.json
+usr/share/gnome-shell/extensions/eortologio@danchris.github.io/stylesheet.css
+
+Slackware package /tmp/gnome-shell-extension-eortologio-6-noarch-1_gfs.txz created.
+
+
++==============================================================================
+| Upgrading gnome-shell-extension-eortologio-6-noarch-1_gfs package using /tmp/gnome-shell-extension-eortologio-6-noarch-1_gfs.txz
++==============================================================================
+Pre-installing package gnome-shell-extension-eortologio-6-noarch-1_gfs...
+Removing package: gnome-shell-extension-eortologio-6-noarch-1_gfs-upgraded-2023-09-07,23:49:17
+Verifying package gnome-shell-extension-eortologio-6-noarch-1_gfs.txz.
+Installing package gnome-shell-extension-eortologio-6-noarch-1_gfs.txz:
+PACKAGE DESCRIPTION:
+# gnome-shell-extension-eortologio (Greek Name Days)
+#
+# Simple gnome extension to display the greek namedays
+#
+# https://gitlab.com/rizitis/eortologio-gnome-shell-extension
+#
+Executing install script for gnome-shell-extension-eortologio-6-noarch-1_gfs.txz.
+Package gnome-shell-extension-eortologio-6-noarch-1_gfs.txz installed.
+Package gnome-shell-extension-eortologio-6-noarch-1_gfs upgraded with new package /tmp/gnome-shell-extension-eortologio-6-noarch-1_gfs.txz.
+10-build_gnome-shell-extension-overview-feature-pack.sh
+
+Cloning into 'overview-feature-pack'...
+Note: switching to '3849d0fcedfec1ba889b039240ebb16409f5c208'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 3849d0f update: metadata version 2
+Packing zip file...
+  adding: util.js (deflated 67%)
+  adding: overviewFeaturePack.js (deflated 79%)
+  adding: extension.js (deflated 55%)
+  adding: prefs.js (deflated 78%)
+  adding: windowSearchProvider.js (deflated 71%)
+  adding: settings.js (deflated 71%)
+  adding: schemas/gschemas.compiled (deflated 52%)
+  adding: schemas/org.gnome.shell.extensions.overview-feature-pack.gschema.xml (deflated 82%)
+  adding: metadata.json (deflated 43%)
+  adding: stylesheet.css (deflated 26%)
+  adding: LICENSE (deflated 66%)
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+Creating Slackware package:  /tmp/gnome-shell-extension-overview-feature-pack-3849d0f-noarch-1_gfs.txz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/gnome-shell-extension-overview-feature-pack-3849d0f/
+usr/doc/gnome-shell-extension-overview-feature-pack-3849d0f/LICENSE
+usr/doc/gnome-shell-extension-overview-feature-pack-3849d0f/README.md
+usr/doc/gnome-shell-extension-overview-feature-pack-3849d0f/gnome-shell-extension-overview-feature-pack.SlackBuild
+usr/share/
+usr/share/glib-2.0/
+usr/share/glib-2.0/schemas/
+usr/share/glib-2.0/schemas/org.gnome.shell.extensions.overview-feature-pack.gschema.xml
+usr/share/gnome-shell/
+usr/share/gnome-shell/extensions/
+usr/share/gnome-shell/extensions/overview-feature-pack@G-dH.github.com/
+usr/share/gnome-shell/extensions/overview-feature-pack@G-dH.github.com/extension.js
+usr/share/gnome-shell/extensions/overview-feature-pack@G-dH.github.com/metadata.json
+usr/share/gnome-shell/extensions/overview-feature-pack@G-dH.github.com/overviewFeaturePack.js
+usr/share/gnome-shell/extensions/overview-feature-pack@G-dH.github.com/prefs.js
+usr/share/gnome-shell/extensions/overview-feature-pack@G-dH.github.com/settings.js
+usr/share/gnome-shell/extensions/overview-feature-pack@G-dH.github.com/util.js
+usr/share/gnome-shell/extensions/overview-feature-pack@G-dH.github.com/windowSearchProvider.js
+
+Slackware package /tmp/gnome-shell-extension-overview-feature-pack-3849d0f-noarch-1_gfs.txz created.
+
+
++==============================================================================
+| Upgrading gnome-shell-extension-overview-feature-pack-3849d0f-noarch-1_gfs package using /tmp/gnome-shell-extension-overview-feature-pack-3849d0f-noarch-1_gfs.txz
++==============================================================================
+Pre-installing package gnome-shell-extension-overview-feature-pack-3849d0f-noarch-1_gfs...
+Removing package: gnome-shell-extension-overview-feature-pack-3849d0f-noarch-1_gfs-upgraded-2023-09-07,23:49:21
+Verifying package gnome-shell-extension-overview-feature-pack-3849d0f-noarch-1_gfs.txz.
+Installing package gnome-shell-extension-overview-feature-pack-3849d0f-noarch-1_gfs.txz:
+PACKAGE DESCRIPTION:
+# ( GNOME extension adds useful features to the Activities Overview)
+#
+# https://github.com/G-dH/overview-feature-pack
+#
+Executing install script for gnome-shell-extension-overview-feature-pack-3849d0f-noarch-1_gfs.txz.
+Package gnome-shell-extension-overview-feature-pack-3849d0f-noarch-1_gfs.txz installed.
+Package gnome-shell-extension-overview-feature-pack-3849d0f-noarch-1_gfs upgraded with new package /tmp/gnome-shell-extension-overview-feature-pack-3849d0f-noarch-1_gfs.txz.
+11-build_gnome-shell-extension-show-desktop.sh
+
+Cloning into 'Show-Desktop-Button'...
+Note: switching to 'f10cac60e2055d00d9ac5e8b85616df13c2154f7'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at f10cac6 updated README
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+Creating Slackware package:  /tmp/gnome-shell-extension-show-desktop-32-noarch-1_gfs.txz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/gnome-shell-extension-show-desktop-32/
+usr/doc/gnome-shell-extension-show-desktop-32/README.md
+usr/doc/gnome-shell-extension-show-desktop-32/gnome-shell-extension-show-desktop.SlackBuild
+usr/share/
+usr/share/glib-2.0/
+usr/share/glib-2.0/schemas/
+usr/share/glib-2.0/schemas/gschemas.compiled
+usr/share/glib-2.0/schemas/org.gnome.shell.extensions.showdesktopbutton.gschema.xml
+usr/share/gnome-shell/
+usr/share/gnome-shell/extensions/
+usr/share/gnome-shell/extensions/show-desktop-button@amivaleo/
+usr/share/gnome-shell/extensions/show-desktop-button@amivaleo/README.md
+usr/share/gnome-shell/extensions/show-desktop-button@amivaleo/extension.js
+usr/share/gnome-shell/extensions/show-desktop-button@amivaleo/locale/
+usr/share/gnome-shell/extensions/show-desktop-button@amivaleo/locale/de_DE/
+usr/share/gnome-shell/extensions/show-desktop-button@amivaleo/locale/de_DE/LC_MESSAGES/
+usr/share/gnome-shell/extensions/show-desktop-button@amivaleo/locale/de_DE/LC_MESSAGES/show-desktop-button.mo
+usr/share/gnome-shell/extensions/show-desktop-button@amivaleo/locale/es_ES/
+usr/share/gnome-shell/extensions/show-desktop-button@amivaleo/locale/es_ES/LC_MESSAGES/
+usr/share/gnome-shell/extensions/show-desktop-button@amivaleo/locale/es_ES/LC_MESSAGES/show-desktop-button.mo
+usr/share/gnome-shell/extensions/show-desktop-button@amivaleo/locale/fr_FR/
+usr/share/gnome-shell/extensions/show-desktop-button@amivaleo/locale/fr_FR/LC_MESSAGES/
+usr/share/gnome-shell/extensions/show-desktop-button@amivaleo/locale/fr_FR/LC_MESSAGES/show-desktop-button.mo
+usr/share/gnome-shell/extensions/show-desktop-button@amivaleo/locale/it_IT/
+usr/share/gnome-shell/extensions/show-desktop-button@amivaleo/locale/it_IT/LC_MESSAGES/
+usr/share/gnome-shell/extensions/show-desktop-button@amivaleo/locale/it_IT/LC_MESSAGES/show-desktop-button.mo
+usr/share/gnome-shell/extensions/show-desktop-button@amivaleo/locale/pt_BR/
+usr/share/gnome-shell/extensions/show-desktop-button@amivaleo/locale/pt_BR/LC_MESSAGES/
+usr/share/gnome-shell/extensions/show-desktop-button@amivaleo/locale/pt_BR/LC_MESSAGES/show-desktop-button.mo
+usr/share/gnome-shell/extensions/show-desktop-button@amivaleo/metadata.json
+usr/share/gnome-shell/extensions/show-desktop-button@amivaleo/prefs.js
+usr/share/gnome-shell/extensions/show-desktop-button@amivaleo/prefs.ui
+usr/share/gnome-shell/extensions/show-desktop-button@amivaleo/schemas/
+usr/share/gnome-shell/extensions/show-desktop-button@amivaleo/schemas/gschemas.compiled
+usr/share/gnome-shell/extensions/show-desktop-button@amivaleo/schemas/org.gnome.shell.extensions.showdesktopbutton.gschema.xml
+usr/share/gnome-shell/extensions/show-desktop-button@amivaleo/show-desktop-button.pot
+
+Slackware package /tmp/gnome-shell-extension-show-desktop-32-noarch-1_gfs.txz created.
+
+
++==============================================================================
+| Upgrading gnome-shell-extension-show-desktop-32-noarch-1_gfs package using /tmp/gnome-shell-extension-show-desktop-32-noarch-1_gfs.txz
++==============================================================================
+Pre-installing package gnome-shell-extension-show-desktop-32-noarch-1_gfs...
+Removing package: gnome-shell-extension-show-desktop-32-noarch-1_gfs-upgraded-2023-09-07,23:49:24
+Verifying package gnome-shell-extension-show-desktop-32-noarch-1_gfs.txz.
+Installing package gnome-shell-extension-show-desktop-32-noarch-1_gfs.txz:
+PACKAGE DESCRIPTION:
+# gnome-shell-extension-show-desktop ( Show-desktop-button ) 
+#
+# A button that hide/show all the open windows on desktop.
+# 
+#
+# https://github.com/amivaleo/Show-Desktop-Button
+#
+Executing install script for gnome-shell-extension-show-desktop-32-noarch-1_gfs.txz.
+Package gnome-shell-extension-show-desktop-32-noarch-1_gfs.txz installed.
+Package gnome-shell-extension-show-desktop-32-noarch-1_gfs upgraded with new package /tmp/gnome-shell-extension-show-desktop-32-noarch-1_gfs.txz.
+12-build_gnome-shell-extension-tray-icons-reloaded.sh
+
+Cloning into 'Tray-Icons-Reloaded'...
+Note: switching to '5891310a217cd80416c057d87d4a25e4787afb92'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 5891310 meta: bump versions
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+Creating Slackware package:  /tmp/gnome-shell-extension-tray-icons-reloaded-26-noarch-1_gfs.txz
+
+./
+install/
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/gnome-shell-extension-tray-icons-reloaded-26/
+usr/doc/gnome-shell-extension-tray-icons-reloaded-26/LICENSE
+usr/doc/gnome-shell-extension-tray-icons-reloaded-26/README.md
+usr/doc/gnome-shell-extension-tray-icons-reloaded-26/gnome-shell-extension-tray-icons-reloaded.SlackBuild
+usr/share/
+usr/share/gnome-shell/
+usr/share/gnome-shell/extensions/
+usr/share/gnome-shell/extensions/trayIconsReloaded@selfmade.pl/
+usr/share/gnome-shell/extensions/trayIconsReloaded@selfmade.pl/AppManager.js
+usr/share/gnome-shell/extensions/trayIconsReloaded@selfmade.pl/LICENSE
+usr/share/gnome-shell/extensions/trayIconsReloaded@selfmade.pl/README.md
+usr/share/gnome-shell/extensions/trayIconsReloaded@selfmade.pl/TrayIndicator.js
+usr/share/gnome-shell/extensions/trayIconsReloaded@selfmade.pl/extension.js
+usr/share/gnome-shell/extensions/trayIconsReloaded@selfmade.pl/metadata.json
+usr/share/gnome-shell/extensions/trayIconsReloaded@selfmade.pl/preferences/
+usr/share/gnome-shell/extensions/trayIconsReloaded@selfmade.pl/preferences/AppChooser.js
+usr/share/gnome-shell/extensions/trayIconsReloaded@selfmade.pl/preferences/AppRow.js
+usr/share/gnome-shell/extensions/trayIconsReloaded@selfmade.pl/preferences/AppRow.xml
+usr/share/gnome-shell/extensions/trayIconsReloaded@selfmade.pl/preferences/Prefs.css
+usr/share/gnome-shell/extensions/trayIconsReloaded@selfmade.pl/preferences/Prefs.js
+usr/share/gnome-shell/extensions/trayIconsReloaded@selfmade.pl/preferences/Prefs.xml
+usr/share/gnome-shell/extensions/trayIconsReloaded@selfmade.pl/prefs.js
+usr/share/gnome-shell/extensions/trayIconsReloaded@selfmade.pl/schemas/
+usr/share/gnome-shell/extensions/trayIconsReloaded@selfmade.pl/schemas/gschemas.compiled
+usr/share/gnome-shell/extensions/trayIconsReloaded@selfmade.pl/schemas/org.gnome.shell.extensions.trayIconsReloaded.gschema.xml
+usr/share/gnome-shell/extensions/trayIconsReloaded@selfmade.pl/stylesheet.css
+
+Slackware package /tmp/gnome-shell-extension-tray-icons-reloaded-26-noarch-1_gfs.txz created.
+
+
++==============================================================================
+| Upgrading gnome-shell-extension-tray-icons-reloaded-26-noarch-1_gfs package using /tmp/gnome-shell-extension-tray-icons-reloaded-26-noarch-1_gfs.txz
++==============================================================================
+Pre-installing package gnome-shell-extension-tray-icons-reloaded-26-noarch-1_gfs...
+Removing package: gnome-shell-extension-tray-icons-reloaded-26-noarch-1_gfs-upgraded-2023-09-07,23:49:27
+Verifying package gnome-shell-extension-tray-icons-reloaded-26-noarch-1_gfs.txz.
+Installing package gnome-shell-extension-tray-icons-reloaded-26-noarch-1_gfs.txz:
+PACKAGE DESCRIPTION:
+# gnome-shell-extensions-tray-icons-rleaded (brings back the Tray Icons)
+#
+# Tray Icons Reloaded is a GNOME Shell extension which bring back Tray 
+# Icons to top panel, with additional features. 
+# 
+# Homepage:
+# https://github.com/MartinPL/Tray-Icons-Reloaded 
+# 
+#
+Package gnome-shell-extension-tray-icons-reloaded-26-noarch-1_gfs.txz installed.
+Package gnome-shell-extension-tray-icons-reloaded-26-noarch-1_gfs upgraded with new package /tmp/gnome-shell-extension-tray-icons-reloaded-26-noarch-1_gfs.txz.
+13-build_gnome-shell-extension-webfeed.sh
+
+Cloning into 'webfeed'...
+Note: switching to '2e85b2a8a052bc7d0d3051d31ef7dd5cf0fdac10'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 2e85b2a Add files via upload
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+Creating Slackware package:  /tmp/gnome-shell-extension-webfeed-10-noarch-1_gfs.txz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/gnome-shell-extension-webfeed-10/
+usr/doc/gnome-shell-extension-webfeed-10/README.md
+usr/doc/gnome-shell-extension-webfeed-10/gnome-shell-extension-webfeed.SlackBuild
+usr/share/
+usr/share/glib-2.0/
+usr/share/glib-2.0/schemas/
+usr/share/glib-2.0/schemas/org.gnome.shell.extensions.webfeed.gschema.xml
+usr/share/gnome-shell/
+usr/share/gnome-shell/extensions/
+usr/share/gnome-shell/extensions/webfeed@xynium.github.com/
+usr/share/gnome-shell/extensions/webfeed@xynium.github.com/atom.js
+usr/share/gnome-shell/extensions/webfeed@xynium.github.com/extension.js
+usr/share/gnome-shell/extensions/webfeed@xynium.github.com/jsxml.js
+usr/share/gnome-shell/extensions/webfeed@xynium.github.com/metadata.json
+usr/share/gnome-shell/extensions/webfeed@xynium.github.com/prefs.js
+usr/share/gnome-shell/extensions/webfeed@xynium.github.com/prefs.ui
+usr/share/gnome-shell/extensions/webfeed@xynium.github.com/rss.js
+usr/share/gnome-shell/extensions/webfeed@xynium.github.com/rss_green.png
+usr/share/gnome-shell/extensions/webfeed@xynium.github.com/rss_red.png
+usr/share/gnome-shell/extensions/webfeed@xynium.github.com/rss_yelow.png
+usr/share/gnome-shell/extensions/webfeed@xynium.github.com/schemas/
+usr/share/gnome-shell/extensions/webfeed@xynium.github.com/schemas/gschemas.compiled
+usr/share/gnome-shell/extensions/webfeed@xynium.github.com/schemas/org.gnome.shell.extensions.webfeed.gschema.xml
+usr/share/gnome-shell/extensions/webfeed@xynium.github.com/stylesheet.css
+usr/share/locale/
+usr/share/locale/fr/
+usr/share/locale/fr.po
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/webfeed.mo
+usr/share/locale/nl/
+usr/share/locale/nl.po
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/nl.mo
+usr/share/locale/webfeed.pot
+
+Slackware package /tmp/gnome-shell-extension-webfeed-10-noarch-1_gfs.txz created.
+
+
++==============================================================================
+| Upgrading gnome-shell-extension-webfeed-10-noarch-1_gfs package using /tmp/gnome-shell-extension-webfeed-10-noarch-1_gfs.txz
++==============================================================================
+Pre-installing package gnome-shell-extension-webfeed-10-noarch-1_gfs...
+Removing package: gnome-shell-extension-webfeed-10-noarch-1_gfs-upgraded-2023-09-07,23:49:30
+Verifying package gnome-shell-extension-webfeed-10-noarch-1_gfs.txz.
+Installing package gnome-shell-extension-webfeed-10-noarch-1_gfs.txz:
+PACKAGE DESCRIPTION:
+# gnome-shell-extension-webfeed (RSS Extension for GNOME)
+#
+# rss and atom feed scanner gnome extension
+#
+# https://github.com/xynium/webfeed 
+#
+Executing install script for gnome-shell-extension-webfeed-10-noarch-1_gfs.txz.
+Package gnome-shell-extension-webfeed-10-noarch-1_gfs.txz installed.
+Package gnome-shell-extension-webfeed-10-noarch-1_gfs upgraded with new package /tmp/gnome-shell-extension-webfeed-10-noarch-1_gfs.txz.

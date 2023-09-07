@@ -6,7 +6,7 @@
 > LONG LIVE SLACKWARE!
 
 *Gnome from scratch*, *Gnome for Slackware*
-## prepare_cosmos.sh
+## prepare_cosmos.bash
 This script add some groups and permissions needed for example avahi to be builded.
 If  you dont want avahi etc in your system, just not run this script and remove .sh extension for avahi script from order folder
 ```
@@ -14,7 +14,7 @@ If  you dont want avahi etc in your system, just not run this script and remove 
 ```
 every file in an order folder without sh at the end will no try to build.
 
-## build_the_universe.sh
+## build_the_universe.bash
 
 This script will build and install a Gnome 45 desktop for Slackware current
 
@@ -26,6 +26,10 @@ This script will build and install a Gnome 45 desktop for Slackware current
 * backgrounds
 * other folders (games,net_web_apps etc..)
 
+
+## configs.bash
+
+The 3rd and last script to ran after installation finish.
 
 ### order_folders
 

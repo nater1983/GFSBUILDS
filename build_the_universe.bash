@@ -17,6 +17,7 @@ fi
 D=$(pwd)
 OD=order
 BD=/tmp/gfs
+BL=BUILD_LOGS
 
 rm -rf "$BD" || true
 chmod +x ./*/*/*.SlackBuild || true
@@ -26,42 +27,46 @@ chmod +x *.bash || true
 
 
 cd ./BLACKLIST45/"$OD" || exit
-./build_all.sh |& tee "$D"/build_blacklist.system.log
+./build_all.sh |& tee "$D"/"$BL"/build_blacklist.system.log
 
 
 
 cd "$D" || exit
 cd ./main_gnome/"$OD"
-./build_all.sh |& tee "$D"/build_main_gnome.log
+./build_all.sh |& tee "$D"/"$BL"/build_main_gnome.log
 
 
 
 cd "$D" || exit
 cd ./gnome/"$OD"
-./build_all.sh |& tee "$D"/build_gnome.log
+./build_all.sh |& tee "$D"/"$BL"/build_gnome.log
 
 
 
 # every day I have time will add more packages
 cd "$D" || exit
 cd ./gnome_soft/"$OD"
-./build_all.sh |& tee "$D"/build_gnome_soft.log
+./build_all.sh |& tee "$D"/"$BL"/build_gnome_soft.log
 
 
 
 cd "$D" || exit
 cd ./gnome_builder/"$OD"
-./build_all.sh |& tee "$D"/build_gnome_builder.log
+./build_all.sh |& tee "$D"/"$BL"/build_gnome_builder.log
 
 
 # not all extension ready for gnome-45  so far...
 cd "$D" || exit
 cd ./extensions/"$OD"
-./build_all.sh |& tee "$D"/build_exensions.log
+./build_all.sh |& tee "$D"/"$BL"/build_exensions.log
 
 cd "$D" || exit 
 cd ./backgrounds/"$OD"
-./build_all.sh |& tee "$D"/build_backgrounds.log
+./build_all.sh |& tee "$D"/"$BL"/build_backgrounds.log
+
+cd "$D" || exit 
+cd ./gnome_more/"$OD"
+./build_all.sh |& tee "$D"/"$BL"/build_gnome_more.log
 
 
 #######################################################################################
@@ -73,7 +78,7 @@ cd ./backgrounds/"$OD"
 
 #cd "$D" || exit
 #cd ./extras/"$OD"
-#./build_all.sh |& tee "$D"/build_extras.log
+#./build_all.sh |& tee "$D"/"$BL"/build_extras.log
 # cd "$D" || exit
 #rm ./*/*/*/*.tar.?z* || true
 
@@ -83,39 +88,8 @@ cd ./backgrounds/"$OD"
 # and ran build_all.sh                                                               #
 # this way you will build and install it with all deps in the right build order.     #
 ######################################################################################
-# NOTE: games are not ready yet...
-# games not ready so far... no time :( #
-#cd "$D" || exit
-#cd ./games/"$OD"
-#./build_all.sh |& tee "$D"/build_games.log
-#rm ./*/*.tar.?z* || true
 
-# configs...
+# Not all games ready so far... no time :( #
 cd "$D" || exit
-cat blacklist.txt >> /etc/slackpkg/blacklist
-cd ./doinst || exit
-bash doinst
-cd "$D" || exit
-ldconfig || true
-slackpkg new-config || true
-updatedb
-./GEN-GFSBUILDS.bash
-
-
-# clean repo from forgoten source.tar.* file...
-rm ./*/*/*.tar.?z* || true
-rm ./*/*/*.deb || true
-echo "Welcome to your new GNOME desktop environment on Slackware!"
-    
-    echo "************************************************************"
-echo -e "  _____     _    ______ 
-|  ___)   | |   \  ___)
-| |      _| |_   \ \   
-| |     /     \   > >  
-| |    ( (| |) _ / /__ 
-|_|   (_\_   _(_/_____)
-          | |          
-          |_|          "
-
-
-
+cd ./games/"$OD"
+./build_all.sh |& tee "$D"/"$BL"/build_games.log

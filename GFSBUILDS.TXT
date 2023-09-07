@@ -1,4 +1,4 @@
-18:04:17 07-09-23
+00:24:58 08-09-23
 
 Directory: .
   Directory: ./BLACKLIST45
@@ -185,6 +185,7 @@ PKGTYPE:
 
 REQUIRED: python3-smartypants 
 
+  Directory: ./BUILD_LOGS
   Directory: ./VRR
     Directory: ./VRR/gnome-control-center-vrr
 PRGNAM: gnome-control-center-vrr
@@ -1587,9 +1588,8 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://download.gnome.org/sources/template-glib/3.36/template-glib-3.36.1.tar.xz
 
-  Directory: ./gnome_soft
-    Directory: ./gnome_soft/AAA-NOTREADY
-      Directory: ./gnome_soft/AAA-NOTREADY/cozy
+  Directory: ./gnome_more
+    Directory: ./gnome_more/cozy
 PRGNAM: cozy
 VERSION: ${VERSION:-1.2.1}
 BUILD: ${BUILD:-1}
@@ -1599,7 +1599,7 @@ DOWNLOAD: https://github.com/geigi/cozy/archive/1.2.1/cozy-1.2.1.tar.gz
 
 REQUIRED: python3-peewee python3-mutagen libdazzle gst-plugins-ugly 
 
-      Directory: ./gnome_soft/AAA-NOTREADY/elastic
+    Directory: ./gnome_more/elastic
 PRGNAM: elastic
 VERSION: ${VERSION:-0.1.3}
 BUILD: ${BUILD:-1}
@@ -1609,7 +1609,7 @@ DOWNLOAD: https://gitlab.gnome.org/World/elastic/-/archive/0.1.3/elastic-0.1.3.t
 
 REQUIRED: libadwaita gtk4 
 
-      Directory: ./gnome_soft/AAA-NOTREADY/emblem
+    Directory: ./gnome_more/emblem
 PRGNAM: emblem
 VERSION: ${VERSION:-1.2.0}
 BUILD: ${BUILD:-1}
@@ -1619,7 +1619,7 @@ DOWNLOAD: https://gitlab.gnome.org/World/design/emblem/-/archive/1.2.0/emblem-1.
 
 REQUIRED: libadwaita gtk4 
 
-      Directory: ./gnome_soft/AAA-NOTREADY/eyedropper
+    Directory: ./gnome_more/eyedropper
 PRGNAM: eyedropper
 VERSION: ${VERSION:-0.6.0}
 BUILD: ${BUILD:-1}
@@ -1629,7 +1629,7 @@ DOWNLOAD: https://github.com/FineFindus/eyedropper/archive/refs/tags/v0.6.0.tar.
 
 REQUIRED: libadwaita gtk4 
 
-      Directory: ./gnome_soft/AAA-NOTREADY/font-noto-emoji
+    Directory: ./gnome_more/font-noto-emoji
 PRGNAM: font-noto-emoji
 VERSION: ${VERSION:-2.038}
 BUILD: ${BUILD:-1}
@@ -1637,7 +1637,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://github.com/googlei18n/noto-emoji/archive/v2.038/noto-emoji-2.038.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/gaphor
+    Directory: ./gnome_more/gaphor
 PRGNAM: gaphor
 VERSION: ${VERSION:-2.19.3}
 BUILD: ${BUILD:-1}
@@ -1647,7 +1647,7 @@ DOWNLOAD: https://github.com/gaphor/gaphor/archive/2.19.3/gaphor-2.19.3.tar.gz
 
 REQUIRED: libadwaita gtk4 python3-poetry-core python3-build python3-pyproject-hooks python3-installer python3-flit_core python3-generic python3-exceptiongroup python3-flit_scm python3-gaphas python3-tinycss2 python3-webencodings python3-pydot graphviz python3-jedi python3-parso python3-better-exceptions 
 
-      Directory: ./gnome_soft/AAA-NOTREADY/gnome-commander
+    Directory: ./gnome_more/gnome-commander
 PRGNAM: gnome-commander
 VERSION: ${VERSION:-1.16.1}
 BUILD: ${BUILD:-1}
@@ -1655,7 +1655,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://download.gnome.org/sources/gnome-commander/1.16/gnome-commander-1.16.1.tar.xz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/gnome-flashback
+    Directory: ./gnome_more/gnome-flashback
 PRGNAM: gnome-flashback	
 VERSION: ${VERSION:-3.46.0}
 BUILD: ${BUILD:-1}
@@ -1663,7 +1663,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://download.gnome.org/sources/gnome-flashback/3.46/gnome-flashback-3.46.0.tar.xz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/gnome-latex
+    Directory: ./gnome_more/gnome-latex
 PRGNAM: gnome-latex
 VERSION: ${VERSION:-3.46.0}
 BUILD: ${BUILD:-1}
@@ -1673,7 +1673,7 @@ DOWNLOAD: https://download.gnome.org/sources/gnome-latex/3.46/gnome-latex-3.46.0
 
 REQUIRED: gtksourceview4 
 
-      Directory: ./gnome_soft/AAA-NOTREADY/gnote
+    Directory: ./gnome_more/gnote
 PRGNAM: gnote
 VERSION: ${VERSION:-45.alpha}
 BUILD: ${BUILD:-1}
@@ -1681,7 +1681,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://download.gnome.org/sources/gnote/45/gnote-45.alpha.tar.xz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/gnumeric
+    Directory: ./gnome_more/gnumeric
 PRGNAM: gnumeric	
 VERSION: ${VERSION:-1.12.55}	
 BUILD: ${BUILD:-1}
@@ -1689,7 +1689,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://download.gnome.org/sources/gnumeric/1.12/gnumeric-1.12.55.tar.xz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/goffice
+    Directory: ./gnome_more/goffice
 PRGNAM: goffice	
 VERSION: ${VERSION:-0.10.55}
 BUILD: ${BUILD:-1}
@@ -1697,7 +1697,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://download.gnome.org/sources/goffice/0.10/goffice-0.10.55.tar.xz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/gthumb
+    Directory: ./gnome_more/gthumb
 PRGNAM: gthumb
 VERSION: ${VERSION:-3.12.3}
 BUILD: ${BUILD:-1}
@@ -1707,15 +1707,15 @@ DOWNLOAD: https://gitlab.gnome.org/GNOME/gthumb/-/archive/3.12.3/gthumb-3.12.3.t
 
 REQUIRED: colord libheif 
 
-      Directory: ./gnome_soft/AAA-NOTREADY/gtk-internet-radio-locator
+    Directory: ./gnome_more/gtk-internet-radio-locator
 PRGNAM: gtk-internet-radio-locator		
-VERSION: ${VERSION:-12.5.0}
+VERSION: ${VERSION:-4.8.3}
 BUILD: ${BUILD:-1}
 TAG: ${TAG:-_gfs}	
 PKGTYPE: ${PKGTYPE:-txz}
-DOWNLOAD: https://download.gnome.org/sources/gtk-internet-radio-locator/4.8/gtk-internet-radio-locator-4.8.2.tar.xz
+DOWNLOAD: https://download.gnome.org/sources/gtk-internet-radio-locator/4.8/gtk-internet-radio-locator-4.8.3.tar.xz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/gupnp
+    Directory: ./gnome_more/gupnp
 PRGNAM: gupnp
 VERSION: ${VERSION:-1.6.5}
 BUILD: ${BUILD:-1}
@@ -1725,7 +1725,7 @@ DOWNLOAD: https://download.gnome.org/sources/gupnp/1.6/gupnp-1.6.5.tar.xz
 
 REQUIRED: libsoup3 gssdp 
 
-      Directory: ./gnome_soft/AAA-NOTREADY/gupnp-av
+    Directory: ./gnome_more/gupnp-av
 PRGNAM: gupnp-av
 VERSION: ${VERSION:-0.14.1}
 BUILD: ${BUILD:-1}
@@ -1735,7 +1735,7 @@ DOWNLOAD: https://download.gnome.org/sources/gupnp-av/0.14/gupnp-av-0.14.1.tar.x
 
 REQUIRED:  
 
-      Directory: ./gnome_soft/AAA-NOTREADY/gupnp-dlna
+    Directory: ./gnome_more/gupnp-dlna
 PRGNAM: gupnp-dlna
 VERSION: ${VERSION:-0.12.0}
 BUILD: ${BUILD:-1}
@@ -1745,7 +1745,7 @@ DOWNLOAD: https://download.gnome.org/sources/gupnp-dlna/0.12/gupnp-dlna-0.12.0.t
 
 REQUIRED:  
 
-      Directory: ./gnome_soft/AAA-NOTREADY/health
+    Directory: ./gnome_more/health
 PRGNAM: health
 VERSION: ${VERSION:-0.94.0}
 BUILD: ${BUILD:-1}
@@ -1755,7 +1755,7 @@ DOWNLOAD: https://gitlab.gnome.org/World/Health/-/archive/0.94.0/Health-0.94.0.t
 
 REQUIRED: libadwaita gtk4 blueprint-compiler appstream-glib 
 
-      Directory: ./gnome_soft/AAA-NOTREADY/hitori
+    Directory: ./gnome_more/hitori
 PRGNAM: hitori
 VERSION: ${VERSION:-44.0}
 BUILD: ${BUILD:-1}
@@ -1763,7 +1763,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://download.gnome.org/sources/hitori/44/hitori-44.0.tar.xz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/identity
+    Directory: ./gnome_more/identity
 PRGNAM: identity
 VERSION: ${VERSION:-0.5.0}
 BUILD: ${BUILD:-1}
@@ -1773,7 +1773,7 @@ DOWNLOAD: https://gitlab.gnome.org/YaLTeR/identity/-/archive/v0.5.0/identity-v0.
 
 REQUIRED: libadwaita gtk4 
 
-      Directory: ./gnome_soft/AAA-NOTREADY/khronos
+    Directory: ./gnome_more/khronos
 PRGNAM: khronos
 VERSION: ${VERSION:-3.7.0}
 BUILD: ${BUILD:-1}
@@ -1783,7 +1783,7 @@ DOWNLOAD: https://github.com/lainsce/khronos/archive/3.7.0/khronos-3.7.0.tar.gz
 
 REQUIRED: gtk4 libadwaita 
 
-      Directory: ./gnome_soft/AAA-NOTREADY/komikku
+    Directory: ./gnome_more/komikku
 PRGNAM: komikku
 VERSION: ${VERSION:-1.19.0}
 BUILD: ${BUILD:-1}
@@ -1792,14 +1792,14 @@ PKGTYPE: ${PKGTYPE:-txz}
 
 REQUIRED: libadwaita pure-protobuf python3-beautifulsoup4 python3-dateparser python3-dateutil python3-emoji python3-entrypoints python3-keyring python3-magic python3-natsort python3-piexif python3-rarfile python3-regex python3-soupsieve python3-tzlocal python3-unidecode 
 
-      Directory: ./gnome_soft/AAA-NOTREADY/libgnome-volume-control
+    Directory: ./gnome_more/libgnome-volume-control
 PRGNAM: libgnome-volume-control	
 VERSION: ${VERSION:-0.0.1}
 BUILD: ${BUILD:-1}
 TAG: ${TAG:-_gfs}	
 PKGTYPE: ${PKGTYPE:-txz}
 
-      Directory: ./gnome_soft/AAA-NOTREADY/libmusicbrainz5
+    Directory: ./gnome_more/libmusicbrainz5
 PRGNAM: libmusicbrainz5
 VERSION: ${VERSION:-5.1.0}
 BUILD: ${BUILD:-1}
@@ -1807,7 +1807,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://github.com/metabrainz/libmusicbrainz/releases/download/release-5.1.0/libmusicbrainz-5.1.0.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/lightsoff
+    Directory: ./gnome_more/lightsoff
 PRGNAM: lightsoff
 VERSION: ${VERSION:-40.0.1}
 BUILD: ${BUILD:-1}
@@ -1817,7 +1817,7 @@ DOWNLOAD: https://gitlab.gnome.org/GNOME/lightsoff/-/archive/40.0.1/lightsoff-40
 
 REQUIRED:  
 
-      Directory: ./gnome_soft/AAA-NOTREADY/lorem
+    Directory: ./gnome_more/lorem
 PRGNAM: lorem
 VERSION: ${VERSION:-1.2}
 BUILD: ${BUILD:-1}
@@ -1827,7 +1827,7 @@ DOWNLOAD: https://gitlab.gnome.org/World/design/lorem/-/archive/1.2/lorem-1.2.ta
 
 REQUIRED: libadwaita gtk4 
 
-      Directory: ./gnome_soft/AAA-NOTREADY/meld
+    Directory: ./gnome_more/meld
 PRGNAM: meld
 VERSION: ${VERSION:-3.22.0}
 BUILD: ${BUILD:-1}
@@ -1835,7 +1835,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://download.gnome.org/sources/meld/3.22/meld-3.22.0.tar.xz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/metadata-cleaner
+    Directory: ./gnome_more/metadata-cleaner
 PRGNAM: metadata-cleaner
 VERSION: ${VERSION:-2.5.2}
 BUILD: ${BUILD:-1}
@@ -1845,7 +1845,7 @@ DOWNLOAD: https://gitlab.com/rmnvgr/metadata-cleaner/-/archive/v2.5.2/metadata-c
 
 REQUIRED: libadwaita gtk4 python3-flit_core python3-installer python3-pyproject-hooks python3-build python3-mutagen python3-mat2 
 
-      Directory: ./gnome_soft/AAA-NOTREADY/metronome
+    Directory: ./gnome_more/metronome
 PRGNAM: metronome
 VERSION: ${VERSION:-1.3.0}
 BUILD: ${BUILD:-1}
@@ -1855,7 +1855,7 @@ DOWNLOAD: https://gitlab.gnome.org/World/metronome/-/archive/1.3.0/metronome-1.3
 
 REQUIRED: libadwaita gtk4 
 
-      Directory: ./gnome_soft/AAA-NOTREADY/mousai
+    Directory: ./gnome_more/mousai
 PRGNAM: mousai
 VERSION: ${VERSION:-0.7.5}
 BUILD: ${BUILD:-1}
@@ -1865,7 +1865,7 @@ DOWNLOAD: https://github.com/SeaDve/Mousai/archive/v0.7.5/Mousai-0.7.5.tar.gz
 
 REQUIRED: gtk4 libadwaita 
 
-      Directory: ./gnome_soft/AAA-NOTREADY/news_flash_gtk
+    Directory: ./gnome_more/news_flash_gtk
 PRGNAM: news_flash_gtk
 VERSION: ${VERSION:-2.3.0}
 BUILD: ${BUILD:-1}
@@ -1875,7 +1875,7 @@ DOWNLOAD: https://gitlab.com/news-flash/news_flash_gtk/-/archive/v.2.3.0/news_fl
 
 REQUIRED: gtk4 libadwaita 
 
-      Directory: ./gnome_soft/AAA-NOTREADY/obfuscate
+    Directory: ./gnome_more/obfuscate
 PRGNAM: obfuscate
 VERSION: ${VERSION:-0.0.9}
 BUILD: ${BUILD:-1}
@@ -1883,7 +1883,8 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://gitlab.gnome.org/World/obfuscate/-/archive/0.0.9/obfuscate-0.0.9.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/polari
+    Directory: ./gnome_more/order
+    Directory: ./gnome_more/polari
 PRGNAM: polari
 VERSION: ${VERSION:-43.0}
 BUILD: ${BUILD:-1}
@@ -1893,7 +1894,7 @@ DOWNLOAD: https://gitlab.gnome.org/GNOME/polari/-/archive/43.0/polari-43.0.tar.g
 
 REQUIRED: telepathy-logger 
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-better-exceptions
+    Directory: ./gnome_more/python3-better-exceptions
 PRGNAM: python3-better-exceptions
 VERSION: ${VERSION:-0.2.1}
 BUILD: ${BUILD:-1}
@@ -1901,7 +1902,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://github.com/Qix-/better-exceptions/archive/0.2.1/better-exceptions-0.2.1.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-cachetools
+    Directory: ./gnome_more/python3-cachetools
 PRGNAM: python3-cachetools
 VERSION: ${VERSION:-5.2.0}
 BUILD: ${BUILD:-1}
@@ -1909,14 +1910,14 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://files.pythonhosted.org/packages/c2/6f/278225c5a070a18a76f85db5f1238f66476579fa9b04cda3722331dcc90f/cachetools-5.2.0.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-dateparser
+    Directory: ./gnome_more/python3-dateparser
 PRGNAM: python3-dateparser
 VERSION: ${VERSION:-1.1.8}
 BUILD: ${BUILD:-1}
 TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-emoji
+    Directory: ./gnome_more/python3-emoji
 PRGNAM: python3-emoji
 VERSION: ${VERSION:-1.2.1}
 BUILD: ${BUILD:-1}
@@ -1924,14 +1925,14 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://github.com/carpedm20/emoji/archive/v.1.2.1/emoji-v.1.2.1.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-entrypoints
+    Directory: ./gnome_more/python3-entrypoints
 PRGNAM: python3-entrypoints
 VERSION: ${VERSION:-0.4}
 BUILD: ${BUILD:-1}
 TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-exceptiongroup
+    Directory: ./gnome_more/python3-exceptiongroup
 PRGNAM: python3-exceptiongroup
 VERSION: ${VERSION:-1.1.1}
 BUILD: ${BUILD:-1}
@@ -1939,7 +1940,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://files.pythonhosted.org/packages/source/e/exceptiongroup/exceptiongroup-1.1.1.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-flit_scm
+    Directory: ./gnome_more/python3-flit_scm
 PRGNAM: python3-flit_scm
 VERSION: ${VERSION:-1.7.0}
 BUILD: ${BUILD:-1}
@@ -1947,7 +1948,9 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://files.pythonhosted.org/packages/source/f/flit_scm/flit_scm-1.7.0.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-gaphas
+REQUIRED: python3-flit_scm 
+
+    Directory: ./gnome_more/python3-gaphas
 PRGNAM: python3-gaphas
 VERSION: ${VERSION:-3.11.3}
 BUILD: ${BUILD:-1}
@@ -1957,7 +1960,7 @@ DOWNLOAD: https://github.com/gaphor/gaphas/archive/3.11.3/gaphas-3.11.3.tar.gz
 
 REQUIRED: libadwaita gtk4 python3-poetry-core generic python3-exceptiongroup 
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-generic
+    Directory: ./gnome_more/python3-generic
 PRGNAM: python3-generic
 VERSION: ${VERSION:-1.1.2}
 BUILD: ${BUILD:-1}
@@ -1965,7 +1968,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://github.com/gaphor/generic/archive/1.1.2/generic-1.1.2.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-google-api-core
+    Directory: ./gnome_more/python3-google-api-core
 PRGNAM: python3-google-api-core
 VERSION: ${VERSION:-2.11.0}
 BUILD: ${BUILD:-1}
@@ -1973,7 +1976,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://files.pythonhosted.org/packages/2b/15/7bafa5379a228ed72baf769eea5e6019a944469fe637ea0742c0351109bf/google-api-core-2.11.0.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-google-api-python-client
+    Directory: ./gnome_more/python3-google-api-python-client
 PRGNAM: python3-google-api-python-client
 VERSION: ${VERSION:-2.70.0}
 BUILD: ${BUILD:-1}
@@ -1981,7 +1984,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://files.pythonhosted.org/packages/a8/fe/71091bf1a9f2fa50c06a6caa94b579da7d354d83ac01a4c34b139808d332/google-api-python-client-2.70.0.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-google-auth
+    Directory: ./gnome_more/python3-google-auth
 PRGNAM: python3-google-auth
 VERSION: ${VERSION:-2.15.0}
 BUILD: ${BUILD:-1}
@@ -1989,7 +1992,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://files.pythonhosted.org/packages/52/a6/72c80f4a0b37c2c32d35636b2373bdf07c1dad81b109f9361742d3aa1cbe/google-auth-2.15.0.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-google-auth-httplib2
+    Directory: ./gnome_more/python3-google-auth-httplib2
 PRGNAM: python3-google-auth-httplib2
 VERSION: ${VERSION:-0.1.0}
 BUILD: ${BUILD:-1}
@@ -1997,7 +2000,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://files.pythonhosted.org/packages/c6/b5/a9e956fd904ecb34ec9d297616fe98fa4106fc12f3b0a914dec983c267b9/google-auth-httplib2-0.1.0.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-google-cloud-core
+    Directory: ./gnome_more/python3-google-cloud-core
 PRGNAM: python3-google-cloud-core
 VERSION: ${VERSION:-2.3.2}
 BUILD: ${BUILD:-1}
@@ -2005,7 +2008,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://files.pythonhosted.org/packages/40/4b/f4cebb92fe965f02f4a9c06f16355cf83a61a2d5db110df9af71191c830a/google-cloud-core-2.3.2.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-google-cloud-storage
+    Directory: ./gnome_more/python3-google-cloud-storage
 PRGNAM: python3-google-cloud-storage
 VERSION: ${VERSION:-2.7.0}
 BUILD: ${BUILD:-1}
@@ -2013,7 +2016,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://files.pythonhosted.org/packages/9f/9c/8cd4da7df57284832c3853aa565de278ca6d33a47ebe6722628488dc01ca/google-cloud-storage-2.7.0.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-google-crc32c
+    Directory: ./gnome_more/python3-google-crc32c
 PRGNAM: python3-google-crc32c
 VERSION: ${VERSION:-1.5.0}
 BUILD: ${BUILD:-1}
@@ -2021,7 +2024,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://files.pythonhosted.org/packages/d3/a5/4bb58448fffd36ede39684044df93a396c13d1ea3516f585767f9f960352/google-crc32c-1.5.0.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-google-resumable-media
+    Directory: ./gnome_more/python3-google-resumable-media
 PRGNAM: python3-google-resumable-media
 VERSION: ${VERSION:-2.4.0}
 BUILD: ${BUILD:-1}
@@ -2029,7 +2032,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://files.pythonhosted.org/packages/71/d2/d681d0c192d2948b692f155bc20ee03727ab3a70d541b0c39a327c9689a9/google-resumable-media-2.4.0.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-googleapis-common-protos
+    Directory: ./gnome_more/python3-googleapis-common-protos
 PRGNAM: python3-googleapis-common-protos
 VERSION: ${VERSION:-1.57.0}
 BUILD: ${BUILD:-1}
@@ -2037,7 +2040,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://files.pythonhosted.org/packages/c5/db/9b98c3a9e148b5daaa2e26ce4faeb6ade28dc623dcc109f2ac7efee514de/googleapis-common-protos-1.57.0.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-guzzle_sphinx_theme
+    Directory: ./gnome_more/python3-guzzle_sphinx_theme
 PRGNAM: python3-guzzle_sphinx_theme
 VERSION: ${VERSION:-0.7.11}
 BUILD: ${BUILD:-1}
@@ -2045,7 +2048,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://files.pythonhosted.org/packages/f4/7d/aed8cd5e4ca52bb8550d2c33fcbb8d6dbd5c2cf5e1694202d2135b374eba/guzzle_sphinx_theme-0.7.11.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-httplib2
+    Directory: ./gnome_more/python3-httplib2
 PRGNAM: python3-httplib2
 VERSION: ${VERSION:-0.21.0}
 BUILD: ${BUILD:-1}
@@ -2053,7 +2056,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://files.pythonhosted.org/packages/c2/37/a093aaa902f6b2301f0f2cff5285548dbc4ab9b9a29215eb440381cbb32b/httplib2-0.21.0.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-jedi
+    Directory: ./gnome_more/python3-jedi
 PRGNAM: python3-jedi
 VERSION: ${VERSION:-0.18.2}
 BUILD: ${BUILD:-1}
@@ -2061,7 +2064,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://files.pythonhosted.org/packages/source/j/jedi/jedi-0.18.2.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-keyring
+    Directory: ./gnome_more/python3-keyring
 PRGNAM: python3-keyring
 VERSION: ${VERSION:-19.2.0}
 BUILD: ${BUILD:-1}
@@ -2069,7 +2072,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://files.pythonhosted.org/packages/ee/46/77fdb7cd2b0f1f684afbc35a59b3d7ebb6961fe528f97b86900002968914/keyring-19.2.0.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-magic
+    Directory: ./gnome_more/python3-magic
 PRGNAM: python3-magic
 VERSION: ${VERSION:-0.4.27}
 BUILD: ${BUILD:-1}
@@ -2077,7 +2080,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://pypi.io/packages/source/p/python-magic/python-magic-0.4.27.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-mat2
+    Directory: ./gnome_more/python3-mat2
 PRGNAM: python3-mat2
 VERSION: ${VERSION:-0.13.3}
 BUILD: ${BUILD:-1}
@@ -2085,7 +2088,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://0xacab.org/jvoisin/mat2/-/archive/0.13.3/mat2-0.13.3.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-msgpack
+    Directory: ./gnome_more/python3-msgpack
 PRGNAM: python3-msgpack
 VERSION: ${VERSION:-1.0.4}
 BUILD: ${BUILD:-1}
@@ -2093,7 +2096,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://files.pythonhosted.org/packages/22/44/0829b19ac243211d1d2bd759999aa92196c546518b0be91de9cacc98122a/msgpack-1.0.4.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-mutagen
+    Directory: ./gnome_more/python3-mutagen
 PRGNAM: python3-mutagen
 VERSION: ${VERSION:-1.46.0}
 BUILD: ${BUILD:-1}
@@ -2101,7 +2104,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://files.pythonhosted.org/packages/b1/54/d1760a363d0fe345528e37782f6c18123b0e99e8ea755022fd51f1ecd0f9/mutagen-1.46.0.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-natsort
+    Directory: ./gnome_more/python3-natsort
 PRGNAM: python3-natsort
 VERSION: ${VERSION:-8.1.0}
 BUILD: ${BUILD:-1}
@@ -2109,7 +2112,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://files.pythonhosted.org/packages/f7/37/207acdf07c2229a799b7a042c0977ad2372f4adb3446fba8f7703e2840e1/natsort-8.1.0.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-oauth2client
+    Directory: ./gnome_more/python3-oauth2client
 PRGNAM: python3-oauth2client
 VERSION: ${VERSION:-4.1.3}
 BUILD: ${BUILD:-1}
@@ -2117,7 +2120,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://files.pythonhosted.org/packages/a6/7b/17244b1083e8e604bf154cf9b716aecd6388acd656dd01893d0d244c94d9/oauth2client-4.1.3.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-parso
+    Directory: ./gnome_more/python3-parso
 PRGNAM: python3-parso
 VERSION: ${VERSION:-0.8.3}
 BUILD: ${BUILD:-1}
@@ -2125,7 +2128,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://github.com/davidhalter/parso/archive/v0.8.3/parso-0.8.3.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-peewee
+    Directory: ./gnome_more/python3-peewee
 PRGNAM: python3-peewee
 VERSION: ${VERSION:-3.16.2}
 BUILD: ${BUILD:-1}
@@ -2133,7 +2136,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://files.pythonhosted.org/packages/a9/50/1dd5ea74c559df4afb8391f8d05f0fec685dbe8effba13bb9072901eb288/peewee-3.16.2.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-piexif
+    Directory: ./gnome_more/python3-piexif
 PRGNAM: python3-piexif
 VERSION: ${VERSION:-1.1.3}
 BUILD: ${BUILD:-1}
@@ -2141,7 +2144,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://files.pythonhosted.org/packages/fa/84/a3f25cec7d0922bf60be8000c9739d28d24b6896717f44cc4cfb843b1487/piexif-1.1.3.zip
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-poetry-core
+    Directory: ./gnome_more/python3-poetry-core
 PRGNAM: python3-poetry-core
 VERSION: ${VERSION:-1.5.2}
 BUILD: ${BUILD:-1}
@@ -2149,7 +2152,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://files.pythonhosted.org/packages/source/p/poetry_core/poetry_core-1.5.2.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-pyasn1
+    Directory: ./gnome_more/python3-pyasn1
 PRGNAM: python3-pyasn1
 VERSION: ${VERSION:-0.4.8}
 BUILD: ${BUILD:-1}
@@ -2157,7 +2160,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://files.pythonhosted.org/packages/a4/db/fffec68299e6d7bad3d504147f9094830b704527a7fc098b721d38cc7fa7/pyasn1-0.4.8.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-pyasn1-modules
+    Directory: ./gnome_more/python3-pyasn1-modules
 PRGNAM: python3-pyasn1-modules
 VERSION: ${VERSION:-0.2.8}
 BUILD: ${BUILD:-1}
@@ -2165,7 +2168,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://files.pythonhosted.org/packages/88/87/72eb9ccf8a58021c542de2588a867dbefc7556e14b2866d1e40e9e2b587e/pyasn1-modules-0.2.8.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-pydot
+    Directory: ./gnome_more/python3-pydot
 PRGNAM: python3-pydot
 VERSION: ${VERSION:-1.4.2}
 BUILD: ${BUILD:-1}
@@ -2173,7 +2176,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://files.pythonhosted.org/packages/13/6e/916cdf94f9b38ae0777b254c75c3bdddee49a54cc4014aac1460a7a172b3/pydot-1.4.2.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-pydrive2
+    Directory: ./gnome_more/python3-pydrive2
 PRGNAM: python3-pydrive2
 VERSION: ${VERSION:-1.15.0}
 BUILD: ${BUILD:-1}
@@ -2181,7 +2184,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://files.pythonhosted.org/packages/05/e8/4d227db64308b3ccc81e7ef5df2432c4b97ecc835b9f291fd07f5be93c58/PyDrive2-1.15.0.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-pyopenssl
+    Directory: ./gnome_more/python3-pyopenssl
 PRGNAM: python3-pyopenssl
 VERSION: ${VERSION:-22.1.0}
 BUILD: ${BUILD:-1}
@@ -2189,7 +2192,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://files.pythonhosted.org/packages/e7/2f/c6d89edac75482f11e231b644e365d31d5479b7b727734e6a8f3d00decd5/pyOpenSSL-22.1.0.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-pyproject-hooks
+    Directory: ./gnome_more/python3-pyproject-hooks
 PRGNAM: python3-pyproject-hooks
 VERSION: ${VERSION:-1.0.0}
 BUILD: ${BUILD:-1}
@@ -2197,7 +2200,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://files.pythonhosted.org/packages/source/p/pyproject_hooks/pyproject_hooks-1.0.0.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-rarfile
+    Directory: ./gnome_more/python3-rarfile
 PRGNAM: python3-rarfile
 VERSION: ${VERSION:-3.1}
 BUILD: ${BUILD:-1}
@@ -2205,7 +2208,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://files.pythonhosted.org/packages/88/0b/107dde3f330d04668e126932a09002ac47348841453aa0391634381fa087/rarfile-3.1.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-regex
+    Directory: ./gnome_more/python3-regex
 PRGNAM: python3-regex
 VERSION: ${VERSION:-2023.6.3}
 BUILD: ${BUILD:-1}
@@ -2213,7 +2216,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://files.pythonhosted.org/packages/source/r/regex/regex-2023.6.3.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-rsa
+    Directory: ./gnome_more/python3-rsa
 PRGNAM: python3-rsa
 VERSION: ${VERSION:-4.9}
 BUILD: ${BUILD:-1}
@@ -2221,7 +2224,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://files.pythonhosted.org/packages/aa/65/7d973b89c4d2351d7fb232c2e452547ddfa243e93131e7cfa766da627b52/rsa-4.9.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-semantic_version
+    Directory: ./gnome_more/python3-semantic_version
 PRGNAM: python3-semantic_version
 VERSION: ${VERSION:-2.10.0}
 BUILD: ${BUILD:-1}
@@ -2229,7 +2232,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://files.pythonhosted.org/packages/7d/31/f2289ce78b9b473d582568c234e104d2a342fd658cc288a7553d83bb8595/semantic_version-2.10.0.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-setuptools_rust
+    Directory: ./gnome_more/python3-setuptools-rust
 PRGNAM: python3-setuptools-rust
 VERSION: ${VERSION:-1.5.2}
 BUILD: ${BUILD:-1}
@@ -2237,7 +2240,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://files.pythonhosted.org/packages/99/db/e4ecb483ffa194d632ed44bda32cb740e564789fed7e56c2be8e2a0e2aa6/setuptools-rust-1.5.2.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-soupsieve
+    Directory: ./gnome_more/python3-soupsieve
 PRGNAM: python3-soupsieve
 VERSION: ${VERSION:-2.3.1}
 BUILD: ${BUILD:-1}
@@ -2245,7 +2248,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://github.com/facelessuser/soupsieve/archive/2.3.1/soupsieve-2.3.1.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-tinycss2
+    Directory: ./gnome_more/python3-tinycss2
 PRGNAM: python3-tinycss2
 VERSION: ${VERSION:-1.1.0}
 BUILD: ${BUILD:-1}
@@ -2253,14 +2256,14 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://files.pythonhosted.org/packages/ce/d3/ece7a98d5826bd134e269a3a3030153d30482194fca71d95a3041812aab8/tinycss2-1.1.0.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-tzlocal
+    Directory: ./gnome_more/python3-tzlocal
 PRGNAM: python3-tzlocal
 VERSION: ${VERSION:-5.0b2}
 BUILD: ${BUILD:-1}
 TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-unidecode
+    Directory: ./gnome_more/python3-unidecode
 PRGNAM: python3-unidecode
 VERSION: ${VERSION:-1.3.6}
 BUILD: ${BUILD:-1}
@@ -2268,7 +2271,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://files.pythonhosted.org/packages/source/u/unidecode/Unidecode-1.3.6.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-uritemplate
+    Directory: ./gnome_more/python3-uritemplate
 PRGNAM: python3-uritemplate
 VERSION: ${VERSION:-4.1.1}
 BUILD: ${BUILD:-1}
@@ -2276,7 +2279,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://files.pythonhosted.org/packages/d2/5a/4742fdba39cd02a56226815abfa72fe0aa81c33bed16ed045647d6000eba/uritemplate-4.1.1.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/python3-webencodings
+    Directory: ./gnome_more/python3-webencodings
 PRGNAM: python3-webencodings
 VERSION: ${VERSION:-0.5.1}
 BUILD: ${BUILD:-1}
@@ -2284,7 +2287,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://github.com/gsnedders/python-webencodings/archive/v0.5.1/python-webencodings-0.5.1.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/raider
+    Directory: ./gnome_more/raider
 PRGNAM: raider
 VERSION: ${VERSION:-1.3.1}
 BUILD: ${BUILD:-1}
@@ -2294,7 +2297,7 @@ DOWNLOAD: https://github.com/ADBeveridge/raider/archive/refs/tags/v1.3.1.tar.gz
 
 REQUIRED: libadwaita gtk4 
 
-      Directory: ./gnome_soft/AAA-NOTREADY/rhythmbox
+    Directory: ./gnome_more/rhythmbox
 PRGNAM: rhythmbox
 VERSION: ${VERSION:-3.4.6}
 BUILD: ${BUILD:-1}
@@ -2302,14 +2305,14 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://download.gnome.org/sources/rhythmbox/3.4/rhythmbox-3.4.6.tar.xz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/rhythmbox-tray-icon
+    Directory: ./gnome_more/rhythmbox-tray-icon
 PRGNAM: rhythmbox-tray-icon
 VERSION: ${VERSION:-2022.04.19}
 BUILD: ${BUILD:-1}
 TAG: ${TAG:-_gfs}	
 PKGTYPE: ${PKGTYPE:-txz}
 
-      Directory: ./gnome_soft/AAA-NOTREADY/rome
+    Directory: ./gnome_more/rome
 PRGNAM: rome
 VERSION: ${VERSION:-12.1.3}
 BUILD: ${BUILD:-1}
@@ -2318,7 +2321,7 @@ PKGTYPE: ${PKGTYPE:-txz}
 
 REQUIRED:  
 
-      Directory: ./gnome_soft/AAA-NOTREADY/rygel
+    Directory: ./gnome_more/rygel
 PRGNAM: rygel
 VERSION: ${VERSION:-0.42.4}
 BUILD: ${BUILD:-1}
@@ -2328,7 +2331,7 @@ DOWNLOAD: https://download.gnome.org/sources/rygel/0.42/rygel-0.42.4.tar.xz
 
 REQUIRED: gst-editing-services gssdp gupnp-av gupnp-dlna gupnp 
 
-      Directory: ./gnome_soft/AAA-NOTREADY/share-preview
+    Directory: ./gnome_more/share-preview
 PRGNAM: share-preview
 VERSION: ${VERSION:-0.3.0}
 BUILD: ${BUILD:-1}
@@ -2338,7 +2341,7 @@ DOWNLOAD: https://github.com/rafaelmardojai/share-preview/archive/0.3.0/share-pr
 
 REQUIRED: gtk4 libadwaita 
 
-      Directory: ./gnome_soft/AAA-NOTREADY/shotwell
+    Directory: ./gnome_more/shotwell
 PRGNAM: shotwell
 VERSION: ${VERSION:-0.32.2}
 BUILD: ${BUILD:-1}
@@ -2346,7 +2349,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://download.gnome.org/sources/shotwell/0.32/shotwell-0.32.2.tar.xz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/sound-juicer
+    Directory: ./gnome_more/sound-juicer
 PRGNAM: sound-juicer
 VERSION: ${VERSION:-3.40.0}
 BUILD: ${BUILD:-1}
@@ -2356,7 +2359,7 @@ DOWNLOAD: https://download.gnome.org/sources/sound-juicer/3.40/sound-juicer-3.40
 
 REQUIRED: libmusicbrainz5 
 
-      Directory: ./gnome_soft/AAA-NOTREADY/telegraph
+    Directory: ./gnome_more/telegraph
 PRGNAM: telegraph
 VERSION: ${VERSION:-0.1.7}
 BUILD: ${BUILD:-1}
@@ -2366,7 +2369,7 @@ DOWNLOAD: https://github.com/fkinoshita/Telegraph/releases/download/v0.1.7/teleg
 
 REQUIRED: gtk4 libadwaita 
 
-      Directory: ./gnome_soft/AAA-NOTREADY/telepathy-idle
+    Directory: ./gnome_more/telepathy-idle
 PRGNAM: telepathy-idle
 VERSION: ${VERSION:-0.2.2}
 BUILD: ${BUILD:-1}
@@ -2374,7 +2377,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: http://telepathy.freedesktop.org/releases/telepathy-idle/telepathy-idle-0.2.2.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/telepathy-logger
+    Directory: ./gnome_more/telepathy-logger
 PRGNAM: telepathy-logger
 VERSION: ${VERSION:-0.8.2}
 BUILD: ${BUILD:-1}
@@ -2382,7 +2385,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: http://telepathy.freedesktop.org/releases/telepathy-logger/telepathy-logger-0.8.2.tar.bz2
 
-      Directory: ./gnome_soft/AAA-NOTREADY/telepathy-mission-control
+    Directory: ./gnome_more/telepathy-mission-control
 PRGNAM: telepathy-mission-control
 VERSION: ${VERSION:-5.16.6}
 BUILD: ${BUILD:-1}
@@ -2390,7 +2393,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: http://telepathy.freedesktop.org/releases/telepathy-mission-control/telepathy-mission-control-5.16.6.tar.gz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/textpieces
+    Directory: ./gnome_more/textpieces
 PRGNAM: textpieces
 VERSION: ${VERSION:-3.1.1}
 BUILD: ${BUILD:-1}
@@ -2400,7 +2403,7 @@ DOWNLOAD: https://github.com/liferooter/textpieces/archive/v3.1.1/textpieces-3.1
 
 REQUIRED: gtk4 libadwaita 
 
-      Directory: ./gnome_soft/AAA-NOTREADY/vala-language-server
+    Directory: ./gnome_more/vala-language-server
 PRGNAM: vala-language-server
 VERSION: ${VERSION:-0.48.7}
 BUILD: ${BUILD:-1}
@@ -2409,7 +2412,7 @@ PKGTYPE: ${PKGTYPE:-txz}
 
 REQUIRED:  
 
-      Directory: ./gnome_soft/AAA-NOTREADY/video-trimmer
+    Directory: ./gnome_more/video-trimmer
 PRGNAM: video-trimmer
 VERSION: ${VERSION:-0.8.1}
 BUILD: ${BUILD:-1}
@@ -2419,7 +2422,7 @@ DOWNLOAD: https://gitlab.gnome.org/YaLTeR/video-trimmer/-/archive/v0.8.1/video-t
 
 REQUIRED: gtk4 libadwaita 
 
-      Directory: ./gnome_soft/AAA-NOTREADY/warp
+    Directory: ./gnome_more/warp
 PRGNAM: warp
 VERSION: ${VERSION:-0.5.4}
 BUILD: ${BUILD:-1}
@@ -2429,7 +2432,7 @@ DOWNLOAD: https://gitlab.gnome.org/World/warp/-/archive/v0.5.4/warp-0.5.4.tar.gz
 
 REQUIRED: gtk4 libadwaita 
 
-      Directory: ./gnome_soft/AAA-NOTREADY/webfont-kit-generator
+    Directory: ./gnome_more/webfont-kit-generator
 PRGNAM: webfont-kit-generator
 VERSION: ${VERSION:-1.0.3}
 BUILD: ${BUILD:-1}
@@ -2439,7 +2442,7 @@ DOWNLOAD: https://github.com/rafaelmardojai/webfont-kit-generator/archive/1.0.3/
 
 REQUIRED: gtk4 libadwaita python-unicodedata2 python-fonttools 
 
-      Directory: ./gnome_soft/AAA-NOTREADY/wike
+    Directory: ./gnome_more/wike
 PRGNAM: wike
 VERSION: ${VERSION:-2.0.1}
 BUILD: ${BUILD:-1}
@@ -2448,7 +2451,7 @@ PKGTYPE: ${PKGTYPE:-txz}
 
 REQUIRED: libadwaita python-gobject python-requests webkit2gtk6.0 meson appstream-glib 
 
-      Directory: ./gnome_soft/AAA-NOTREADY/workbench
+    Directory: ./gnome_more/workbench
 PRGNAM: workbench
 VERSION: ${VERSION:-44.1}
 BUILD: ${BUILD:-1}
@@ -2457,7 +2460,7 @@ PKGTYPE: ${PKGTYPE:-txz}
 
 REQUIRED: libadwaita blueprint-compiler vala-language-server rome 
 
-      Directory: ./gnome_soft/AAA-NOTREADY/xdg-user-dirs-gtk
+    Directory: ./gnome_more/xdg-user-dirs-gtk
 PRGNAM: xdg-user-dirs-gtk
 VERSION: ${VERSION:-0.11}
 BUILD: ${BUILD:-1}
@@ -2465,7 +2468,7 @@ TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://download.gnome.org/sources/xdg-user-dirs-gtk/0.11/xdg-user-dirs-gtk-0.11.tar.xz
 
-      Directory: ./gnome_soft/AAA-NOTREADY/zap
+    Directory: ./gnome_more/zap
 PRGNAM: zap
 VERSION: ${VERSION:-1.2.3}
 BUILD: ${BUILD:-1}
@@ -2475,6 +2478,7 @@ DOWNLOAD: https://gitlab.com/rmnvgr/zap/-/archive/1.2.3/zap-1.2.3.tar.gz
 
 REQUIRED: gtk4 libadwaita 
 
+  Directory: ./gnome_soft
     Directory: ./gnome_soft/Authenticator
 PRGNAM: Authenticator
 VERSION: ${VERSION:-4.3.1}

@@ -1,0 +1,1406 @@
+26-build_atomix.sh
+atomix
+--2023-09-07 23:58:10--  https://download.gnome.org/sources/atomix/44/atomix-44.0.tar.xz
+Resolving download.gnome.org (download.gnome.org)... 2a04:4e42:600::347, 2a04:4e42::347, 2a04:4e42:400::347, ...
+Connecting to download.gnome.org (download.gnome.org)|2a04:4e42:600::347|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://mirrors.dotsrc.org/gnome/sources/atomix/44/atomix-44.0.tar.xz [following]
+--2023-09-07 23:58:11--  https://mirrors.dotsrc.org/gnome/sources/atomix/44/atomix-44.0.tar.xz
+Resolving mirrors.dotsrc.org (mirrors.dotsrc.org)... 2001:878:346::116, 130.225.254.116
+Connecting to mirrors.dotsrc.org (mirrors.dotsrc.org)|2001:878:346::116|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 535508 (523K) [application/octet-stream]
+Saving to: ‘atomix-44.0.tar.xz’
+
+     0K .......... .......... .......... .......... ..........  9%  346K 1s
+    50K .......... .......... .......... .......... .......... 19%  899K 1s
+   100K .......... .......... .......... .......... .......... 28% 1.07M 1s
+   150K .......... .......... .......... .......... .......... 38% 1.66M 0s
+   200K .......... .......... .......... .......... .......... 47% 1.95M 0s
+   250K .......... .......... .......... .......... .......... 57% 2.35M 0s
+   300K .......... .......... .......... .......... .......... 66% 2.54M 0s
+   350K .......... .......... .......... .......... .......... 76% 2.10M 0s
+   400K .......... .......... .......... .......... .......... 86% 2.78M 0s
+   450K .......... .......... .......... .......... .......... 95% 2.84M 0s
+   500K .......... .......... ..                              100% 5.94M=0.4s
+
+2023-09-07 23:58:12 (1.27 MB/s) - ‘atomix-44.0.tar.xz’ saved [535508/535508]
+
+atomix-44.0/
+atomix-44.0/AUTHORS
+atomix-44.0/COPYING
+atomix-44.0/ChangeLog
+atomix-44.0/MAINTAINERS
+atomix-44.0/NEWS
+atomix-44.0/README.md
+atomix-44.0/atomix.doap
+atomix-44.0/data/
+atomix-44.0/data/atomix-logo.png
+atomix-44.0/data/atomix-logo.svg
+atomix-44.0/data/atomix.appdata.xml.in
+atomix-44.0/data/atomix.desktop.in
+atomix-44.0/data/atomix.png
+atomix-44.0/data/icons/
+atomix-44.0/data/icons/hicolor/
+atomix-44.0/data/icons/hicolor/16x16/
+atomix-44.0/data/icons/hicolor/16x16/apps/
+atomix-44.0/data/icons/hicolor/16x16/apps/atomix.png
+atomix-44.0/data/icons/hicolor/22x22/
+atomix-44.0/data/icons/hicolor/22x22/apps/
+atomix-44.0/data/icons/hicolor/22x22/apps/atomix.png
+atomix-44.0/data/icons/hicolor/24x24/
+atomix-44.0/data/icons/hicolor/24x24/apps/
+atomix-44.0/data/icons/hicolor/24x24/apps/atomix.png
+atomix-44.0/data/icons/hicolor/256x256/
+atomix-44.0/data/icons/hicolor/256x256/apps/
+atomix-44.0/data/icons/hicolor/256x256/apps/atomix.png
+atomix-44.0/data/icons/hicolor/32x32/
+atomix-44.0/data/icons/hicolor/32x32/apps/
+atomix-44.0/data/icons/hicolor/32x32/apps/atomix.png
+atomix-44.0/data/icons/hicolor/48x48/
+atomix-44.0/data/icons/hicolor/48x48/apps/
+atomix-44.0/data/icons/hicolor/48x48/apps/atomix.png
+atomix-44.0/data/icons/hicolor/512x512/
+atomix-44.0/data/icons/hicolor/512x512/apps/
+atomix-44.0/data/icons/hicolor/512x512/apps/atomix.png
+atomix-44.0/data/icons/hicolor/symbolic/
+atomix-44.0/data/icons/hicolor/symbolic/apps/
+atomix-44.0/data/icons/hicolor/symbolic/apps/atomix-symbolic.svg
+atomix-44.0/data/its/
+atomix-44.0/data/its/level.its
+atomix-44.0/data/its/level.loc
+atomix-44.0/data/level/
+atomix-44.0/data/level/aceticacid.atomix.xml.in
+atomix-44.0/data/level/acetone.atomix.xml.in
+atomix-44.0/data/level/butanol.atomix.xml.in
+atomix-44.0/data/level/cyclobutane.atomix.xml.in
+atomix-44.0/data/level/dimethylether.atomix.xml.in
+atomix-44.0/data/level/ethanal.atomix.xml.in
+atomix-44.0/data/level/ethane.atomix.xml.in
+atomix-44.0/data/level/ethanol.atomix.xml.in
+atomix-44.0/data/level/ethylene.atomix.xml.in
+atomix-44.0/data/level/glycerin.atomix.xml.in
+atomix-44.0/data/level/lactic-acid.atomix.xml.in
+atomix-44.0/data/level/meson.build
+atomix-44.0/data/level/methanal.atomix.xml.in
+atomix-44.0/data/level/methane.atomix.xml.in
+atomix-44.0/data/level/methanol.atomix.xml.in
+atomix-44.0/data/level/propanal.atomix.xml.in
+atomix-44.0/data/level/propylene.atomix.xml.in
+atomix-44.0/data/level/pyran.atomix.xml.in
+atomix-44.0/data/level/sequence
+atomix-44.0/data/level/transbutylen.atomix.xml.in
+atomix-44.0/data/level/water.atomix.xml.in
+atomix-44.0/data/level-transform.xsl
+atomix-44.0/data/meson.build
+atomix-44.0/data/themes/
+atomix-44.0/data/themes/default/
+atomix-44.0/data/themes/default/arrow-bottom.png
+atomix-44.0/data/themes/default/arrow-left.png
+atomix-44.0/data/themes/default/arrow-right.png
+atomix-44.0/data/themes/default/arrow-top.png
+atomix-44.0/data/themes/default/atom-c.png
+atomix-44.0/data/themes/default/atom-f.png
+atomix-44.0/data/themes/default/atom-h.png
+atomix-44.0/data/themes/default/atom-n.png
+atomix-44.0/data/themes/default/atom-o.png
+atomix-44.0/data/themes/default/cursor.png
+atomix-44.0/data/themes/default/decor-fence.png
+atomix-44.0/data/themes/default/decor-holes.png
+atomix-44.0/data/themes/default/decor-liquid.png
+atomix-44.0/data/themes/default/floor.png
+atomix-44.0/data/themes/default/link-bottom-double.png
+atomix-44.0/data/themes/default/link-bottom-left.png
+atomix-44.0/data/themes/default/link-bottom-right.png
+atomix-44.0/data/themes/default/link-bottom.png
+atomix-44.0/data/themes/default/link-left-double.png
+atomix-44.0/data/themes/default/link-left.png
+atomix-44.0/data/themes/default/link-right-double.png
+atomix-44.0/data/themes/default/link-right.png
+atomix-44.0/data/themes/default/link-top-double.png
+atomix-44.0/data/themes/default/link-top-left.png
+atomix-44.0/data/themes/default/link-top-right.png
+atomix-44.0/data/themes/default/link-top.png
+atomix-44.0/data/themes/default/shadow-bottom-right.png
+atomix-44.0/data/themes/default/shadow-left-top.png
+atomix-44.0/data/themes/default/shadow-left.png
+atomix-44.0/data/themes/default/shadow-top-left-both.png
+atomix-44.0/data/themes/default/shadow-top-left.png
+atomix-44.0/data/themes/default/shadow-top.png
+atomix-44.0/data/themes/default/theme
+atomix-44.0/data/themes/default/wall-bottom-left.png
+atomix-44.0/data/themes/default/wall-bottom-right.png
+atomix-44.0/data/themes/default/wall-horizontal-bottomx.png
+atomix-44.0/data/themes/default/wall-horizontal-left-end.png
+atomix-44.0/data/themes/default/wall-horizontal-right-end.png
+atomix-44.0/data/themes/default/wall-horizontal-topx.png
+atomix-44.0/data/themes/default/wall-horizontal.png
+atomix-44.0/data/themes/default/wall-single.png
+atomix-44.0/data/themes/default/wall-top-left.png
+atomix-44.0/data/themes/default/wall-top-right.png
+atomix-44.0/data/themes/default/wall-vertical-bottom-end.png
+atomix-44.0/data/themes/default/wall-vertical-leftx.png
+atomix-44.0/data/themes/default/wall-vertical-rightx.png
+atomix-44.0/data/themes/default/wall-vertical-top-end.png
+atomix-44.0/data/themes/default/wall-vertical.png
+atomix-44.0/data/ui/
+atomix-44.0/data/ui/interface.ui
+atomix-44.0/data/ui/menu.ui
+atomix-44.0/meson.build
+atomix-44.0/meson_post_install.py
+atomix-44.0/org.gnome.atomix.json
+atomix-44.0/po/
+atomix-44.0/po/ChangeLog
+atomix-44.0/po/LINGUAS
+atomix-44.0/po/POTFILES.in
+atomix-44.0/po/af.po
+atomix-44.0/po/am.po
+atomix-44.0/po/ar.po
+atomix-44.0/po/az.po
+atomix-44.0/po/be.po
+atomix-44.0/po/bg.po
+atomix-44.0/po/bn.po
+atomix-44.0/po/bs.po
+atomix-44.0/po/ca.po
+atomix-44.0/po/cs.po
+atomix-44.0/po/da.po
+atomix-44.0/po/de.po
+atomix-44.0/po/dz.po
+atomix-44.0/po/el.po
+atomix-44.0/po/en_CA.po
+atomix-44.0/po/en_GB.po
+atomix-44.0/po/eo.po
+atomix-44.0/po/es.po
+atomix-44.0/po/et.po
+atomix-44.0/po/eu.po
+atomix-44.0/po/fa.po
+atomix-44.0/po/fi.po
+atomix-44.0/po/fr.po
+atomix-44.0/po/fur.po
+atomix-44.0/po/ga.po
+atomix-44.0/po/gl.po
+atomix-44.0/po/gu.po
+atomix-44.0/po/he.po
+atomix-44.0/po/hi.po
+atomix-44.0/po/hu.po
+atomix-44.0/po/id.po
+atomix-44.0/po/is.po
+atomix-44.0/po/it.po
+atomix-44.0/po/ja.po
+atomix-44.0/po/ka.po
+atomix-44.0/po/kn.po
+atomix-44.0/po/ko.po
+atomix-44.0/po/lt.po
+atomix-44.0/po/lv.po
+atomix-44.0/po/meson.build
+atomix-44.0/po/mk.po
+atomix-44.0/po/ml.po
+atomix-44.0/po/ms.po
+atomix-44.0/po/nb.po
+atomix-44.0/po/ne.po
+atomix-44.0/po/nl.po
+atomix-44.0/po/oc.po
+atomix-44.0/po/pa.po
+atomix-44.0/po/pl.po
+atomix-44.0/po/pt.po
+atomix-44.0/po/pt_BR.po
+atomix-44.0/po/ro.po
+atomix-44.0/po/ru.po
+atomix-44.0/po/sk.po
+atomix-44.0/po/sl.po
+atomix-44.0/po/sq.po
+atomix-44.0/po/sr.po
+atomix-44.0/po/sr@latin.po
+atomix-44.0/po/sv.po
+atomix-44.0/po/ta.po
+atomix-44.0/po/th.po
+atomix-44.0/po/tr.po
+atomix-44.0/po/uk.po
+atomix-44.0/po/vi.po
+atomix-44.0/po/wa.po
+atomix-44.0/po/zh_CN.po
+atomix-44.0/po/zh_HK.po
+atomix-44.0/po/zh_TW.po
+atomix-44.0/src/
+atomix-44.0/src/atomix-application.h
+atomix-44.0/src/board-gtk.c
+atomix-44.0/src/board-gtk.h
+atomix-44.0/src/canvas_helper.c
+atomix-44.0/src/canvas_helper.h
+atomix-44.0/src/clock.c
+atomix-44.0/src/clock.h
+atomix-44.0/src/goal-view.c
+atomix-44.0/src/goal-view.h
+atomix-44.0/src/goal.c
+atomix-44.0/src/goal.h
+atomix-44.0/src/level-manager.c
+atomix-44.0/src/level-manager.h
+atomix-44.0/src/level-private.h
+atomix-44.0/src/level.c
+atomix-44.0/src/level.h
+atomix-44.0/src/main.c
+atomix-44.0/src/main.h
+atomix-44.0/src/meson.build
+atomix-44.0/src/pf-test.c
+atomix-44.0/src/playfield.c
+atomix-44.0/src/playfield.h
+atomix-44.0/src/preferences.c
+atomix-44.0/src/preferences.h
+atomix-44.0/src/theme-manager.c
+atomix-44.0/src/theme-manager.h
+atomix-44.0/src/theme-private.h
+atomix-44.0/src/theme.c
+atomix-44.0/src/theme.h
+atomix-44.0/src/tile.c
+atomix-44.0/src/tile.h
+atomix-44.0/src/undo.c
+atomix-44.0/src/undo.h
+atomix-44.0/src/xml-util.c
+atomix-44.0/src/xml-util.h
+The Meson build system
+Version: 1.2.1
+Source dir: /tmp/gfs/atomix-44.0
+Build dir: /tmp/gfs/atomix-44.0/build
+Build type: native build
+Project name: atomix
+Project version: 44.0
+C compiler for the host machine: ccache cc (gcc 13.2.0 "cc (GCC) 13.2.0")
+C linker for the host machine: cc ld.bfd 2.41-slack151
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Found pkg-config: /usr/bin/pkg-config (0.29.2)
+Run-time dependency gtk+-3.0 found: YES 3.24.38
+Run-time dependency gdk-pixbuf-2.0 found: YES 2.42.10
+Run-time dependency glib-2.0 found: YES 2.77.3
+Run-time dependency libgnome-games-support-1 found: YES 1.8.2
+Library m found: YES
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Configuring config.h using configuration
+Build targets in project: 94
+NOTICE: Future-deprecated features used:
+ * 0.56.0: {'meson.source_root'}
+
+atomix 44.0
+
+  User defined options
+    buildtype      : release
+    default_library: shared
+    infodir        : /usr/info
+    libdir         : lib64
+    localstatedir  : /var
+    mandir         : /usr/man
+    prefix         : /usr
+    sysconfdir     : /etc
+
+Found ninja-1.11.1 at /usr/bin/ninja
+[1/110] Generating data/atomix.appdata.xml with a custom command
+[2/110] Generating data/level/aceticacid.atomix.xml with a custom command
+[3/110] Generating data/level/ethanol.atomix.xml with a custom command
+[4/110] Generating data/level/dimethylether.atomix.xml with a custom command
+[5/110] Generating data/atomix.desktop with a custom command
+[6/110] Generating data/level/cyclobutane.atomix.xml with a custom command
+[7/110] Generating data/level/butanol.atomix.xml with a custom command
+[8/110] Generating data/level/ethanal.atomix.xml with a custom command
+[9/110] Generating data/level/methanal.atomix.xml with a custom command
+[10/110] Generating data/level/acetone.atomix.xml with a custom command
+[11/110] Generating data/level/ethane.atomix.xml with a custom command
+[12/110] Generating data/level/ethylene.atomix.xml with a custom command
+[13/110] Generating data/level/lactic-acid.atomix.xml with a custom command
+[14/110] Generating data/level/glycerin.atomix.xml with a custom command
+[15/110] Generating data/level/methanol.atomix.xml with a custom command
+[16/110] Generating data/level/propanal.atomix.xml with a custom command
+[17/110] Generating data/level/propylene.atomix.xml with a custom command
+[18/110] Generating data/level/pyran.atomix.xml with a custom command
+[19/110] Generating data/level/methane.atomix.xml with a custom command
+[20/110] Generating data/level/transbutylen.atomix.xml with a custom command
+[21/110] Generating data/level/water.atomix.xml with a custom command
+[22/110] Compiling C object src/libatomix.a.p/xml-util.c.o
+[23/110] Compiling C object src/libatomix.a.p/tile.c.o
+[24/110] Compiling C object src/libatomix.a.p/theme.c.o
+[25/110] Compiling C object src/libatomix.a.p/level.c.o
+[26/110] Compiling C object src/libatomix.a.p/theme-manager.c.o
+[27/110] Compiling C object src/libatomix.a.p/level-manager.c.o
+[28/110] Generating po/af/LC_MESSAGES/atomix-af.mo with a custom command
+[29/110] Compiling C object src/libatomix.a.p/playfield.c.o
+[30/110] Generating po/am/LC_MESSAGES/atomix-am.mo with a custom command
+[31/110] Generating po/ar/LC_MESSAGES/atomix-ar.mo with a custom command
+[32/110] Generating po/az/LC_MESSAGES/atomix-az.mo with a custom command
+[33/110] Generating po/be/LC_MESSAGES/atomix-be.mo with a custom command
+[34/110] Generating po/bg/LC_MESSAGES/atomix-bg.mo with a custom command
+[35/110] Compiling C object src/atomix.p/clock.c.o
+[36/110] Compiling C object src/atomix.p/undo.c.o
+[37/110] Generating po/bn/LC_MESSAGES/atomix-bn.mo with a custom command
+[38/110] Generating po/bs/LC_MESSAGES/atomix-bs.mo with a custom command
+[39/110] Generating po/ca/LC_MESSAGES/atomix-ca.mo with a custom command
+[40/110] Compiling C object src/pf-test.p/tile.c.o
+[41/110] Generating po/cs/LC_MESSAGES/atomix-cs.mo with a custom command
+[42/110] Generating po/da/LC_MESSAGES/atomix-da.mo with a custom command
+[43/110] Generating po/de/LC_MESSAGES/atomix-de.mo with a custom command
+[44/110] Generating po/dz/LC_MESSAGES/atomix-dz.mo with a custom command
+[45/110] Generating po/el/LC_MESSAGES/atomix-el.mo with a custom command
+[46/110] Generating po/en_CA/LC_MESSAGES/atomix-en_CA.mo with a custom command
+[47/110] Generating po/en_GB/LC_MESSAGES/atomix-en_GB.mo with a custom command
+[48/110] Generating po/es/LC_MESSAGES/atomix-es.mo with a custom command
+[49/110] Generating po/et/LC_MESSAGES/atomix-et.mo with a custom command
+[50/110] Generating po/eo/LC_MESSAGES/atomix-eo.mo with a custom command
+[51/110] Generating po/eu/LC_MESSAGES/atomix-eu.mo with a custom command
+[52/110] Generating po/fa/LC_MESSAGES/atomix-fa.mo with a custom command
+[53/110] Generating po/fr/LC_MESSAGES/atomix-fr.mo with a custom command
+[54/110] Generating po/fi/LC_MESSAGES/atomix-fi.mo with a custom command
+[55/110] Generating po/fur/LC_MESSAGES/atomix-fur.mo with a custom command
+[56/110] Compiling C object src/pf-test.p/xml-util.c.o
+[57/110] Generating po/gu/LC_MESSAGES/atomix-gu.mo with a custom command
+[58/110] Generating po/gl/LC_MESSAGES/atomix-gl.mo with a custom command
+[59/110] Generating po/he/LC_MESSAGES/atomix-he.mo with a custom command
+[60/110] Generating po/hi/LC_MESSAGES/atomix-hi.mo with a custom command
+[61/110] Generating po/id/LC_MESSAGES/atomix-id.mo with a custom command
+[62/110] Generating po/hu/LC_MESSAGES/atomix-hu.mo with a custom command
+[63/110] Generating po/ja/LC_MESSAGES/atomix-ja.mo with a custom command
+[64/110] Generating po/is/LC_MESSAGES/atomix-is.mo with a custom command
+[65/110] Generating po/it/LC_MESSAGES/atomix-it.mo with a custom command
+[66/110] Generating po/ka/LC_MESSAGES/atomix-ka.mo with a custom command
+[67/110] Generating po/kn/LC_MESSAGES/atomix-kn.mo with a custom command
+[68/110] Generating po/ga/LC_MESSAGES/atomix-ga.mo with a custom command
+[69/110] Generating po/ko/LC_MESSAGES/atomix-ko.mo with a custom command
+[70/110] Generating po/lt/LC_MESSAGES/atomix-lt.mo with a custom command
+[71/110] Generating po/lv/LC_MESSAGES/atomix-lv.mo with a custom command
+[72/110] Generating po/mk/LC_MESSAGES/atomix-mk.mo with a custom command
+[73/110] Generating po/ml/LC_MESSAGES/atomix-ml.mo with a custom command
+[74/110] Compiling C object src/atomix.p/goal-view.c.o
+[75/110] Generating po/nb/LC_MESSAGES/atomix-nb.mo with a custom command
+[76/110] Generating po/nl/LC_MESSAGES/atomix-nl.mo with a custom command
+[77/110] Generating po/ms/LC_MESSAGES/atomix-ms.mo with a custom command
+[78/110] Generating po/ne/LC_MESSAGES/atomix-ne.mo with a custom command
+[79/110] Generating po/oc/LC_MESSAGES/atomix-oc.mo with a custom command
+[80/110] Generating po/pa/LC_MESSAGES/atomix-pa.mo with a custom command
+[81/110] Generating po/pl/LC_MESSAGES/atomix-pl.mo with a custom command
+[82/110] Generating po/ro/LC_MESSAGES/atomix-ro.mo with a custom command
+[83/110] Generating po/sk/LC_MESSAGES/atomix-sk.mo with a custom command
+[84/110] Generating po/pt/LC_MESSAGES/atomix-pt.mo with a custom command
+[85/110] Generating po/pt_BR/LC_MESSAGES/atomix-pt_BR.mo with a custom command
+[86/110] Generating po/ru/LC_MESSAGES/atomix-ru.mo with a custom command
+[87/110] Generating po/sl/LC_MESSAGES/atomix-sl.mo with a custom command
+[88/110] Generating po/sq/LC_MESSAGES/atomix-sq.mo with a custom command
+[89/110] Generating po/sr/LC_MESSAGES/atomix-sr.mo with a custom command
+[90/110] Generating po/sr@latin/LC_MESSAGES/atomix-sr@latin.mo with a custom command
+[91/110] Generating po/sv/LC_MESSAGES/atomix-sv.mo with a custom command
+[92/110] Generating po/ta/LC_MESSAGES/atomix-ta.mo with a custom command
+[93/110] Generating po/th/LC_MESSAGES/atomix-th.mo with a custom command
+[94/110] Generating po/tr/LC_MESSAGES/atomix-tr.mo with a custom command
+[95/110] Generating po/uk/LC_MESSAGES/atomix-uk.mo with a custom command
+[96/110] Generating po/vi/LC_MESSAGES/atomix-vi.mo with a custom command
+[97/110] Generating po/wa/LC_MESSAGES/atomix-wa.mo with a custom command
+[98/110] Generating po/zh_CN/LC_MESSAGES/atomix-zh_CN.mo with a custom command
+[99/110] Generating po/zh_HK/LC_MESSAGES/atomix-zh_HK.mo with a custom command
+[100/110] Generating po/zh_TW/LC_MESSAGES/atomix-zh_TW.mo with a custom command
+[101/110] Compiling C object src/libatomix.a.p/canvas_helper.c.o
+[102/110] Compiling C object src/pf-test.p/playfield.c.o
+[103/110] Linking static target src/libatomix.a
+[104/110] Compiling C object src/atomix.p/goal.c.o
+[105/110] Compiling C object src/pf-test.p/pf-test.c.o
+[106/110] Compiling C object src/atomix.p/board-gtk.c.o
+[107/110] Compiling C object src/atomix.p/main.c.o
+../src/main.c: In function ‘main’:
+../src/main.c:690:3: warning: ‘G_APPLICATION_FLAGS_NONE’ is deprecated: Use 'G_APPLICATION_DEFAULT_FLAGS' instead [-Wdeprecated-declarations]
+  690 |   gtk_app = gtk_application_new ("org.gnome.atomix", G_APPLICATION_FLAGS_NONE);
+      |   ^~~~~~~
+In file included from /usr/include/glib-2.0/gio/giotypes.h:30,
+                 from /usr/include/glib-2.0/gio/gio.h:28,
+                 from /usr/include/gtk-3.0/gdk/gdkapplaunchcontext.h:28,
+                 from /usr/include/gtk-3.0/gdk/gdk.h:32,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:30,
+                 from ../src/board-gtk.h:23,
+                 from ../src/main.c:22:
+/usr/include/glib-2.0/gio/gioenums.h:1540:3: note: declared here
+ 1540 |   G_APPLICATION_FLAGS_NONE GIO_DEPRECATED_ENUMERATOR_IN_2_74_FOR(G_APPLICATION_DEFAULT_FLAGS),
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+[108/110] Compiling C object src/pf-test.p/theme.c.o
+[109/110] Linking target src/atomix
+[110/110] Linking target src/pf-test
+[0/1] Installing files.
+Installing subdir /tmp/gfs/atomix-44.0/data/icons to /tmp/gfs/package-atomix/usr/share/icons
+Installing /tmp/gfs/atomix-44.0/data/icons/hicolor/256x256/apps/atomix.png to /tmp/gfs/package-atomix/usr/share/icons/hicolor/256x256/apps
+Installing /tmp/gfs/atomix-44.0/data/icons/hicolor/symbolic/apps/atomix-symbolic.svg to /tmp/gfs/package-atomix/usr/share/icons/hicolor/symbolic/apps
+Installing /tmp/gfs/atomix-44.0/data/icons/hicolor/24x24/apps/atomix.png to /tmp/gfs/package-atomix/usr/share/icons/hicolor/24x24/apps
+Installing /tmp/gfs/atomix-44.0/data/icons/hicolor/22x22/apps/atomix.png to /tmp/gfs/package-atomix/usr/share/icons/hicolor/22x22/apps
+Installing /tmp/gfs/atomix-44.0/data/icons/hicolor/32x32/apps/atomix.png to /tmp/gfs/package-atomix/usr/share/icons/hicolor/32x32/apps
+Installing /tmp/gfs/atomix-44.0/data/icons/hicolor/48x48/apps/atomix.png to /tmp/gfs/package-atomix/usr/share/icons/hicolor/48x48/apps
+Installing /tmp/gfs/atomix-44.0/data/icons/hicolor/512x512/apps/atomix.png to /tmp/gfs/package-atomix/usr/share/icons/hicolor/512x512/apps
+Installing /tmp/gfs/atomix-44.0/data/icons/hicolor/16x16/apps/atomix.png to /tmp/gfs/package-atomix/usr/share/icons/hicolor/16x16/apps
+Installing subdir /tmp/gfs/atomix-44.0/data/ui to /tmp/gfs/package-atomix/usr/share/atomix/ui
+Installing /tmp/gfs/atomix-44.0/data/ui/interface.ui to /tmp/gfs/package-atomix/usr/share/atomix/ui
+Installing /tmp/gfs/atomix-44.0/data/ui/menu.ui to /tmp/gfs/package-atomix/usr/share/atomix/ui
+Installing subdir /tmp/gfs/atomix-44.0/data/themes to /tmp/gfs/package-atomix/usr/share/atomix/themes
+Installing /tmp/gfs/atomix-44.0/data/themes/default/wall-vertical-bottom-end.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/decor-liquid.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/wall-top-right.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/link-bottom-right.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/link-bottom.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/arrow-bottom.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/link-bottom-left.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/atom-n.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/link-top-right.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/wall-horizontal-right-end.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/decor-fence.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/link-right.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/cursor.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/atom-c.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/wall-horizontal-topx.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/shadow-left.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/arrow-top.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/link-left.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/arrow-left.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/wall-vertical-top-end.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/wall-horizontal-left-end.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/wall-single.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/atom-f.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/wall-vertical.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/link-top-left.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/wall-bottom-left.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/shadow-top.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/atom-o.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/wall-horizontal.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/theme to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/wall-bottom-right.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/link-right-double.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/wall-top-left.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/wall-horizontal-bottomx.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/shadow-top-left-both.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/wall-vertical-leftx.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/link-top-double.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/shadow-left-top.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/link-bottom-double.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/link-top.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/wall-vertical-rightx.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/arrow-right.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/link-left-double.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/floor.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/decor-holes.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/shadow-top-left.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/shadow-bottom-right.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing /tmp/gfs/atomix-44.0/data/themes/default/atom-h.png to /tmp/gfs/package-atomix/usr/share/atomix/themes/default
+Installing data/atomix.desktop to /tmp/gfs/package-atomix/usr/share/applications
+Installing data/atomix.appdata.xml to /tmp/gfs/package-atomix/usr/share/metainfo
+Installing data/level/aceticacid.atomix.xml to /tmp/gfs/package-atomix/usr/share/atomix/level
+Installing data/level/acetone.atomix.xml to /tmp/gfs/package-atomix/usr/share/atomix/level
+Installing data/level/butanol.atomix.xml to /tmp/gfs/package-atomix/usr/share/atomix/level
+Installing data/level/cyclobutane.atomix.xml to /tmp/gfs/package-atomix/usr/share/atomix/level
+Installing data/level/dimethylether.atomix.xml to /tmp/gfs/package-atomix/usr/share/atomix/level
+Installing data/level/ethane.atomix.xml to /tmp/gfs/package-atomix/usr/share/atomix/level
+Installing data/level/ethanal.atomix.xml to /tmp/gfs/package-atomix/usr/share/atomix/level
+Installing data/level/ethanol.atomix.xml to /tmp/gfs/package-atomix/usr/share/atomix/level
+Installing data/level/ethylene.atomix.xml to /tmp/gfs/package-atomix/usr/share/atomix/level
+Installing data/level/glycerin.atomix.xml to /tmp/gfs/package-atomix/usr/share/atomix/level
+Installing data/level/lactic-acid.atomix.xml to /tmp/gfs/package-atomix/usr/share/atomix/level
+Installing data/level/methanal.atomix.xml to /tmp/gfs/package-atomix/usr/share/atomix/level
+Installing data/level/methane.atomix.xml to /tmp/gfs/package-atomix/usr/share/atomix/level
+Installing data/level/methanol.atomix.xml to /tmp/gfs/package-atomix/usr/share/atomix/level
+Installing data/level/propanal.atomix.xml to /tmp/gfs/package-atomix/usr/share/atomix/level
+Installing data/level/propylene.atomix.xml to /tmp/gfs/package-atomix/usr/share/atomix/level
+Installing data/level/pyran.atomix.xml to /tmp/gfs/package-atomix/usr/share/atomix/level
+Installing data/level/transbutylen.atomix.xml to /tmp/gfs/package-atomix/usr/share/atomix/level
+Installing data/level/water.atomix.xml to /tmp/gfs/package-atomix/usr/share/atomix/level
+Installing src/atomix to /tmp/gfs/package-atomix/usr/bin
+Installing po/af/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/af/LC_MESSAGES
+Installing po/am/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/am/LC_MESSAGES
+Installing po/ar/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/ar/LC_MESSAGES
+Installing po/az/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/az/LC_MESSAGES
+Installing po/be/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/be/LC_MESSAGES
+Installing po/bg/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/bg/LC_MESSAGES
+Installing po/bn/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/bn/LC_MESSAGES
+Installing po/bs/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/bs/LC_MESSAGES
+Installing po/ca/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/ca/LC_MESSAGES
+Installing po/cs/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/cs/LC_MESSAGES
+Installing po/da/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/da/LC_MESSAGES
+Installing po/de/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/de/LC_MESSAGES
+Installing po/dz/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/dz/LC_MESSAGES
+Installing po/el/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/el/LC_MESSAGES
+Installing po/en_CA/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/en_CA/LC_MESSAGES
+Installing po/en_GB/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/en_GB/LC_MESSAGES
+Installing po/eo/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/eo/LC_MESSAGES
+Installing po/es/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/es/LC_MESSAGES
+Installing po/et/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/et/LC_MESSAGES
+Installing po/eu/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/eu/LC_MESSAGES
+Installing po/fa/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/fa/LC_MESSAGES
+Installing po/fi/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/fi/LC_MESSAGES
+Installing po/fr/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/fr/LC_MESSAGES
+Installing po/fur/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/fur/LC_MESSAGES
+Installing po/ga/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/ga/LC_MESSAGES
+Installing po/gl/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/gl/LC_MESSAGES
+Installing po/gu/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/gu/LC_MESSAGES
+Installing po/he/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/he/LC_MESSAGES
+Installing po/hi/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/hi/LC_MESSAGES
+Installing po/hu/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/hu/LC_MESSAGES
+Installing po/id/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/id/LC_MESSAGES
+Installing po/is/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/is/LC_MESSAGES
+Installing po/it/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/it/LC_MESSAGES
+Installing po/ja/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/ja/LC_MESSAGES
+Installing po/ka/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/ka/LC_MESSAGES
+Installing po/kn/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/kn/LC_MESSAGES
+Installing po/ko/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/ko/LC_MESSAGES
+Installing po/lt/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/lt/LC_MESSAGES
+Installing po/lv/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/lv/LC_MESSAGES
+Installing po/mk/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/mk/LC_MESSAGES
+Installing po/ml/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/ml/LC_MESSAGES
+Installing po/ms/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/ms/LC_MESSAGES
+Installing po/nb/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/nb/LC_MESSAGES
+Installing po/ne/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/ne/LC_MESSAGES
+Installing po/nl/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/nl/LC_MESSAGES
+Installing po/oc/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/oc/LC_MESSAGES
+Installing po/pa/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/pa/LC_MESSAGES
+Installing po/pl/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/pl/LC_MESSAGES
+Installing po/pt/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/pt/LC_MESSAGES
+Installing po/pt_BR/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/pt_BR/LC_MESSAGES
+Installing po/ro/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/ro/LC_MESSAGES
+Installing po/ru/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/ru/LC_MESSAGES
+Installing po/sk/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/sk/LC_MESSAGES
+Installing po/sl/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/sl/LC_MESSAGES
+Installing po/sq/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/sq/LC_MESSAGES
+Installing po/sr/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/sr/LC_MESSAGES
+Installing po/sr@latin/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/sr@latin/LC_MESSAGES
+Installing po/sv/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/sv/LC_MESSAGES
+Installing po/ta/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/ta/LC_MESSAGES
+Installing po/th/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/th/LC_MESSAGES
+Installing po/tr/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/tr/LC_MESSAGES
+Installing po/uk/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/uk/LC_MESSAGES
+Installing po/vi/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/vi/LC_MESSAGES
+Installing po/wa/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/wa/LC_MESSAGES
+Installing po/zh_CN/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/zh_CN/LC_MESSAGES
+Installing po/zh_HK/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/zh_HK/LC_MESSAGES
+Installing po/zh_TW/LC_MESSAGES/atomix.mo to /tmp/gfs/package-atomix/usr/share/locale/zh_TW/LC_MESSAGES
+Installing /tmp/gfs/atomix-44.0/data/atomix-logo.png to /tmp/gfs/package-atomix/usr/share/atomix
+Installing /tmp/gfs/atomix-44.0/data/level/sequence to /tmp/gfs/package-atomix/usr/share/atomix/level
+Running custom install script '/usr/bin/python3 /tmp/gfs/atomix-44.0/meson_post_install.py /usr/share'
+install: creating directory '/tmp/gfs/package-atomix/usr/man'
+install: creating directory '/tmp/gfs/package-atomix/usr/man/man6'
+'/home/test/web.slackbuilds.45/games/atomix/atomix.6' -> '/tmp/gfs/package-atomix/usr/man/man6/atomix.6'
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+Creating Slackware package:  /tmp/atomix-44.0-x86_64-1_gfs.txz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+install/slack-required
+usr/
+usr/bin/
+usr/bin/atomix
+usr/doc/
+usr/doc/atomix-44.0/
+usr/doc/atomix-44.0/AUTHORS
+usr/doc/atomix-44.0/COPYING
+usr/doc/atomix-44.0/ChangeLog
+usr/doc/atomix-44.0/MAINTAINERS
+usr/doc/atomix-44.0/NEWS
+usr/doc/atomix-44.0/README.md
+usr/doc/atomix-44.0/atomix.SlackBuild
+usr/man/
+usr/man/man6/
+usr/man/man6/atomix.6.gz
+usr/share/
+usr/share/applications/
+usr/share/applications/atomix.desktop
+usr/share/atomix/
+usr/share/atomix/atomix-logo.png
+usr/share/atomix/level/
+usr/share/atomix/level/aceticacid.atomix.xml
+usr/share/atomix/level/acetone.atomix.xml
+usr/share/atomix/level/butanol.atomix.xml
+usr/share/atomix/level/cyclobutane.atomix.xml
+usr/share/atomix/level/dimethylether.atomix.xml
+usr/share/atomix/level/ethanal.atomix.xml
+usr/share/atomix/level/ethane.atomix.xml
+usr/share/atomix/level/ethanol.atomix.xml
+usr/share/atomix/level/ethylene.atomix.xml
+usr/share/atomix/level/glycerin.atomix.xml
+usr/share/atomix/level/lactic-acid.atomix.xml
+usr/share/atomix/level/methanal.atomix.xml
+usr/share/atomix/level/methane.atomix.xml
+usr/share/atomix/level/methanol.atomix.xml
+usr/share/atomix/level/propanal.atomix.xml
+usr/share/atomix/level/propylene.atomix.xml
+usr/share/atomix/level/pyran.atomix.xml
+usr/share/atomix/level/sequence
+usr/share/atomix/level/transbutylen.atomix.xml
+usr/share/atomix/level/water.atomix.xml
+usr/share/atomix/themes/
+usr/share/atomix/themes/default/
+usr/share/atomix/themes/default/arrow-bottom.png
+usr/share/atomix/themes/default/arrow-left.png
+usr/share/atomix/themes/default/arrow-right.png
+usr/share/atomix/themes/default/arrow-top.png
+usr/share/atomix/themes/default/atom-c.png
+usr/share/atomix/themes/default/atom-f.png
+usr/share/atomix/themes/default/atom-h.png
+usr/share/atomix/themes/default/atom-n.png
+usr/share/atomix/themes/default/atom-o.png
+usr/share/atomix/themes/default/cursor.png
+usr/share/atomix/themes/default/decor-fence.png
+usr/share/atomix/themes/default/decor-holes.png
+usr/share/atomix/themes/default/decor-liquid.png
+usr/share/atomix/themes/default/floor.png
+usr/share/atomix/themes/default/link-bottom-double.png
+usr/share/atomix/themes/default/link-bottom-left.png
+usr/share/atomix/themes/default/link-bottom-right.png
+usr/share/atomix/themes/default/link-bottom.png
+usr/share/atomix/themes/default/link-left-double.png
+usr/share/atomix/themes/default/link-left.png
+usr/share/atomix/themes/default/link-right-double.png
+usr/share/atomix/themes/default/link-right.png
+usr/share/atomix/themes/default/link-top-double.png
+usr/share/atomix/themes/default/link-top-left.png
+usr/share/atomix/themes/default/link-top-right.png
+usr/share/atomix/themes/default/link-top.png
+usr/share/atomix/themes/default/shadow-bottom-right.png
+usr/share/atomix/themes/default/shadow-left-top.png
+usr/share/atomix/themes/default/shadow-left.png
+usr/share/atomix/themes/default/shadow-top-left-both.png
+usr/share/atomix/themes/default/shadow-top-left.png
+usr/share/atomix/themes/default/shadow-top.png
+usr/share/atomix/themes/default/theme
+usr/share/atomix/themes/default/wall-bottom-left.png
+usr/share/atomix/themes/default/wall-bottom-right.png
+usr/share/atomix/themes/default/wall-horizontal-bottomx.png
+usr/share/atomix/themes/default/wall-horizontal-left-end.png
+usr/share/atomix/themes/default/wall-horizontal-right-end.png
+usr/share/atomix/themes/default/wall-horizontal-topx.png
+usr/share/atomix/themes/default/wall-horizontal.png
+usr/share/atomix/themes/default/wall-single.png
+usr/share/atomix/themes/default/wall-top-left.png
+usr/share/atomix/themes/default/wall-top-right.png
+usr/share/atomix/themes/default/wall-vertical-bottom-end.png
+usr/share/atomix/themes/default/wall-vertical-leftx.png
+usr/share/atomix/themes/default/wall-vertical-rightx.png
+usr/share/atomix/themes/default/wall-vertical-top-end.png
+usr/share/atomix/themes/default/wall-vertical.png
+usr/share/atomix/ui/
+usr/share/atomix/ui/interface.ui
+usr/share/atomix/ui/menu.ui
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/16x16/
+usr/share/icons/hicolor/16x16/apps/
+usr/share/icons/hicolor/16x16/apps/atomix.png
+usr/share/icons/hicolor/22x22/
+usr/share/icons/hicolor/22x22/apps/
+usr/share/icons/hicolor/22x22/apps/atomix.png
+usr/share/icons/hicolor/24x24/
+usr/share/icons/hicolor/24x24/apps/
+usr/share/icons/hicolor/24x24/apps/atomix.png
+usr/share/icons/hicolor/256x256/
+usr/share/icons/hicolor/256x256/apps/
+usr/share/icons/hicolor/256x256/apps/atomix.png
+usr/share/icons/hicolor/32x32/
+usr/share/icons/hicolor/32x32/apps/
+usr/share/icons/hicolor/32x32/apps/atomix.png
+usr/share/icons/hicolor/48x48/
+usr/share/icons/hicolor/48x48/apps/
+usr/share/icons/hicolor/48x48/apps/atomix.png
+usr/share/icons/hicolor/512x512/
+usr/share/icons/hicolor/512x512/apps/
+usr/share/icons/hicolor/512x512/apps/atomix.png
+usr/share/icons/hicolor/symbolic/
+usr/share/icons/hicolor/symbolic/apps/
+usr/share/icons/hicolor/symbolic/apps/atomix-symbolic.svg
+usr/share/locale/
+usr/share/locale/af/
+usr/share/locale/af/LC_MESSAGES/
+usr/share/locale/af/LC_MESSAGES/atomix.mo
+usr/share/locale/am/
+usr/share/locale/am/LC_MESSAGES/
+usr/share/locale/am/LC_MESSAGES/atomix.mo
+usr/share/locale/ar/
+usr/share/locale/ar/LC_MESSAGES/
+usr/share/locale/ar/LC_MESSAGES/atomix.mo
+usr/share/locale/az/
+usr/share/locale/az/LC_MESSAGES/
+usr/share/locale/az/LC_MESSAGES/atomix.mo
+usr/share/locale/be/
+usr/share/locale/be/LC_MESSAGES/
+usr/share/locale/be/LC_MESSAGES/atomix.mo
+usr/share/locale/bg/
+usr/share/locale/bg/LC_MESSAGES/
+usr/share/locale/bg/LC_MESSAGES/atomix.mo
+usr/share/locale/bn/
+usr/share/locale/bn/LC_MESSAGES/
+usr/share/locale/bn/LC_MESSAGES/atomix.mo
+usr/share/locale/bs/
+usr/share/locale/bs/LC_MESSAGES/
+usr/share/locale/bs/LC_MESSAGES/atomix.mo
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/atomix.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/atomix.mo
+usr/share/locale/da/
+usr/share/locale/da/LC_MESSAGES/
+usr/share/locale/da/LC_MESSAGES/atomix.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/atomix.mo
+usr/share/locale/dz/
+usr/share/locale/dz/LC_MESSAGES/
+usr/share/locale/dz/LC_MESSAGES/atomix.mo
+usr/share/locale/el/
+usr/share/locale/el/LC_MESSAGES/
+usr/share/locale/el/LC_MESSAGES/atomix.mo
+usr/share/locale/en_CA/
+usr/share/locale/en_CA/LC_MESSAGES/
+usr/share/locale/en_CA/LC_MESSAGES/atomix.mo
+usr/share/locale/en_GB/
+usr/share/locale/en_GB/LC_MESSAGES/
+usr/share/locale/en_GB/LC_MESSAGES/atomix.mo
+usr/share/locale/eo/
+usr/share/locale/eo/LC_MESSAGES/
+usr/share/locale/eo/LC_MESSAGES/atomix.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/atomix.mo
+usr/share/locale/et/
+usr/share/locale/et/LC_MESSAGES/
+usr/share/locale/et/LC_MESSAGES/atomix.mo
+usr/share/locale/eu/
+usr/share/locale/eu/LC_MESSAGES/
+usr/share/locale/eu/LC_MESSAGES/atomix.mo
+usr/share/locale/fa/
+usr/share/locale/fa/LC_MESSAGES/
+usr/share/locale/fa/LC_MESSAGES/atomix.mo
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/atomix.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/atomix.mo
+usr/share/locale/fur/
+usr/share/locale/fur/LC_MESSAGES/
+usr/share/locale/fur/LC_MESSAGES/atomix.mo
+usr/share/locale/ga/
+usr/share/locale/ga/LC_MESSAGES/
+usr/share/locale/ga/LC_MESSAGES/atomix.mo
+usr/share/locale/gl/
+usr/share/locale/gl/LC_MESSAGES/
+usr/share/locale/gl/LC_MESSAGES/atomix.mo
+usr/share/locale/gu/
+usr/share/locale/gu/LC_MESSAGES/
+usr/share/locale/gu/LC_MESSAGES/atomix.mo
+usr/share/locale/he/
+usr/share/locale/he/LC_MESSAGES/
+usr/share/locale/he/LC_MESSAGES/atomix.mo
+usr/share/locale/hi/
+usr/share/locale/hi/LC_MESSAGES/
+usr/share/locale/hi/LC_MESSAGES/atomix.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/atomix.mo
+usr/share/locale/id/
+usr/share/locale/id/LC_MESSAGES/
+usr/share/locale/id/LC_MESSAGES/atomix.mo
+usr/share/locale/is/
+usr/share/locale/is/LC_MESSAGES/
+usr/share/locale/is/LC_MESSAGES/atomix.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/atomix.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/atomix.mo
+usr/share/locale/ka/
+usr/share/locale/ka/LC_MESSAGES/
+usr/share/locale/ka/LC_MESSAGES/atomix.mo
+usr/share/locale/kn/
+usr/share/locale/kn/LC_MESSAGES/
+usr/share/locale/kn/LC_MESSAGES/atomix.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/atomix.mo
+usr/share/locale/lt/
+usr/share/locale/lt/LC_MESSAGES/
+usr/share/locale/lt/LC_MESSAGES/atomix.mo
+usr/share/locale/lv/
+usr/share/locale/lv/LC_MESSAGES/
+usr/share/locale/lv/LC_MESSAGES/atomix.mo
+usr/share/locale/mk/
+usr/share/locale/mk/LC_MESSAGES/
+usr/share/locale/mk/LC_MESSAGES/atomix.mo
+usr/share/locale/ml/
+usr/share/locale/ml/LC_MESSAGES/
+usr/share/locale/ml/LC_MESSAGES/atomix.mo
+usr/share/locale/ms/
+usr/share/locale/ms/LC_MESSAGES/
+usr/share/locale/ms/LC_MESSAGES/atomix.mo
+usr/share/locale/nb/
+usr/share/locale/nb/LC_MESSAGES/
+usr/share/locale/nb/LC_MESSAGES/atomix.mo
+usr/share/locale/ne/
+usr/share/locale/ne/LC_MESSAGES/
+usr/share/locale/ne/LC_MESSAGES/atomix.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/atomix.mo
+usr/share/locale/oc/
+usr/share/locale/oc/LC_MESSAGES/
+usr/share/locale/oc/LC_MESSAGES/atomix.mo
+usr/share/locale/pa/
+usr/share/locale/pa/LC_MESSAGES/
+usr/share/locale/pa/LC_MESSAGES/atomix.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/atomix.mo
+usr/share/locale/pt/
+usr/share/locale/pt/LC_MESSAGES/
+usr/share/locale/pt/LC_MESSAGES/atomix.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/atomix.mo
+usr/share/locale/ro/
+usr/share/locale/ro/LC_MESSAGES/
+usr/share/locale/ro/LC_MESSAGES/atomix.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/atomix.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/atomix.mo
+usr/share/locale/sl/
+usr/share/locale/sl/LC_MESSAGES/
+usr/share/locale/sl/LC_MESSAGES/atomix.mo
+usr/share/locale/sq/
+usr/share/locale/sq/LC_MESSAGES/
+usr/share/locale/sq/LC_MESSAGES/atomix.mo
+usr/share/locale/sr/
+usr/share/locale/sr/LC_MESSAGES/
+usr/share/locale/sr/LC_MESSAGES/atomix.mo
+usr/share/locale/sr@latin/
+usr/share/locale/sr@latin/LC_MESSAGES/
+usr/share/locale/sr@latin/LC_MESSAGES/atomix.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/atomix.mo
+usr/share/locale/ta/
+usr/share/locale/ta/LC_MESSAGES/
+usr/share/locale/ta/LC_MESSAGES/atomix.mo
+usr/share/locale/th/
+usr/share/locale/th/LC_MESSAGES/
+usr/share/locale/th/LC_MESSAGES/atomix.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/atomix.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/atomix.mo
+usr/share/locale/vi/
+usr/share/locale/vi/LC_MESSAGES/
+usr/share/locale/vi/LC_MESSAGES/atomix.mo
+usr/share/locale/wa/
+usr/share/locale/wa/LC_MESSAGES/
+usr/share/locale/wa/LC_MESSAGES/atomix.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/atomix.mo
+usr/share/locale/zh_HK/
+usr/share/locale/zh_HK/LC_MESSAGES/
+usr/share/locale/zh_HK/LC_MESSAGES/atomix.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/atomix.mo
+usr/share/metainfo/
+usr/share/metainfo/atomix.appdata.xml
+
+Slackware package /tmp/atomix-44.0-x86_64-1_gfs.txz created.
+
+
++==============================================================================
+| Installing new package /tmp/atomix-44.0-x86_64-1_gfs.txz
++==============================================================================
+
+Verifying package atomix-44.0-x86_64-1_gfs.txz.
+Installing package atomix-44.0-x86_64-1_gfs.txz:
+PACKAGE DESCRIPTION:
+#  atomix (Mind game) 
+#
+# Mind game - build molecules out of single atoms 
+# Atomix is a puzzle game in which you have to build full molecules,
+# from simple inorganic ones in the first levels to extremely complex
+# organic ones in the last levels, out of isolated atoms, which are
+# laying around among walls and other obstacles on the playfield.
+#
+# https://gitlab.gnome.org/GNOME/atomix
+#
+Executing install script for atomix-44.0-x86_64-1_gfs.txz.
+Package atomix-44.0-x86_64-1_gfs.txz installed.
+44-build_retro-gtk.sh
+retro-gtk
+Cloning into 'retro-gtk'...
+Note: switching to '9033b2a09f4de3ad4e2e70d80841291c3e4fed9c'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 9033b2a error: Fix propagation
+The Meson build system
+Version: 1.2.1
+Source dir: /tmp/gfs/retro-gtk
+Build dir: /tmp/gfs/retro-gtk/build
+Build type: native build
+Project name: retro-gtk
+Project version: 1.0.2
+C compiler for the host machine: ccache cc (gcc 13.2.0 "cc (GCC) 13.2.0")
+C linker for the host machine: cc ld.bfd 2.41-slack151
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Found pkg-config: /usr/bin/pkg-config (0.29.2)
+Run-time dependency epoxy found: YES 1.5.10
+Run-time dependency gio-2.0 found: YES 2.77.3
+Run-time dependency gio-unix-2.0 found: YES 2.77.3
+Run-time dependency glib-2.0 found: YES 2.77.3
+Run-time dependency gmodule-2.0 found: YES 2.77.3
+Run-time dependency gobject-2.0 found: YES 2.77.3
+Run-time dependency gtk4 found: YES 4.12.1
+Run-time dependency libpulse-simple found: YES 16.1
+Library m found: YES
+Run-time dependency samplerate found: YES 0.2.2
+Configuring retro-gtk-config.h using configuration
+Program gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Found pkg-config: /usr/bin/pkg-config (0.29.2)
+Program make-ipc-runner-private.sh found: YES (/tmp/gfs/retro-gtk/shared/make-ipc-runner-private.sh)
+Program glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Program glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Program glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Program glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Program glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Configuring retro-gtk-version.h using configuration
+Run-time dependency gobject-introspection-1.0 found: YES 1.76.1
+Dependency gobject-introspection-1.0 found: YES 1.76.1 (cached)
+Program g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
+Dependency gobject-introspection-1.0 found: YES 1.76.1 (cached)
+Program g-ir-compiler found: YES (/usr/bin/g-ir-compiler)
+Program vapigen found: YES (/usr/bin/vapigen)
+Configuring gtkdocentities.ent using configuration
+Program gtkdoc-scan found: YES (/usr/bin/gtkdoc-scan)
+Program gtkdoc-scangobj found: YES (/usr/bin/gtkdoc-scangobj)
+Program gtkdoc-mkdb found: YES (/usr/bin/gtkdoc-mkdb)
+Program gtkdoc-mkhtml found: YES (/usr/bin/gtkdoc-mkhtml)
+Program gtkdoc-fixxref found: YES (/usr/bin/gtkdoc-fixxref)
+Build targets in project: 16
+NOTICE: Future-deprecated features used:
+ * 0.56.0: {'dependency.get_pkgconfig_variable', 'meson.build_root', 'meson.source_root'}
+ * 1.1.0: {'"boolean option" keyword argument "value" of type str'}
+
+retro-gtk 1.0.2
+
+  Demos and tests
+    Demos                : False
+    Build tests          : False
+    Install tests        : False
+
+  Documentation and introspection
+    Build documentation  : True
+    Install documentation: True
+    Introspection        : True
+    Vala bindings        : True
+
+  Optional dependencies
+    PulseAudio           : True
+
+  Directories
+    prefix               : /usr
+    bindir               : /usr/bin
+    libdir               : /usr/lib64
+    libexecdir           : /usr/libexec
+    libretrodir          : /usr/lib64/libretro
+    datadir              : /usr/share
+
+  User defined options
+    buildtype            : release
+    default_library      : shared
+    infodir              : /usr/info
+    libdir               : lib64
+    libexecdir           : /usr/libexec
+    localstatedir        : /var
+    mandir               : /usr/man
+    prefix               : /usr
+    sysconfdir           : /etc
+    build-doc            : true
+    build-tests          : false
+    demos                : false
+    install-doc          : true
+    install-tests        : false
+    introspection        : true
+    pulseaudio           : enabled
+    vapi                 : true
+
+Found ninja-1.11.1 at /usr/bin/ninja
+[1/66] Generating retro-gtk/retro_gtk_resources_h with a custom command
+[2/66] Generating retro-gtk/retro_gtk_resources_c with a custom command
+[3/66] Generating retro-runner/retro-runner-enums.h with a custom command (wrapped by meson to capture output)
+[4/66] Generating retro-gtk/retro-gtk-enums.h with a custom command (wrapped by meson to capture output)
+[5/66] Generating retro-gtk/retro-gtk-enums.c with a custom command (wrapped by meson to capture output)
+[6/66] Generating retro-runner/retro-runner-enums.c with a custom command (wrapped by meson to capture output)
+[7/66] Generating shared/ipc-runner-public.c with a custom command
+[8/66] Generating shared/ipc-runner-public.h with a custom command
+[9/66] Generating shared/make-ipc-runner-private with a custom command
+[10/66] Compiling C object retro-runner/retro-runner.p/.._shared_retro-memfd.c.o
+[11/66] Compiling C object retro-runner/retro-runner.p/.._shared_retro-debug.c.o
+[12/66] Compiling C object retro-runner/retro-runner.p/meson-generated_.._retro-runner-enums.c.o
+[13/66] Compiling C object retro-runner/retro-runner.p/.._shared_retro-controller-codes.c.o
+[14/66] Compiling C object retro-runner/retro-runner.p/.._shared_retro-input.c.o
+[15/66] Compiling C object retro-runner/retro-runner.p/.._shared_retro-controller-type.c.o
+[16/66] Compiling C object retro-runner/retro-runner.p/.._shared_retro-controller-state.c.o
+[17/66] Compiling C object retro-runner/retro-runner.p/.._shared_retro-pixel-format.c.o
+[18/66] Compiling C object retro-runner/retro-runner.p/retro-input-descriptor.c.o
+[19/66] Compiling C object retro-runner/retro-runner.p/retro-main-loop-source.c.o
+[20/66] Compiling C object retro-runner/retro-runner.p/retro-runner.c.o
+[21/66] Compiling C object retro-runner/retro-runner.p/.._shared_retro-framebuffer.c.o
+[22/66] Compiling C object retro-runner/retro-runner.p/ipc-runner-impl.c.o
+[23/66] Compiling C object retro-runner/retro-runner.p/retro-environment.c.o
+[24/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/meson-generated_.._retro_gtk_resources.c.o
+[25/66] Compiling C object retro-runner/retro-runner.p/retro-game-info.c.o
+[26/66] Compiling C object retro-runner/retro-runner.p/retro-module.c.o
+[27/66] Compiling C object retro-runner/retro-runner.p/retro-renderer.c.o
+[28/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/.._shared_retro-controller-codes.c.o
+[29/66] Compiling C object retro-runner/retro-runner.p/retro-pa-player.c.o
+[30/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/meson-generated_.._retro-gtk-enums.c.o
+[31/66] Compiling C object retro-runner/retro-runner.p/retro-gl-renderer.c.o
+[32/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/.._shared_retro-debug.c.o
+[33/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/.._shared_retro-controller-type.c.o
+[34/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/.._shared_retro-controller-state.c.o
+[35/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/.._shared_retro-input.c.o
+[36/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-controller-iterator.c.o
+[37/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/.._shared_retro-memfd.c.o
+[38/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/.._shared_retro-pixel-format.c.o
+[39/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/.._shared_retro-framebuffer.c.o
+[40/66] Compiling C object retro-runner/retro-runner.p/meson-generated_.._.._shared_ipc-runner.c.o
+[41/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-controller.c.o
+[42/66] Compiling C object retro-runner/retro-runner.p/retro-core.c.o
+[43/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-key-joypad-mapping.c.o
+[44/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-core-descriptor.c.o
+[45/66] Linking target retro-runner/retro-runner
+[46/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-glsl-shader.c.o
+[47/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-glsl-filter.c.o
+[48/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-module-query.c.o
+[49/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/meson-generated_.._.._shared_ipc-runner.c.o
+[50/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-core-view-controller.c.o
+[51/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-option.c.o
+[52/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-module-iterator.c.o
+[53/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-video-filter.c.o
+[54/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-keyboard.c.o
+[55/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-option-iterator.c.o
+[56/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-log.c.o
+[57/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-runner-process.c.o
+[58/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-core-view.c.o
+In file included from /usr/lib64/glib-2.0/include/glibconfig.h:9,
+                 from /usr/include/glib-2.0/glib/gtypes.h:34,
+                 from /usr/include/glib-2.0/glib/galloca.h:34,
+                 from /usr/include/glib-2.0/glib.h:32,
+                 from /usr/include/gtk-4.0/gtk/css/gtkcss.h:29,
+                 from /usr/include/gtk-4.0/gtk/gtk.h:29,
+                 from ../retro-gtk/retro-core-view.h:9,
+                 from ../retro-gtk/retro-core-view.c:10:
+../retro-gtk/retro-core-view.c: In function ‘retro_core_view_dispose’:
+../retro-gtk/retro-core-view.c:355:20: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  355 |   g_clear_pointer ((GtkWidget **) &self->display, gtk_widget_unparent);
+/usr/include/glib-2.0/glib/gmacros.h:870:47: note: in definition of macro ‘G_STATIC_ASSERT’
+  870 | #define G_STATIC_ASSERT(expr) _Static_assert (expr, "Expression evaluates to false")
+      |                                               ^~~~
+../retro-gtk/retro-core-view.c:355:3: note: in expansion of macro ‘g_clear_pointer’
+  355 |   g_clear_pointer ((GtkWidget **) &self->display, gtk_widget_unparent);
+      |   ^~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/glib/gatomic.h:30,
+                 from /usr/include/glib-2.0/glib/gthread.h:34,
+                 from /usr/include/glib-2.0/glib/gasyncqueue.h:34,
+                 from /usr/include/glib-2.0/glib.h:34:
+../retro-gtk/retro-core-view.c:355:20: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  355 |   g_clear_pointer ((GtkWidget **) &self->display, gtk_widget_unparent);
+/usr/include/glib-2.0/glib/glib-typeof.h:39:36: note: in definition of macro ‘glib_typeof’
+   39 | #define glib_typeof(t) __typeof__ (t)
+      |                                    ^
+../retro-gtk/retro-core-view.c:355:3: note: in expansion of macro ‘g_clear_pointer’
+  355 |   g_clear_pointer ((GtkWidget **) &self->display, gtk_widget_unparent);
+      |   ^~~~~~~~~~~~~~~
+[59/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-pixbuf.c.o
+[60/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-gl-display.c.o
+../retro-gtk/retro-gl-display.c: In function ‘get_video_box’:
+../retro-gtk/retro-gl-display.c:108:3: warning: ‘gtk_widget_get_allocated_width’ is deprecated: Use 'gtk_widget_get_width' instead [-Wdeprecated-declarations]
+  108 |   w = (gdouble) gtk_widget_get_allocated_width (GTK_WIDGET (self)) * scale;
+      |   ^
+In file included from /usr/include/gtk-4.0/gtk/gtkapplication.h:26,
+                 from /usr/include/gtk-4.0/gtk/gtkwindow.h:32,
+                 from /usr/include/gtk-4.0/gtk/gtkaboutdialog.h:29,
+                 from /usr/include/gtk-4.0/gtk/gtk.h:33,
+                 from ../retro-gtk/retro-gl-display-private.h:9,
+                 from ../retro-gtk/retro-gl-display.c:10:
+/usr/include/gtk-4.0/gtk/gtkwidget.h:472:23: note: declared here
+  472 | int                   gtk_widget_get_allocated_width    (GtkWidget     *widget);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../retro-gtk/retro-gl-display.c:109:3: warning: ‘gtk_widget_get_allocated_height’ is deprecated: Use 'gtk_widget_get_height' instead [-Wdeprecated-declarations]
+  109 |   h = (gdouble) gtk_widget_get_allocated_height (GTK_WIDGET (self)) * scale;
+      |   ^
+/usr/include/gtk-4.0/gtk/gtkwidget.h:474:23: note: declared here
+  474 | int                   gtk_widget_get_allocated_height   (GtkWidget     *widget);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../retro-gtk/retro-gl-display.c: In function ‘draw_texture’:
+../retro-gtk/retro-gl-display.c:183:5: warning: ‘gtk_widget_get_allocated_width’ is deprecated: Use 'gtk_widget_get_width' instead [-Wdeprecated-declarations]
+  183 |     (gfloat) gtk_widget_get_allocated_width (GTK_WIDGET (self)) /
+      |     ^
+/usr/include/gtk-4.0/gtk/gtkwidget.h:472:23: note: declared here
+  472 | int                   gtk_widget_get_allocated_width    (GtkWidget     *widget);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../retro-gtk/retro-gl-display.c:184:5: warning: ‘gtk_widget_get_allocated_height’ is deprecated: Use 'gtk_widget_get_height' instead [-Wdeprecated-declarations]
+  184 |     (gfloat) gtk_widget_get_allocated_height (GTK_WIDGET (self)) /
+      |     ^
+/usr/include/gtk-4.0/gtk/gtkwidget.h:474:23: note: declared here
+  474 | int                   gtk_widget_get_allocated_height   (GtkWidget     *widget);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../retro-gtk/retro-gl-display.c:189:3: warning: ‘gtk_widget_get_allocated_width’ is deprecated: Use 'gtk_widget_get_width' instead [-Wdeprecated-declarations]
+  189 |   target_width = (GLfloat) gtk_widget_get_allocated_width (GTK_WIDGET (self));
+      |   ^~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/gtkwidget.h:472:23: note: declared here
+  472 | int                   gtk_widget_get_allocated_width    (GtkWidget     *widget);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../retro-gtk/retro-gl-display.c:190:3: warning: ‘gtk_widget_get_allocated_height’ is deprecated: Use 'gtk_widget_get_height' instead [-Wdeprecated-declarations]
+  190 |   target_height = (GLfloat) gtk_widget_get_allocated_height (GTK_WIDGET (self));
+      |   ^~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/gtkwidget.h:474:23: note: declared here
+  474 | int                   gtk_widget_get_allocated_height   (GtkWidget     *widget);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../retro-gtk/retro-gl-display.c:191:3: warning: ‘gtk_widget_get_allocated_width’ is deprecated: Use 'gtk_widget_get_width' instead [-Wdeprecated-declarations]
+  191 |   output_width = (GLfloat) gtk_widget_get_allocated_width (GTK_WIDGET (self));
+      |   ^~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/gtkwidget.h:472:23: note: declared here
+  472 | int                   gtk_widget_get_allocated_width    (GtkWidget     *widget);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../retro-gtk/retro-gl-display.c:192:3: warning: ‘gtk_widget_get_allocated_height’ is deprecated: Use 'gtk_widget_get_height' instead [-Wdeprecated-declarations]
+  192 |   output_height = (GLfloat) gtk_widget_get_allocated_height (GTK_WIDGET (self));
+      |   ^~~~~~~~~~~~~
+/usr/include/gtk-4.0/gtk/gtkwidget.h:474:23: note: declared here
+  474 | int                   gtk_widget_get_allocated_height   (GtkWidget     *widget);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[61/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-pixdata.c.o
+[62/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-core.c.o
+[63/66] Linking target retro-gtk/libretro-gtk-2.so.0
+[64/66] Generating retro-gtk/Retro-2.gir with a custom command (wrapped by meson to set env)
+[65/66] Generating retro-gtk/Retro-2.typelib with a custom command
+[66/66] Generating retro-gtk/retro-gtk-2.vapi with a custom command
+[1/15] Generating shared/ipc-runner-public.h with a custom command
+[2/15] Generating shared/ipc-runner-public.c with a custom command
+[3/15] Generating shared/make-ipc-runner-private with a custom command
+[4/15] Compiling C object retro-runner/retro-runner.p/ipc-runner-impl.c.o
+[5/15] Compiling C object retro-runner/retro-runner.p/meson-generated_.._.._shared_ipc-runner.c.o
+[6/15] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-runner-process.c.o
+[7/15] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/meson-generated_.._.._shared_ipc-runner.c.o
+[8/15] Compiling C object retro-runner/retro-runner.p/retro-runner.c.o
+[9/15] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-core.c.o
+[10/15] Linking target retro-runner/retro-runner
+[11/15] Linking target retro-gtk/libretro-gtk-2.so.0
+[12/15] Generating retro-gtk/Retro-2.gir with a custom command (wrapped by meson to set env)
+[13/15] Generating retro-gtk/Retro-2.typelib with a custom command
+[14/15] Generating retro-gtk/retro-gtk-2.vapi with a custom command
+[14/15] Installing files.
+Installing retro-runner/retro-runner to /tmp/gfs/package-retro-gtk/usr/libexec
+Installing retro-gtk/retro-gtk-enums.h to /tmp/gfs/package-retro-gtk/usr/include/retro-gtk
+Installing retro-gtk/libretro-gtk-2.so.0 to /tmp/gfs/package-retro-gtk/usr/lib64
+Installing retro-gtk/Retro-2.gir to /tmp/gfs/package-retro-gtk/usr/share/gir-1.0
+Installing retro-gtk/Retro-2.typelib to /tmp/gfs/package-retro-gtk/usr/lib64/girepository-1.0
+Installing retro-gtk/retro-gtk-2.vapi to /tmp/gfs/package-retro-gtk/usr/share/vala/vapi
+Installing /tmp/gfs/retro-gtk/shared/retro-controller-codes.h to /tmp/gfs/package-retro-gtk/usr/include/retro-gtk/
+Installing /tmp/gfs/retro-gtk/shared/retro-controller-type.h to /tmp/gfs/package-retro-gtk/usr/include/retro-gtk/
+Installing /tmp/gfs/retro-gtk/shared/retro-input.h to /tmp/gfs/package-retro-gtk/usr/include/retro-gtk/
+Installing /tmp/gfs/retro-gtk/shared/retro-memory-type.h to /tmp/gfs/package-retro-gtk/usr/include/retro-gtk/
+Installing /tmp/gfs/retro-gtk/shared/retro-rumble-effect.h to /tmp/gfs/package-retro-gtk/usr/include/retro-gtk/
+Installing /tmp/gfs/retro-gtk/retro-gtk/retro-gtk.h to /tmp/gfs/package-retro-gtk/usr/include/retro-gtk/
+Installing /tmp/gfs/retro-gtk/retro-gtk/retro-controller.h to /tmp/gfs/package-retro-gtk/usr/include/retro-gtk/
+Installing /tmp/gfs/retro-gtk/retro-gtk/retro-controller-iterator.h to /tmp/gfs/package-retro-gtk/usr/include/retro-gtk/
+Installing /tmp/gfs/retro-gtk/retro-gtk/retro-core.h to /tmp/gfs/package-retro-gtk/usr/include/retro-gtk/
+Installing /tmp/gfs/retro-gtk/retro-gtk/retro-core-descriptor.h to /tmp/gfs/package-retro-gtk/usr/include/retro-gtk/
+Installing /tmp/gfs/retro-gtk/retro-gtk/retro-core-view.h to /tmp/gfs/package-retro-gtk/usr/include/retro-gtk/
+Installing /tmp/gfs/retro-gtk/retro-gtk/retro-key-joypad-mapping.h to /tmp/gfs/package-retro-gtk/usr/include/retro-gtk/
+Installing /tmp/gfs/retro-gtk/retro-gtk/retro-log.h to /tmp/gfs/package-retro-gtk/usr/include/retro-gtk/
+Installing /tmp/gfs/retro-gtk/retro-gtk/retro-module-iterator.h to /tmp/gfs/package-retro-gtk/usr/include/retro-gtk/
+Installing /tmp/gfs/retro-gtk/retro-gtk/retro-module-query.h to /tmp/gfs/package-retro-gtk/usr/include/retro-gtk/
+Installing /tmp/gfs/retro-gtk/retro-gtk/retro-option.h to /tmp/gfs/package-retro-gtk/usr/include/retro-gtk/
+Installing /tmp/gfs/retro-gtk/retro-gtk/retro-option-iterator.h to /tmp/gfs/package-retro-gtk/usr/include/retro-gtk/
+Installing /tmp/gfs/retro-gtk/retro-gtk/retro-pixbuf.h to /tmp/gfs/package-retro-gtk/usr/include/retro-gtk/
+Installing /tmp/gfs/retro-gtk/retro-gtk/retro-pixdata.h to /tmp/gfs/package-retro-gtk/usr/include/retro-gtk/
+Installing /tmp/gfs/retro-gtk/retro-gtk/retro-video-filter.h to /tmp/gfs/package-retro-gtk/usr/include/retro-gtk/
+Installing /tmp/gfs/retro-gtk/build/retro-gtk/retro-gtk-version.h to /tmp/gfs/package-retro-gtk/usr/include/retro-gtk
+Installing /tmp/gfs/retro-gtk/build/meson-private/retro-gtk-2.deps to /tmp/gfs/package-retro-gtk/usr/share/vala/vapi
+Installing /tmp/gfs/retro-gtk/build/meson-private/retro-gtk-2.pc to /tmp/gfs/package-retro-gtk/usr/lib64/pkgconfig
+Installing symlink pointing to libretro-gtk-2.so.0 to /tmp/gfs/package-retro-gtk/usr/lib64/libretro-gtk-2.so
+Running custom install script '/usr/bin/meson --internal gtkdoc --sourcedir=/tmp/gfs/retro-gtk --builddir=/tmp/gfs/retro-gtk/build --subdir=doc --headerdirs=/tmp/gfs/retro-gtk/retro-gtk@@/tmp/gfs/retro-gtk/build/retro-gtk@@/tmp/gfs/retro-gtk/shared@@/tmp/gfs/retro-gtk/build/shared --mainfile=retro-gtk-doc.xml --modulename=retro-gtk --moduleversion= --mode=auto --gtkdoc-scan=/usr/bin/gtkdoc-scan --gtkdoc-scangobj=/usr/bin/gtkdoc-scangobj --gtkdoc-mkdb=/usr/bin/gtkdoc-mkdb --gtkdoc-mkhtml=/usr/bin/gtkdoc-mkhtml --gtkdoc-fixxref=/usr/bin/gtkdoc-fixxref --htmlargs= --scanargs=--rebuild-types --scanobjsargs= --gobjects-types-file=/tmp/gfs/retro-gtk/doc/retro-gtk.types --fixxrefargs=--html-dir=share/gtk-doc/html@@--extra-dir=/usr/share/gtk-doc/html/glib@@--extra-dir=/usr/share/gtk-doc/html/gobject@@--extra-dir=/usr/share/gtk-doc/html/gio@@--extra-dir=/usr/share/gtk-doc/html/gi@@--extra-dir=/usr/share/gtk-doc/html/gtk3@@--extra-dir=/usr/share/gtk-doc/html/gdk-pixbuf --mkdbargs=--default-includes=retro-gtk/retro-gtk.h --html-assets= --content-files=/tmp/gfs/retro-gtk/doc/libretro-core-descriptor.xml@@/tmp/gfs/retro-gtk/doc/reference-test-case.xml --expand-content-files= --ignore-headers=ipc-runner-private.h@@retro-cairo-display-private.h@@retro-controller-codes-private.h@@retro-controller-iterator-private.h@@retro-controller-state-private.h@@retro-core-view-controller-private.h@@retro-debug-private.h@@retro-framebuffer-private.h@@retro-gl-display-private.h@@retro-glsl-filter-private.h@@retro-glsl-shader-private.h@@retro-input-private.h@@retro-keyboard-key-private.h@@retro-keyboard-private.h@@retro-memfd-private.h@@retro-option-iterator-private.h@@retro-option-private.h@@retro-pixdata-private.h@@retro-pixel-format-private.h@@retro-runner-process-private.h --installdir=retro-gtk --cc=ccache cc --ld=cc --cflags=-I/tmp/gfs/retro-gtk/. -I/tmp/gfs/retro-gtk/build/. -I/tmp/gfs/retro-gtk/shared -I/tmp/gfs/retro-gtk/build/shared -I/tmp/gfs/retro-gtk/retro-gtk/. -I/tmp/gfs/retro-gtk/build/retro-gtk/. -pthread -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/gio-unix-2.0 -mfpmath=sse -msse -msse2 -I/usr/include/gtk-4.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/fribidi -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/cairo -I/usr/include/libxml2 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/pixman-1 -I/usr/include/graphene-1.0 -I/usr/lib64/graphene-1.0/include -O2 -fPIC --ldflags=-L/tmp/gfs/retro-gtk/build/retro-gtk -Wl,-rpath,/tmp/gfs/retro-gtk/build/retro-gtk -lretro-gtk-2 -lepoxy -lgio-2.0 -lgobject-2.0 -lglib-2.0 -lgmodule-2.0 -pthread -lgtk-4 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -lgdk_pixbuf-2.0 -lcairo-gobject -lcairo -lgraphene-1.0 -O2 -fPIC'
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/lib64/libretro-gtk-2.so	libretro-gtk-2.so.0
+
+Making symbolic link creation script:
+( cd usr/lib64 ; rm -rf libretro-gtk-2.so )
+( cd usr/lib64 ; ln -sf libretro-gtk-2.so.0 libretro-gtk-2.so )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/lib64/libretro-gtk-2.so'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root.root ([y]es, [n]o)? n
+
+Creating Slackware package:  /tmp/retro-gtk-1.0.2-x86_64-1_gfs.txz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/retro-gtk-1.0.2/
+usr/doc/retro-gtk-1.0.2/AUTHORS
+usr/doc/retro-gtk-1.0.2/COPYING
+usr/doc/retro-gtk-1.0.2/HACKING.md
+usr/doc/retro-gtk-1.0.2/NEWS
+usr/doc/retro-gtk-1.0.2/NEWS.retro-gobject-pre-merge
+usr/doc/retro-gtk-1.0.2/README.md
+usr/doc/retro-gtk-1.0.2/retro-gtk.SlackBuild
+usr/include/
+usr/include/retro-gtk/
+usr/include/retro-gtk/retro-controller-codes.h
+usr/include/retro-gtk/retro-controller-iterator.h
+usr/include/retro-gtk/retro-controller-type.h
+usr/include/retro-gtk/retro-controller.h
+usr/include/retro-gtk/retro-core-descriptor.h
+usr/include/retro-gtk/retro-core-view.h
+usr/include/retro-gtk/retro-core.h
+usr/include/retro-gtk/retro-gtk-enums.h
+usr/include/retro-gtk/retro-gtk-version.h
+usr/include/retro-gtk/retro-gtk.h
+usr/include/retro-gtk/retro-input.h
+usr/include/retro-gtk/retro-key-joypad-mapping.h
+usr/include/retro-gtk/retro-log.h
+usr/include/retro-gtk/retro-memory-type.h
+usr/include/retro-gtk/retro-module-iterator.h
+usr/include/retro-gtk/retro-module-query.h
+usr/include/retro-gtk/retro-option-iterator.h
+usr/include/retro-gtk/retro-option.h
+usr/include/retro-gtk/retro-pixbuf.h
+usr/include/retro-gtk/retro-pixdata.h
+usr/include/retro-gtk/retro-rumble-effect.h
+usr/include/retro-gtk/retro-video-filter.h
+usr/lib64/
+usr/lib64/girepository-1.0/
+usr/lib64/girepository-1.0/Retro-2.typelib
+usr/lib64/libretro-gtk-2.so.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/retro-gtk-2.pc
+usr/libexec/
+usr/libexec/retro-runner
+usr/share/
+usr/share/gir-1.0/
+usr/share/gir-1.0/Retro-2.gir
+usr/share/gtk-doc/
+usr/share/gtk-doc/html/
+usr/share/gtk-doc/html/retro-gtk/
+usr/share/gtk-doc/html/retro-gtk/RetroController.html
+usr/share/gtk-doc/html/retro-gtk/RetroControllerIterator.html
+usr/share/gtk-doc/html/retro-gtk/RetroCore.html
+usr/share/gtk-doc/html/retro-gtk/RetroCoreDescriptor.html
+usr/share/gtk-doc/html/retro-gtk/RetroCoreView.html
+usr/share/gtk-doc/html/retro-gtk/RetroInput.html
+usr/share/gtk-doc/html/retro-gtk/RetroKeyJoypadMapping.html
+usr/share/gtk-doc/html/retro-gtk/RetroModuleIterator.html
+usr/share/gtk-doc/html/retro-gtk/RetroModuleQuery.html
+usr/share/gtk-doc/html/retro-gtk/RetroOption.html
+usr/share/gtk-doc/html/retro-gtk/RetroOptionIterator.html
+usr/share/gtk-doc/html/retro-gtk/RetroPixdata.html
+usr/share/gtk-doc/html/retro-gtk/annotations-glossary.html
+usr/share/gtk-doc/html/retro-gtk/api-index-full.html
+usr/share/gtk-doc/html/retro-gtk/core-api.html
+usr/share/gtk-doc/html/retro-gtk/home.png
+usr/share/gtk-doc/html/retro-gtk/index.html
+usr/share/gtk-doc/html/retro-gtk/left-insensitive.png
+usr/share/gtk-doc/html/retro-gtk/left.png
+usr/share/gtk-doc/html/retro-gtk/libretro-core-descriptor.html
+usr/share/gtk-doc/html/retro-gtk/object-tree.html
+usr/share/gtk-doc/html/retro-gtk/overview.html
+usr/share/gtk-doc/html/retro-gtk/reference-test-case.html
+usr/share/gtk-doc/html/retro-gtk/retro-gtk-Pixbuf-Functions.html
+usr/share/gtk-doc/html/retro-gtk/retro-gtk-RetroController-Codes.html
+usr/share/gtk-doc/html/retro-gtk/retro-gtk-RetroControllerType.html
+usr/share/gtk-doc/html/retro-gtk/retro-gtk-RetroCore-Logging-Functions.html
+usr/share/gtk-doc/html/retro-gtk/retro-gtk-RetroVideoFilter.html
+usr/share/gtk-doc/html/retro-gtk/retro-gtk-Version.html
+usr/share/gtk-doc/html/retro-gtk/retro-gtk-retro-memory-type.html
+usr/share/gtk-doc/html/retro-gtk/retro-gtk-retro-rumble-effect.html
+usr/share/gtk-doc/html/retro-gtk/retro-gtk.devhelp2
+usr/share/gtk-doc/html/retro-gtk/right-insensitive.png
+usr/share/gtk-doc/html/retro-gtk/right.png
+usr/share/gtk-doc/html/retro-gtk/style.css
+usr/share/gtk-doc/html/retro-gtk/up-insensitive.png
+usr/share/gtk-doc/html/retro-gtk/up.png
+usr/share/vala/
+usr/share/vala/vapi/
+usr/share/vala/vapi/retro-gtk-2.deps
+usr/share/vala/vapi/retro-gtk-2.vapi
+
+Slackware package /tmp/retro-gtk-1.0.2-x86_64-1_gfs.txz created.
+
+
++==============================================================================
+| Installing new package /tmp/retro-gtk-1.0.2-x86_64-1_gfs.txz
++==============================================================================
+
+Verifying package retro-gtk-1.0.2-x86_64-1_gfs.txz.
+Installing package retro-gtk-1.0.2-x86_64-1_gfs.txz:
+PACKAGE DESCRIPTION:
+# retro-gtk 
+#
+# The GTK Libretro frontend framework.
+# Libretro is a plugin format design to implement video game
+# console emulators, video games and similar multimedia software.
+#  
+# 
+#
+Executing install script for retro-gtk-1.0.2-x86_64-1_gfs.txz.
+Package retro-gtk-1.0.2-x86_64-1_gfs.txz installed.
