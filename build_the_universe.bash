@@ -94,7 +94,7 @@ cd ./backgrounds/"$OD"
 cd "$D" || exit
 cat blacklist.txt >> /etc/slackpkg/blacklist
 cd ./doinst || exit
-./doinst
+bash doinst
 cd "$D" || exit
 ldconfig || true
 slackpkg new-config || true
