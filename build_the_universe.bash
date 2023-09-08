@@ -93,3 +93,6 @@ cd ./gnome_more/"$OD"
 cd "$D" || exit
 cd ./games/"$OD"
 ./build_all.sh |& tee "$D"/"$BL"/build_games.log
+
+cd "$D" || exit
+bash configs.bash
