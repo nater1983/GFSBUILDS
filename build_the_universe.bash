@@ -19,6 +19,16 @@ OD=order
 BD=/tmp/gfs
 BL=BUILD_LOGS
 
+
+log_time_elapsed() {
+  local log_file="$1"
+  echo "Time elapsed for $log_file: $SECONDS seconds" >> "$log_file"
+  SECONDS=0
+}
+
+
+SECONDS=0
+
 rm -rf "$BD" || true
 chmod +x ./*/*/*.SlackBuild || true
 chmod +x ./*/*/*.sh || true
@@ -28,45 +38,51 @@ chmod +x *.bash || true
 
 cd ./BLACKLIST45/"$OD" || exit
 ./build_all.sh |& tee "$D"/"$BL"/build_blacklist.system.log
+log_time_elapsed "$D"/"$BL"/build_blacklist.system.log
 
 
 
 cd "$D" || exit
 cd ./main_gnome/"$OD"
 ./build_all.sh |& tee "$D"/"$BL"/build_main_gnome.log
-
+log_time_elapsed "$D"/"$BL"/build_main_gnome.log
 
 
 cd "$D" || exit
 cd ./gnome/"$OD"
 ./build_all.sh |& tee "$D"/"$BL"/build_gnome.log
-
+log_time_elapsed "$D"/"$BL"/build_gnome.log
 
 
 # every day I have time will add more packages
 cd "$D" || exit
 cd ./gnome_soft/"$OD"
 ./build_all.sh |& tee "$D"/"$BL"/build_gnome_soft.log
-
+log_time_elapsed "$D"/"$BL"/build_gnome_soft.log
 
 
 cd "$D" || exit
 cd ./gnome_builder/"$OD"
 ./build_all.sh |& tee "$D"/"$BL"/build_gnome_builder.log
-
+log_time_elapsed "$D"/"$BL"/build_gnome_builder.log
 
 # not all extension ready for gnome-45  so far...
 cd "$D" || exit
 cd ./extensions/"$OD"
-./build_all.sh |& tee "$D"/"$BL"/build_exensions.log
+./build_all.sh |& tee "$D"/"$BL"/build_extensions.log
+log_time_elapsed "$D"/"$BL"/build_extensions.log
+
 
 cd "$D" || exit 
 cd ./backgrounds/"$OD"
 ./build_all.sh |& tee "$D"/"$BL"/build_backgrounds.log
+log_time_elapsed "$D"/"$BL"/build_backgrounds.log
+
 
 cd "$D" || exit 
 cd ./gnome_more/"$OD"
 ./build_all.sh |& tee "$D"/"$BL"/build_gnome_more.log
+log_time_elapsed "$D"/"$BL"/build_gnome_more.log
 
 
 #######################################################################################
@@ -79,6 +95,7 @@ cd ./gnome_more/"$OD"
 #cd "$D" || exit
 #cd ./extras/"$OD"
 #./build_all.sh |& tee "$D"/"$BL"/build_extras.log
+#log_time_elapsed "$D"/"$BL"/build_extras.log
 # cd "$D" || exit
 #rm ./*/*/*/*.tar.?z* || true
 
@@ -93,6 +110,13 @@ cd ./gnome_more/"$OD"
 cd "$D" || exit
 cd ./games/"$OD"
 ./build_all.sh |& tee "$D"/"$BL"/build_games.log
+log_time_elapsed "$D"/"$BL"/build_games.log
+
 
 cd "$D" || exit
-bash configs.bash
+bash configs.bash |& tee "$D"/"$BL"/ran_configs.log
+log_time_elapsed "$D"/"$BL"/ran_configs.log
+
+echo ""
+log_time_elapsed "To build the Universe..."
+
