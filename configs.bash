@@ -15,6 +15,7 @@ updatedb
 # clean repo from forgoten source.tar.* file...
 rm ./*/*/*.tar.?z* || true
 rm ./*/*/*.deb || true
+rm */*/*.zip || true
 echo "Welcome to your new GNOME desktop environment on Slackware!"
     
     echo "************************************************************"
