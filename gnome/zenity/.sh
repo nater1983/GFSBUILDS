@@ -1,2 +1,0 @@
-zenity/
-zenity

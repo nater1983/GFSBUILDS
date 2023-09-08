@@ -1,2 +1,0 @@
-libportal/
-libportal
