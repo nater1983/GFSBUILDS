@@ -22,7 +22,9 @@ BL=BUILD_LOGS
 
 log_time_elapsed() {
   local log_file="$1"
-  echo "Time elapsed for $log_file: $SECONDS seconds" >> "$log_file"
+  if [ -n "$log_file" ]; then
+    echo "Time elapsed for $log_file: $SECONDS seconds" >> "$log_file"
+  fi
   SECONDS=0
 }
 
