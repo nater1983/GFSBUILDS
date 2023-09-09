@@ -1,30 +1,30 @@
 26-build_atomix.sh
 atomix
---2023-09-07 23:58:10--  https://download.gnome.org/sources/atomix/44/atomix-44.0.tar.xz
-Resolving download.gnome.org (download.gnome.org)... 2a04:4e42:600::347, 2a04:4e42::347, 2a04:4e42:400::347, ...
-Connecting to download.gnome.org (download.gnome.org)|2a04:4e42:600::347|:443... connected.
+--2023-09-09 16:51:49--  https://download.gnome.org/sources/atomix/44/atomix-44.0.tar.xz
+Resolving download.gnome.org (download.gnome.org)... 2a04:4e42::347, 2a04:4e42:200::347, 2a04:4e42:400::347, ...
+Connecting to download.gnome.org (download.gnome.org)|2a04:4e42::347|:443... connected.
 HTTP request sent, awaiting response... 302 Found
-Location: https://mirrors.dotsrc.org/gnome/sources/atomix/44/atomix-44.0.tar.xz [following]
---2023-09-07 23:58:11--  https://mirrors.dotsrc.org/gnome/sources/atomix/44/atomix-44.0.tar.xz
-Resolving mirrors.dotsrc.org (mirrors.dotsrc.org)... 2001:878:346::116, 130.225.254.116
-Connecting to mirrors.dotsrc.org (mirrors.dotsrc.org)|2001:878:346::116|:443... connected.
+Location: https://ftp.acc.umu.se/pub/GNOME/sources/atomix/44/atomix-44.0.tar.xz [following]
+--2023-09-09 16:51:50--  https://ftp.acc.umu.se/pub/GNOME/sources/atomix/44/atomix-44.0.tar.xz
+Resolving ftp.acc.umu.se (ftp.acc.umu.se)... 2001:6b0:19::173, 2001:6b0:19::163, 2001:6b0:19::165, ...
+Connecting to ftp.acc.umu.se (ftp.acc.umu.se)|2001:6b0:19::173|:443... connected.
 HTTP request sent, awaiting response... 200 OK
-Length: 535508 (523K) [application/octet-stream]
+Length: 535508 (523K) [application/x-xz]
 Saving to: ‘atomix-44.0.tar.xz’
 
-     0K .......... .......... .......... .......... ..........  9%  346K 1s
-    50K .......... .......... .......... .......... .......... 19%  899K 1s
-   100K .......... .......... .......... .......... .......... 28% 1.07M 1s
-   150K .......... .......... .......... .......... .......... 38% 1.66M 0s
-   200K .......... .......... .......... .......... .......... 47% 1.95M 0s
-   250K .......... .......... .......... .......... .......... 57% 2.35M 0s
-   300K .......... .......... .......... .......... .......... 66% 2.54M 0s
-   350K .......... .......... .......... .......... .......... 76% 2.10M 0s
-   400K .......... .......... .......... .......... .......... 86% 2.78M 0s
-   450K .......... .......... .......... .......... .......... 95% 2.84M 0s
-   500K .......... .......... ..                              100% 5.94M=0.4s
+     0K .......... .......... .......... .......... ..........  9%  301K 2s
+    50K .......... .......... .......... .......... .......... 19%  560K 1s
+   100K .......... .......... .......... .......... .......... 28%  849K 1s
+   150K .......... .......... .......... .......... .......... 38% 1.45M 1s
+   200K .......... .......... .......... .......... .......... 47% 1.43M 0s
+   250K .......... .......... .......... .......... .......... 57% 2.13M 0s
+   300K .......... .......... .......... .......... .......... 66% 2.55M 0s
+   350K .......... .......... .......... .......... .......... 76% 2.47M 0s
+   400K .......... .......... .......... .......... .......... 86% 3.36M 0s
+   450K .......... .......... .......... .......... .......... 95% 3.34M 0s
+   500K .......... .......... ..                              100% 6.53M=0.5s
 
-2023-09-07 23:58:12 (1.27 MB/s) - ‘atomix-44.0.tar.xz’ saved [535508/535508]
+2023-09-09 16:51:51 (1.07 MB/s) - ‘atomix-44.0.tar.xz’ saved [535508/535508]
 
 atomix-44.0/
 atomix-44.0/AUTHORS
@@ -271,7 +271,7 @@ Host machine cpu: x86_64
 Found pkg-config: /usr/bin/pkg-config (0.29.2)
 Run-time dependency gtk+-3.0 found: YES 3.24.38
 Run-time dependency gdk-pixbuf-2.0 found: YES 2.42.10
-Run-time dependency glib-2.0 found: YES 2.77.3
+Run-time dependency glib-2.0 found: YES 2.78.0
 Run-time dependency libgnome-games-support-1 found: YES 1.8.2
 Library m found: YES
 Program msgfmt found: YES (/usr/bin/msgfmt)
@@ -296,113 +296,111 @@ atomix 44.0
     sysconfdir     : /etc
 
 Found ninja-1.11.1 at /usr/bin/ninja
-[1/110] Generating data/atomix.appdata.xml with a custom command
-[2/110] Generating data/level/aceticacid.atomix.xml with a custom command
-[3/110] Generating data/level/ethanol.atomix.xml with a custom command
-[4/110] Generating data/level/dimethylether.atomix.xml with a custom command
+[1/110] Generating data/level/ethane.atomix.xml with a custom command
+[2/110] Generating data/level/acetone.atomix.xml with a custom command
+[3/110] Generating data/atomix.appdata.xml with a custom command
+[4/110] Generating data/level/aceticacid.atomix.xml with a custom command
 [5/110] Generating data/atomix.desktop with a custom command
-[6/110] Generating data/level/cyclobutane.atomix.xml with a custom command
-[7/110] Generating data/level/butanol.atomix.xml with a custom command
-[8/110] Generating data/level/ethanal.atomix.xml with a custom command
-[9/110] Generating data/level/methanal.atomix.xml with a custom command
-[10/110] Generating data/level/acetone.atomix.xml with a custom command
-[11/110] Generating data/level/ethane.atomix.xml with a custom command
+[6/110] Generating data/level/dimethylether.atomix.xml with a custom command
+[7/110] Generating data/level/ethanal.atomix.xml with a custom command
+[8/110] Generating data/level/glycerin.atomix.xml with a custom command
+[9/110] Generating data/level/ethanol.atomix.xml with a custom command
+[10/110] Generating data/level/butanol.atomix.xml with a custom command
+[11/110] Generating data/level/cyclobutane.atomix.xml with a custom command
 [12/110] Generating data/level/ethylene.atomix.xml with a custom command
 [13/110] Generating data/level/lactic-acid.atomix.xml with a custom command
-[14/110] Generating data/level/glycerin.atomix.xml with a custom command
-[15/110] Generating data/level/methanol.atomix.xml with a custom command
-[16/110] Generating data/level/propanal.atomix.xml with a custom command
-[17/110] Generating data/level/propylene.atomix.xml with a custom command
-[18/110] Generating data/level/pyran.atomix.xml with a custom command
-[19/110] Generating data/level/methane.atomix.xml with a custom command
-[20/110] Generating data/level/transbutylen.atomix.xml with a custom command
-[21/110] Generating data/level/water.atomix.xml with a custom command
+[14/110] Generating data/level/propylene.atomix.xml with a custom command
+[15/110] Generating data/level/transbutylen.atomix.xml with a custom command
+[16/110] Generating data/level/water.atomix.xml with a custom command
+[17/110] Generating data/level/propanal.atomix.xml with a custom command
+[18/110] Generating data/level/methane.atomix.xml with a custom command
+[19/110] Generating data/level/pyran.atomix.xml with a custom command
+[20/110] Generating data/level/methanal.atomix.xml with a custom command
+[21/110] Generating data/level/methanol.atomix.xml with a custom command
 [22/110] Compiling C object src/libatomix.a.p/xml-util.c.o
 [23/110] Compiling C object src/libatomix.a.p/tile.c.o
-[24/110] Compiling C object src/libatomix.a.p/theme.c.o
-[25/110] Compiling C object src/libatomix.a.p/level.c.o
-[26/110] Compiling C object src/libatomix.a.p/theme-manager.c.o
+[24/110] Compiling C object src/libatomix.a.p/level.c.o
+[25/110] Compiling C object src/libatomix.a.p/theme.c.o
+[26/110] Compiling C object src/libatomix.a.p/playfield.c.o
 [27/110] Compiling C object src/libatomix.a.p/level-manager.c.o
 [28/110] Generating po/af/LC_MESSAGES/atomix-af.mo with a custom command
-[29/110] Compiling C object src/libatomix.a.p/playfield.c.o
+[29/110] Compiling C object src/libatomix.a.p/theme-manager.c.o
 [30/110] Generating po/am/LC_MESSAGES/atomix-am.mo with a custom command
-[31/110] Generating po/ar/LC_MESSAGES/atomix-ar.mo with a custom command
-[32/110] Generating po/az/LC_MESSAGES/atomix-az.mo with a custom command
-[33/110] Generating po/be/LC_MESSAGES/atomix-be.mo with a custom command
-[34/110] Generating po/bg/LC_MESSAGES/atomix-bg.mo with a custom command
-[35/110] Compiling C object src/atomix.p/clock.c.o
-[36/110] Compiling C object src/atomix.p/undo.c.o
-[37/110] Generating po/bn/LC_MESSAGES/atomix-bn.mo with a custom command
-[38/110] Generating po/bs/LC_MESSAGES/atomix-bs.mo with a custom command
-[39/110] Generating po/ca/LC_MESSAGES/atomix-ca.mo with a custom command
-[40/110] Compiling C object src/pf-test.p/tile.c.o
-[41/110] Generating po/cs/LC_MESSAGES/atomix-cs.mo with a custom command
-[42/110] Generating po/da/LC_MESSAGES/atomix-da.mo with a custom command
+[31/110] Generating po/az/LC_MESSAGES/atomix-az.mo with a custom command
+[32/110] Compiling C object src/pf-test.p/tile.c.o
+[33/110] Generating po/ar/LC_MESSAGES/atomix-ar.mo with a custom command
+[34/110] Generating po/be/LC_MESSAGES/atomix-be.mo with a custom command
+[35/110] Generating po/bg/LC_MESSAGES/atomix-bg.mo with a custom command
+[36/110] Generating po/bn/LC_MESSAGES/atomix-bn.mo with a custom command
+[37/110] Generating po/bs/LC_MESSAGES/atomix-bs.mo with a custom command
+[38/110] Generating po/ca/LC_MESSAGES/atomix-ca.mo with a custom command
+[39/110] Generating po/cs/LC_MESSAGES/atomix-cs.mo with a custom command
+[40/110] Generating po/da/LC_MESSAGES/atomix-da.mo with a custom command
+[41/110] Generating po/dz/LC_MESSAGES/atomix-dz.mo with a custom command
+[42/110] Compiling C object src/atomix.p/goal-view.c.o
 [43/110] Generating po/de/LC_MESSAGES/atomix-de.mo with a custom command
-[44/110] Generating po/dz/LC_MESSAGES/atomix-dz.mo with a custom command
-[45/110] Generating po/el/LC_MESSAGES/atomix-el.mo with a custom command
-[46/110] Generating po/en_CA/LC_MESSAGES/atomix-en_CA.mo with a custom command
-[47/110] Generating po/en_GB/LC_MESSAGES/atomix-en_GB.mo with a custom command
+[44/110] Generating po/el/LC_MESSAGES/atomix-el.mo with a custom command
+[45/110] Generating po/en_GB/LC_MESSAGES/atomix-en_GB.mo with a custom command
+[46/110] Compiling C object src/libatomix.a.p/canvas_helper.c.o
+[47/110] Generating po/en_CA/LC_MESSAGES/atomix-en_CA.mo with a custom command
 [48/110] Generating po/es/LC_MESSAGES/atomix-es.mo with a custom command
-[49/110] Generating po/et/LC_MESSAGES/atomix-et.mo with a custom command
-[50/110] Generating po/eo/LC_MESSAGES/atomix-eo.mo with a custom command
-[51/110] Generating po/eu/LC_MESSAGES/atomix-eu.mo with a custom command
-[52/110] Generating po/fa/LC_MESSAGES/atomix-fa.mo with a custom command
-[53/110] Generating po/fr/LC_MESSAGES/atomix-fr.mo with a custom command
+[49/110] Generating po/eo/LC_MESSAGES/atomix-eo.mo with a custom command
+[50/110] Generating po/et/LC_MESSAGES/atomix-et.mo with a custom command
+[51/110] Linking static target src/libatomix.a
+[52/110] Generating po/eu/LC_MESSAGES/atomix-eu.mo with a custom command
+[53/110] Generating po/fa/LC_MESSAGES/atomix-fa.mo with a custom command
 [54/110] Generating po/fi/LC_MESSAGES/atomix-fi.mo with a custom command
-[55/110] Generating po/fur/LC_MESSAGES/atomix-fur.mo with a custom command
-[56/110] Compiling C object src/pf-test.p/xml-util.c.o
-[57/110] Generating po/gu/LC_MESSAGES/atomix-gu.mo with a custom command
-[58/110] Generating po/gl/LC_MESSAGES/atomix-gl.mo with a custom command
-[59/110] Generating po/he/LC_MESSAGES/atomix-he.mo with a custom command
-[60/110] Generating po/hi/LC_MESSAGES/atomix-hi.mo with a custom command
-[61/110] Generating po/id/LC_MESSAGES/atomix-id.mo with a custom command
+[55/110] Generating po/fr/LC_MESSAGES/atomix-fr.mo with a custom command
+[56/110] Generating po/fur/LC_MESSAGES/atomix-fur.mo with a custom command
+[57/110] Generating po/ga/LC_MESSAGES/atomix-ga.mo with a custom command
+[58/110] Generating po/gu/LC_MESSAGES/atomix-gu.mo with a custom command
+[59/110] Generating po/gl/LC_MESSAGES/atomix-gl.mo with a custom command
+[60/110] Generating po/he/LC_MESSAGES/atomix-he.mo with a custom command
+[61/110] Generating po/hi/LC_MESSAGES/atomix-hi.mo with a custom command
 [62/110] Generating po/hu/LC_MESSAGES/atomix-hu.mo with a custom command
-[63/110] Generating po/ja/LC_MESSAGES/atomix-ja.mo with a custom command
-[64/110] Generating po/is/LC_MESSAGES/atomix-is.mo with a custom command
-[65/110] Generating po/it/LC_MESSAGES/atomix-it.mo with a custom command
-[66/110] Generating po/ka/LC_MESSAGES/atomix-ka.mo with a custom command
-[67/110] Generating po/kn/LC_MESSAGES/atomix-kn.mo with a custom command
-[68/110] Generating po/ga/LC_MESSAGES/atomix-ga.mo with a custom command
-[69/110] Generating po/ko/LC_MESSAGES/atomix-ko.mo with a custom command
-[70/110] Generating po/lt/LC_MESSAGES/atomix-lt.mo with a custom command
-[71/110] Generating po/lv/LC_MESSAGES/atomix-lv.mo with a custom command
-[72/110] Generating po/mk/LC_MESSAGES/atomix-mk.mo with a custom command
-[73/110] Generating po/ml/LC_MESSAGES/atomix-ml.mo with a custom command
-[74/110] Compiling C object src/atomix.p/goal-view.c.o
-[75/110] Generating po/nb/LC_MESSAGES/atomix-nb.mo with a custom command
-[76/110] Generating po/nl/LC_MESSAGES/atomix-nl.mo with a custom command
-[77/110] Generating po/ms/LC_MESSAGES/atomix-ms.mo with a custom command
+[63/110] Generating po/is/LC_MESSAGES/atomix-is.mo with a custom command
+[64/110] Generating po/it/LC_MESSAGES/atomix-it.mo with a custom command
+[65/110] Generating po/id/LC_MESSAGES/atomix-id.mo with a custom command
+[66/110] Generating po/ja/LC_MESSAGES/atomix-ja.mo with a custom command
+[67/110] Generating po/ka/LC_MESSAGES/atomix-ka.mo with a custom command
+[68/110] Generating po/kn/LC_MESSAGES/atomix-kn.mo with a custom command
+[69/110] Compiling C object src/pf-test.p/xml-util.c.o
+[70/110] Generating po/ko/LC_MESSAGES/atomix-ko.mo with a custom command
+[71/110] Generating po/lt/LC_MESSAGES/atomix-lt.mo with a custom command
+[72/110] Generating po/lv/LC_MESSAGES/atomix-lv.mo with a custom command
+[73/110] Generating po/mk/LC_MESSAGES/atomix-mk.mo with a custom command
+[74/110] Generating po/ml/LC_MESSAGES/atomix-ml.mo with a custom command
+[75/110] Generating po/ms/LC_MESSAGES/atomix-ms.mo with a custom command
+[76/110] Generating po/nb/LC_MESSAGES/atomix-nb.mo with a custom command
+[77/110] Generating po/nl/LC_MESSAGES/atomix-nl.mo with a custom command
 [78/110] Generating po/ne/LC_MESSAGES/atomix-ne.mo with a custom command
 [79/110] Generating po/oc/LC_MESSAGES/atomix-oc.mo with a custom command
 [80/110] Generating po/pa/LC_MESSAGES/atomix-pa.mo with a custom command
-[81/110] Generating po/pl/LC_MESSAGES/atomix-pl.mo with a custom command
-[82/110] Generating po/ro/LC_MESSAGES/atomix-ro.mo with a custom command
-[83/110] Generating po/sk/LC_MESSAGES/atomix-sk.mo with a custom command
-[84/110] Generating po/pt/LC_MESSAGES/atomix-pt.mo with a custom command
-[85/110] Generating po/pt_BR/LC_MESSAGES/atomix-pt_BR.mo with a custom command
-[86/110] Generating po/ru/LC_MESSAGES/atomix-ru.mo with a custom command
+[81/110] Generating po/pt/LC_MESSAGES/atomix-pt.mo with a custom command
+[82/110] Generating po/pl/LC_MESSAGES/atomix-pl.mo with a custom command
+[83/110] Generating po/pt_BR/LC_MESSAGES/atomix-pt_BR.mo with a custom command
+[84/110] Generating po/ro/LC_MESSAGES/atomix-ro.mo with a custom command
+[85/110] Generating po/ru/LC_MESSAGES/atomix-ru.mo with a custom command
+[86/110] Generating po/sk/LC_MESSAGES/atomix-sk.mo with a custom command
 [87/110] Generating po/sl/LC_MESSAGES/atomix-sl.mo with a custom command
-[88/110] Generating po/sq/LC_MESSAGES/atomix-sq.mo with a custom command
-[89/110] Generating po/sr/LC_MESSAGES/atomix-sr.mo with a custom command
-[90/110] Generating po/sr@latin/LC_MESSAGES/atomix-sr@latin.mo with a custom command
-[91/110] Generating po/sv/LC_MESSAGES/atomix-sv.mo with a custom command
-[92/110] Generating po/ta/LC_MESSAGES/atomix-ta.mo with a custom command
-[93/110] Generating po/th/LC_MESSAGES/atomix-th.mo with a custom command
+[88/110] Compiling C object src/pf-test.p/playfield.c.o
+[89/110] Generating po/sq/LC_MESSAGES/atomix-sq.mo with a custom command
+[90/110] Generating po/sv/LC_MESSAGES/atomix-sv.mo with a custom command
+[91/110] Generating po/sr/LC_MESSAGES/atomix-sr.mo with a custom command
+[92/110] Generating po/sr@latin/LC_MESSAGES/atomix-sr@latin.mo with a custom command
+[93/110] Generating po/ta/LC_MESSAGES/atomix-ta.mo with a custom command
 [94/110] Generating po/tr/LC_MESSAGES/atomix-tr.mo with a custom command
 [95/110] Generating po/uk/LC_MESSAGES/atomix-uk.mo with a custom command
-[96/110] Generating po/vi/LC_MESSAGES/atomix-vi.mo with a custom command
-[97/110] Generating po/wa/LC_MESSAGES/atomix-wa.mo with a custom command
+[96/110] Generating po/th/LC_MESSAGES/atomix-th.mo with a custom command
+[97/110] Generating po/vi/LC_MESSAGES/atomix-vi.mo with a custom command
 [98/110] Generating po/zh_CN/LC_MESSAGES/atomix-zh_CN.mo with a custom command
 [99/110] Generating po/zh_HK/LC_MESSAGES/atomix-zh_HK.mo with a custom command
-[100/110] Generating po/zh_TW/LC_MESSAGES/atomix-zh_TW.mo with a custom command
-[101/110] Compiling C object src/libatomix.a.p/canvas_helper.c.o
-[102/110] Compiling C object src/pf-test.p/playfield.c.o
-[103/110] Linking static target src/libatomix.a
-[104/110] Compiling C object src/atomix.p/goal.c.o
-[105/110] Compiling C object src/pf-test.p/pf-test.c.o
-[106/110] Compiling C object src/atomix.p/board-gtk.c.o
-[107/110] Compiling C object src/atomix.p/main.c.o
+[100/110] Generating po/wa/LC_MESSAGES/atomix-wa.mo with a custom command
+[101/110] Generating po/zh_TW/LC_MESSAGES/atomix-zh_TW.mo with a custom command
+[102/110] Compiling C object src/atomix.p/clock.c.o
+[103/110] Compiling C object src/pf-test.p/theme.c.o
+[104/110] Compiling C object src/atomix.p/board-gtk.c.o
+[105/110] Compiling C object src/atomix.p/main.c.o
 ../src/main.c: In function ‘main’:
 ../src/main.c:690:3: warning: ‘G_APPLICATION_FLAGS_NONE’ is deprecated: Use 'G_APPLICATION_DEFAULT_FLAGS' instead [-Wdeprecated-declarations]
   690 |   gtk_app = gtk_application_new ("org.gnome.atomix", G_APPLICATION_FLAGS_NONE);
@@ -417,7 +415,9 @@ In file included from /usr/include/glib-2.0/gio/giotypes.h:30,
 /usr/include/glib-2.0/gio/gioenums.h:1540:3: note: declared here
  1540 |   G_APPLICATION_FLAGS_NONE GIO_DEPRECATED_ENUMERATOR_IN_2_74_FOR(G_APPLICATION_DEFAULT_FLAGS),
       |   ^~~~~~~~~~~~~~~~~~~~~~~~
-[108/110] Compiling C object src/pf-test.p/theme.c.o
+[106/110] Compiling C object src/atomix.p/undo.c.o
+[107/110] Compiling C object src/atomix.p/goal.c.o
+[108/110] Compiling C object src/pf-test.p/pf-test.c.o
 [109/110] Linking target src/atomix
 [110/110] Linking target src/pf-test
 [0/1] Installing files.
@@ -929,9 +929,10 @@ Slackware package /tmp/atomix-44.0-x86_64-1_gfs.txz created.
 
 
 +==============================================================================
-| Installing new package /tmp/atomix-44.0-x86_64-1_gfs.txz
+| Upgrading atomix-44.0-x86_64-1_gfs package using /tmp/atomix-44.0-x86_64-1_gfs.txz
 +==============================================================================
-
+Pre-installing package atomix-44.0-x86_64-1_gfs...
+Removing package: atomix-44.0-x86_64-1_gfs-upgraded-2023-09-09,16:51:54
 Verifying package atomix-44.0-x86_64-1_gfs.txz.
 Installing package atomix-44.0-x86_64-1_gfs.txz:
 PACKAGE DESCRIPTION:
@@ -947,6 +948,7 @@ PACKAGE DESCRIPTION:
 #
 Executing install script for atomix-44.0-x86_64-1_gfs.txz.
 Package atomix-44.0-x86_64-1_gfs.txz installed.
+Package atomix-44.0-x86_64-1_gfs upgraded with new package /tmp/atomix-44.0-x86_64-1_gfs.txz.
 44-build_retro-gtk.sh
 retro-gtk
 Cloning into 'retro-gtk'...
@@ -981,11 +983,11 @@ Host machine cpu family: x86_64
 Host machine cpu: x86_64
 Found pkg-config: /usr/bin/pkg-config (0.29.2)
 Run-time dependency epoxy found: YES 1.5.10
-Run-time dependency gio-2.0 found: YES 2.77.3
-Run-time dependency gio-unix-2.0 found: YES 2.77.3
-Run-time dependency glib-2.0 found: YES 2.77.3
-Run-time dependency gmodule-2.0 found: YES 2.77.3
-Run-time dependency gobject-2.0 found: YES 2.77.3
+Run-time dependency gio-2.0 found: YES 2.78.0
+Run-time dependency gio-unix-2.0 found: YES 2.78.0
+Run-time dependency glib-2.0 found: YES 2.78.0
+Run-time dependency gmodule-2.0 found: YES 2.78.0
+Run-time dependency gobject-2.0 found: YES 2.78.0
 Run-time dependency gtk4 found: YES 4.12.1
 Run-time dependency libpulse-simple found: YES 16.1
 Library m found: YES
@@ -1000,10 +1002,10 @@ Program glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
 Program glib-mkenums found: YES (/usr/bin/glib-mkenums)
 Program glib-mkenums found: YES (/usr/bin/glib-mkenums)
 Configuring retro-gtk-version.h using configuration
-Run-time dependency gobject-introspection-1.0 found: YES 1.76.1
-Dependency gobject-introspection-1.0 found: YES 1.76.1 (cached)
+Run-time dependency gobject-introspection-1.0 found: YES 1.78.0
+Dependency gobject-introspection-1.0 found: YES 1.78.0 (cached)
 Program g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
-Dependency gobject-introspection-1.0 found: YES 1.76.1 (cached)
+Dependency gobject-introspection-1.0 found: YES 1.78.0 (cached)
 Program g-ir-compiler found: YES (/usr/bin/g-ir-compiler)
 Program vapigen found: YES (/usr/bin/vapigen)
 Configuring gtkdocentities.ent using configuration
@@ -1063,62 +1065,59 @@ retro-gtk 1.0.2
 Found ninja-1.11.1 at /usr/bin/ninja
 [1/66] Generating retro-gtk/retro_gtk_resources_h with a custom command
 [2/66] Generating retro-gtk/retro_gtk_resources_c with a custom command
-[3/66] Generating retro-runner/retro-runner-enums.h with a custom command (wrapped by meson to capture output)
-[4/66] Generating retro-gtk/retro-gtk-enums.h with a custom command (wrapped by meson to capture output)
-[5/66] Generating retro-gtk/retro-gtk-enums.c with a custom command (wrapped by meson to capture output)
+[3/66] Generating retro-gtk/retro-gtk-enums.h with a custom command (wrapped by meson to capture output)
+[4/66] Generating retro-runner/retro-runner-enums.h with a custom command (wrapped by meson to capture output)
+[5/66] Generating shared/ipc-runner-public.h with a custom command
 [6/66] Generating retro-runner/retro-runner-enums.c with a custom command (wrapped by meson to capture output)
 [7/66] Generating shared/ipc-runner-public.c with a custom command
-[8/66] Generating shared/ipc-runner-public.h with a custom command
+[8/66] Generating retro-gtk/retro-gtk-enums.c with a custom command (wrapped by meson to capture output)
 [9/66] Generating shared/make-ipc-runner-private with a custom command
-[10/66] Compiling C object retro-runner/retro-runner.p/.._shared_retro-memfd.c.o
-[11/66] Compiling C object retro-runner/retro-runner.p/.._shared_retro-debug.c.o
-[12/66] Compiling C object retro-runner/retro-runner.p/meson-generated_.._retro-runner-enums.c.o
-[13/66] Compiling C object retro-runner/retro-runner.p/.._shared_retro-controller-codes.c.o
-[14/66] Compiling C object retro-runner/retro-runner.p/.._shared_retro-input.c.o
-[15/66] Compiling C object retro-runner/retro-runner.p/.._shared_retro-controller-type.c.o
-[16/66] Compiling C object retro-runner/retro-runner.p/.._shared_retro-controller-state.c.o
-[17/66] Compiling C object retro-runner/retro-runner.p/.._shared_retro-pixel-format.c.o
-[18/66] Compiling C object retro-runner/retro-runner.p/retro-input-descriptor.c.o
+[10/66] Compiling C object retro-runner/retro-runner.p/.._shared_retro-debug.c.o
+[11/66] Compiling C object retro-runner/retro-runner.p/.._shared_retro-controller-type.c.o
+[12/66] Compiling C object retro-runner/retro-runner.p/.._shared_retro-input.c.o
+[13/66] Compiling C object retro-runner/retro-runner.p/.._shared_retro-memfd.c.o
+[14/66] Compiling C object retro-runner/retro-runner.p/meson-generated_.._retro-runner-enums.c.o
+[15/66] Compiling C object retro-runner/retro-runner.p/.._shared_retro-controller-codes.c.o
+[16/66] Compiling C object retro-runner/retro-runner.p/.._shared_retro-pixel-format.c.o
+[17/66] Compiling C object retro-runner/retro-runner.p/.._shared_retro-framebuffer.c.o
+[18/66] Compiling C object retro-runner/retro-runner.p/.._shared_retro-controller-state.c.o
 [19/66] Compiling C object retro-runner/retro-runner.p/retro-main-loop-source.c.o
-[20/66] Compiling C object retro-runner/retro-runner.p/retro-runner.c.o
-[21/66] Compiling C object retro-runner/retro-runner.p/.._shared_retro-framebuffer.c.o
-[22/66] Compiling C object retro-runner/retro-runner.p/ipc-runner-impl.c.o
-[23/66] Compiling C object retro-runner/retro-runner.p/retro-environment.c.o
-[24/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/meson-generated_.._retro_gtk_resources.c.o
-[25/66] Compiling C object retro-runner/retro-runner.p/retro-game-info.c.o
-[26/66] Compiling C object retro-runner/retro-runner.p/retro-module.c.o
-[27/66] Compiling C object retro-runner/retro-runner.p/retro-renderer.c.o
-[28/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/.._shared_retro-controller-codes.c.o
-[29/66] Compiling C object retro-runner/retro-runner.p/retro-pa-player.c.o
-[30/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/meson-generated_.._retro-gtk-enums.c.o
-[31/66] Compiling C object retro-runner/retro-runner.p/retro-gl-renderer.c.o
-[32/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/.._shared_retro-debug.c.o
-[33/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/.._shared_retro-controller-type.c.o
-[34/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/.._shared_retro-controller-state.c.o
-[35/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/.._shared_retro-input.c.o
-[36/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-controller-iterator.c.o
-[37/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/.._shared_retro-memfd.c.o
-[38/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/.._shared_retro-pixel-format.c.o
-[39/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/.._shared_retro-framebuffer.c.o
-[40/66] Compiling C object retro-runner/retro-runner.p/meson-generated_.._.._shared_ipc-runner.c.o
-[41/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-controller.c.o
-[42/66] Compiling C object retro-runner/retro-runner.p/retro-core.c.o
+[20/66] Compiling C object retro-runner/retro-runner.p/retro-game-info.c.o
+[21/66] Compiling C object retro-runner/retro-runner.p/retro-environment.c.o
+[22/66] Compiling C object retro-runner/retro-runner.p/retro-input-descriptor.c.o
+[23/66] Compiling C object retro-runner/retro-runner.p/retro-runner.c.o
+[24/66] Compiling C object retro-runner/retro-runner.p/retro-module.c.o
+[25/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/meson-generated_.._retro_gtk_resources.c.o
+[26/66] Compiling C object retro-runner/retro-runner.p/retro-renderer.c.o
+[27/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/meson-generated_.._retro-gtk-enums.c.o
+[28/66] Compiling C object retro-runner/retro-runner.p/retro-gl-renderer.c.o
+[29/66] Compiling C object retro-runner/retro-runner.p/ipc-runner-impl.c.o
+[30/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/.._shared_retro-controller-codes.c.o
+[31/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/.._shared_retro-debug.c.o
+[32/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/.._shared_retro-controller-type.c.o
+[33/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/.._shared_retro-input.c.o
+[34/66] Compiling C object retro-runner/retro-runner.p/retro-pa-player.c.o
+[35/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/.._shared_retro-memfd.c.o
+[36/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-controller.c.o
+[37/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-controller-iterator.c.o
+[38/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/.._shared_retro-controller-state.c.o
+[39/66] Compiling C object retro-runner/retro-runner.p/retro-core.c.o
+[40/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/.._shared_retro-framebuffer.c.o
+[41/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/.._shared_retro-pixel-format.c.o
+[42/66] Compiling C object retro-runner/retro-runner.p/meson-generated_.._.._shared_ipc-runner.c.o
 [43/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-key-joypad-mapping.c.o
-[44/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-core-descriptor.c.o
-[45/66] Linking target retro-runner/retro-runner
-[46/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-glsl-shader.c.o
-[47/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-glsl-filter.c.o
-[48/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-module-query.c.o
-[49/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/meson-generated_.._.._shared_ipc-runner.c.o
-[50/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-core-view-controller.c.o
-[51/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-option.c.o
-[52/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-module-iterator.c.o
-[53/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-video-filter.c.o
-[54/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-keyboard.c.o
-[55/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-option-iterator.c.o
-[56/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-log.c.o
-[57/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-runner-process.c.o
-[58/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-core-view.c.o
+[44/66] Linking target retro-runner/retro-runner
+[45/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-glsl-shader.c.o
+[46/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-module-query.c.o
+[47/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/meson-generated_.._.._shared_ipc-runner.c.o
+[48/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-keyboard.c.o
+[49/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-core-view-controller.c.o
+[50/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-module-iterator.c.o
+[51/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-glsl-filter.c.o
+[52/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-option-iterator.c.o
+[53/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-core-descriptor.c.o
+[54/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-option.c.o
+[55/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-core-view.c.o
 In file included from /usr/lib64/glib-2.0/include/glibconfig.h:9,
                  from /usr/include/glib-2.0/glib/gtypes.h:34,
                  from /usr/include/glib-2.0/glib/galloca.h:34,
@@ -1148,8 +1147,10 @@ In file included from /usr/include/glib-2.0/glib/gatomic.h:30,
 ../retro-gtk/retro-core-view.c:355:3: note: in expansion of macro ‘g_clear_pointer’
   355 |   g_clear_pointer ((GtkWidget **) &self->display, gtk_widget_unparent);
       |   ^~~~~~~~~~~~~~~
-[59/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-pixbuf.c.o
-[60/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-gl-display.c.o
+[56/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-video-filter.c.o
+[57/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-pixbuf.c.o
+[58/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-log.c.o
+[59/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-gl-display.c.o
 ../retro-gtk/retro-gl-display.c: In function ‘get_video_box’:
 ../retro-gtk/retro-gl-display.c:108:3: warning: ‘gtk_widget_get_allocated_width’ is deprecated: Use 'gtk_widget_get_width' instead [-Wdeprecated-declarations]
   108 |   w = (gdouble) gtk_widget_get_allocated_width (GTK_WIDGET (self)) * scale;
@@ -1206,6 +1207,7 @@ In file included from /usr/include/gtk-4.0/gtk/gtkapplication.h:26,
 /usr/include/gtk-4.0/gtk/gtkwidget.h:474:23: note: declared here
   474 | int                   gtk_widget_get_allocated_height   (GtkWidget     *widget);
       |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[60/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-runner-process.c.o
 [61/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-pixdata.c.o
 [62/66] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-core.c.o
 [63/66] Linking target retro-gtk/libretro-gtk-2.so.0
@@ -1215,11 +1217,11 @@ In file included from /usr/include/gtk-4.0/gtk/gtkapplication.h:26,
 [1/15] Generating shared/ipc-runner-public.h with a custom command
 [2/15] Generating shared/ipc-runner-public.c with a custom command
 [3/15] Generating shared/make-ipc-runner-private with a custom command
-[4/15] Compiling C object retro-runner/retro-runner.p/ipc-runner-impl.c.o
-[5/15] Compiling C object retro-runner/retro-runner.p/meson-generated_.._.._shared_ipc-runner.c.o
-[6/15] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-runner-process.c.o
-[7/15] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/meson-generated_.._.._shared_ipc-runner.c.o
-[8/15] Compiling C object retro-runner/retro-runner.p/retro-runner.c.o
+[4/15] Compiling C object retro-runner/retro-runner.p/meson-generated_.._.._shared_ipc-runner.c.o
+[5/15] Compiling C object retro-runner/retro-runner.p/retro-runner.c.o
+[6/15] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/meson-generated_.._.._shared_ipc-runner.c.o
+[7/15] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-runner-process.c.o
+[8/15] Compiling C object retro-runner/retro-runner.p/ipc-runner-impl.c.o
 [9/15] Compiling C object retro-gtk/libretro-gtk-2.so.0.p/retro-core.c.o
 [10/15] Linking target retro-runner/retro-runner
 [11/15] Linking target retro-gtk/libretro-gtk-2.so.0
@@ -1388,9 +1390,10 @@ Slackware package /tmp/retro-gtk-1.0.2-x86_64-1_gfs.txz created.
 
 
 +==============================================================================
-| Installing new package /tmp/retro-gtk-1.0.2-x86_64-1_gfs.txz
+| Upgrading retro-gtk-1.0.2-x86_64-1_gfs package using /tmp/retro-gtk-1.0.2-x86_64-1_gfs.txz
 +==============================================================================
-
+Pre-installing package retro-gtk-1.0.2-x86_64-1_gfs...
+Removing package: retro-gtk-1.0.2-x86_64-1_gfs-upgraded-2023-09-09,16:52:07
 Verifying package retro-gtk-1.0.2-x86_64-1_gfs.txz.
 Installing package retro-gtk-1.0.2-x86_64-1_gfs.txz:
 PACKAGE DESCRIPTION:
@@ -1404,3 +1407,5 @@ PACKAGE DESCRIPTION:
 #
 Executing install script for retro-gtk-1.0.2-x86_64-1_gfs.txz.
 Package retro-gtk-1.0.2-x86_64-1_gfs.txz installed.
+Package retro-gtk-1.0.2-x86_64-1_gfs upgraded with new package /tmp/retro-gtk-1.0.2-x86_64-1_gfs.txz.
+Time elapsed for /home/test/web.slackbuilds.45/BUILD_LOGS/build_games.log: 20 seconds

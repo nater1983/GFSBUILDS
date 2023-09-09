@@ -22,12 +22,12 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-wget -c https://download.gnome.org/sources/gobject-introspection/1.76/gobject-introspection-1.76.1.tar.xz
+wget -c https://download.gnome.org/sources/gobject-introspection/1.78/gobject-introspection-1.78.0.tar.xz
 
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=gobject-introspection
-VERSION=${VERSION:-1.76.1}
+VERSION=${VERSION:-1.78.0}
 BUILD=${BUILD:-1}
 TAG=${TAG:-}
 PKGTYPE=${PKGTYPE:-txz}

@@ -1,4 +1,4 @@
-00:24:58 08-09-23
+16:52:13 09-09-23
 
 Directory: .
   Directory: ./BLACKLIST45
@@ -61,11 +61,11 @@ DOWNLOAD: https://download.gnome.org/sources/glib-networking/2.76/glib-networkin
 
     Directory: ./BLACKLIST45/glib2
 PRGNAM: glib2
-VERSION: ${VERSION:-2.77.3}
+VERSION: ${VERSION:-2.78.0}
 BUILD: ${BUILD:-1}
 TAG: ${TAG:-}
 PKGTYPE: ${PKGTYPE:-txz}
-DOWNLOAD: https://download.gnome.org/sources/glib/2.77/glib-2.77.3.tar.xz
+DOWNLOAD: https://download.gnome.org/sources/glib/2.78/glib-2.78.0.tar.xz
 
     Directory: ./BLACKLIST45/glibmm
 PRGNAM: glibmm
@@ -77,11 +77,11 @@ DOWNLOAD: https://download.gnome.org/sources/glibmm/2.68/glibmm-2.68.2.tar.xz
 
     Directory: ./BLACKLIST45/gobject-introspection
 PRGNAM: gobject-introspection
-VERSION: ${VERSION:-1.76.1}
+VERSION: ${VERSION:-1.78.0}
 BUILD: ${BUILD:-1}
 TAG: ${TAG:-}
 PKGTYPE: ${PKGTYPE:-txz}
-DOWNLOAD: https://download.gnome.org/sources/gobject-introspection/1.76/gobject-introspection-1.76.1.tar.xz
+DOWNLOAD: https://download.gnome.org/sources/gobject-introspection/1.78/gobject-introspection-1.78.0.tar.xz
 
     Directory: ./BLACKLIST45/graphviz
 PRGNAM: graphviz
@@ -230,7 +230,7 @@ PKGTYPE: ${PKGTYPE:-txz}
 
     Directory: ./extensions/gnome-shell-extension-arc-menu
 PRGNAM: gnome-shell-extension-arc-menu
-VERSION: ${VERSION:-49}
+VERSION: 49
 BUILD: ${BUILD:-1}
 TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
@@ -1135,11 +1135,11 @@ REQUIRED:
 
     Directory: ./gnome/highlight
 PRGNAM: highlight
-VERSION: ${VERSION:-4.4}
+VERSION: ${VERSION:-4.7}
 BUILD: ${BUILD:-1}
 TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
-DOWNLOAD: http://www.andre-simon.de/zip/highlight-4.4.tar.bz2
+DOWNLOAD: http://www.andre-simon.de/zip/highlight-4.7.tar.bz2
 
 REQUIRED: lua53 
 
@@ -1443,12 +1443,12 @@ DOWNLOAD: https://download.gnome.org/sources/tracker-miners/3.6/tracker-miners-3
 REQUIRED: exempi libgxps libiptcdata libosinfo totem-pl-parser tracker upower 
 
     Directory: ./gnome/xdg-desktop-portal
-PRGNAM: xdg-desktop-portal
-VERSION: ${VERSION:-1.17.0}
+PRGNAM: 
+VERSION: ${VERSION:-1.17.2}
 BUILD: ${BUILD:-1}
 TAG: ${TAG:-}
 PKGTYPE: ${PKGTYPE:-txz}
-DOWNLOAD: https://github.com/flatpak/xdg-desktop-portal/releases/download/1.17.0/xdg-desktop-portal-1.17.0.tar.xz
+DOWNLOAD: https://github.com/flatpak/xdg-desktop-portal/releases/download/1.17.2/xdg-desktop-portal-1.17.2.tar.xz
 
     Directory: ./gnome/xdg-desktop-portal-gnome
 PRGNAM: xdg-desktop-portal-gnome	
@@ -1482,11 +1482,11 @@ REQUIRED:
 
     Directory: ./gnome/zenity
 PRGNAM: zenity
-VERSION: ${VERSION:-3.99.1}
+VERSION: ${VERSION:-3.99.2}
 BUILD: ${BUILD:-1}
 TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
-DOWNLOAD: https://download.gnome.org/sources/zenity/3.99/zenity-3.99.1.tar.xz
+DOWNLOAD: https://download.gnome.org/sources/zenity/3.99/zenity-3.99.2.tar.xz
 
 REQUIRED:  
 
@@ -2699,11 +2699,11 @@ DOWNLOAD: https://gitlab.com/mobian1/callaudiod/-/archive/0.1.7/callaudiod-0.1.7
 
     Directory: ./gnome_soft/calls
 PRGNAM: calls
-VERSION: ${VERSION:-45.alpha.0}
+VERSION: ${VERSION:-45.rc.0}
 BUILD: ${BUILD:-1}
 TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
-DOWNLOAD: https://download.gnome.org/sources/calls/45/calls-45.alpha.0.tar.xz
+DOWNLOAD: https://download.gnome.org/sources/calls/45/calls-45.rc.0.tar.xz
 
 REQUIRED:  
 
@@ -3127,11 +3127,11 @@ REQUIRED: gsound
 
     Directory: ./gnome_soft/ibus-gtk4
 PRGNAM: 
-VERSION: ${VERSION:-1.5.28}
+VERSION: ${VERSION:-1.5.29-rc1}
 BUILD: ${BUILD:-1}
 TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
-DOWNLOAD: https://github.com/ibus/ibus/releases/download/1.5.28/ibus-1.5.28.tar.gz
+DOWNLOAD: https://github.com/ibus/ibus/releases/download/1.5.29-rc1/ibus-1.5.29-rc1.tar.gz
 
     Directory: ./gnome_soft/jpegoptim
 PRGNAM: jpegoptim
@@ -3242,6 +3242,8 @@ VERSION: ${VERSION:-0.5}
 BUILD: ${BUILD:-1}
 TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
+
+REQUIRED: nautilus-python 
 
     Directory: ./gnome_soft/nautilus-python
 PRGNAM: nautilus-python
@@ -4057,11 +4059,11 @@ DOWNLOAD: https://github.com/ostreedev/ostree/releases/download/v2023.4/libostre
 
     Directory: ./main_gnome/libportal
 PRGNAM: libportal
-VERSION: ${VERSION:-0.6}
+VERSION: ${VERSION:-0.7}
 BUILD: ${BUILD:-1}
 TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
-DOWNLOAD: https://github.com/flatpak/libportal/releases/download/0.6/libportal-0.6.tar.xz
+DOWNLOAD: https://github.com/flatpak/libportal/releases/download/0.7/libportal-0.7.tar.xz
 
 REQUIRED:  
 
@@ -4223,11 +4225,11 @@ REQUIRED: bubblewrap geoclue2 wpebackend-fdo xdg-dbus-proxy
 
     Directory: ./main_gnome/webkit2gtk6.0
 PRGNAM: webkit2gtk6.0
-VERSION: ${VERSION:-2.40.5}
+VERSION: ${VERSION:-2.41.91}
 BUILD: ${BUILD:-1}
 TAG: ${TAG:-_gfs}
 PKGTYPE: ${PKGTYPE:-txz}
-DOWNLOAD: https://webkitgtk.org/releases/webkitgtk-2.40.5.tar.xz
+DOWNLOAD: https://webkitgtk.org/releases/webkitgtk-2.41.91.tar.xz
 
 REQUIRED: libwpe libsoup3 xdg-dbus-proxy wpebackend-fdo geoclue2 bubblewrap libaom dav1d libavif libyuv 
 

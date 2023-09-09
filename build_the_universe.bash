@@ -121,4 +121,3 @@ log_time_elapsed "$D"/"$BL"/ran_configs.log
 
 echo ""
 log_time_elapsed "To build the Universe..."
-
