@@ -59,7 +59,6 @@ find -L . \
   -o -perm 511 \) -exec chmod 755 {} \; -o \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
-sed -i -- 's/GLib.get_user_data_dir/GLib.get_system_data_dirs/g' eortologio@danchris.github.io/helpers.js
  
 mkdir -p $PKG/usr/share/gnome-shell/extensions/
 cp -a eortologio@danchris.github.io/  $PKG/usr/share/gnome-shell/extensions/
