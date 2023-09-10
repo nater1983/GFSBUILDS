@@ -5,9 +5,7 @@ cairomm
 gi-docgen
 gjs
 glib-networking
-glib2
 glibmm
-gobject-introspection
 graphviz
 gtkmm4
 gvfs
