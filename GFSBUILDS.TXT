@@ -1,4 +1,4 @@
-11:08:00 10-09-23
+11:15:29 10-09-23
 
 Directory: .
   Directory: ./BLACKLIST45
@@ -59,14 +59,6 @@ TAG: ${TAG:-}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://download.gnome.org/sources/glib-networking/2.76/glib-networking-2.76.0.tar.xz
 
-    Directory: ./BLACKLIST45/glib2
-PRGNAM: glib2
-VERSION: ${VERSION:-2.78.0}
-BUILD: ${BUILD:-1}
-TAG: ${TAG:-}
-PKGTYPE: ${PKGTYPE:-txz}
-DOWNLOAD: https://download.gnome.org/sources/glib/2.78/glib-2.78.0.tar.xz
-
     Directory: ./BLACKLIST45/glibmm
 PRGNAM: glibmm
 VERSION: ${VERSION:-2.68.2}
@@ -74,14 +66,6 @@ BUILD: ${BUILD:-1}
 TAG: ${TAG:-}
 PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://download.gnome.org/sources/glibmm/2.68/glibmm-2.68.2.tar.xz
-
-    Directory: ./BLACKLIST45/gobject-introspection
-PRGNAM: gobject-introspection
-VERSION: ${VERSION:-1.78.0}
-BUILD: ${BUILD:-1}
-TAG: ${TAG:-}
-PKGTYPE: ${PKGTYPE:-txz}
-DOWNLOAD: https://download.gnome.org/sources/gobject-introspection/1.78/gobject-introspection-1.78.0.tar.xz
 
     Directory: ./BLACKLIST45/graphviz
 PRGNAM: graphviz
@@ -4351,6 +4335,14 @@ DOWNLOAD: https://download.gnome.org/sources/clutter-gtk/1.8/clutter-gtk-1.8.4.t
 
 REQUIRED: clutter 
 
+    Directory: ./removed/glib2
+PRGNAM: glib2
+VERSION: ${VERSION:-2.78.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/glib/2.78/glib-2.78.0.tar.xz
+
     Directory: ./removed/gnome-video-effects
 PRGNAM: gnome-video-effects
 VERSION: ${VERSION:-0.6.0}
@@ -4360,6 +4352,14 @@ PKGTYPE: ${PKGTYPE:-txz}
 DOWNLOAD: https://download.gnome.org/sources/gnome-video-effects/0.6/gnome-video-effects-0.6.0.tar.xz
 
 REQUIRED:  
+
+    Directory: ./removed/gobject-introspection
+PRGNAM: gobject-introspection
+VERSION: ${VERSION:-1.78.0}
+BUILD: ${BUILD:-1}
+TAG: ${TAG:-}
+PKGTYPE: ${PKGTYPE:-txz}
+DOWNLOAD: https://download.gnome.org/sources/gobject-introspection/1.78/gobject-introspection-1.78.0.tar.xz
 
     Directory: ./removed/gtk4
 PRGNAM: 
