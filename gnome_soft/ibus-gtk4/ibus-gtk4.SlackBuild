@@ -26,7 +26,7 @@ wget -c https://github.com/ibus/ibus/releases/download/1.5.29-rc1/ibus-1.5.29-rc
 
 cd $(dirname $0) ; CWD=$(pwd)
 
-PKGNAM=ibus-gtk4
+PRGNAM=ibus-gtk4
 SRCNAM=ibus
 VERSION=${VERSION:-1.5.29-rc1}
 BUILD=${BUILD:-1}
@@ -64,12 +64,12 @@ else
 fi
 
 if [ ! -z "${PRINT_PACKAGE_NAME}" ]; then
-  echo "$PKGNAM-$VERSION-$ARCH-$BUILD.txz"
+  echo "$PRGNAM-$VERSION-$ARCH-$BUILD.txz"
   exit 0
 fi
 
 TMP=${TMP:-/tmp/gfs}
-PKG=$TMP/package-${PKGNAM}
+PKG=$TMP/package-${PRGNAM}
 OUTPUT=${OUTPUT:-/tmp}
 
 rm -rf $PKG
@@ -133,4 +133,4 @@ zcat $CWD/doinst.sh.gz > $PKG/install/doinst.sh
 cat $CWD/slack-desc > $PKG/install/slack-desc
 
 cd $PKG
-/sbin/makepkg -l y -c n $OUTPUT/$PKGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE
+/sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE

@@ -28,7 +28,7 @@ wget -c https://gitlab.freedesktop.org/upower/upower/-/archive/v0.99.20/upower-v
 
 cd $(dirname $0) ; CWD=$(pwd)
 
-PKGNAM=upower
+PRGNAM=upower
 SRCVER=v0.99.20
 VERSION=${VERSION:-0.99.20}
 BUILD=${BUILD:-1}
@@ -52,7 +52,7 @@ fi
 
 TMP=${TMP:-/tmp/gfs}
 OUTPUT=${OUTPUT:-/tmp}
-PKG=$TMP/package-$PKGNAM
+PKG=$TMP/package-$PRGNAM
 
 if [ "$ARCH" = "i586" ]; then
   SLKCFLAGS="-O2 -march=i586 -mtune=i686"
@@ -71,9 +71,9 @@ fi
 rm -rf $PKG
 mkdir -p $TMP $PKG
 cd $TMP
-rm -rf $PKGNAM-$SRCVER
-tar xvf $CWD/$PKGNAM-$SRCVER.tar.?z* || exit 1
-cd $PKGNAM-$SRCVER || exit 1
+rm -rf $PRGNAM-$SRCVER
+tar xvf $CWD/$PRGNAM-$SRCVER.tar.?z* || exit 1
+cd $PRGNAM-$SRCVER || exit 1
 chown -R root:root .
 find . \
  \( -perm 777 -o -perm 775 -o -perm 711 -o -perm 555 -o -perm 511 \) \
@@ -119,10 +119,10 @@ mv $PKG/etc/UPower/UPower.conf $PKG/etc/UPower/UPower.conf.new
 find $PKG/usr/man -type f -exec gzip -9 {} \;
 for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
 
-mkdir -p $PKG/usr/doc/$PKGNAM-$VERSION
+mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a  AUTHORS COPYING HACKING RELEASE COMMITMENT NEWS README \
-  $PKG/usr/doc/$PKGNAM-$VERSION
-cat $CWD/$PKGNAM.SlackBuild > $PKG/usr/doc/$PKGNAM-$VERSION/$PKGNAM.SlackBuild
+  $PKG/usr/doc/$PRGNAM-$VERSION
+cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 if [ -f $CWD/slack-required ]; then cat $CWD/slack-required > $PKG/install/slack-required; fi
@@ -131,4 +131,4 @@ zcat $CWD/doinst.sh.gz > $PKG/install/doinst.sh
 
 cd $PKG
 
-/sbin/makepkg -l y -c n $OUTPUT/$PKGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE
+/sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE
